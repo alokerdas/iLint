@@ -1,0 +1,53 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1196_Instance_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1196_Instance_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1236: object < a > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1236: object < b > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1236: object < c > should not share the same name with another object in the outer scope.
+Violated 1138: module name "block" does not match to regular expression .*_module.
+Violated 1196: module instance name "test_0" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1196_Instance_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1196_Instance_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <  block test_0 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "test_0" must be related to module Name.
+TOTAL NUMBER OF VIOLATIONS ARE: 52.

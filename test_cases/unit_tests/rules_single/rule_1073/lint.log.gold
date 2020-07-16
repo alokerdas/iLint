@@ -1,0 +1,2 @@
+Violated 1073: Only non-blocking assignment is used in combinational block. File: 1073_Blocking_Non_blocking_Assignment_in_Combinational_Block.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

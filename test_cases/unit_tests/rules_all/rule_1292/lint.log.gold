@@ -1,0 +1,553 @@
+Violated 1301: no Escape should be used on < in1 >.
+Violated 1004: Signals test_adder.in1 is driven by 12 devices.
+Violated 1004: Signals test_adder.in1 is driven by 12 devices.
+Violated 1127: signal name "in1" does not match to regular expression s_.
+Violated 1187: wire "in1" should be explicitly declared.
+Violated 1237: the fan-out number of signal < in1 > is < 13 > whereas the limitation is 5.
+Violated 1138: module name "test_adder" does not match to regular expression .*_module.
+Violated 1235: Timescale Missing on Module < test_adder >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder >
+Violated 1313: port < in1 > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1196: module instance name "adderx_1" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < adderx_1 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx_1 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx_1 >
+Violated 1322: port < in1 > and its connection < ss > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1196: module instance name "adderx_2" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < adderx_2 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx_2 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx_2 >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1196: module instance name "test_1_adderx" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < test_1_adderx >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.test_1_adderx >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.test_1_adderx >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1196: module instance name "testadder" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < testadder >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.testadder >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.testadder >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "testadder" must be related to module Name.
+Violated 1292: Instance name "testadder" indexed by an integer followed by a '_'.
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1196: module instance name "adderx_last" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < adderx_last >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx_last >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx_last >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "adderx_last" indexed by an integer followed by a '_'.
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "T111111_eSt_tEsT_11_" is unconventional and should be in the range from 3 to 16.
+Violated 1173: Module instance "T111111_eSt_tEsT_11_" should be named in CASE_LOWER case.
+Violated 1196: module instance name "T111111_eSt_tEsT_11_" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < T111111_eSt_tEsT_11_ >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.T111111_eSt_tEsT_11_ >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.T111111_eSt_tEsT_11_ >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "T111111_eSt_tEsT_11_" must be related to module Name.
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1196: module instance name "adder_last_1" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < adder_last_1 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adder_last_1 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adder_last_1 >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "adder_last_1" must be related to module Name.
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx" does not match to regular expression .*_module.
+Violated 1196: module instance name "a_0001A_1" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < a_0001A_1 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_1 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_2 >
+Violated 1317: gate port is deliberately not connected on Module <  adderx test_1_adderx >
+Violated 1317: gate port is deliberately not connected on Module <  adderx adderx_last >
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.a_0001A_1 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.a_0001A_1 >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "a_0001A_1" must be related to module Name.
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx1" does not match to regular expression .*_module.
+Violated 1196: module instance name "adderx1a_1" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < adderx1a_1 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx1a_1 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adderx1a_1 >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx1" does not match to regular expression .*_module.
+Violated 1196: module instance name "adDabcerxd_0" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < adDabcerxd_0 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adDabcerxd_0 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.adDabcerxd_0 >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "adDabcerxd_0" must be related to module Name.
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx1" does not match to regular expression .*_module.
+Violated 1173: Module instance "AdDabcerxd2" should be named in CASE_LOWER case.
+Violated 1196: module instance name "AdDabcerxd2" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < AdDabcerxd2 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.AdDabcerxd2 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.AdDabcerxd2 >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "AdDabcerxd2" must be related to module Name.
+Violated 1292: Instance name "AdDabcerxd2" indexed by an integer followed by a '_'.
+Violated 1301: no Escape should be used on < ss >.
+Violated 1127: signal name "ss" does not match to regular expression s_.
+Violated 1236: object < ss > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < ss > is < 13 > whereas the limitation is 5.
+Violated 1009: Parameter "check" cannot be in LOWER CASE.
+Violated 1042: parameter name "check" does not match to regular expression p_.*.
+Violated 1138: module name "adderx1" does not match to regular expression .*_module.
+Violated 1196: module instance name "addabcerxe1" does not match to regular expression U_.*.
+Violated 1235: Timescale Missing on Module < addabcerxe1 >.
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1255: comment is not found following port declaration  input [1:0] ss; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1292_Instance_Name_Related_to_Module_Nam.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input [1:0] ss; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  ss ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1317: gate port is deliberately not connected on Module <  adderx1 adderx1a_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.addabcerxe1 >
+Violated 1312: use localparam instead of parameter to declare < check = 1 > in module or interface < test_adder.addabcerxe1 >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "addabcerxe1" must be related to module Name.
+Violated 1292: Instance name "addabcerxe1" indexed by an integer followed by a '_'.
+TOTAL NUMBER OF VIOLATIONS ARE: 552.

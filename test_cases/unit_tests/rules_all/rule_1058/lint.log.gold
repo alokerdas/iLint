@@ -1,0 +1,44 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d" is detected.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1058_Signal_Has_Never_Been_Referenced_Assigned.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1058_Signal_Has_Never_Been_Referenced_Assigned.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1058_Signal_Has_Never_Been_Referenced_Assigned.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1059: Signal "a" Has Never Been Refferenced.
+Violated 1059: Signal "d" Has Never Been Refferenced.
+Violated 1058: Signal "b" Has Never Been Assigned.
+Violated 1058: Signal "c" Has Never Been Assigned.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1205: procedural continuous assign statement should not be used because it is not synthesizable.
+Violated 1205: procedural continuous assign statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 43.

@@ -1,0 +1,25 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1012: No Output Port is on "test.a".
+Violated 1098: Bidirectional Port "a" Decleared.
+Violated 1099: Signal "a<2>" Driven By Constant.
+Violated 1100: Assignment to a Signal.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration  input [7:0] a, b; 
+Violated 1255: comment is not found following port declaration  output [7:0] c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1324: more than one port is declared in one line.  assign a[2] = 0; //warning on "a[2]", input signal is assigned
+
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 23.

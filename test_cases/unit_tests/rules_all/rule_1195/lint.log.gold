@@ -1,0 +1,63 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < count >.
+Violated 1097: violation as Direct Connection from Input "clk" to Output "count".
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < nextCount >.
+Violated 1097: violation as Direct Connection from Input "clk" to Output "count".
+Violated 1127: signal name "nextCount" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "nextCount" is detected.
+Violated 1187: wire "nextCount" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < rst_pa >.
+Violated 1127: signal name "rst_pa" does not match to regular expression s_.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1168: register ouput name "count<7>" does not match to regular expression .*_r.
+Violated 1169: register Input name "nextCount<7>" does not match to regular expression .*_nxt.
+Violated 1147: State register name "count<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<1>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<2>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<3>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<4>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<5>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<6>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<7>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "nextCount<0>" not in library.
+Violated 1191: register inferred on signal "nextCount<1>" not in library.
+Violated 1191: register inferred on signal "nextCount<2>" not in library.
+Violated 1191: register inferred on signal "nextCount<3>" not in library.
+Violated 1191: register inferred on signal "nextCount<4>" not in library.
+Violated 1191: register inferred on signal "nextCount<5>" not in library.
+Violated 1191: register inferred on signal "nextCount<6>" not in library.
+Violated 1191: register inferred on signal "nextCount<7>" not in library.
+Violated 1195: asynchronous signal name "rst_pa" does not match to regular expression .*_a.
+Violated 1199: next register name "nextCount<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "nextCount<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "nextCount<2>" does not match to regular expression .*_ns.
+Violated 1199: next register name "nextCount<3>" does not match to regular expression .*_ns.
+Violated 1199: next register name "nextCount<4>" does not match to regular expression .*_ns.
+Violated 1199: next register name "nextCount<5>" does not match to regular expression .*_ns.
+Violated 1199: next register name "nextCount<6>" does not match to regular expression .*_ns.
+Violated 1199: next register name "nextCount<7>" does not match to regular expression .*_ns.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clk,rst_pa; 
+Violated 1255: comment is not found following port declaration output[7:0] count; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1195_Asynchronous_Signal_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end nextCount. File: 1195_Asynchronous_Signal_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst_pa. File: 1195_Asynchronous_Signal_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1328: the lines of a source file < 1195_Asynchronous_Signal_Name_Prefix_or_Suffix.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  nextCount ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  count > should not be used because it is not synthesizable.
+Violated 1319: memory <  nextCount > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 62.

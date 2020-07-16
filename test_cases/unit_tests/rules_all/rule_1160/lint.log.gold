@@ -1,0 +1,39 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1003: Clock signals "test.clock" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1167: active high signal name "reset<1>" does not match to regular expression .*_p.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1160: Bit select "reset<1>" in Sensitivity List.
+Violated 1160: Bit select "clock<0>" in Sensitivity List.
+Violated 1152: reset signal name "reset<1>" does not match to regular expression rst_.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1195: asynchronous signal name "reset<1>" does not match to regular expression .*_a.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input d; 
+Violated 1255: comment is not found following port declaration input [1:0] clock, reset; 
+Violated 1255: comment is not found following port declaration output q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1160_Bit_Select_in_Sensitivity_List.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1160_Bit_Select_in_Sensitivity_List.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1160_Bit_Select_in_Sensitivity_List.v , Line: 0
+Violated 1328: the lines of a source file < 1160_Bit_Select_in_Sensitivity_List.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  clock, reset ").
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 38.

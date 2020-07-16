@@ -1,0 +1,62 @@
+Violated 1301: no Escape should be used on < clock2 >.
+Violated 1127: signal name "clock2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < y1 >.
+Violated 1127: signal name "y1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y2 >.
+Violated 1127: signal name "y2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s6 >.
+Violated 1004: Signals test._s6 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "clock2" not a constant in bits selection.
+Violated 1127: signal name "_s6" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s6" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1004: Signals test._s7 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "clock2" not a constant in bits selection.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s7" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s8" does not match to regular expression gate_.
+Violated 1194: mux inferred on signal  "y2".
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1003: Clock signals "test.clock2" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "y1" does not match to regular expression .*_r.
+Violated 1169: register Input name "data" does not match to regular expression .*_nxt.
+Violated 1155: Clock Signal "clock2" Used as a Control.
+Violated 1149: No Set or Reset Signal only Clock "clock2".
+Violated 1147: State register name "y1" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "data" not in library.
+Violated 1199: next register name "data" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clock2, data; 
+Violated 1255: comment is not found following port declaration output y1, y2; 
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1155_Clock_Signal_Used_as_a_Control.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y1. File: 1155_Clock_Signal_Used_as_a_Control.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y2. File: 1155_Clock_Signal_Used_as_a_Control.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s6. File: 1155_Clock_Signal_Used_as_a_Control.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1155_Clock_Signal_Used_as_a_Control.v , Line: 0
+Violated 1328: the lines of a source file < 1155_Clock_Signal_Used_as_a_Control.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 61.

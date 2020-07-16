@@ -1,0 +1,2 @@
+Violated 1069: Task call statement multiply(...) should not be used because it is not synthesizable. File: 1069_Task_Call_Not_Synthesizable.v , Line: 7
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

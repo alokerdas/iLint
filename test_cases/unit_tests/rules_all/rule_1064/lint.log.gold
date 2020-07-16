@@ -1,0 +1,44 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < sel1 >.
+Violated 1127: signal name "sel1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < sel2 >.
+Violated 1127: signal name "sel2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < zo >.
+Violated 1127: signal name "zo" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "zo" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1255: comment is not found following port declaration  input[1:0] sel1,sel2; 
+Violated 1255: comment is not found following port declaration  output[3:0] zo; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end sel1. File: 1064_Logical_Arithmetic_BitWise_Operation_in_Case_Selection_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel2. File: 1064_Logical_Arithmetic_BitWise_Operation_in_Case_Selection_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end zo. File: 1064_Logical_Arithmetic_BitWise_Operation_in_Case_Selection_Expression.v , Line: 0
+Violated 1328: the lines of a source file < 1064_Logical_Arithmetic_BitWise_Operation_in_Case_Selection_Expression.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  sel1,sel2 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  zo ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  zo ").
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  zo > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1044: violation as case label exceed "1'b".
+Violated 1044: violation as case label exceed "1'b".
+Violated 1044: violation as case label exceed "1'b".
+Violated 1044: violation as case label exceed "1'b".
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1064: Some operation "&" in Case Selection Expression.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1219: default branch is unreachable because case alternatives have covered all the possibilities of case expression.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+TOTAL NUMBER OF VIOLATIONS ARE: 43.

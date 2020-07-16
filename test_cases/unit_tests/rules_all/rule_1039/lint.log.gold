@@ -1,0 +1,95 @@
+Violated 1301: no Escape should be used on < ck >.
+Violated 1127: signal name "ck" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < din >.
+Violated 1127: signal name "din" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < dout >.
+Violated 1004: Signals smp.dout is driven by 3 devices.
+Violated 1127: signal name "dout" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < douti >.
+Violated 1004: Signals smp.douti is driven by 3 devices.
+Violated 1127: signal name "douti" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "douti" is detected.
+Violated 1187: wire "douti" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < res >.
+Violated 1127: signal name "res" does not match to regular expression s_.
+Violated 1043: The length of parameter "D1" is unconventional and should be in the range from 3 to 16.
+Violated 1042: parameter name "D1" does not match to regular expression p_.*.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input ck,res,din; 
+Violated 1255: comment is not found following port declaration output dout; 
+Violated 1255: comment is not found following port declaration input A; 
+Violated 1255: comment is not found following port declaration output Z; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end din. File: 1039_Library_Cell_Instantiated.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end dout. File: 1039_Library_Cell_Instantiated.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end douti. File: 1039_Library_Cell_Instantiated.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end res. File: 1039_Library_Cell_Instantiated.v , Line: 0
+Violated 1328: the lines of a source file < 1039_Library_Cell_Instantiated.v > hould not exceed 10 lines.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  reg douti; 
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < `endcelldefine >
+Violated 1312: use localparam instead of parameter to declare < D1 = 1 > in module or interface < smp >
+Violated 1314: Unconventional port declaration in order < ck > ......
+Violated 1313: port < din > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1001: Signals "smp.OBUF.A" cannot be in UPPER CASE.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "smp.OBUF.Z" cannot be in UPPER CASE.
+Violated 1004: Signals smp.OBUF.Z is driven by 3 devices.
+Violated 1127: signal name "Z" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "JANIV" does not match to regular expression .*_module.
+Violated 1137: module "JANIV" should be named in CASE_LOWER case.
+Violated 1170: Instance/Module Name "JANIV" uses the same name as an ASIC library cell name.
+Violated 1173: Module instance "OBUF" should be named in CASE_LOWER case.
+Violated 1196: module instance name "OBUF" does not match to regular expression U_.*.
+Violated 1039: library cell "JANIV" is instantiated.
+Violated 1255: comment is not found following port declaration input ck,res,din; 
+Violated 1255: comment is not found following port declaration output dout; 
+Violated 1255: comment is not found following port declaration input A; 
+Violated 1255: comment is not found following port declaration output Z; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end Z. File: 1039_Library_Cell_Instantiated.v , Line: 0
+Violated 1328: the lines of a source file < 1039_Library_Cell_Instantiated.v > hould not exceed 10 lines.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  reg douti; 
+Violated 1317: gate port is deliberately not connected on Module < JANIV OBUF  >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < `endcelldefine >
+Violated 1312: use localparam instead of parameter to declare < D1 = 1 > in module or interface < smp.OBUF >
+Violated 1318: gate port is not connected on module < smp.OBUF > .
+Violated 1322: port < ck > and its connection < A > should be similar.
+Violated 1322: port < din > and its connection < Z > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "OBUF" must be related to module Name.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1077: variable "douti" is assigned in another assignment in same time point.
+Violated 1081: signal "din" is being read asynchronously. It may cause simulation-synthesis mismatch.
+TOTAL NUMBER OF VIOLATIONS ARE: 94.

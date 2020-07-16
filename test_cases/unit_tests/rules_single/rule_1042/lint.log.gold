@@ -1,0 +1,2 @@
+Violated 1042: Parameter name "st0" does not match to regular expression "p_*". File: 1042_Parameter_Name_Prefix_or_Suffix.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

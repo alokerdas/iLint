@@ -1,0 +1,35 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in >.
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out >.
+Violated 1034: VHDL Reserved Words "out".
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < rst >.
+Violated 1127: signal name "rst" does not match to regular expression s_.
+Violated 1120: Both Edge "clk" and Non-edge "rst" Expressions in the Sensitivity List.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration   input clk, rst, in; 
+Violated 1255: comment is not found following port declaration   output out; 
+Violated 1257: signals should be declared one per line with a comment at the end in. File: 1250_Wait_Statement_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1250_Wait_Statement_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst. File: 1250_Wait_Statement_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+Violated 1060: While/for Statement Not Synthesizable.
+Violated 1029: "BLOCKING" assignment is on "out" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1250: wait statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 34.

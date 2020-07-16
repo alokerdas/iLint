@@ -1,0 +1,167 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < count >.
+Violated 1004: Signals test.count is driven by 4 devices.
+Violated 1004: Signals test.count is driven by 4 devices.
+Violated 1004: Signals test.count is driven by 4 devices.
+Violated 1004: Signals test.count is driven by 4 devices.
+Violated 1005: Bit mismatched Signal is "test._s8".
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < i_rst >.
+Violated 1127: signal name "i_rst" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "i_rst" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s5 >.
+Violated 1004: Signals test._s5 is driven by 2 devices.
+Violated 1099: Signal "_s5<0>" Driven By Constant.
+Violated 1099: Signal "_s5<0>" Driven By Constant.
+Violated 1099: Signal "_s5<0>" Driven By Constant.
+Violated 1099: Signal "_s5<0>" Driven By Constant.
+Violated 1099: Signal "_s5<0>" Driven By Constant.
+Violated 1103: Signal "_s5<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s5<0>" with no Load.
+Violated 1127: signal name "_s5" does not match to regular expression s_.
+Violated 1128: unsigned "clk" to signed "_s5" assignment occurs.
+Violated 1187: wire "_s5" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s5" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s8 >.
+Violated 1004: Signals test._s8 is driven by 4 devices.
+Violated 1004: Signals test._s8 is driven by 4 devices.
+Violated 1004: Signals test._s8 is driven by 4 devices.
+Violated 1004: Signals test._s8 is driven by 4 devices.
+Violated 1005: Bit mismatched Signal is "test.count".
+Violated 1127: signal name "_s8" does not match to regular expression s_.
+Violated 1128: unsigned "clk" to signed "_s5" assignment occurs.
+Violated 1187: wire "_s8" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s11 >.
+Violated 1005: Bit mismatched Signal is "test._s12".
+Violated 1127: signal name "_s11" does not match to regular expression s_.
+Violated 1128: unsigned "_s11" to signed "_s12" assignment occurs.
+Violated 1187: wire "_s11" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s12 >.
+Violated 1127: signal name "_s12" does not match to regular expression s_.
+Violated 1128: unsigned "_s11" to signed "_s12" assignment occurs.
+Violated 1187: wire "_s12" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s12" is detected.
+Violated 1301: no Escape should be used on < _s14 >.
+Violated 1127: signal name "_s14" does not match to regular expression s_.
+Violated 1128: unsigned "_s14" to signed "_s15" assignment occurs.
+Violated 1187: wire "_s14" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s15 >.
+Violated 1127: signal name "_s15" does not match to regular expression s_.
+Violated 1128: unsigned "_s14" to signed "_s15" assignment occurs.
+Violated 1187: wire "_s15" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s15" is detected.
+Violated 1301: no Escape should be used on < _s20 >.
+Violated 1004: Signals test._s20 is driven by 3 devices.
+Violated 1004: Signals test._s20 is driven by 3 devices.
+Violated 1004: Signals test._s20 is driven by 3 devices.
+Violated 1004: Signals test._s20 is driven by 3 devices.
+Violated 1127: signal name "_s20" does not match to regular expression s_.
+Violated 1128: unsigned "_s14" to signed "_s15" assignment occurs.
+Violated 1187: wire "_s20" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s21 >.
+Violated 1004: Signals test._s21 is driven by 2 devices.
+Violated 1127: signal name "_s21" does not match to regular expression s_.
+Violated 1128: unsigned "_s14" to signed "_s15" assignment occurs.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s21" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s21" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s26 >.
+Violated 1004: Signals test._s26 is driven by 2 devices.
+Violated 1099: Signal "_s26<0>" Driven By Constant.
+Violated 1099: Signal "_s26<0>" Driven By Constant.
+Violated 1099: Signal "_s26<0>" Driven By Constant.
+Violated 1099: Signal "_s26<0>" Driven By Constant.
+Violated 1109: Signal "_s26<0>" Stuck at Logic 1.
+Violated 1104: Signal "_s26<0>" with no Load.
+Violated 1127: signal name "_s26" does not match to regular expression s_.
+Violated 1128: unsigned "_s14" to signed "_s15" assignment occurs.
+Violated 1187: wire "_s26" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s26" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s28 >.
+Violated 1004: Signals test._s28 is driven by 3 devices.
+Violated 1004: Signals test._s28 is driven by 3 devices.
+Violated 1004: Signals test._s28 is driven by 3 devices.
+Violated 1004: Signals test._s28 is driven by 3 devices.
+Violated 1127: signal name "_s28" does not match to regular expression s_.
+Violated 1128: unsigned "_s14" to signed "_s15" assignment occurs.
+Violated 1187: wire "_s28" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s28" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1009: Parameter "number" cannot be in LOWER CASE.
+Violated 1042: parameter name "number" does not match to regular expression p_.*.
+Violated 1175: gate name "_s22" does not match to regular expression gate_.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1166: active low signal name "i_rst" does not match to regular expression .*_n.
+Violated 1168: register ouput name "count<3>" does not match to regular expression .*_r.
+Violated 1152: reset signal name "i_rst" does not match to regular expression rst_.
+Violated 1151: Asynchronous Loop count<3> --> _s21 --> count<3>.
+Violated 1147: State register name "count<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<1>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<2>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<3>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s28<0>" not in library.
+Violated 1191: register inferred on signal "_s28<1>" not in library.
+Violated 1191: register inferred on signal "_s28<2>" not in library.
+Violated 1191: register inferred on signal "_s28<3>" not in library.
+Violated 1195: asynchronous signal name "i_rst" does not match to regular expression .*_a.
+Violated 1197: active low reset signal name "i_rst" does not follow the regular expression rst_.*_n.
+Violated 1199: next register name "_s28<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s28<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s28<2>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s28<3>" does not match to regular expression .*_ns.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1227: bit width of left-hand-side operand does not match the right-hand-side operand in "Addition".
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1227: bit width of left-hand-side operand does not match the right-hand-side operand in "?".
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output [3:0] count; 
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end i_rst. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s5. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s8. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s11. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s12. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s14. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s15. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s20. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s21. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s26. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s28. File: 1151_Asynchronous_Loop.v , Line: 0
+Violated 1328: the lines of a source file < 1151_Asynchronous_Loop.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test (count, clk); 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < number = 10 > in module or interface < test >
+Violated 1319: memory <  count > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 166.

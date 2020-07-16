@@ -1,0 +1,21 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "testalways" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input a, b; 
+Violated 1255: comment is not found following port declaration output c; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1307_Need_Comment_Before_Function_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1307_Need_Comment_Before_Function_Block.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 20.

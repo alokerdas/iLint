@@ -1,0 +1,5 @@
+Violated 1104: Signal "a" has no Load. File: 1104_Signal_with_No_Load.v , Line: 2
+Violated 1104: Signal "b" has no Load. File: 1104_Signal_with_No_Load.v , Line: 2
+Violated 1104: Signal "d" has no Load. File: 1104_Signal_with_No_Load.v , Line: 6
+Violated 1104: Signal "e" has no Load. File: 1104_Signal_with_No_Load.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 4.

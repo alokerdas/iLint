@@ -1,0 +1,22 @@
+Violated 1301: no Escape should be used on < regA >.
+Violated 1033: Keyword "regA" is part of Verilog Reserved Word.
+Violated 1127: signal name "regA" does not match to regular expression s_.
+Violated 1128: unsigned "regA" to signed "regS" assignment occurs.
+Violated 1187: wire "regA" should be explicitly declared.
+Violated 1301: no Escape should be used on < regS >.
+Violated 1033: Keyword "regS" is part of Verilog Reserved Word.
+Violated 1127: signal name "regS" does not match to regular expression s_.
+Violated 1128: unsigned "regA" to signed "regS" assignment occurs.
+Violated 1187: wire "regS" should be explicitly declared.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end regS. File: 1128_Sign_Unsigned_Conversion_in_Assignment.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  regA ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  regS ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  regA > should not be used because it is not synthesizable.
+Violated 1319: memory <  regS > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 21.

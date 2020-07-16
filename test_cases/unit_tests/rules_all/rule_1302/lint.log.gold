@@ -1,0 +1,103 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in >.
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out1 >.
+Violated 1127: signal name "out1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < out2 >.
+Violated 1097: violation as Direct Connection from Input "in" to Output "out2".
+Violated 1127: signal name "out2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration output out1, out2; 
+Violated 1255: comment is not found following port declaration input in, clk; 
+Violated 1255: comment is not found following port declaration input Din, Clk; 
+Violated 1255: comment is not found following port declaration output Q, QB; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end in. File: 1302_set_dont_touch_Used.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out1. File: 1302_set_dont_touch_Used.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out2. File: 1302_set_dont_touch_Used.v , Line: 0
+Violated 1328: the lines of a source file < 1302_set_dont_touch_Used.v > hould not exceed 10 lines.
+Violated 1263: unknown synopsys directive < //synopsys set_dont_touch FF1 > should not be used here.
+Violated 1302: dc_shell commands < //synopsys set_dont_touch FF1 > should not be used.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < `endcelldefine >
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1001: Signals "smp.myFF1.Clk" cannot be in UPPER CASE.
+Violated 1127: signal name "Clk" does not match to regular expression s_.
+Violated 1001: Signals "smp.myFF1.Din" cannot be in UPPER CASE.
+Violated 1127: signal name "Din" does not match to regular expression s_.
+Violated 1001: Signals "smp.myFF1.Q" cannot be in UPPER CASE.
+Violated 1127: signal name "Q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "Q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "smp.myFF1.QB" cannot be in UPPER CASE.
+Violated 1097: violation as Direct Connection from Input "in" to Output "out2".
+Violated 1127: signal name "QB" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "QB" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "FF1" does not match to regular expression .*_module.
+Violated 1137: module "FF1" should be named in CASE_LOWER case.
+Violated 1196: module instance name "myFF1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration output out1, out2; 
+Violated 1255: comment is not found following port declaration input in, clk; 
+Violated 1255: comment is not found following port declaration input Din, Clk; 
+Violated 1255: comment is not found following port declaration output Q, QB; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end Din. File: 1302_set_dont_touch_Used.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end Q. File: 1302_set_dont_touch_Used.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end QB. File: 1302_set_dont_touch_Used.v , Line: 0
+Violated 1328: the lines of a source file < 1302_set_dont_touch_Used.v > hould not exceed 10 lines.
+Violated 1263: unknown synopsys directive < //synopsys set_dont_touch FF1 > should not be used here.
+Violated 1302: dc_shell commands < //synopsys set_dont_touch FF1 > should not be used.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `celldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1305: comment not found on < `endcelldefine >.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module < //synopsys set_dont_touch FF1
+ >
+Violated 1317: gate port is deliberately not connected on Module < FF1 myFF1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < `endcelldefine >
+Violated 1314: Unconventional port declaration in order < Clk > ......
+Violated 1313: port < Din > should be declared by using explicit name.
+Violated 1322: port < clk > and its connection < Clk > should be similar.
+Violated 1322: port < in > and its connection < Din > should be similar.
+Violated 1322: port < out1 > and its connection < Q > should be similar.
+Violated 1322: port < out2 > and its connection < QB > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1029: "BLOCKING" assignment is on "out1" used in an edge triggered block.
+Violated 1029: "BLOCKING" assignment is on "out2" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1203: variable "Din" assigned here is completely overwrited by following assignments.
+Violated 1203: variable "Din" assigned here is completely overwrited by following assignments.
+Violated 1203: variable "Din" assigned here is completely overwrited by following assignments.
+TOTAL NUMBER OF VIOLATIONS ARE: 101.

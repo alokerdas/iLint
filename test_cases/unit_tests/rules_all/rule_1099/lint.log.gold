@@ -1,0 +1,35 @@
+Violated 1301: no Escape should be used on < q >.
+Violated 1099: Signal "q" Driven By Constant.
+Violated 1103: Signal "q" Stuck at Logic 0.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1187: wire "q" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1043: The length of parameter "W" is unconventional and should be in the range from 3 to 16.
+Violated 1042: parameter name "W" does not match to regular expression p_.*.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration  input [7:0] a, b; 
+Violated 1255: comment is not found following port declaration  output [7:0] c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1324: more than one port is declared in one line.  assign a[2] = 0; //warning on "a[2]", input signal is assigned
+
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1099_Signal_Driven_by_Constant.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test; 
+Violated 1311: Multiline command should not be used here /*module test (a, b, c);
+
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < W = 2 > in module or interface < test >
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 32.

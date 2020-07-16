@@ -1,0 +1,52 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < out >.
+Violated 1034: VHDL Reserved Words "out".
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out" is detected.
+Violated 1187: wire "out" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1216_Bit_Width_Mismatch_in_Comparison_of_Case_Statement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1216_Bit_Width_Mismatch_in_Comparison_of_Case_Statement.v , Line: 0
+Violated 1328: the lines of a source file < 1216_Bit_Width_Mismatch_in_Comparison_of_Case_Statement.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  out, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  se ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " )
+ ").
+Violated 1269: comment should be on <  endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  out, b > should not be used because it is not synthesizable.
+Violated 1319: memory <  a > should not be used because it is not synthesizable.
+Violated 1319: memory <  se > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1046: Default Not Found.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1084: Specify bit width "9" explicitly when assigning out<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "9" explicitly when assigning out<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "9" explicitly when assigning out<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "9" explicitly when assigning out<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "9" explicitly when assigning out<0> constant of 5 bits or more.
+Violated 1216: bit width mismatch in the comparison of case statement of "(2)" with "(3)".
+Violated 1221: not all possible case branches are specified.
+TOTAL NUMBER OF VIOLATIONS ARE: 50.

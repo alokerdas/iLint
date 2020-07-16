@@ -1,0 +1,109 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < count >.
+Violated 1004: Signals top.count is driven by 2 devices.
+Violated 1112: Nontop Module Tri-state "out" Detected.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < load >.
+Violated 1112: Nontop Module Tri-state "out" Detected.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1127: signal name "load" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output count; 
+Violated 1255: comment is not found following port declaration  input data; 
+Violated 1255: comment is not found following port declaration  input clock, reset, load; 
+Violated 1255: comment is not found following port declaration  output out; 
+Violated 1255: comment is not found following port declaration  input data; 
+Violated 1255: comment is not found following port declaration  input clock, reset, load; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end load. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1328: the lines of a source file < 1112_tri_state_non_top.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1236: object < clock > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < count >.
+Violated 1112: Nontop Module Tri-state "out" Detected.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "count" is detected.
+Violated 1187: wire "count" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < count > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1236: object < data > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < load >.
+Violated 1112: Nontop Module Tri-state "out" Detected.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1127: signal name "load" does not match to regular expression s_.
+Violated 1236: object < load > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < out >.
+Violated 1004: Signals top.u_up_counter_1.out is driven by 2 devices.
+Violated 1112: Nontop Module Tri-state "out" Detected.
+Violated 1034: VHDL Reserved Words "out".
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1124: Combinational Path Between PI "load" and PO "count" without Being Registered.
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1236: object < reset > should not share the same name with another object in the outer scope.
+Violated 1175: gate name "B<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "B<0>" Found.
+Violated 1179: Tri-state ouput signal name "out" does not match to regular expression .*_z.
+Violated 1138: module name "up_counter" does not match to regular expression .*_module.
+Violated 1196: module instance name "u_up_counter_1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  output count; 
+Violated 1255: comment is not found following port declaration  input data; 
+Violated 1255: comment is not found following port declaration  input clock, reset, load; 
+Violated 1255: comment is not found following port declaration  output out; 
+Violated 1255: comment is not found following port declaration  input data; 
+Violated 1255: comment is not found following port declaration  input clock, reset, load; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end load. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1112_tri_state_non_top.v , Line: 0
+Violated 1328: the lines of a source file < 1112_tri_state_non_top.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <  up_counter u_up_counter_1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1318: gate port is not connected on module < top.u_up_counter_1 > .
+Violated 1322: port < reset > and its connection < out > should be similar.
+Violated 1322: port < (null) > and its connection < reset > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 108.

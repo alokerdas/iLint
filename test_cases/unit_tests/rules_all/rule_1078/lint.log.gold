@@ -1,0 +1,18 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration  input clock, q_nxt; 
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1066: repeat expression  evaluates to X or Z, causing it to repeat zero or unknown times.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1078: empty process is detected.
+Violated 1252: event control statement or delay is lost in some possible branches of always, it may cause simulation time hangs.
+TOTAL NUMBER OF VIOLATIONS ARE: 17.

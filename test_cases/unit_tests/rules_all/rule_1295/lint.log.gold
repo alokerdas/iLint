@@ -1,0 +1,31 @@
+Violated 1301: no Escape should be used on < data1 >.
+Violated 1127: signal name "data1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data2 >.
+Violated 1127: signal name "data2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y1 >.
+Violated 1127: signal name "y1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y2 >.
+Violated 1127: signal name "y2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y2" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clk,data1,data2; 
+Violated 1255: comment is not found following port declaration output y1,y2; 
+Violated 1257: signals should be declared one per line with a comment at the end data2. File: 1295_Event_Control_Construct_in_always_comb.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y1. File: 1295_Event_Control_Construct_in_always_comb.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y2. File: 1295_Event_Control_Construct_in_always_comb.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1295: Event construct @ is found in "always_comb" procedure.
+TOTAL NUMBER OF VIOLATIONS ARE: 30.

@@ -1,0 +1,3 @@
+Violated 1088: More than one top module detected, top modules:. File: 1088_Multiple_Top_Modules.v , Line: 1
+Violated 1088: More than one top module detected, top modules:. File: 1088_Multiple_Top_Modules.v , Line: 16
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

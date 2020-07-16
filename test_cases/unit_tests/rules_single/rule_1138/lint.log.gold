@@ -1,0 +1,2 @@
+Violated 1138: Module name "TEST" does not match to regular expression "m_*". File: 1138_Module_Name_Prefix_or_Suffix.v , Line: 1
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

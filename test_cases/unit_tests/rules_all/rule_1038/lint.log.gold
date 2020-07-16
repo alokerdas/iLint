@@ -1,0 +1,59 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < en >.
+Violated 1127: signal name "en" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < io >.
+Violated 1012: No Output Port is on "test.io".
+Violated 1098: Bidirectional Port "io" Decleared.
+Violated 1127: signal name "io" does not match to regular expression s_.
+Violated 1037: inout port "io" should be input only in shift.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1187: wire "q" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < set >.
+Violated 1127: signal name "set" does not match to regular expression s_.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1175: gate name "_s9" does not match to regular expression gate_.
+Violated 1179: Tri-state ouput signal name "io" does not match to regular expression .*_z.
+Violated 1190: tri-state buffer "io" should not be mixed with other combinational logics in the module "test".
+Violated 1193: tri-state logic is inferred on signal "io".
+Violated 1038: Tri-state "io" should be disabled in shift.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input data,clk,set,reset,en; 
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1038_TriStateDisabledinShift.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1038_TriStateDisabledinShift.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end en. File: 1038_TriStateDisabledinShift.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end io. File: 1038_TriStateDisabledinShift.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1038_TriStateDisabledinShift.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1038_TriStateDisabledinShift.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end set. File: 1038_TriStateDisabledinShift.v , Line: 0
+Violated 1328: the lines of a source file < 1038_TriStateDisabledinShift.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1049: Case Like If Else.
+Violated 1049: Case Like If Else.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1022: register "q" should be assigned in data clause.
+Violated 1022: register "q" should be assigned in data clause.
+Violated 1022: register "q" should be assigned in data clause.
+Violated 1249: primitive gate < _s1 > found in non_leaf module.
+Violated 1249: primitive gate < _s9 > found in non_leaf module.
+TOTAL NUMBER OF VIOLATIONS ARE: 58.

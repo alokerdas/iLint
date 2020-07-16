@@ -1,0 +1,84 @@
+Violated 1301: no Escape should be used on < clk1 >.
+Violated 1127: signal name "clk1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clk2 >.
+Violated 1127: signal name "clk2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d1 >.
+Violated 1127: signal name "d1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d2 >.
+Violated 1127: signal name "d2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < en1 >.
+Violated 1124: Combinational Path Between PI "en1" and PO "q" without Being Registered.
+Violated 1127: signal name "en1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < en2 >.
+Violated 1124: Combinational Path Between PI "en2" and PO "qq" without Being Registered.
+Violated 1127: signal name "en2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1124: Combinational Path Between PI "en1" and PO "q" without Being Registered.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1284: The input of register "q" comes from more than one clock source.
+Violated 1301: no Escape should be used on < q1 >.
+Violated 1124: Combinational Path Between PI "en1" and PO "q" without Being Registered.
+Violated 1127: signal name "q1" does not match to regular expression s_.
+Violated 1187: wire "q1" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q2 >.
+Violated 1124: Combinational Path Between PI "en2" and PO "qq" without Being Registered.
+Violated 1127: signal name "q2" does not match to regular expression s_.
+Violated 1187: wire "q2" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < qq >.
+Violated 1124: Combinational Path Between PI "en2" and PO "qq" without Being Registered.
+Violated 1127: signal name "qq" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1284: The input of register "qq" comes from more than one clock source.
+Violated 1175: gate name "_s17" does not match to regular expression gate_.
+Violated 1179: Tri-state ouput signal name "q" does not match to regular expression .*_z.
+Violated 1193: tri-state logic is inferred on signal "q".
+Violated 1175: gate name "_s19" does not match to regular expression gate_.
+Violated 1179: Tri-state ouput signal name "qq" does not match to regular expression .*_z.
+Violated 1193: tri-state logic is inferred on signal "qq".
+Violated 1003: Clock signals "test.clk2" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1113: Combinational Path Too Long.
+Violated 1168: register ouput name "q2" does not match to regular expression .*_r.
+Violated 1169: register Input name "d2" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk2".
+Violated 1147: State register name "q2" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d2" not in library.
+Violated 1199: next register name "d2" does not match to regular expression .*_ns.
+Violated 1279: The inputs of the tri-state bus "qq" are not generated from any clock source.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test.clk1" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1113: Combinational Path Too Long.
+Violated 1145: Mutiple Clock Source Not Recommended.
+Violated 1168: register ouput name "q1" does not match to regular expression .*_r.
+Violated 1169: register Input name "d1" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk1".
+Violated 1147: State register name "q1" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d1" not in library.
+Violated 1199: next register name "d1" does not match to regular expression .*_ns.
+Violated 1279: The inputs of the tri-state bus "q" are not generated from any clock source.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clk1, clk2, en1, en2, d1, d2; 
+Violated 1255: comment is not found following port declaration output q, qq; 
+Violated 1257: signals should be declared one per line with a comment at the end clk2. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d1. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d2. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end en1. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end en2. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q1. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q2. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end qq. File: 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v , Line: 0
+Violated 1328: the lines of a source file < 1279_Inputs_of_a_Tri-state_Bus_Not_Generated_from_a_Single_Clock_Source.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 83.

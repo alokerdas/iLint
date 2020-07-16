@@ -1,0 +1,2 @@
+Violated 1025: Signal "c" is assigned by both blocking and non-blocking assignments. File: 1025_Signal_Driven_by_Both_Blocking_and_Non_blocking_Assignments.v , Line: 7
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

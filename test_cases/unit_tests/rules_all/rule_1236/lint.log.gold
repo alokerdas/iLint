@@ -1,0 +1,51 @@
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "a" is detected.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "b" is detected.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "c" is detected.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "sel" is detected.
+Violated 1127: signal name "temp" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1143: 'reg' declaration "temp" is detected.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1168: register ouput name "y" does not match to regular expression .*_r.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1255: comment is not found following port declaration   input sel; 
+Violated 1255: comment is not found following port declaration   input [7:0] a,b,c; 
+Violated 1255: comment is not found following port declaration   output [7:0] y; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1236_Objects_With_Same_Name_of_Object_in_Outer_scope.v , Line: 7
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1236_Objects_With_Same_Name_of_Object_in_Outer_scope.v , Line: 7
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1236_Objects_With_Same_Name_of_Object_in_Outer_scope.v , Line: 7
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1236_Objects_With_Same_Name_of_Object_in_Outer_scope.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a,b,c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  temp ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1317: gate port is deliberately not connected on Module <     begin: testb
+ >
+Violated 1317: gate port is deliberately not connected on Module <       reg [7:0] y; //"y" in scope "testb",
+ >
+Violated 1269: comment should be on <     end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  y > should not be used because it is not synthesizable.
+Violated 1319: memory <  temp > should not be used because it is not synthesizable.
+Violated 1319: memory <  y > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: File Name < 1236_Objects_With_Same_Name_of_Object_in_Outer_scope > does not match with Module Name < test >.
+Violated 1239: the length < 52 > of file name < 1236_Objects_With_Same_Name_of_Object_in_Outer_scope > should not exceed < 10 > characters.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1236: object < y > should not share the same name with

@@ -1,0 +1,90 @@
+Violated 1301: no Escape should be used on < ck >.
+Violated 1127: signal name "ck" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "ck" is detected.
+Violated 1187: wire "ck" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < count >.
+Violated 1097: violation as Direct Connection from Input "clock" to Output "count".
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1187: wire "count" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "reset" is detected.
+Violated 1187: wire "reset" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clock,reset; 
+Violated 1255: comment is not found following port declaration output [8:0] count; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1322_Port_Name_Does_Not_Follow_the_Connected_Signal.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1322_Port_Name_Does_Not_Follow_the_Connected_Signal.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1322_Port_Name_Does_Not_Follow_the_Connected_Signal.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  count > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < count >.
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "count" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < count > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < reset > should not share the same name with another object in the outer scope.
+Violated 1138: module name "block" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "cc" is unconventional and should be in the range from 3 to 16.
+Violated 1196: module instance name "cc" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration input clock,reset; 
+Violated 1255: comment is not found following port declaration output [8:0] count; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1322_Port_Name_Does_Not_Follow_the_Connected_Signal.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1322_Port_Name_Does_Not_Follow_the_Connected_Signal.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1322_Port_Name_Does_Not_Follow_the_Connected_Signal.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1317: gate port is deliberately not connected on Module < block cc  >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1319: memory <  count > should not be used because it is not synthesizable.
+Violated 1322: port < ck > and its connection < clock > should be similar.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "cc" must be related to module Name.
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1044: violation as case label exceed "8'b".
+Violated 1087: process should be named.
+Violated 1074: do not assign signal with negative value "-000000000сп!".
+Violated 1025: signal "count<0>" is assigned by both blocking and non-blocking assignments.
+Violated 1025: signal "count<0>" is assigned by both blocking and non-blocking assignments.
+Violated 1025: signal "count<0>" is assigned by both blocking and non-blocking assignments.
+Violated 1025: signal "count<0>" is assigned by both blocking and non-blocking assignments.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 89.

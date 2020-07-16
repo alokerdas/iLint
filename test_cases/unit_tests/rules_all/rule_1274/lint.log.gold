@@ -1,0 +1,134 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < a1 >.
+Violated 1127: signal name "a1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a1" is detected.
+Violated 1187: wire "a1" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < a2 >.
+Violated 1127: signal name "a2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a2" is detected.
+Violated 1187: wire "a2" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1004: Signals test.b is driven by 4 devices.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < c >.
+Violated 1004: Signals test.c is driven by 4 devices.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "clk" is detected.
+Violated 1187: wire "clk" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d" is detected.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < d1 >.
+Violated 1127: signal name "d1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d1" is detected.
+Violated 1187: wire "d1" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1187: wire "q" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q1 >.
+Violated 1127: signal name "q1" does not match to regular expression s_.
+Violated 1187: wire "q1" should be explicitly declared.
+Violated 1301: no Escape should be used on < q2 >.
+Violated 1127: signal name "q2" does not match to regular expression s_.
+Violated 1187: wire "q2" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < s >.
+Violated 1127: signal name "s" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "s" is detected.
+Violated 1187: wire "s" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "sel" is detected.
+Violated 1187: wire "sel" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s15 >.
+Violated 1127: signal name "_s15" does not match to regular expression s_.
+Violated 1187: wire "_s15" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s15" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s18 >.
+Violated 1127: signal name "_s18" does not match to regular expression s_.
+Violated 1187: wire "_s18" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s18" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s19 >.
+Violated 1127: signal name "_s19" does not match to regular expression s_.
+Violated 1187: wire "_s19" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s19" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1194: mux inferred on signal  "q2".
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1189: latch signal name "q1" does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "q1".
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1125: Non-constant Divisor "c".
+Violated 1126: Non-constant Divident "b".
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end a1. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end a2. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d1. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q1. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q2. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end s. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s15. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s18. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s19. File: 1274_Use_always_comb_to_Model_Combinational_Behavior.v , Line: 0
+Violated 1328: the lines of a source file < 1274_Use_always_comb_to_Model_Combinational_Behavior.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 133.

@@ -1,0 +1,27 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1120: Both Edge "clk" and Non-edge "data" Expressions in the Sensitivity List.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk, data; 
+Violated 1255: comment is not found following port declaration  output y; 
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1068_Event_Control_in_Unsuitable_Place_is_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1068_Event_Control_in_Unsuitable_Place_is_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1068: event control data in unsuitable place is not synthesizable.
+Violated 1029: "BLOCKING" assignment is on "y" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 26.

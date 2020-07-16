@@ -1,0 +1,2 @@
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

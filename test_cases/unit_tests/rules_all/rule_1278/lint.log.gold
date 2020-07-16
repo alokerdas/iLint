@@ -1,0 +1,153 @@
+Violated 1001: Signals "test2.R" cannot be in UPPER CASE.
+Violated 1127: signal name "R" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1004: Signals test2.q is driven by 4 devices.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s19 >.
+Violated 1004: Signals test2._s19 is driven by 2 devices.
+Violated 1127: signal name "_s19" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s19" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s19" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s26 >.
+Violated 1004: Signals test2._s26 is driven by 2 devices.
+Violated 1127: signal name "_s26" does not match to regular expression s_.
+Violated 1187: wire "_s26" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s26" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s33 >.
+Violated 1004: Signals test2._s33 is driven by 2 devices.
+Violated 1127: signal name "_s33" does not match to regular expression s_.
+Violated 1187: wire "_s33" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s33" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s20" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test2.R".
+Violated 1177: reduction operation should not be performed on single-bit signal "test2.R".
+Violated 1139: Combinational Logic Found in Sequential "clk" Block.
+Violated 1175: gate name "_s27" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test2.R".
+Violated 1177: reduction operation should not be performed on single-bit signal "test2.R".
+Violated 1176: Implicit and Confusing Operator Precedence on "R".
+Violated 1139: Combinational Logic Found in Sequential "clk" Block.
+Violated 1175: gate name "_s34" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test2.R".
+Violated 1177: reduction operation should not be performed on single-bit signal "test2.R".
+Violated 1176: Implicit and Confusing Operator Precedence on "R".
+Violated 1003: Clock signals "test2.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1167: active high signal name "R" does not match to regular expression .*_p.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1152: reset signal name "R" does not match to regular expression rst_.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1195: asynchronous signal name "R" does not match to regular expression .*_a.
+Violated 1197: active low reset signal name "R" does not follow the regular expression rst_.*_n.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test2.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1102: more than one clock signal in a module.
+Violated 1166: active low signal name "R" does not match to regular expression .*_n.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1152: reset signal name "R" does not match to regular expression rst_.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1195: asynchronous signal name "R" does not match to regular expression .*_a.
+Violated 1197: active low reset signal name "R" does not follow the regular expression rst_.*_n.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test2.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1283: Signal "q" has already been reset.
+Violated 1282: Multiple asynchronous resets are specified in the same always construct.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test2.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test2.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1283: Signal "q" has already been reset.
+Violated 1282: Multiple asynchronous resets are specified in the same always construct.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test2.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test2.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1283: Signal "q" has already been reset.
+Violated 1282: Multiple asynchronous resets are specified in the same always construct.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test2" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input d1, d2, clk, R, d; 
+Violated 1255: comment is not found following port declaration output q; 
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1278_Use_Simple_Expression_for_Asynchronous_Set_or_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1278_Use_Simple_Expression_for_Asynchronous_Set_or_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1278_Use_Simple_Expression_for_Asynchronous_Set_or_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s19. File: 1278_Use_Simple_Expression_for_Asynchronous_Set_or_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s26. File: 1278_Use_Simple_Expression_for_Asynchronous_Set_or_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s33. File: 1278_Use_Simple_Expression_for_Asynchronous_Set_or_Reset.v , Line: 0
+Violated 1328: the lines of a source file < 1278_Use_Simple_Expression_for_Asynchronous_Set_or_Reset.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 152.

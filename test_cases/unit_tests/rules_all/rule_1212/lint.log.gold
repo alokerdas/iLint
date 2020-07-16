@@ -1,0 +1,38 @@
+Violated 1001: Signals "smp.CK" cannot be in UPPER CASE.
+Violated 1127: signal name "CK" does not match to regular expression s_.
+Violated 1001: Signals "smp.FIN1" cannot be in UPPER CASE.
+Violated 1127: signal name "FIN1" does not match to regular expression s_.
+Violated 1001: Signals "smp.FIN2" cannot be in UPPER CASE.
+Violated 1127: signal name "FIN2" does not match to regular expression s_.
+Violated 1001: Signals "smp.FOUT1" cannot be in UPPER CASE.
+Violated 1127: signal name "FOUT1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "FOUT1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "smp.FOUT2" cannot be in UPPER CASE.
+Violated 1127: signal name "FOUT2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "FOUT2" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "smp.RES" cannot be in UPPER CASE.
+Violated 1127: signal name "RES" does not match to regular expression s_.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input 
+Violated 1255: comment is not found following port declaration output FOUT1,FOUT2; 
+Violated 1257: signals should be declared one per line with a comment at the end FIN1. File: 1212_Flip-Flops_with_and_without_Asynchronous.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end FIN2. File: 1212_Flip-Flops_with_and_without_Asynchronous.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end FOUT1. File: 1212_Flip-Flops_with_and_without_Asynchronous.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end FOUT2. File: 1212_Flip-Flops_with_and_without_Asynchronous.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end RES. File: 1212_Flip-Flops_with_and_without_Asynchronous.v , Line: 0
+Violated 1328: the lines of a source file < 1212_Flip-Flops_with_and_without_Asynchronous.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < CK > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1077: variable "FOUT1" is assigned in another assignment in same time point.
+Violated 1212: flip-flop "FOUT1" with asynchronous reset/set and flip-flop "FOUT2" without asynchronous reset/set in the same always construct.
+TOTAL NUMBER OF VIOLATIONS ARE: 37.

@@ -1,0 +1,39 @@
+Violated 1301: no Escape should be used on < aIn >.
+Violated 1127: signal name "aIn" does not match to regular expression s_.
+Violated 1187: wire "aIn" should be explicitly declared.
+Violated 1290: UDP Name "Carry" should be named in lower case.
+Violated 1301: no Escape should be used on < bIn >.
+Violated 1127: signal name "bIn" does not match to regular expression s_.
+Violated 1187: wire "bIn" should be explicitly declared.
+Violated 1290: UDP Name "Carry" should be named in lower case.
+Violated 1301: no Escape should be used on < carryIn >.
+Violated 1127: signal name "carryIn" does not match to regular expression s_.
+Violated 1187: wire "carryIn" should be explicitly declared.
+Violated 1290: UDP Name "Carry" should be named in lower case.
+Violated 1301: no Escape should be used on < carryOut >.
+Violated 1127: signal name "carryOut" does not match to regular expression s_.
+Violated 1187: wire "carryOut" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1290: UDP Name "Carry" should be named in lower case.
+Violated 1123: UDP declaration "Carry" should not be used because it is not synthesizable.
+Violated 1309: user defined primitive < Carry > should be named in lower case.
+Violated 1175: gate name "u1" does not match to regular expression gate_.
+Violated 1178: Gate Instance "u1" Found.
+Violated 1024: UDP instance "u1" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration output carryOut; 
+Violated 1255: comment is not found following port declaration input carryIn, aIn,bIn; 
+Violated 1257: signals should be declared one per line with a comment at the end bIn. File: 1309_User_Defined_Primitive_should_be_Named_in_Lower_Case.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end carryIn. File: 1309_User_Defined_Primitive_should_be_Named_in_Lower_Case.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end carryOut. File: 1309_User_Defined_Primitive_should_be_Named_in_Lower_Case.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1309_User_Defined_Primitive_should_be_Named_in_Lower_Case.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1309: user defined primitive < Carry > should be named in lower case.
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endtable >
+Violated 1269: comment should be on < endprimitive >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 38.

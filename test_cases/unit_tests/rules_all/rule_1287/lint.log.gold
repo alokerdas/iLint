@@ -1,0 +1,104 @@
+Violated 1001: Signals "smp.A" cannot be in UPPER CASE.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1001: Signals "smp.B" cannot be in UPPER CASE.
+Violated 1127: signal name "B" does not match to regular expression s_.
+Violated 1001: Signals "smp.C" cannot be in UPPER CASE.
+Violated 1127: signal name "C" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1287: Bit Width "A" and "B" Mismatch in Logical Operation.
+Violated 1001: Signals "smp.X" cannot be in UPPER CASE.
+Violated 1124: Combinational Path Between PI "X" and PO "Z" without Being Registered.
+Violated 1127: signal name "X" does not match to regular expression s_.
+Violated 1287: Bit Width "X" and "Y" Mismatch in Logical Operation.
+Violated 1001: Signals "smp.Y" cannot be in UPPER CASE.
+Violated 1124: Combinational Path Between PI "Y" and PO "Z" without Being Registered.
+Violated 1124: Combinational Path Between PI "Y" and PO "Z" without Being Registered.
+Violated 1127: signal name "Y" does not match to regular expression s_.
+Violated 1001: Signals "smp.Z" cannot be in UPPER CASE.
+Violated 1124: Combinational Path Between PI "X" and PO "Z" without Being Registered.
+Violated 1127: signal name "Z" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1287: Bit Width "X" and "Y" Mismatch in Logical Operation.
+Violated 1301: no Escape should be used on < _s2 >.
+Violated 1124: Combinational Path Between PI "A" and PO "Z" without Being Registered.
+Violated 1124: Combinational Path Between PI "A" and PO "Z" without Being Registered.
+Violated 1127: signal name "_s2" does not match to regular expression s_.
+Violated 1187: wire "_s2" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s2" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1287: Bit Width "A" and "B" Mismatch in Logical Operation.
+Violated 1301: no Escape should be used on < _s4 >.
+Violated 1124: Combinational Path Between PI "B" and PO "C" without Being Registered.
+Violated 1124: Combinational Path Between PI "B" and PO "C" without Being Registered.
+Violated 1124: Combinational Path Between PI "B" and PO "C" without Being Registered.
+Violated 1127: signal name "_s4" does not match to regular expression s_.
+Violated 1187: wire "_s4" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s4" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1287: Bit Width "A" and "B" Mismatch in Logical Operation.
+Violated 1301: no Escape should be used on < _s14 >.
+Violated 1124: Combinational Path Between PI "Y" and PO "C" without Being Registered.
+Violated 1124: Combinational Path Between PI "Y" and PO "C" without Being Registered.
+Violated 1124: Combinational Path Between PI "X" and PO "Z" without Being Registered.
+Violated 1127: signal name "_s14" does not match to regular expression s_.
+Violated 1187: wire "_s14" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s14" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1287: Bit Width "X" and "Y" Mismatch in Logical Operation.
+Violated 1301: no Escape should be used on < _s16 >.
+Violated 1099: Signal "_s16" Driven By Constant.
+Violated 1109: Signal "_s16" Stuck at Logic 1.
+Violated 1104: Signal "_s16" with no Load.
+Violated 1127: signal name "_s16" does not match to regular expression s_.
+Violated 1187: wire "_s16" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s16" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1180: condition expression on "A" is wider than single-bit.
+Violated 1180: condition expression on "A" is wider than single-bit.
+Violated 1175: gate name "_s3" does not match to regular expression gate_.
+Violated 1180: condition expression on "B" is wider than single-bit.
+Violated 1180: condition expression on "B" is wider than single-bit.
+Violated 1180: condition expression on "B" is wider than single-bit.
+Violated 1175: gate name "_s0" does not match to regular expression gate_.
+Violated 1180: condition expression on "B" is wider than single-bit.
+Violated 1175: gate name "_s13" does not match to regular expression gate_.
+Violated 1180: condition expression on "Y" is wider than single-bit.
+Violated 1180: condition expression on "Y" is wider than single-bit.
+Violated 1175: gate name "_s12" does not match to regular expression gate_.
+Violated 1180: condition expression on "Y" is wider than single-bit.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input X; 
+Violated 1255: comment is not found following port declaration  input [1:0]Y; 
+Violated 1255: comment is not found following port declaration  input [1:0] A; 
+Violated 1255: comment is not found following port declaration  input [2:0] B; 
+Violated 1255: comment is not found following port declaration  output C,Z; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end B. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end C. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end X. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end Y. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end Z. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s2. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s4. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s14. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s16. File: 1287_BitWidthMismatchinLogicalOperation.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object " Y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  A ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  B ").
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 103.

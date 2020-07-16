@@ -1,0 +1,2 @@
+Violated 1108: Variable name "Nnnnnnnnnnnn" does not match to regular expression v_.*. File: 1108_Variable_Name_Prefix_or_Suffix.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -1,0 +1,138 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "clock" is detected.
+Violated 1187: wire "clock" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < count >.
+Violated 1097: violation as Direct Connection from Input "clock" to Output "count".
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1187: wire "count" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "reset" is detected.
+Violated 1187: wire "reset" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y >.
+Violated 1097: violation as Direct Connection from Input "reset" to Output "y".
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1187: wire "y" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "initval" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clock,reset; 
+Violated 1255: comment is not found following port declaration  output [8:0] count,y; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1065_Nested_Edge_triggers.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1065_Nested_Edge_triggers.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1065_Nested_Edge_triggers.v , Line: 0
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1065_Nested_Edge_triggers.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count,y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count,y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count,y ").
+Violated 1269: comment should be on <      end >
+Violated 1269: comment should be on <   endmodule >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  count,y > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < clock > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < count >.
+Violated 1097: violation as Direct Connection from Input "clock" to Output "count".
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "count" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < count > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < reset > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < y >.
+Violated 1097: violation as Direct Connection from Input "reset" to Output "y".
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < y > should not share the same name with another object in the outer scope.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "cc" is unconventional and should be in the range from 3 to 16.
+Violated 1196: module instance name "cc" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input clock,reset; 
+Violated 1255: comment is not found following port declaration  output [8:0] count,y; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1065_Nested_Edge_triggers.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1065_Nested_Edge_triggers.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1065_Nested_Edge_triggers.v , Line: 0
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1065_Nested_Edge_triggers.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count,y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count,y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count,y ").
+Violated 1317: gate port is deliberately not connected on Module <    test cc  >
+Violated 1269: comment should be on <      end >
+Violated 1269: comment should be on <   endmodule >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1319: memory <  count,y > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "cc" must be related to module Name.
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1044: violation as case label exceed "8'b".
+Violated 1087: process should be named.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1065: nested edge-triggered constructs "posedge" "clock" should not be used.
+Violated 1029: "BLOCKING" assignment is on "y<0>" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1052:       "#20" Delay Control Ignored by Synthesis
+Violated 1052:       "#10" Delay Control Ignored by Synthesis
+Violated 1052:       "#50" Delay Control Ignored by Synthesis
+Violated 1053: System Task Call "$monitor;" Not Synthesizable.
+Violated 1053: System Task Call "$finish;" Not Synthesizable.
+Violated 1029: "BLOCKING" assignment is on "clock" used in an edge triggered block.
+Violated 1029: "BLOCKING" assignment is on "reset" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1052:   "#4" Delay Control Ignored by Synthesis
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 137.

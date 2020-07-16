@@ -1,0 +1,46 @@
+Violated 1001: Signals "smp.A" cannot be in UPPER CASE.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1001: Signals "smp.B" cannot be in UPPER CASE.
+Violated 1127: signal name "B" does not match to regular expression s_.
+Violated 1001: Signals "smp.C" cannot be in UPPER CASE.
+Violated 1127: signal name "C" does not match to regular expression s_.
+Violated 1001: Signals "smp.G" cannot be in UPPER CASE.
+Violated 1127: signal name "G" does not match to regular expression s_.
+Violated 1001: Signals "smp.H" cannot be in UPPER CASE.
+Violated 1127: signal name "H" does not match to regular expression s_.
+Violated 1001: Signals "smp.Z" cannot be in UPPER CASE.
+Violated 1127: signal name "Z" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "Z" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input  [1:0]A, B, C,G,H; 
+Violated 1255: comment is not found following port declaration output  [1:0]Z; 
+Violated 1257: signals should be declared one per line with a comment at the end B. File: 1074_Negative_Value_Assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end C. File: 1074_Negative_Value_Assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end G. File: 1074_Negative_Value_Assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end H. File: 1074_Negative_Value_Assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end Z. File: 1074_Negative_Value_Assignment.v , Line: 0
+Violated 1328: the lines of a source file < 1074_Negative_Value_Assignment.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object " A, B, C,G,H ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " Z ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " Z ").
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory < Z > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1044: violation as case label exceed "3'b".
+Violated 1044: violation as case label exceed "3'b".
+Violated 1044: violation as case label exceed "3'b".
+Violated 1044: violation as case label exceed "3'b".
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1046: Default Not Found.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1074: do not assign signal with negative value "-11".
+TOTAL NUMBER OF VIOLATIONS ARE: 45.

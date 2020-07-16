@@ -1,0 +1,23 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1328: the lines of a source file < 1304_Macro_Naming_Convention.v > hould not exceed 10 lines.
+Violated 1262: < `ifdef > conditional compiler directive should not be used.
+Violated 1265: Define Statements Should be Put into One File.
+Violated 1304: Macro name < add(a,b) a + b > must be upper case
+Violated 1305: comment not found on < `define add(a,b) a + b >.
+Violated 1305: comment not found on < `define add(a,b) a + b >.
+Violated 1305: comment not found on < `define NAND(delay) nand #(delay) >.
+Violated 1305: comment not found on < `define NAND(delay) nand #(delay) >.
+Violated 1305: comment not found on < `define Def1 0 >.
+Violated 1305: comment not found on < `define Def1 0 >.
+Violated 1305: comment not found on < `define Def2 0 >.
+Violated 1305: comment not found on < `define Def2 0 >.
+Violated 1307: no comment is found before always
+Violated 1308: define is not allowed for defining constants < 0 >.
+Violated 1308: define is not allowed for defining constants < 0 >.
+Violated 1269: comment should be on < `endif >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 22.

@@ -1,0 +1,27 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1222_Incomplete_Case_Expression_with_Default_Clause.v , Line: 0
+Violated 1328: the lines of a source file < 1222_Incomplete_Case_Expression_with_Default_Clause.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " ) //warning here, 2'b11 is not covered but default
+ ").
+Violated 1269: comment should be on <     endcase >
+Violated 1269: comment should be on <    endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1027: "casez" statement Detected.
+Violated 1028: complex "casez" decreases circuit quality with.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1220: not all possible values of the case expression are covered in a full case but a default clause exists.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+TOTAL NUMBER OF VIOLATIONS ARE: 25.

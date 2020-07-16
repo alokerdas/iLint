@@ -1,0 +1,65 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < tmp1 >.
+Violated 1127: signal name "tmp1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "tmp1" is detected.
+Violated 1187: wire "tmp1" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < tmp2 >.
+Violated 1127: signal name "tmp2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "tmp2" is detected.
+Violated 1187: wire "tmp2" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output y; 
+Violated 1255: comment is not found following port declaration  input a, b, c, d; 
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end tmp1. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end tmp2. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 0
+Violated 1328: the lines of a source file < 1204_TemporaryVariableUsedinNonblocking.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1029: "NON-BLOCKING" assignment is on "tmp1" used in an edge triggered block.
+Violated 1029: "NON-BLOCKING" assignment is on "tmp2" used in an edge triggered block.
+Violated 1029: "NON-BLOCKING" assignment is on "y" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1030: "vector" "&" is used in a single-bit logical operation.
+Violated 1030: "vector" "&" is used in a single-bit logical operation.
+Violated 1030: "vector" "&" is used in a single-bit logical operation.
+Violated 1030: "vector" "&" is used in a single-bit logical operation.
+Violated 1030: "vector" "|" is used in a single-bit logical operation.
+Violated 1030: "vector" "|" is used in a single-bit logical operation.
+Violated 1204: "tmp1"is used like a temporary variable; by non-blocking assignment, it will reduce one more storage element.
+Violated 1204: "tmp2"is used like a temporary variable; by non-blocking assignment, it will reduce one more storage element.
+Violated 1204: "tmp1"is used like a temporary variable; by non-blocking assignment, it will reduce one more storage element.
+Violated 1204: "tmp2"is used like a temporary variable; by non-blocking assignment, it will reduce one more storage element.
+Violated 1231: variable < test.tmp1 > is not fully initialized before being referenced.
+TOTAL NUMBER OF VIOLATIONS ARE: 64.

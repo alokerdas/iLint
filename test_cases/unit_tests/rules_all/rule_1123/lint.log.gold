@@ -1,0 +1,48 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1124: Combinational Path Between PI "a" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "d" without Being Registered.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1124: Combinational Path Between PI "a" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "d" without Being Registered.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1124: Combinational Path Between PI "a" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "d" without Being Registered.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1124: Combinational Path Between PI "a" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "d" without Being Registered.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1123: UDP declaration "test" should not be used because it is not synthesizable.
+Violated 1309: user defined primitive < test > should be named in lower case.
+Violated 1175: gate name "test1" does not match to regular expression gate_.
+Violated 1178: Gate Instance "test1" Found.
+Violated 1024: UDP instance "test1" should not be used because it is not synthesizable.
+Violated 1138: module name "test_M" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input a,b,c; 
+Violated 1255: comment is not found following port declaration  output d; 
+Violated 1255: comment is not found following port declaration   output sum; 
+Violated 1255: comment is not found following port declaration   input cin, a, b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1123_UDP_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1123_UDP_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1123_UDP_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1123_UDP_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on <   endtable >
+Violated 1269: comment should be on < endprimitive >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 47.

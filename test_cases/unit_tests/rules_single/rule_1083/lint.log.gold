@@ -1,0 +1,3 @@
+Violated 1083: Event enable statement ->event1 should not be used because it is not synthesizable. File: 1083_Event_Enable_Statement_Not_Synthesizable.v , Line: 8
+Violated 1083: Event enable statement ->event2 should not be used because it is not synthesizable. File: 1083_Event_Enable_Statement_Not_Synthesizable.v , Line: 10
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

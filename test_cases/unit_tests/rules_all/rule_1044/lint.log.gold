@@ -1,0 +1,48 @@
+Violated 1001: Signals "test.Clock" cannot be in UPPER CASE.
+Violated 1127: signal name "Clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "data" is detected.
+Violated 1187: wire "data" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < state >.
+Violated 1127: signal name "state" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "state" is detected.
+Violated 1187: wire "state" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input A,B,C,G,H; 
+Violated 1255: comment is not found following port declaration output Z; 
+Violated 1255: comment is not found following port declaration  input Clock; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1044_Case_Label_out_of_Boundary.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end state. File: 1044_Case_Label_out_of_Boundary.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1044_Case_Label_out_of_Boundary.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1311: Multiline command should not be used here /*module smp(A,B,C,G,H,Z);
+
+Violated 1315: literal numbers should not be used in specifying a range (in object "  state ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  data ").
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on <     endcase >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  state > should not be used because it is not synthesizable.
+Violated 1319: memory <  data > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1044: violation as case label exceed "5'b".
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1216: bit width mismatch in the comparison of case statement of "(4)" with "(6)".
+Violated 1216: bit width mismatch in the comparison of case statement of "(4)" with "(5)".
+Violated 1220: not all possible values of the case expression are covered in a full case but a default clause exists.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+TOTAL NUMBER OF VIOLATIONS ARE: 46.

@@ -1,0 +1,27 @@
+Violated 1127: signal name "_s3" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1187: wire "_s3" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s3" is detected.
+Violated 1100: Assignment to a Signal < 0 >.
+Violated 1104: Signal < test._s3 > with no load < 0 >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1144: 'wire' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1188: 'tri' declaration "a" is detected.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1144: 'wire' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1188: 'tri' declaration "b" is detected.
+Violated 1240: bit width of left-hand-side variable < a > (4) does not match that of right-hand-side variable < b > (3) in the assignment.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1269: comment should be on < endmodule >
+Violated 1238: File Name < 1240_Bit_width_missmatch > does not match with Module Name < test >.
+Violated 1239: the length < 24 > of file name < 1240_Bit_width_missmatch > should not exceed < 10 > characters.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+TOTAL NUMBER OF VIOLATIONS ARE: 26.

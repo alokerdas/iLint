@@ -1,0 +1,2 @@
+Violated 1004: Signals test.f is driven by 2 devices. File: 1004_Signal_Driven_By_Multiple_devices.v , Line: 3
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

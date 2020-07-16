@@ -1,0 +1,2 @@
+Violated 1136: Module Name "test_top_0123456789012" is unconventional and should be in the range from 3 to 16. File: 1136_Module_Name_Length.v , Line: 1
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

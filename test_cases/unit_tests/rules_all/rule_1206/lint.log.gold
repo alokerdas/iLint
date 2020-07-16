@@ -1,0 +1,196 @@
+Violated 1001: Signals "test.R_W" cannot be in UPPER CASE.
+Violated 1007: Tristate Buffer is not properly defined on "_s14<0>".
+Violated 1007: Tristate Buffer is not properly defined on "_s14<0>".
+Violated 1005: Bit mismatched Signal is "test._s14".
+Violated 1127: signal name "R_W" does not match to regular expression s_.
+Violated 1001: Signals "test.VMA" cannot be in UPPER CASE.
+Violated 1127: signal name "VMA" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < addr >.
+Violated 1127: signal name "addr" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1004: Signals test.data is driven by 7 devices.
+Violated 1004: Signals test.data is driven by 7 devices.
+Violated 1012: No Output Port is on "test.data".
+Violated 1098: Bidirectional Port "data" Decleared.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1237: the fan-out number of signal < data > is < 8 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < dataout >.
+Violated 1127: signal name "dataout" does not match to regular expression s_.
+Violated 1187: wire "dataout" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s5 >.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1127: signal name "_s5" does not match to regular expression s_.
+Violated 1187: wire "_s5" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < macroram >.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1004: Signals test.macroram is driven by 2 devices.
+Violated 1105: Integer "test.macroram" is used in concatenation/directly.
+Violated 1033: Keyword "macroram" is part of Verilog Reserved Word.
+Violated 1127: signal name "macroram" does not match to regular expression s_.
+Violated 1108: variable name "macroram" does not match to regular expression v_.*.
+Violated 1187: wire "macroram" should be explicitly declared.
+Violated 1198: integer type object "macroram" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s14 >.
+Violated 1007: Tristate Buffer is not properly defined on "_s14<0>".
+Violated 1007: Tristate Buffer is not properly defined on "_s14<0>".
+Violated 1005: Bit mismatched Signal is "test.R_W".
+Violated 1127: signal name "_s14" does not match to regular expression s_.
+Violated 1187: wire "_s14" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s15 >.
+Violated 1004: Signals test._s15 is driven by 2 devices.
+Violated 1127: signal name "_s15" does not match to regular expression s_.
+Violated 1187: wire "_s15" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s15" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s17 >.
+Violated 1004: Signals test._s17 is driven by 2 devices.
+Violated 1004: Signals test._s17 is driven by 2 devices.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1121: "addr<1>" not a constant in bits selection.
+Violated 1121: "addr<1>" not a constant in bits selection.
+Violated 1127: signal name "_s17" does not match to regular expression s_.
+Violated 1187: wire "_s17" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s17" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1139: Combinational Logic Found in Sequential "_s5" Block.
+Violated 1139: Combinational Logic Found in Sequential "_s5" Block.
+Violated 1175: gate name "_s6" does not match to regular expression gate_.
+Violated 1176: Implicit and Confusing Operator Precedence on "clock".
+Violated 1175: gate name "_s22" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test.R_W".
+Violated 1179: Tri-state ouput signal name "data<0>" does not match to regular expression .*_z.
+Violated 1190: tri-state buffer "data<0>" should not be mixed with other combinational logics in the module "test".
+Violated 1193: tri-state logic is inferred on signal "data<0>".
+Violated 1175: gate name "_s23" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test.R_W".
+Violated 1179: Tri-state ouput signal name "data<1>" does not match to regular expression .*_z.
+Violated 1190: tri-state buffer "data<1>" should not be mixed with other combinational logics in the module "test".
+Violated 1193: tri-state logic is inferred on signal "data<1>".
+Violated 1023: tri-state enable port should not be connect to an expression.
+Violated 1139: Combinational Logic Found in Sequential "_s5" Block.
+Violated 1175: gate name "_s16" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test.R_W".
+Violated 1179: Tri-state ouput signal name "data<1>" does not match to regular expression .*_z.
+Violated 1003: Clock signals "test._s5" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1013: Gated Clock is on "_s6".
+Violated 1096: Logic Expression Used in Sensitivity List.
+Violated 1113: Combinational Path Too Long.
+Violated 1168: register ouput name "dataout<1>" does not match to regular expression .*_r.
+Violated 1168: register ouput name "macroram<11>" does not match to regular expression .*_r.
+Violated 1169: register Input name "data<1>" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "_s5".
+Violated 1147: State register name "dataout<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "dataout<1>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s17<0>" not in library.
+Violated 1191: register inferred on signal "_s17<1>" not in library.
+Violated 1199: next register name "_s17<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s17<1>" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1279: The inputs of the tri-state bus "data<0>" are not generated from any clock source.
+Violated 1194: mux inferred on signal  "_s17<0>".
+Violated 1194: mux inferred on signal  "_s17<1>".
+Violated 1206: memory written and read at same time.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1206: memory written and read at same time.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1003: Clock signals "test._s5" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1013: Gated Clock is on "_s6".
+Violated 1096: Logic Expression Used in Sensitivity List.
+Violated 1102: more than one clock signal in a module.
+Violated 1113: Combinational Path Too Long.
+Violated 1168: register ouput name "dataout<1>" does not match to regular expression .*_r.
+Violated 1168: register ouput name "macroram<11>" does not match to regular expression .*_r.
+Violated 1169: register Input name "data<1>" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "_s5".
+Violated 1147: State register name "macroram<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<1>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<2>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<3>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<4>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<5>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<6>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<7>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<8>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<9>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<10>" does not match to regular expression .*_cs.
+Violated 1147: State register name "macroram<11>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "data<0>" not in library.
+Violated 1191: register inferred on signal "data<1>" not in library.
+Violated 1191: register inferred on signal "data<0>" not in library.
+Violated 1191: register inferred on signal "data<1>" not in library.
+Violated 1191: register inferred on signal "data<0>" not in library.
+Violated 1191: register inferred on signal "data<1>" not in library.
+Violated 1191: register inferred on signal "data<0>" not in library.
+Violated 1191: register inferred on signal "data<1>" not in library.
+Violated 1191: register inferred on signal "data<0>" not in library.
+Violated 1191: register inferred on signal "data<1>" not in library.
+Violated 1191: register inferred on signal "data<0>" not in library.
+Violated 1191: register inferred on signal "data<1>" not in library.
+Violated 1199: next register name "data<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "data<1>" does not match to regular expression .*_ns.
+Violated 1206: memory written and read at same time.
+Violated 1209: reconverged clock "test._s5" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1116: Memory "macroram" Not Synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clock; 
+Violated 1255: comment is not found following port declaration input VMA; 
+Violated 1255: comment is not found following port declaration input R_W; 
+Violated 1255: comment is not found following port declaration input [1:0] addr; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end VMA. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end addr. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clock. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end dataout. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s5. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end macroram. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s14. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s15. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s17. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1206_Memory_is_Read_and_Written_at_Same_Time.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  addr ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  data ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  macroram [5:0] ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  dataout ").
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  macroram  > should not be used because it is not synthesizable.
+Violated 1319: memory <  dataout > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 195.

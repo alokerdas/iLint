@@ -1,0 +1,31 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < s >.
+Violated 1127: signal name "s" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "s" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration   input sel, a, b; 
+Violated 1255: comment is not found following port declaration   output s; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1252_Event_Control_or_Delay_Statement_Not_Found_in_All_Branches.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end s. File: 1252_Event_Control_or_Delay_Statement_Not_Found_in_All_Branches.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1252_Event_Control_or_Delay_Statement_Not_Found_in_All_Branches.v , Line: 0
+Violated 1328: the lines of a source file < 1252_Event_Control_or_Delay_Statement_Not_Found_in_All_Branches.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <     end >
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1077: variable "s" is assigned in another assignment in same time point.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1081: signal "b" is being read asynchronously. It may cause simulation-synthesis mismatch.
+Violated 1252: event control statement or delay is lost in some possible branches of always, it may cause simulation time hangs.
+TOTAL NUMBER OF VIOLATIONS ARE: 30.

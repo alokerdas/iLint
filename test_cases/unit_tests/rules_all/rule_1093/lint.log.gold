@@ -1,0 +1,68 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1097: violation as Direct Connection from Input "a" to Output "y".
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < c >.
+Violated 1004: Signals test.c is driven by 2 devices.
+Violated 1099: Signal "c<0>" Driven By Constant.
+Violated 1099: Signal "c<0>" Driven By Constant.
+Violated 1109: Signal "c<0>" Stuck at Logic 1.
+Violated 1104: Signal "c<0>" with no Load.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1144: 'wire' declaration "c" is detected.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1188: 'tri' declaration "c" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1009: Parameter "c" cannot be in LOWER CASE.
+Violated 1043: The length of parameter "c" is unconventional and should be in the range from 3 to 16.
+Violated 1042: parameter name "c" does not match to regular expression p_.*.
+Violated 1003: Clock signals "test.c" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1093: Constant Event Expression "c<0>".
+Violated 1168: register ouput name "y<7>" does not match to regular expression .*_r.
+Violated 1169: register Input name "a<7>" does not match to regular expression .*_nxt.
+Violated 1160: Bit select "c<0>" in Sensitivity List.
+Violated 1149: No Set or Reset Signal only Clock "c<0>".
+Violated 1147: State register name "y<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "y<1>" does not match to regular expression .*_cs.
+Violated 1147: State register name "y<2>" does not match to regular expression .*_cs.
+Violated 1147: State register name "y<3>" does not match to regular expression .*_cs.
+Violated 1147: State register name "y<4>" does not match to regular expression .*_cs.
+Violated 1147: State register name "y<5>" does not match to regular expression .*_cs.
+Violated 1147: State register name "y<6>" does not match to regular expression .*_cs.
+Violated 1147: State register name "y<7>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "a<0>" not in library.
+Violated 1191: register inferred on signal "a<1>" not in library.
+Violated 1191: register inferred on signal "a<2>" not in library.
+Violated 1191: register inferred on signal "a<3>" not in library.
+Violated 1191: register inferred on signal "a<4>" not in library.
+Violated 1191: register inferred on signal "a<5>" not in library.
+Violated 1191: register inferred on signal "a<6>" not in library.
+Violated 1191: register inferred on signal "a<7>" not in library.
+Violated 1199: next register name "a<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "a<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "a<2>" does not match to regular expression .*_ns.
+Violated 1199: next register name "a<3>" does not match to regular expression .*_ns.
+Violated 1199: next register name "a<4>" does not match to regular expression .*_ns.
+Violated 1199: next register name "a<5>" does not match to regular expression .*_ns.
+Violated 1199: next register name "a<6>" does not match to regular expression .*_ns.
+Violated 1199: next register name "a<7>" does not match to regular expression .*_ns.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input [7:0] a; 
+Violated 1255: comment is not found following port declaration  output [7:0] y; 
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1093_Constant_Event_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1093_Constant_Event_Expression.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   reg [7:0] y; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < c = 1 > in module or interface < test >
+Violated 1319: memory <  y > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 67.

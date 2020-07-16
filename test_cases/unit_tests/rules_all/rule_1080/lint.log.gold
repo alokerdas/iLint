@@ -1,0 +1,40 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < rst >.
+Violated 1127: signal name "rst" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk, rst, d; 
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1080_Event_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1080_Event_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst. File: 1080_Event_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1080_Event_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1083: event enable statement ->event1 should not be used because it is not synthesizable.
+Violated 1083: event enable statement ->event2 should not be used because it is not synthesizable.
+Violated 1080: event "event1" should is not synthesizable.
+Violated 1080: event "event2" should is not synthesizable.
+Violated 1029: "NON-BLOCKING" assignment is on "q" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1029: "NON-BLOCKING" assignment is on "q" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1077: variable "q" is assigned in another assignment in same time point.
+Violated 1081: signal "d" is being read asynchronously. It may cause simulation-synthesis mismatch.
+TOTAL NUMBER OF VIOLATIONS ARE: 39.

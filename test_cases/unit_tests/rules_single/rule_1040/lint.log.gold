@@ -1,0 +1,3 @@
+Violated 1040: Falling active clock "clk" should not be used. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 5
+Violated 1040: Falling active clock "clk" should not be used. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

@@ -1,0 +1,26 @@
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < bind >.
+Violated 1012: No Output Port is on "test.bind".
+Violated 1098: Bidirectional Port "bind" Decleared.
+Violated 1032: System Verilog Reserved Words "bind".
+Violated 1127: signal name "bind" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1175: gate name "an<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "an<0>" Found.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input bind, b, c; 
+Violated 1257: signals should be declared one per line with a comment at the end bind. File: 1012_No_Output_Port.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1012_No_Output_Port.v , Line: 0
+Violated 1324: more than one port is declared in one line. module test (bind, b, c); //no output for module test
+
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < bind > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 24.

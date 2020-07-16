@@ -1,0 +1,49 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1004: Signals test.b is driven by 2 devices.
+Violated 1004: Signals test.b is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "test._s1".
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s1 >.
+Violated 1004: Signals test._s1 is driven by 2 devices.
+Violated 1004: Signals test._s1 is driven by 2 devices.
+Violated 1004: Signals test._s1 is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "test.b".
+Violated 1099: Signal "_s1<2>" Driven By Constant.
+Violated 1099: Signal "_s1<2>" Driven By Constant.
+Violated 1099: Signal "_s1<2>" Driven By Constant.
+Violated 1099: Signal "_s1<2>" Driven By Constant.
+Violated 1099: Signal "_s1<2>" Driven By Constant.
+Violated 1099: Signal "_s1<2>" Driven By Constant.
+Violated 1127: signal name "_s1" does not match to regular expression s_.
+Violated 1187: wire "_s1" should be explicitly declared.
+Violated 1227: bit width of left-hand-side operand does not match the right-hand-side operand in "Addition".
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1227_OperandBitSizeMismatchinAddition_sub.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1227_OperandBitSizeMismatchinAddition_sub.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s1. File: 1227_OperandBitSizeMismatchinAddition_sub.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 48.

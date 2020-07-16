@@ -1,0 +1,3 @@
+Violated 1082: String "\000\000\000\000are equal." should not be used because it is not synthesizable. File: 1082_string_not_synthesizable.v , Line: 11
+Violated 1082: String "are not equal." should not be used because it is not synthesizable. File: 1082_string_not_synthesizable.v , Line: 16
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

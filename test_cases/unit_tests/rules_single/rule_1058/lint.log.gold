@@ -1,0 +1,5 @@
+Violated 1058: Signal "test.a" Has Never Been Assigned. File: 1058_Signal_Has_Never_Been_Referenced_Assigned.v , Line: 3
+Violated 1058: Signal "test.b" Has Never Been Assigned. File: 1058_Signal_Has_Never_Been_Referenced_Assigned.v , Line: 3
+Violated 1058: Signal "test.c" Has Never Been Assigned. File: 1058_Signal_Has_Never_Been_Referenced_Assigned.v , Line: 2
+Violated 1058: Signal "test.d" Has Never Been Assigned. File: 1058_Signal_Has_Never_Been_Referenced_Assigned.v , Line: 3
+TOTAL NUMBER OF VIOLATIONS ARE: 4.

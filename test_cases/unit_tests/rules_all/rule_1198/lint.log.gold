@@ -1,0 +1,51 @@
+Violated 1009: Parameter "n" cannot be in LOWER CASE.
+Violated 1043: The length of parameter "n" is unconventional and should be in the range from 3 to 16.
+Violated 1042: parameter name "n" does not match to regular expression p_.*.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration  input f1; 
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test; 
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < n=8 > in module or interface < test >
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < f1 >.
+Violated 1127: signal name "f1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "f1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < f2 >.
+Violated 1105: Integer "test.func1.f2" is used in concatenation/directly.
+Violated 1127: signal name "f2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "f2" is detected.
+Violated 1108: variable name "f2" does not match to regular expression v_.*.
+Violated 1187: wire "f2" should be explicitly declared.
+Violated 1198: integer type object "f2" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < func1 >.
+Violated 1127: signal name "func1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "func1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1132: function name "func1" does not match to regular expression f_.
+Violated 1129: Integer function "f2" detected.
+Violated 1255: comment is not found following port declaration  input f1; 
+Violated 1257: signals should be declared one per line with a comment at the end f2. File: 1198_Integer_Type_Object_Detected.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end func1. File: 1198_Integer_Type_Object_Detected.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test; 
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < n=8 > in module or interface < test.func1 >
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 50.

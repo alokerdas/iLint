@@ -1,0 +1,33 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < count >.
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "count" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < nextCount >.
+Violated 1127: signal name "nextCount" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "nextCount" is detected.
+Violated 1187: wire "nextCount" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1255: comment is not found following port declaration  output [8:0] count; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1143_reg_Declaration_Detected.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end nextCount. File: 1143_reg_Declaration_Detected.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  nextCount ").
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1319: memory <  count > should not be used because it is not synthesizable.
+Violated 1319: memory <  nextCount > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1029: "BLOCKING" assignment is on "count<0>" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1084: Specify bit width "9" explicitly when assigning count<0> constant of 5 bits or more.
+TOTAL NUMBER OF VIOLATIONS ARE: 32.

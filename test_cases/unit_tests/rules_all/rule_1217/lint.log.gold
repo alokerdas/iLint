@@ -1,0 +1,31 @@
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < zo >.
+Violated 1127: signal name "zo" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "zo" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input[1:0] sel; 
+Violated 1255: comment is not found following port declaration  output[3:0] zo; 
+Violated 1257: signals should be declared one per line with a comment at the end zo. File: 1217_Condition_Signal_Assigned_to_x_in_Default_Branch.v , Line: 0
+Violated 1328: the lines of a source file < 1217_Condition_Signal_Assigned_to_x_in_Default_Branch.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  sel ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  zo ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  zo ").
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  zo > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1217: "x" is assigned to default case.
+Violated 1217: "x" is assigned to default case.
+Violated 1220: not all possible values of the case expression are covered in a full case but a default clause exists.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+TOTAL NUMBER OF VIOLATIONS ARE: 30.

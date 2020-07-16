@@ -1,0 +1,54 @@
+Violated 1301: no Escape should be used on < bar >.
+Violated 1127: signal name "bar" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "bar" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < bar_0 >.
+Violated 1127: signal name "bar_0" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < bar_1 >.
+Violated 1127: signal name "bar_1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < bar_2 >.
+Violated 1127: signal name "bar_2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < bar_3 >.
+Violated 1127: signal name "bar_3" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < foo >.
+Violated 1127: signal name "foo" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input [5:0] foo; 
+Violated 1255: comment is not found following port declaration input [35:0] bar_0, bar_1, bar_2, bar_3; 
+Violated 1255: comment is not found following port declaration output [35:0] bar; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end bar_0. File: 1219_Unreachable_Default_Branch_of_Case_Statement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end bar_1. File: 1219_Unreachable_Default_Branch_of_Case_Statement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end bar_2. File: 1219_Unreachable_Default_Branch_of_Case_Statement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end bar_3. File: 1219_Unreachable_Default_Branch_of_Case_Statement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end foo. File: 1219_Unreachable_Default_Branch_of_Case_Statement.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1219_Unreachable_Default_Branch_of_Case_Statement.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  foo ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  bar_0, bar_1, bar_2, bar_3 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  bar ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  bar ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " )
+ ").
+Violated 1269: comment should be on <   endcase >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  bar > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1084: Specify bit width "36" explicitly when assigning bar<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "36" explicitly when assigning bar<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "36" explicitly when assigning bar<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "36" explicitly when assigning bar<0> constant of 5 bits or more.
+Violated 1084: Specify bit width "36" explicitly when assigning bar<0> constant of 5 bits or more.
+Violated 1219: default branch is unreachable because case alternatives have covered all the possibilities of case expression.
+TOTAL NUMBER OF VIOLATIONS ARE: 52.

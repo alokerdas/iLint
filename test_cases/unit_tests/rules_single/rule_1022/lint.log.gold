@@ -1,0 +1,2 @@
+Violated 1022: Register "counter" should be assigned in data clause. File: 1022_UnassignedinDataClause.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

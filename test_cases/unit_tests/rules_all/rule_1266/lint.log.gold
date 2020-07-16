@@ -1,0 +1,86 @@
+Violated 1001: Signals "test.E21_REG_BPP" cannot be in UPPER CASE.
+Violated 1002: Signals "test.E21_REG_BPP" cannot be greater than "10" characters.
+Violated 1127: signal name "E21_REG_BPP" does not match to regular expression s_.
+Violated 1001: Signals "test.SADDR" cannot be in UPPER CASE.
+Violated 1127: signal name "SADDR" does not match to regular expression s_.
+Violated 1001: Signals "test.SOFFSET" cannot be in UPPER CASE.
+Violated 1127: signal name "SOFFSET" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "SOFFSET" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1124: Combinational Path Between PI "c" and PO "y" without Being Registered.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1287: Bit Width "b" and "c" Mismatch in Logical Operation.
+Violated 1301: no Escape should be used on < y >.
+Violated 1124: Combinational Path Between PI "c" and PO "y" without Being Registered.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1287: Bit Width "b" and "c" Mismatch in Logical Operation.
+Violated 1301: no Escape should be used on < _s0 >.
+Violated 1124: Combinational Path Between PI "a" and PO "y" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "y" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "y" without Being Registered.
+Violated 1127: signal name "_s0" does not match to regular expression s_.
+Violated 1187: wire "_s0" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1287: Bit Width "b" and "c" Mismatch in Logical Operation.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1175: gate name "_s3" does not match to regular expression gate_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input a,b,c; 
+Violated 1255: comment is not found following port declaration input [03:00] SADDR; 
+Violated 1255: comment is not found following port declaration input [01:00] E21_REG_BPP; 
+Violated 1255: comment is not found following port declaration output y; 
+Violated 1255: comment is not found following port declaration output [03:00] SOFFSET; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end SADDR. File: 1266_Synopsys_Directives_Translate_off_on.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end SOFFSET. File: 1266_Synopsys_Directives_Translate_off_on.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end a. File: 1266_Synopsys_Directives_Translate_off_on.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1266_Synopsys_Directives_Translate_off_on.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1266_Synopsys_Directives_Translate_off_on.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1266_Synopsys_Directives_Translate_off_on.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s0. File: 1266_Synopsys_Directives_Translate_off_on.v , Line: 0
+Violated 1328: the lines of a source file < 1266_Synopsys_Directives_Translate_off_on.v > hould not exceed 10 lines.
+Violated 1263: unknown synopsys directive < // synopsys translate_off > should not be used here.
+Violated 1266: statement/expression used in < // synopsys translate_on > may cause mismatch between pre-synthesis and post-synthesis.
+Violated 1266: statement/expression used in < // synopsys translate_off > may cause mismatch between pre-synthesis and post-synthesis.
+Violated 1268: nested synopsys < translate_on > directive couldn't be used.
+Violated 1268: nested synopsys < translate_off > directive couldn't be used.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  SADDR ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  E21_REG_BPP ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  SOFFSET ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  SOFFSET ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " )
+ ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  <= SADDR[03:00] ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  <= {SADDR[02:00], 1'b0} ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  <= {SADDR[01:00], 2'b0} ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  <= 0 ").
+Violated 1269: comment should be on < endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  SOFFSET > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1074: do not assign signal with negative value "-0000".
+Violated 1220: not all possible values of the case expression are covered in a full case but a default clause exists.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+Violated 1249: primitive gate < _s1 > found in non_leaf module.
+Violated 1249: primitive gate < _s3 > found in non_leaf module.
+TOTAL NUMBER OF VIOLATIONS ARE: 84.

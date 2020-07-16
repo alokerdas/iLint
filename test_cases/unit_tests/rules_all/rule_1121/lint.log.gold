@@ -1,0 +1,58 @@
+Violated 1301: no Escape should be used on < in >.
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out >.
+Violated 1034: VHDL Reserved Words "out".
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < s >.
+Violated 1097: violation as Direct Connection from Input "s" to Output "out".
+Violated 1127: signal name "s" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s2 >.
+Violated 1004: Signals test._s2 is driven by 2 devices.
+Violated 1035: Insufficiant Index "3".
+Violated 1121: "s<2>" not a constant in bits selection.
+Violated 1127: signal name "_s2" does not match to regular expression s_.
+Violated 1187: wire "_s2" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1042: parameter name "DATA_WIDTH" does not match to regular expression p_.*.
+Violated 1042: parameter name "S_WIDTH" does not match to regular expression p_.*.
+Violated 1194: mux inferred on signal  "_s2".
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1003: Clock signals "test.in" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "out" does not match to regular expression .*_r.
+Violated 1160: Bit select "in<0>" in Sensitivity List.
+Violated 1149: No Set or Reset Signal only Clock "in<0>".
+Violated 1147: State register name "out" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s2" not in library.
+Violated 1199: next register name "_s2" does not match to regular expression .*_ns.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output out; 
+Violated 1255: comment is not found following port declaration  input [S_WIDTH-1:0] s; 
+Violated 1255: comment is not found following port declaration  input [DATA_WIDTH-1:0] in; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1121_Non_constant_Bit_Range.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end s. File: 1121_Non_constant_Bit_Range.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s2. File: 1121_Non_constant_Bit_Range.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1121_Non_constant_Bit_Range.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test (out, s, in); 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  s ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in ").
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < S_WIDTH = 3 > in module or interface < test >
+Violated 1312: use localparam instead of parameter to declare < DATA_WIDTH = 8 > in module or interface < test >
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 57.

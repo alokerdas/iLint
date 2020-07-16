@@ -1,0 +1,50 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < temp >.
+Violated 1127: signal name "temp" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "temp" is detected.
+Violated 1187: wire "temp" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "testini" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1061_Matching_Deassign_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end temp. File: 1061_Matching_Deassign_Statement_Not_Found.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1061_Matching_Deassign_Statement_Not_Found.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b, temp ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  a, b, temp > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1052:       "#50" Delay Control Ignored by Synthesis
+Violated 1052:       "#100" Delay Control Ignored by Synthesis
+Violated 1053: System Task Call "$finish;" Not Synthesizable.
+Violated 1059: Signal "temp" Has Never Been Refferenced.
+Violated 1058: Signal "a" Has Never Been Assigned.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1072: delay should not be used in a "a<0>" non-blocking assignment.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1205: procedural continuous assign statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 49.

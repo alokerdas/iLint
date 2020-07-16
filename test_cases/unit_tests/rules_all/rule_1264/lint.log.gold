@@ -1,0 +1,13 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1263: unknown synopsys directive < // synopsys dc_script_begin > should not be used here.
+Violated 1264: dc_shell commands < // set_dont_touch find(cell) > should not be used here.
+Violated 1264: dc_shell commands < // set_dont_touch find(net) > should not be used here.
+Violated 1302: dc_shell commands < // set_dont_touch find(cell) > should not be used.
+Violated 1302: dc_shell commands < // set_dont_touch find(net) > should not be used.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 12.

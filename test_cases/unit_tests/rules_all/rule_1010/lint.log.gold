@@ -1,0 +1,14 @@
+Violated 1010: Generic Bit-width Too Long "33" for parameter "TW".
+Violated 1043: The length of parameter "TW" is unconventional and should be in the range from 3 to 16.
+Violated 1042: parameter name "TW" does not match to regular expression p_.*.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test; 
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < TW= 33'b100010000000000000000000000000010 > in module or interface < test >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 13.

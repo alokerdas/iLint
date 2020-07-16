@@ -1,0 +1,14 @@
+Violated 1116: Memory "mem" Not Synthesizable.
+Violated 1118: Too Many Bits "8192" in Memory.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mem [0:1023] ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  mem  > should not be used because it is not synthesizable.
+Violated 1320: total bits in <  mem  > should be less than 1024
+Violated 1321: total word in <  mem  > should be less than 1024
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 13.

@@ -1,0 +1,107 @@
+Violated 1001: Signals "test.D" cannot be in UPPER CASE.
+Violated 1127: signal name "D" does not match to regular expression s_.
+Violated 1001: Signals "test.Q1" cannot be in UPPER CASE.
+Violated 1127: signal name "Q1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "test.Q2" cannot be in UPPER CASE.
+Violated 1127: signal name "Q2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < reset1 >.
+Violated 1097: violation as Direct Connection from Input "reset1" to Output "Q2".
+Violated 1127: signal name "reset1" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < set >.
+Violated 1127: signal name "set" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < set1 >.
+Violated 1127: signal name "set1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s13 >.
+Violated 1004: Signals test._s13 is driven by 2 devices.
+Violated 1127: signal name "_s13" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s13" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s13" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s23 >.
+Violated 1004: Signals test._s23 is driven by 2 devices.
+Violated 1127: signal name "_s23" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s23" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s23" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s14" does not match to regular expression gate_.
+Violated 1139: Combinational Logic Found in Sequential "clk" Block.
+Violated 1175: gate name "_s24" does not match to regular expression gate_.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1166: active low signal name "reset1" does not match to regular expression .*_n.
+Violated 1168: register ouput name "Q2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "Q1" does not match to regular expression .*_r.
+Violated 1169: register Input name "D" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "D" does not match to regular expression .*_nxt.
+Violated 1152: reset signal name "reset1" does not match to regular expression rst_.
+Violated 1153: set signal name "set1" does not match to regular expression set_.
+Violated 1147: State register name "Q2" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "D" not in library.
+Violated 1195: asynchronous signal name "reset1" does not match to regular expression .*_a.
+Violated 1197: active low reset signal name "reset1" does not follow the regular expression rst_.*_n.
+Violated 1199: next register name "D" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1281: Set (set1) and reset (reset1) are specified for the same flip-flop/latch.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1102: more than one clock signal in a module.
+Violated 1166: active low signal name "reset" does not match to regular expression .*_n.
+Violated 1168: register ouput name "Q2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "Q1" does not match to regular expression .*_r.
+Violated 1169: register Input name "D" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "D" does not match to regular expression .*_nxt.
+Violated 1152: reset signal name "reset" does not match to regular expression rst_.
+Violated 1153: set signal name "set" does not match to regular expression set_.
+Violated 1147: State register name "Q1" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "D" not in library.
+Violated 1195: asynchronous signal name "reset" does not match to regular expression .*_a.
+Violated 1197: active low reset signal name "reset" does not follow the regular expression rst_.*_n.
+Violated 1199: next register name "D" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1283: Signal "Q1" has already been reset.
+Violated 1283: Signal "Q1" has already been set.
+Violated 1282: Multiple asynchronous resets are specified in the same always construct.
+Violated 1281: Set (set) and reset (reset) are specified for the same flip-flop/latch.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clk,set,reset,set1,reset1, enable; 
+Violated 1255: comment is not found following port declaration input D; 
+Violated 1255: comment is not found following port declaration output Q1,Q2; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end Q1. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end Q2. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset1. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end set. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end set1. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s13. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s23. File: 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1281_Both_Set_and_Reset_Found_for_a_Flip-flop.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 106.

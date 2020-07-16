@@ -1,0 +1,2 @@
+Violated 1085: More than one if/case/while/for/forever/repeat statements is used in a single always block. File: 1085_One_Statement_in_a_Single_Always_Block.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

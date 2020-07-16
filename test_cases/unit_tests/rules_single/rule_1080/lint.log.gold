@@ -1,0 +1,3 @@
+Violated 1080: Event "event2" is not synthesizable. File: 1080_Event_Not_Synthesizable.v , Line: 5
+Violated 1080: Event "event1" is not synthesizable. File: 1080_Event_Not_Synthesizable.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

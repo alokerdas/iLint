@@ -1,0 +1,28 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration   output q; 
+Violated 1255: comment is not found following port declaration   input clock, reset, d; 
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1251_Case_Equivalence_Operator_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1251_Case_Equivalence_Operator_Not_Synthesizable.v , Line: 0
+Violated 1328: the lines of a source file < 1251_Case_Equivalence_Operator_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1030: "vector" "E" is used in a single-bit logical operation.
+Violated 1030: "vector" "E" is used in a single-bit logical operation.
+Violated 1022: register "q" should be assigned in data clause.
+Violated 1022: register "q" should be assigned in data clause.
+Violated 1251: Case Equivalence Operator < E > Not Synthesizable on < test >.
+TOTAL NUMBER OF VIOLATIONS ARE: 27.

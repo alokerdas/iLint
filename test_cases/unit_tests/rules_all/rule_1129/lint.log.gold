@@ -1,0 +1,45 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration    input a, b, cin; 
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < cin >.
+Violated 1127: signal name "cin" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "cin" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "test.TF.TF" cannot be in UPPER CASE.
+Violated 1127: signal name "TF" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "TF" is detected.
+Violated 1198: integer type object "TF" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1132: function name "TF" does not match to regular expression f_.
+Violated 1130: The length of function name "TF" is unconventional and should be in the range from 3 to 16.
+Violated 1131: function "TF" should be named in CASE_LOWER case.
+Violated 1129: Integer function "TF" detected.
+Violated 1255: comment is not found following port declaration    input a, b, cin; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1129_Function_with_Integer_Return_Value.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end cin. File: 1129_Function_with_Integer_Return_Value.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end TF. File: 1129_Function_with_Integer_Return_Value.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 44.

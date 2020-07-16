@@ -1,0 +1,2 @@
+Violated 1048: Write enable signal "test.WE_mem" for memories should be disabled in the test mode. File: 1048_Write_Enable_Signals_for_Memory.v , Line: 4
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -1,0 +1,583 @@
+Violated 1001: Signals "smp.IN1" cannot be in UPPER CASE.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1127: signal name "IN1" does not match to regular expression s_.
+Violated 1237: the fan-out number of signal < IN1 > is < 7 > whereas the limitation is 5.
+Violated 1001: Signals "smp.IN2" cannot be in UPPER CASE.
+Violated 1127: signal name "IN2" does not match to regular expression s_.
+Violated 1001: Signals "smp.OUT1" cannot be in UPPER CASE.
+Violated 1127: signal name "OUT1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "smp.OUT2" cannot be in UPPER CASE.
+Violated 1127: signal name "OUT2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s6 >.
+Violated 1004: Signals smp._s6 is driven by 2 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1127: signal name "_s6" does not match to regular expression s_.
+Violated 1187: wire "_s6" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s6" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s8 >.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1004: Signals smp._s8 is driven by 3 devices.
+Violated 1005: Bit mismatched Signal is "smp._s12".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1127: signal name "_s8" does not match to regular expression s_.
+Violated 1187: wire "_s8" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s9 >.
+Violated 1004: Signals smp._s9 is driven by 2 devices.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1103: Signal "_s9<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s9<0>" with no Load.
+Violated 1127: signal name "_s9" does not match to regular expression s_.
+Violated 1187: wire "_s9" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s9" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s12 >.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1004: Signals smp._s12 is driven by 3 devices.
+Violated 1005: Bit mismatched Signal is "smp._s8".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1127: signal name "_s12" does not match to regular expression s_.
+Violated 1187: wire "_s12" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s12" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s13 >.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1004: Signals smp._s13 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1127: signal name "_s13" does not match to regular expression s_.
+Violated 1187: wire "_s13" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s14 >.
+Violated 1004: Signals smp._s14 is driven by 2 devices.
+Violated 1099: Signal "_s14<0>" Driven By Constant.
+Violated 1099: Signal "_s14<0>" Driven By Constant.
+Violated 1099: Signal "_s14<0>" Driven By Constant.
+Violated 1099: Signal "_s14<0>" Driven By Constant.
+Violated 1103: Signal "_s14<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s14<0>" with no Load.
+Violated 1127: signal name "_s14" does not match to regular expression s_.
+Violated 1187: wire "_s14" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s14" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s16 >.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1004: Signals smp._s16 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1121: "_s6" not a constant in bits selection.
+Violated 1127: signal name "_s16" does not match to regular expression s_.
+Violated 1187: wire "_s16" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s16" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s20 >.
+Violated 1004: Signals smp._s20 is driven by 2 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1127: signal name "_s20" does not match to regular expression s_.
+Violated 1187: wire "_s20" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s20" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s22 >.
+Violated 1004: Signals smp._s22 is driven by 6 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1004: Signals smp._s22 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1127: signal name "_s22" does not match to regular expression s_.
+Violated 1187: wire "_s22" should be explicitly declared.
+Violated 1237: the fan-out number of signal < _s22 > is < 7 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < _s23 >.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1099: Signal "_s23<0>" Driven By Constant.
+Violated 1103: Signal "_s23<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s23<0>" with no Load.
+Violated 1127: signal name "_s23" does not match to regular expression s_.
+Violated 1187: wire "_s23" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s23" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s25 >.
+Violated 1004: Signals smp._s25 is driven by 6 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1004: Signals smp._s25 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1127: signal name "_s25" does not match to regular expression s_.
+Violated 1187: wire "_s25" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s25" is detected.
+Violated 1237: the fan-out number of signal < _s25 > is < 7 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < _s27 >.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1004: Signals smp._s27 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1127: signal name "_s27" does not match to regular expression s_.
+Violated 1187: wire "_s27" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s28 >.
+Violated 1004: Signals smp._s28 is driven by 2 devices.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1099: Signal "_s28<0>" Driven By Constant.
+Violated 1103: Signal "_s28<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s28<0>" with no Load.
+Violated 1127: signal name "_s28" does not match to regular expression s_.
+Violated 1187: wire "_s28" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s28" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s30 >.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1121: "_s20" not a constant in bits selection.
+Violated 1127: signal name "_s30" does not match to regular expression s_.
+Violated 1187: wire "_s30" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s30" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<0>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<1>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<2>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<3>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<4>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<5>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<6>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<7>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<8>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<9>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<10>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<11>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<12>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<13>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<14>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<15>".
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s8<16>".
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1272: Arithmetic/Relational Operations Sharing with Large Operand Not Allowed. It Exceed Limit 8 Bit.
+Violated 1273: Do not infer large multiplier by the operand "smp.IN2" whose bit-width is larger than 16.

@@ -1,0 +1,2 @@
+Violated 1094: Clock Signal "qc" Used as Sequential Logic. File: 1094_Clock_Driven_by_Sequential_Logic.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

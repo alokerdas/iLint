@@ -1,0 +1,56 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in >.
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < rst >.
+Violated 1127: signal name "rst" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s4 >.
+Violated 1004: Signals test._s4 is driven by 2 devices.
+Violated 1127: signal name "_s4" does not match to regular expression s_.
+Violated 1187: wire "_s4" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s4" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s6 >.
+Violated 1127: signal name "_s6" does not match to regular expression s_.
+Violated 1187: wire "_s6" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s7" is detected.
+Violated 1175: gate name "_s5" does not match to regular expression gate_.
+Violated 1180: condition expression on "rst" is wider than single-bit.
+Violated 1180: condition expression on "rst" is wider than single-bit.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1122: Multiple Bits in Special Type "rst<0>" Reset Signal.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "in" does not match to regular expression .*_nxt.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "in" not in library.
+Violated 1199: next register name "in" does not match to regular expression .*_ns.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input in, clk; 
+Violated 1255: comment is not found following port declaration  input [1:0] rst; 
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end in. File: 1122MultipleBitsinSpecialTypeSignal.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1122MultipleBitsinSpecialTypeSignal.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst. File: 1122MultipleBitsinSpecialTypeSignal.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s4. File: 1122MultipleBitsinSpecialTypeSignal.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s6. File: 1122MultipleBitsinSpecialTypeSignal.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1122MultipleBitsinSpecialTypeSignal.v , Line: 0
+Violated 1328: the lines of a source file < 1122MultipleBitsinSpecialTypeSignal.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  rst ").
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 55.

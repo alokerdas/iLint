@@ -1,0 +1,74 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < a1 >.
+Violated 1127: signal name "a1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < a2 >.
+Violated 1127: signal name "a2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a2" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b1 >.
+Violated 1127: signal name "b1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b2 >.
+Violated 1127: signal name "b2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b2" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < en >.
+Violated 1127: signal name "en" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input en; 
+Violated 1255: comment is not found following port declaration output a, b, a1, b1, a2, b2; 
+Violated 1257: signals should be declared one per line with a comment at the end a1. File: 1296_Incomplete_Assignment_in_always_comb.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end a2. File: 1296_Incomplete_Assignment_in_always_comb.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1296_Incomplete_Assignment_in_always_comb.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end b1. File: 1296_Incomplete_Assignment_in_always_comb.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end b2. File: 1296_Incomplete_Assignment_in_always_comb.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end en. File: 1296_Incomplete_Assignment_in_always_comb.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1296_Incomplete_Assignment_in_always_comb.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1019: More Than Expected Bit 2'b.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1296: variable "test.b" and "a" is not completely assigned in always_comb block.
+Violated 1019: More Than Expected Bit 2'b.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1296: variable "test.b1" is not completely assigned in always_comb block.
+Violated 1019: More Than Expected Bit 2'b.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+TOTAL NUMBER OF VIOLATIONS ARE: 73.

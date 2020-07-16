@@ -1,0 +1,28 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < counter >.
+Violated 1127: signal name "counter" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "counter" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clock, reset; 
+Violated 1255: comment is not found following port declaration  output [3:0] counter; 
+Violated 1257: signals should be declared one per line with a comment at the end counter. File: 1022_UnassignedinDataClause.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1022_UnassignedinDataClause.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  counter ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  counter ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  tmp ").
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1319: memory <  counter > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1022: register "counter<0>" should be assigned in data clause.
+TOTAL NUMBER OF VIOLATIONS ARE: 27.

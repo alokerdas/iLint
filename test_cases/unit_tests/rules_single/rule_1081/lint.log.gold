@@ -1,0 +1,4 @@
+Violated 1049: Case Like If Else. File: 1081_asynchronous_signal_reference.v , Line: 7
+Violated 1081: Signal "b" is being read asynchronously. It may cause simulation-synthesis mismatch. File: 1081_asynchronous_signal_reference.v , Line: 9
+Violated 1081: Signal "a" is being read asynchronously. It may cause simulation-synthesis mismatch. File: 1081_asynchronous_signal_reference.v , Line: 11
+TOTAL NUMBER OF VIOLATIONS ARE: 3.

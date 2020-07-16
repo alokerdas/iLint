@@ -1,0 +1,45 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1005: Bit mismatched Signal is "test.o".
+Violated 1097: violation as Direct Connection from Input "a" to Output "o".
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1185: descending bit order and zero bound are not used for range declaration of "a".
+Violated 1286: Bus direction of "test.a" is not consistent with "test.o".
+Violated 1286: Bus direction of "test.a" is not consistent with "test.o".
+Violated 1286: Bus direction of "test.a" is not consistent with "test.o".
+Violated 1301: no Escape should be used on < b >.
+Violated 1012: No Output Port is on "test.b".
+Violated 1005: Bit mismatched Signal is "test.c".
+Violated 1098: Bidirectional Port "b" Decleared.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1185: descending bit order and zero bound are not used for range declaration of "b".
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < o >.
+Violated 1005: Bit mismatched Signal is "test.a".
+Violated 1099: Signal "o<3>" Driven By Constant.
+Violated 1100: Assignment to a Signal.
+Violated 1127: signal name "o" does not match to regular expression s_.
+Violated 1286: Bus direction of "test.o" is not consistent with "test.a".
+Violated 1286: Bus direction of "test.o" is not consistent with "test.a".
+Violated 1286: Bus direction of "test.o" is not consistent with "test.a".
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input [8:1]b; 
+Violated 1255: comment is not found following port declaration output [9:0]c; 
+Violated 1255: comment is not found following port declaration input [0:2] a; 
+Violated 1255: comment is not found following port declaration output [3:0] o; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1185UnconventionalVectorRangeDefinition.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1185UnconventionalVectorRangeDefinition.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end o. File: 1185UnconventionalVectorRangeDefinition.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object " b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  o ").
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 44.

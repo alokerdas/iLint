@@ -1,0 +1,119 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < p >.
+Violated 1127: signal name "p" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "p" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < r >.
+Violated 1127: signal name "r" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "r" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < rst_n >.
+Violated 1127: signal name "rst_n" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < tmp1 >.
+Violated 1127: signal name "tmp1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "tmp1" is detected.
+Violated 1187: wire "tmp1" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < tmp2 >.
+Violated 1127: signal name "tmp2" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "tmp2" is detected.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "tmp2" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "Ao4" does not match to regular expression .*_module.
+Violated 1137: module "Ao4" should be named in CASE_LOWER case.
+Violated 1255: comment is not found following port declaration   output y, q, r; 
+Violated 1255: comment is not found following port declaration   input a, b, c, d; 
+Violated 1255: comment is not found following port declaration   input clk, rst_n; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end p. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end r. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst_n. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end tmp1. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end tmp2. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1327_Space_Use_in_Indention.v , Line: 0
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1327_Space_Use_in_Indention.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on <      end >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1029: "BLOCKING" assignment is on "tmp1" used in an edge triggered block.
+Violated 1029: "NON-BLOCKING" assignment is on "y" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1030: "vector" "&" is used in a single-bit logical operation.
+Violated 1030: "vector" "&" is used in a single-bit logical operation.
+Violated 1030: "vector" "|" is used in a single-bit logical operation.
+Violated 1030: "vector" "|" is used in a single-bit logical operation.
+Violated 1212: flip-flop "tmp2" with asynchronous reset/set and flip-flop "y" without asynchronous reset/set in the same always construct.
+Violated 1231: variable < Ao4.tmp1 > is not fully initialized before being referenced.
+Violated 1249: primitive gate < _s1 > found in non_leaf module.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1065: nested edge-triggered constructs "posedge" "clk" should not be used.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1081: signal "d" is being read asynchronously. It may cause simulation-synthesis mismatch.
+Violated 1212: flip-flop "tmp2" with asynchronous reset/set and flip-flop "q" without asynchronous reset/set in the same always construct.
+Violated 1249: primitive gate < _s1 > found in non_leaf module.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1065: nested edge-triggered constructs "posedge" "clk" should not be used.
+Violated 1029: "NON-BLOCKING" assignment is on "r" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1030: "vector" "|" is used in a single-bit logical operation.
+Violated 1030: "vector" "|" is used in a single-bit logical operation.
+Violated 1212: flip-flop "tmp2" with asynchronous reset/set and flip-flop "r" without asynchronous reset/set in the same always construct.
+Violated 1249: primitive gate < _s1 > found in non_leaf module.
+TOTAL NUMBER OF VIOLATIONS ARE: 118.

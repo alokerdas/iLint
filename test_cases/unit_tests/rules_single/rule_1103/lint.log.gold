@@ -1,0 +1,3 @@
+Violated 1103: Signal "d" Stuck at Logic 0/1. File: 1103_Signal_Stuck_at_Logic_0.v , Line: 7
+Violated 1103: Signal "e" Stuck at Logic 0/1. File: 1103_Signal_Stuck_at_Logic_0.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

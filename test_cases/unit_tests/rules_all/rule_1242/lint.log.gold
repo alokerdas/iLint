@@ -1,0 +1,67 @@
+Violated 1001: Signals "test.I" cannot be in UPPER CASE.
+Violated 1127: signal name "I" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < I >.
+Violated 1106: Integer variable "I" should be named in CASE_LOWER case.
+Violated 1108: variable name "I" does not match to regular expression v_.*.
+Violated 1143: 'reg' declaration "I" is detected.
+Violated 1198: integer type object "I" should not be used.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1128: unsigned "clk" to signed "I" assignment occurs.
+Violated 1188: 'tri' declaration "clk" is detected.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1127: signal name "s" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "s" is detected.
+Violated 1042: parameter name "WIDTH" does not match to regular expression p_.*.
+Violated 1255: comment is not found following port declaration   input [7:0] a; 
+Violated 1255: comment is not found following port declaration   output [7:0]c; 
+Violated 1255: comment is not found following port declaration   output [WIDTH:0] q; 
+Violated 1255: comment is not found following port declaration   input [2:0] s; 
+Violated 1255: comment is not found following port declaration   input clk; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1242_Non-constant_For_Loop_Count.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test (q, clk, s ); 
+Violated 1311: Multiline command should not be used here /*module test (a,c);
+
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  s ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on < endmodule*/ >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < WIDTH = 8 > in module or interface < test >
+Violated 1319: memory < c > should not be used because it is not synthesizable.
+Violated 1319: memory <  q > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: File Name < 1242_Non-constant_For_Loop_Count > does not match with Module Name < test >.
+Violated 1239: the length < 32 > of file name < 1242_Non-constant_For_Loop_Count > should not exceed < 10 > characters.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1060: While/for Statement Not Synthesizable.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1147: State register name "I" does not match to regular expression .*_cs.
+Violated 1149: No Set or Reset Signal only Clock in Module < test >.
+Violated 1191: register inferred on signal not in library on Module < test >.
+Violated 1242: loop count < s > should be a constant.
+Violated 1244: Arithmetic operation < + > is performed on non for loop variable.
+Violated 1250: wait statement should not be used because it is not synthesizable.
+Violated 1254: For loop Detected on < test >.
+TOTAL NUMBER OF VIOLATIONS ARE: 65.

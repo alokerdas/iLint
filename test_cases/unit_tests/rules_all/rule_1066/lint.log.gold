@@ -1,0 +1,25 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1255: comment is not found following port declaration  input [7:0] b; 
+Violated 1255: comment is not found following port declaration  output [7:0]c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1328: the lines of a source file < 1066_Undefined_Repeat_Expression.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " c ").
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory < c > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1066: repeat expression  evaluates to X or Z, causing it to repeat zero or unknown times.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1078: empty process is detected.
+Violated 1252: event control statement or delay is lost in some possible branches of always, it may cause simulation time hangs.
+TOTAL NUMBER OF VIOLATIONS ARE: 24.

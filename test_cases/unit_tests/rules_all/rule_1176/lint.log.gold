@@ -1,0 +1,164 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1005: Bit mismatched Signal is "test._s25".
+Violated 1005: Bit mismatched Signal is "test._s26".
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < f1 >.
+Violated 1097: violation as Direct Connection from Input "a" to Output "f1".
+Violated 1127: signal name "f1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < f3 >.
+Violated 1127: signal name "f3" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < g >.
+Violated 1097: violation as Direct Connection from Input "g" to Output "f3".
+Violated 1127: signal name "g" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < h >.
+Violated 1127: signal name "h" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < i >.
+Violated 1127: signal name "i" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < j >.
+Violated 1127: signal name "j" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s11 >.
+Violated 1127: signal name "_s11" does not match to regular expression s_.
+Violated 1187: wire "_s11" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s11" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s13 >.
+Violated 1004: Signals test._s13 is driven by 2 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s13" not a constant in bits selection.
+Violated 1127: signal name "_s13" does not match to regular expression s_.
+Violated 1187: wire "_s13" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s13" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s15 >.
+Violated 1004: Signals test._s15 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s13" not a constant in bits selection.
+Violated 1127: signal name "_s15" does not match to regular expression s_.
+Violated 1187: wire "_s15" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s18 >.
+Violated 1099: Signal "_s18" Driven By Constant.
+Violated 1103: Signal "_s18" Stuck at Logic 0.
+Violated 1127: signal name "_s18" does not match to regular expression s_.
+Violated 1187: wire "_s18" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s19 >.
+Violated 1004: Signals test._s19 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s13" not a constant in bits selection.
+Violated 1127: signal name "_s19" does not match to regular expression s_.
+Violated 1187: wire "_s19" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s19" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s21 >.
+Violated 1004: Signals test._s21 is driven by 4 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s13" not a constant in bits selection.
+Violated 1127: signal name "_s21" does not match to regular expression s_.
+Violated 1187: wire "_s21" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s22 >.
+Violated 1004: Signals test._s22 is driven by 2 devices.
+Violated 1099: Signal "_s22<0>" Driven By Constant.
+Violated 1099: Signal "_s22<0>" Driven By Constant.
+Violated 1099: Signal "_s22<0>" Driven By Constant.
+Violated 1103: Signal "_s22<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s22<0>" with no Load.
+Violated 1127: signal name "_s22" does not match to regular expression s_.
+Violated 1187: wire "_s22" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s22" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s25 >.
+Violated 1004: Signals test._s25 is driven by 3 devices.
+Violated 1005: Bit mismatched Signal is "test.c".
+Violated 1127: signal name "_s25" does not match to regular expression s_.
+Violated 1187: wire "_s25" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s26 >.
+Violated 1004: Signals test._s26 is driven by 3 devices.
+Violated 1004: Signals test._s26 is driven by 2 devices.
+Violated 1004: Signals test._s26 is driven by 2 devices.
+Violated 1099: Signal "_s22<0>" Driven By Constant.
+Violated 1099: Signal "_s26<2>" Driven By Constant.
+Violated 1127: signal name "_s26" does not match to regular expression s_.
+Violated 1187: wire "_s26" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s26" is detected.
+Violated 1301: no Escape should be used on < _s28 >.
+Violated 1004: Signals test._s28 is driven by 4 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s13" not a constant in bits selection.
+Violated 1127: signal name "_s28" does not match to regular expression s_.
+Violated 1187: wire "_s28" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s28" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s32 >.
+Violated 1004: Signals test._s32 is driven by 2 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s32" not a constant in bits selection.
+Violated 1127: signal name "_s32" does not match to regular expression s_.
+Violated 1187: wire "_s32" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s32" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s12" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test.b".
+Violated 1176: Implicit and Confusing Operator Precedence on "a".
+Violated 1176: Implicit and Confusing Operator Precedence on "a".
+Violated 1175: gate name "_s14" does not match to regular expression gate_.
+Violated 1175: gate name "_s20" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "test.b".
+Violated 1176: Implicit and Confusing Operator Precedence on "b".
+Violated 1175: gate name "_s33" does not match to regular expression gate_.
+Violated 1176: Implicit and Confusing Operator Precedence on "g".
+Violated 1162: number of bits to shift ("_s26<2>") should be a constant.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1194: mux inferred on signal  "f1".
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1194: mux inferred on signal  "f3".
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input a, b, c, d, e, f, g, h, i, j; 
+Violated 1255: comment is not found following port declaration  output f1, f2, f3; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end f1. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end f3. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end g. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end h. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end i. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end j. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s11. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s13. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s15. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s18. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s19. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s21. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s22. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s25. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s26. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s28. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s32. File: 1176_Implicit_and_Confusing_Operator_Precedence.v , Line: 0
+Violated 1328: the lines of a source file < 1176_Implicit_and_Confusing_Operator_Precedence.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 163.

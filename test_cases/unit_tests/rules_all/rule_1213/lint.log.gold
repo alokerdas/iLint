@@ -1,0 +1,48 @@
+Violated 1001: Signals "TriState.DATA" cannot be in UPPER CASE.
+Violated 1127: signal name "DATA" does not match to regular expression s_.
+Violated 1001: Signals "TriState.G" cannot be in UPPER CASE.
+Violated 1127: signal name "G" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1124: Combinational Path Between PI "data" and PO "y" without Being Registered.
+Violated 1124: Combinational Path Between PI "en" and PO "y" without Being Registered.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < en >.
+Violated 1124: Combinational Path Between PI "data" and PO "y" without Being Registered.
+Violated 1124: Combinational Path Between PI "en" and PO "y" without Being Registered.
+Violated 1127: signal name "en" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1124: Combinational Path Between PI "data" and PO "y" without Being Registered.
+Violated 1124: Combinational Path Between PI "en" and PO "y" without Being Registered.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s9 >.
+Violated 1127: signal name "_s9" does not match to regular expression s_.
+Violated 1187: wire "_s9" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s10 >.
+Violated 1127: signal name "_s10" does not match to regular expression s_.
+Violated 1187: wire "_s10" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s10" is detected.
+Violated 1175: gate name "_s15" does not match to regular expression gate_.
+Violated 1179: Tri-state ouput signal name "y" does not match to regular expression .*_z.
+Violated 1193: tri-state logic is inferred on signal "y".
+Violated 1189: latch signal name "y" does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "y".
+Violated 1276: "always_latch" is not used to model sequential blocks.
+Violated 1138: module name "TriState" does not match to regular expression .*_module.
+Violated 1137: module "TriState" should be named in CASE_LOWER case.
+Violated 1213: latch "y" should not be mixed with combinational logic.
+Violated 1255: comment is not found following port declaration  output y,Q; 
+Violated 1255: comment is not found following port declaration  input en,data,G,DATA; 
+Violated 1257: signals should be declared one per line with a comment at the end G. File: 1213_Latch_Should_Not_Coexist_with_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1213_Latch_Should_Not_Coexist_with_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end en. File: 1213_Latch_Should_Not_Coexist_with_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1213_Latch_Should_Not_Coexist_with_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s9. File: 1213_Latch_Should_Not_Coexist_with_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s10. File: 1213_Latch_Should_Not_Coexist_with_Other_Logic_in_a_Module.v , Line: 0
+Violated 1328: the lines of a source file < 1213_Latch_Should_Not_Coexist_with_Other_Logic_in_a_Module.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 47.

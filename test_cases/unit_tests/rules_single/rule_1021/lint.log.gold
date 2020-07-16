@@ -1,0 +1,3 @@
+Violated 1021: Drive strength "(PULL)" should not be used because it is not synthesizable. File: 1021_Drive_Strength_Not_Synthesizable.v , Line: 3
+Violated 1021: Drive strength "(STRONG)" should not be used because it is not synthesizable. File: 1021_Drive_Strength_Not_Synthesizable.v , Line: 3
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

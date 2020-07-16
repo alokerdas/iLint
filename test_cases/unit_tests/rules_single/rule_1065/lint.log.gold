@@ -1,0 +1,2 @@
+Violated 1065: Nested edge-triggered constructs should not be used. File: 1065_Nested_Edge_triggers.v , Line: 29
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

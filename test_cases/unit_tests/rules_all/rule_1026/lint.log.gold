@@ -1,0 +1,39 @@
+Violated 1301: no Escape should be used on < cas >.
+Violated 1127: signal name "cas" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in >.
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out >.
+Violated 1034: VHDL Reserved Words "out".
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk, in, cas; 
+Violated 1255: comment is not found following port declaration  output out; 
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1026_xz_Used_in_Case_Label.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end in. File: 1026_xz_Used_in_Case_Label.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1026_xz_Used_in_Case_Label.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1026_xz_Used_in_Case_Label.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "x" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1219: default branch is unreachable because case alternatives have covered all the possibilities of case expression.
+Violated 1220: not all possible values of the case expression are covered in a full case but a default clause exists.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+TOTAL NUMBER OF VIOLATIONS ARE: 38.

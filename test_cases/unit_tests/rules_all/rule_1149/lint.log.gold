@@ -1,0 +1,206 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < counter >.
+Violated 1127: signal name "counter" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1097: violation as Direct Connection from Input "reset" to Output "counter".
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < tmp >.
+Violated 1004: Signals test.tmp is driven by 4 devices.
+Violated 1004: Signals test.tmp is driven by 4 devices.
+Violated 1004: Signals test.tmp is driven by 4 devices.
+Violated 1004: Signals test.tmp is driven by 4 devices.
+Violated 1127: signal name "tmp" does not match to regular expression s_.
+Violated 1187: wire "tmp" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s0 >.
+Violated 1004: Signals test._s0 is driven by 2 devices.
+Violated 1099: Signal "_s0<0>" Driven By Constant.
+Violated 1099: Signal "_s0<0>" Driven By Constant.
+Violated 1099: Signal "_s0<0>" Driven By Constant.
+Violated 1099: Signal "_s0<0>" Driven By Constant.
+Violated 1109: Signal "_s0<0>" Stuck at Logic 1.
+Violated 1104: Signal "_s0<0>" with no Load.
+Violated 1127: signal name "_s0" does not match to regular expression s_.
+Violated 1187: wire "_s0" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s0" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1004: Signals test._s7 is driven by 2 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s7" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s9 >.
+Violated 1004: Signals test._s9 is driven by 3 devices.
+Violated 1004: Signals test._s9 is driven by 2 devices.
+Violated 1004: Signals test._s9 is driven by 2 devices.
+Violated 1004: Signals test._s9 is driven by 2 devices.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1103: Signal "_s9<0>" Stuck at Logic 0.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1127: signal name "_s9" does not match to regular expression s_.
+Violated 1187: wire "_s9" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s10 >.
+Violated 1004: Signals test._s10 is driven by 3 devices.
+Violated 1004: Signals test._s10 is driven by 2 devices.
+Violated 1004: Signals test._s10 is driven by 2 devices.
+Violated 1004: Signals test._s10 is driven by 2 devices.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1035: Insufficiant Index "1".
+Violated 1103: Signal "_s9<0>" Stuck at Logic 0.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1121: "_s7" not a constant in bits selection.
+Violated 1104: Signal "_s9<0>" with no Load.
+Violated 1127: signal name "_s10" does not match to regular expression s_.
+Violated 1187: wire "_s10" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s10" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s8" does not match to regular expression gate_.
+Violated 1227: bit width of left-hand-side operand does not match the right-hand-side operand in "Addition".
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1194: mux inferred on signal  "counter<0>".
+Violated 1194: mux inferred on signal  "counter<1>".
+Violated 1194: mux inferred on signal  "counter<2>".
+Violated 1194: mux inferred on signal  "counter<3>".
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1227: bit width of left-hand-side operand does not match the right-hand-side operand in "?".
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clock, reset; 
+Violated 1255: comment is not found following port declaration  output [3:0] counter; 
+Violated 1255: comment is not found following port declaration  output [3:0] q; 
+Violated 1255: comment is not found following port declaration  input clock; 
+Violated 1255: comment is not found following port declaration  input [3:0] d; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end counter. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end tmp. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s0. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s9. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s10. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1149_No_Set_Reset.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  counter ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  counter ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  tmp ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  d ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  counter > should not be used because it is not synthesizable.
+Violated 1319: memory <  q > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1236: object < clock > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q >.
+Violated 1004: Signals test.pure_dff1.q is driven by 4 devices.
+Violated 1004: Signals test.pure_dff1.q is driven by 4 devices.
+Violated 1004: Signals test.pure_dff1.q is driven by 4 devices.
+Violated 1004: Signals test.pure_dff1.q is driven by 4 devices.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1003: Clock signals "test.pure_dff1.clock" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1157: Clock "clock" feeds the Primary Output signal directly or indirectly.
+Violated 1168: register ouput name "tmp<3>" does not match to regular expression .*_r.
+Violated 1169: register Input name "d<3>" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clock".
+Violated 1147: State register name "tmp<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "tmp<1>" does not match to regular expression .*_cs.
+Violated 1147: State register name "tmp<2>" does not match to regular expression .*_cs.
+Violated 1147: State register name "tmp<3>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d<0>" not in library.
+Violated 1191: register inferred on signal "d<1>" not in library.
+Violated 1191: register inferred on signal "d<2>" not in library.
+Violated 1191: register inferred on signal "d<3>" not in library.
+Violated 1199: next register name "d<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "d<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "d<2>" does not match to regular expression .*_ns.
+Violated 1199: next register name "d<3>" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clock" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1227: bit width of left-hand-side operand does not match the right-hand-side operand in "?".
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "pure_dff" does not match to regular expression .*_module.
+Violated 1196: module instance name "pure_dff1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input clock, reset; 
+Violated 1255: comment is not found following port declaration  output [3:0] counter; 
+Violated 1255: comment is not found following port declaration  output [3:0] q; 
+Violated 1255: comment is not found following port declaration  input clock; 
+Violated 1255: comment is not found following port declaration  input [3:0] d; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1149_No_Set_Reset.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1149_No_Set_Reset.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  counter ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  counter ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  tmp ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  d ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1317: gate port is deliberately not connected on Module <  pure_dff pure_dff1 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1318: gate port is not connected on module < test.pure_dff1 > .
+Violated 1319: memory <  counter > should not be used because it is not synthesizable.
+Violated 1319: memory <  q > should not be used because it is not synthesizable.
+Violated 1322: port < counter > and its connection < d > should be similar.
+Violated 1322: port < reset > and its connection < q > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 205.

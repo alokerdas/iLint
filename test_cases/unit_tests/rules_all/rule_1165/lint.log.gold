@@ -1,0 +1,141 @@
+Violated 1301: no Escape should be used on < clear >.
+Violated 1127: signal name "clear" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < preset >.
+Violated 1127: signal name "preset" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y1 >.
+Violated 1127: signal name "y1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y2 >.
+Violated 1127: signal name "y2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1004: Signals test._s7 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "preset" not a constant in bits selection.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s8 >.
+Violated 1127: signal name "_s8" does not match to regular expression s_.
+Violated 1187: wire "_s8" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s9 >.
+Violated 1127: signal name "_s9" does not match to regular expression s_.
+Violated 1187: wire "_s9" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s9" is detected.
+Violated 1301: no Escape should be used on < _s11 >.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1005: Bit mismatched Signal is "test._s12".
+Violated 1099: Signal "_s12<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "1".
+Violated 1109: Signal "_s12<0>" Stuck at Logic 1.
+Violated 1121: "preset" not a constant in bits selection.
+Violated 1127: signal name "_s11" does not match to regular expression s_.
+Violated 1187: wire "_s11" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s12 >.
+Violated 1004: Signals test._s12 is driven by 3 devices.
+Violated 1099: Signal "_s12<0>" Driven By Constant.
+Violated 1099: Signal "_s12<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "1".
+Violated 1109: Signal "_s12<0>" Stuck at Logic 1.
+Violated 1121: "preset" not a constant in bits selection.
+Violated 1104: Signal "_s12<0>" with no Load.
+Violated 1127: signal name "_s12" does not match to regular expression s_.
+Violated 1187: wire "_s12" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s12" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s16 >.
+Violated 1004: Signals test._s16 is driven by 3 devices.
+Violated 1035: Insufficiant Index "1".
+Violated 1121: "preset" not a constant in bits selection.
+Violated 1127: signal name "_s16" does not match to regular expression s_.
+Violated 1187: wire "_s16" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s21 >.
+Violated 1099: Signal "_s21" Driven By Constant.
+Violated 1103: Signal "_s21" Stuck at Logic 0.
+Violated 1104: Signal "_s21" with no Load.
+Violated 1127: signal name "_s21" does not match to regular expression s_.
+Violated 1128: unsigned "_s8" to signed "_s21" assignment occurs.
+Violated 1187: wire "_s21" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s21" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1003: Clock signals "test.clock" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Sync" Reset dtected.
+Violated 1168: register ouput name "y2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "y1" does not match to regular expression .*_r.
+Violated 1169: register Input name "data" does not match to regular expression .*_nxt.
+Violated 1152: reset signal name "clear" does not match to regular expression rst_.
+Violated 1147: State register name "y2" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s7" not in library.
+Violated 1199: next register name "_s7" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1194: mux inferred on signal  "_s7".
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1228: the bit widths of the conditional assignment operans are different.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1003: Clock signals "test.clock" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1102: more than one clock signal in a module.
+Violated 1167: active high signal name "clear" does not match to regular expression .*_p.
+Violated 1168: register ouput name "y2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "y1" does not match to regular expression .*_r.
+Violated 1169: register Input name "data" does not match to regular expression .*_nxt.
+Violated 1165: Signal "preset" Used as Synchronous and Asynchronous Set.
+Violated 1152: reset signal name "clear" does not match to regular expression rst_.
+Violated 1153: set signal name "preset" does not match to regular expression set_.
+Violated 1147: State register name "y1" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "data" not in library.
+Violated 1195: asynchronous signal name "clear" does not match to regular expression .*_a.
+Violated 1199: next register name "data" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clock" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1281: Set (preset) and reset (clear) are specified for the same flip-flop/latch.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input data, clock, preset, clear; 
+Violated 1255: comment is not found following port declaration output y1, y2; 
+Violated 1257: signals should be declared one per line with a comment at the end clock. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end preset. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y1. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y2. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s8. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s9. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s11. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s12. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s16. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s21. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 0
+Violated 1328: the lines of a source file < 1165_Signal_Used_as_Synchronous_and.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1174: module "forset" is empty.
+Violated 1182: process name "forset" does not match to regular expression *._PROC.
+Violated 1235: Timescale Missing on Module < forset >.
+Violated 1255: comment is not found following port declaration input data, clock, preset, clear; 
+Violated 1255: comment is not found following port declaration output y1, y2; 
+Violated 1328: the lines of a source file < 1165_Signal_Used_as_Synchronous_and.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module < begin: forset
+ >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 139.

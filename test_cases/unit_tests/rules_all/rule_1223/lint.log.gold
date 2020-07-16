@@ -1,0 +1,126 @@
+Violated 1301: no Escape should be used on < a1 >.
+Violated 1004: Signals top.a1 is driven by 2 devices.
+Violated 1127: signal name "a1" does not match to regular expression s_.
+Violated 1187: wire "a1" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < a3 >.
+Violated 1127: signal name "a3" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1301: no Escape should be used on < latch >.
+Violated 1004: Signals top.latch is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "top.s2.latch".
+Violated 1005: Bit mismatched Signal is "top.s1.latch".
+Violated 1127: signal name "latch" does not match to regular expression s_.
+Violated 1187: wire "latch" should be explicitly declared.
+Violated 1301: no Escape should be used on < a2 >.
+Violated 1124: Combinational Path Between PI "c" and PO "q" without Being Registered.
+Violated 1127: signal name "a2" does not match to regular expression s_.
+Violated 1144: 'wire' declaration "a2" is detected.
+Violated 1187: wire "a2" should be explicitly declared.
+Violated 1188: 'tri' declaration "a2" is detected.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration output a3; 
+Violated 1255: comment is not found following port declaration input latch, c; 
+Violated 1255: comment is not found following port declaration output q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end a3. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end latch. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end a2. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1328: the lines of a source file < 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  tri_,latch ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < c >.
+Violated 1097: violation as Direct Connection from Input "c" to Output "a3".
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1236: object < c > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < latch >.
+Violated 1005: Bit mismatched Signal is "top.latch".
+Violated 1127: signal name "latch" does not match to regular expression s_.
+Violated 1236: object < latch > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < q >.
+Violated 1124: Combinational Path Between PI "c" and PO "q" without Being Registered.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1285: Signal "q" should not connect both input and output port of the instance.
+Violated 1299: Primary output pin "top.s1.q" floating through wire "top.s1.q".
+Violated 1189: latch signal name "q" does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "q".
+Violated 1276: "always_latch" is not used to model sequential blocks.
+Violated 1138: module name "sub" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "s1" is unconventional and should be in the range from 3 to 16.
+Violated 1196: module instance name "s1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration output a3; 
+Violated 1255: comment is not found following port declaration input latch, c; 
+Violated 1255: comment is not found following port declaration output q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end latch. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1328: the lines of a source file < 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  tri_,latch ").
+Violated 1317: gate port is deliberately not connected on Module < sub s1 >
+Violated 1317: gate port is deliberately not connected on Module < sub s2 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1318: gate port is not connected on module < top.s1 > .
+Violated 1322: port < a1 > and its connection < c > should be similar.
+Violated 1322: port < a3 > and its connection < latch > should be similar.
+Violated 1322: port < c > and its connection < q > should be similar.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "s1" must be related to module Name.
+Violated 1301: no Escape should be used on < c >.
+Violated 1124: Combinational Path Between PI "c" and PO "q" without Being Registered.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < c > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < latch >.
+Violated 1005: Bit mismatched Signal is "top.latch".
+Violated 1127: signal name "latch" does not match to regular expression s_.
+Violated 1236: object < latch > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1236: object < q > should not share the same name with another object in the outer scope.
+Violated 1189: latch signal name "q" does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "q".
+Violated 1223: latch to latch should be enabled in different phase.
+Violated 1276: "always_latch" is not used to model sequential blocks.
+Violated 1138: module name "sub" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "s2" is unconventional and should be in the range from 3 to 16.
+Violated 1196: module instance name "s2" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration output a3; 
+Violated 1255: comment is not found following port declaration input latch, c; 
+Violated 1255: comment is not found following port declaration output q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end latch. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v , Line: 0
+Violated 1328: the lines of a source file < 1223_Latch_to_Latch_Connected_should_be_Enabled_in_Different_Phase.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  tri_,latch ").
+Violated 1317: gate port is deliberately not connected on Module < sub s1 >
+Violated 1317: gate port is deliberately not connected on Module < sub s2 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "s2" must be related to module Name.
+Violated 1292: Instance name "s2" indexed by an integer followed by a '_'.
+TOTAL NUMBER OF VIOLATIONS ARE: 125.

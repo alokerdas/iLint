@@ -1,0 +1,10 @@
+Violated 1138: module name "TEST" does not match to regular expression .*_module.
+Violated 1137: module "TEST" should be named in CASE_LOWER case.
+Violated 1174: module "TEST" is empty.
+Violated 1235: Timescale Missing on Module < TEST >.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 9.

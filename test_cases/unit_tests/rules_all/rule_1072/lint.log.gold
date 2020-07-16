@@ -1,0 +1,36 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1042: parameter name "D_CQ" does not match to regular expression p_.*.
+Violated 1042: parameter name "D_RQ" does not match to regular expression p_.*.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1255: comment is not found following port declaration  input clock, reset, d; 
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1072_Delay_in_Nonblocking_Assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1072_Delay_in_Nonblocking_Assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1072_Delay_in_Nonblocking_Assignment.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1072_Delay_in_Nonblocking_Assignment.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   wire clock, reset, d; 
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < D_RQ = 1, D_CQ = 2 > in module or interface < test >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1052:         "#1" Delay Control Ignored by Synthesis
+Violated 1052:         "#2" Delay Control Ignored by Synthesis
+Violated 1072: delay should not be used in a "q" non-blocking assignment.
+Violated 1072: delay should not be used in a "q" non-blocking assignment.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 35.

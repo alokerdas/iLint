@@ -1,0 +1,4 @@
+Violated 1045: Different bits of signal "c" should not be driven in different blocks. File: 1045_Different_Bits_of_Vector_Driven_in_Different_Blocks.v , Line: 6
+Violated 1045: Different bits of signal "c" should not be driven in different blocks. File: 1045_Different_Bits_of_Vector_Driven_in_Different_Blocks.v , Line: 8
+Violated 1045: Different bits of signal "c" should not be driven in different blocks. File: 1045_Different_Bits_of_Vector_Driven_in_Different_Blocks.v , Line: 10
+TOTAL NUMBER OF VIOLATIONS ARE: 3.

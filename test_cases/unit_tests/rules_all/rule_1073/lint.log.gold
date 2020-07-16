@@ -1,0 +1,37 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < in >.
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "in" is detected.
+Violated 1187: wire "in" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < o >.
+Violated 1127: signal name "o" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "o" is detected.
+Violated 1187: wire "o" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end in. File: 1073_Blocking_Non_blocking_Assignment_in_Combinational_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end o. File: 1073_Blocking_Non_blocking_Assignment_in_Combinational_Block.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1073_Blocking_Non_blocking_Assignment_in_Combinational_Block.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+Violated 1073: NONBLOCKING assignment "a" is used in combinational block.
+Violated 1073: NONBLOCKING assignment "o" is used in combinational block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 36.

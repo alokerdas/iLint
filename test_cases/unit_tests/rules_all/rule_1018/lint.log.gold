@@ -1,0 +1,91 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d" is detected.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < e >.
+Violated 1127: signal name "e" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "e" is detected.
+Violated 1187: wire "e" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < f >.
+Violated 1127: signal name "f" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "f" is detected.
+Violated 1187: wire "f" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < g >.
+Violated 1127: signal name "g" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "g" is detected.
+Violated 1187: wire "g" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "sel" is detected.
+Violated 1187: wire "sel" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1018_Line_Too_Long.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1018_Line_Too_Long.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1018_Line_Too_Long.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end e. File: 1018_Line_Too_Long.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end f. File: 1018_Line_Too_Long.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end g. File: 1018_Line_Too_Long.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1018_Line_Too_Long.v , Line: 0
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1018_Line_Too_Long.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a,b,c,d,e,f,g ").
+Violated 1269: comment should be on <     end >
+Violated 1269: comment should be on <     end >
+Violated 1269: comment should be on <   endmodule >
+Violated 1319: memory <  a,b,c,d,e,f,g > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1018: Line Too Long.
+Violated 1052:       "#200" Delay Control Ignored by Synthesis
+Violated 1053: System Task Call "$monitor;" Not Synthesizable.
+Violated 1053: System Task Call "$finish;" Not Synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1052:   "#20" Delay Control Ignored by Synthesis
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 90.

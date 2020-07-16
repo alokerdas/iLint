@@ -1,0 +1,11 @@
+Violated 1138: module name "test_top_0123456789012" does not match to regular expression .*_module.
+Violated 1136: Module Name "test_top_0123456789012" is unconventional and should be in the range from 3 to 16.
+Violated 1174: module "test_top_0123456789012" is empty.
+Violated 1235: Timescale Missing on Module < test_top_0123456789012 >.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module < //warning on "test_top_0123456789012"
+ >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 9.

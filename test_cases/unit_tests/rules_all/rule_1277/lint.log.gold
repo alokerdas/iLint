@@ -1,0 +1,57 @@
+Violated 1001: Signals "test.R" cannot be in UPPER CASE.
+Violated 1127: signal name "R" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d1 >.
+Violated 1127: signal name "d1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d2 >.
+Violated 1127: signal name "d2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "d2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d1" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "d2" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d1" not in library.
+Violated 1199: next register name "d1" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1102: more than one clock signal in a module.
+Violated 1167: active high signal name "R" does not match to regular expression .*_p.
+Violated 1168: register ouput name "d2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d1" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1152: reset signal name "R" does not match to regular expression rst_.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1195: asynchronous signal name "R" does not match to regular expression .*_a.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1277: If statement describing asynchronous set/reset should be put before any other logic statement in always block.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input d1, clk, R, d; 
+Violated 1255: comment is not found following port declaration  output q, d2; 
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1277_MostBeginningStatement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1277_MostBeginningStatement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d1. File: 1277_MostBeginningStatement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d2. File: 1277_MostBeginningStatement.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1277_MostBeginningStatement.v , Line: 0
+Violated 1328: the lines of a source file < 1277_MostBeginningStatement.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 56.

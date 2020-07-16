@@ -1,0 +1,49 @@
+Violated 1301: no Escape should be used on < en >.
+Violated 1127: signal name "en" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "en" is detected.
+Violated 1187: wire "en" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < ns >.
+Violated 1105: Integer "top.ns" is used in concatenation/directly.
+Violated 1127: signal name "ns" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "ns" is detected.
+Violated 1108: variable name "ns" does not match to regular expression v_.*.
+Violated 1187: wire "ns" should be explicitly declared.
+Violated 1198: integer type object "ns" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < ps >.
+Violated 1105: Integer "top.ps" is used in concatenation/directly.
+Violated 1127: signal name "ps" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "ps" is detected.
+Violated 1108: variable name "ps" does not match to regular expression v_.*.
+Violated 1187: wire "ps" should be explicitly declared.
+Violated 1198: integer type object "ps" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end ns. File: 1207_Ignore_Don't_Care_Values_in_Case_Expressions.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end ps. File: 1207_Ignore_Don't_Care_Values_in_Case_Expressions.v , Line: 0
+Violated 1328: the lines of a source file < 1207_Ignore_Don't_Care_Values_in_Case_Expressions.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endcase >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endcase >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1027: "casex" statement Detected.
+Violated 1028: complex "casex" decreases circuit quality with.
+Violated 1087: process should be named.
+Violated 1207: "X/Z/?" is detected in "casex" expression.
+Violated 1219: default branch is unreachable because case alternatives have covered all the possibilities of case expression.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+Violated 1027: "casez" statement Detected.
+Violated 1028: complex "casez" decreases circuit quality with.
+Violated 1087: process should be named.
+Violated 1207: "Z/?" is detected in "casez" expression.
+Violated 1219: default branch is unreachable because case alternatives have covered all the possibilities of case expression.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+TOTAL NUMBER OF VIOLATIONS ARE: 48.

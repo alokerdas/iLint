@@ -1,0 +1,57 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "comb1" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration module comb1(input a, b ,c, output reg [1:0] y); 
+Violated 1255: comment is not found following port declaration module comb1(input a, b ,c, output reg [1:0] y); 
+Violated 1255: comment is not found following port declaration input a; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1294_Task_in_'always_comb'_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1294_Task_in_'always_comb'_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1294_Task_in_'always_comb'_Block.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y) ").
+Violated 1269: comment should be on < endtask >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  y) > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < a > should not share the same name with another object in the outer scope.
+Violated 1135: Task name "ort1" does not match to regular expression p_.
+Violated 1133: The length of task name "ort1" is unconventional and should be in the range from 3 to 16.
+Violated 1181: Task "ort1" not synthesizeble.
+Violated 1235: Timescale Missing on Module < ort1 >.
+Violated 1255: comment is not found following port declaration module comb1(input a, b ,c, output reg [1:0] y); 
+Violated 1255: comment is not found following port declaration module comb1(input a, b ,c, output reg [1:0] y); 
+Violated 1255: comment is not found following port declaration input a; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y) ").
+Violated 1269: comment should be on < endtask >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  y) > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1239: 
+Violated 1069: task call statement ort1(...) should not be used because it is not synthesizable.
+Violated 1075: signal "a" should not be assigned to itself.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1294: Task is used in "always_comb" block.
+TOTAL NUMBER OF VIOLATIONS ARE: 56.

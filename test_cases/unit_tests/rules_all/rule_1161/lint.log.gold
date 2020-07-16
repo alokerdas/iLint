@@ -1,0 +1,68 @@
+Violated 1301: no Escape should be used on < clk_1 >.
+Violated 1127: signal name "clk_1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < clk_2 >.
+Violated 1127: signal name "clk_2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d1 >.
+Violated 1127: signal name "d1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d2 >.
+Violated 1127: signal name "d2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q1 >.
+Violated 1127: signal name "q1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < q2 >.
+Violated 1127: signal name "q2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < set >.
+Violated 1127: signal name "set" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < _s13 >.
+Violated 1004: Signals test._s13 is driven by 2 devices.
+Violated 1127: signal name "_s13" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s13" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s13" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s14" does not match to regular expression gate_.
+Violated 1003: Clock signals "test.clk_2" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "q2" does not match to regular expression .*_r.
+Violated 1169: register Input name "d2" does not match to regular expression .*_nxt.
+Violated 1153: set signal name "clk_1" does not match to regular expression set_.
+Violated 1147: State register name "q2" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d2" not in library.
+Violated 1199: next register name "d2" does not match to regular expression .*_ns.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test.clk_1" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1145: Mutiple Clock Source Not Recommended.
+Violated 1168: register ouput name "q2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "q1" does not match to regular expression .*_r.
+Violated 1169: register Input name "d2" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "d1" does not match to regular expression .*_nxt.
+Violated 1161: Clock Signal "clk_1"  Used as Set.
+Violated 1153: set signal name "set" does not match to regular expression set_.
+Violated 1147: State register name "q1" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d1" not in library.
+Violated 1199: next register name "d1" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1283: Signal "q1" has already been set.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration output q1, q2; 
+Violated 1255: comment is not found following port declaration input clk_1, clk_2, set, d1, d2; 
+Violated 1257: signals should be declared one per line with a comment at the end clk_2. File: 1161_Clock_Signal_Used_as_Set.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d1. File: 1161_Clock_Signal_Used_as_Set.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d2. File: 1161_Clock_Signal_Used_as_Set.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q1. File: 1161_Clock_Signal_Used_as_Set.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q2. File: 1161_Clock_Signal_Used_as_Set.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end set. File: 1161_Clock_Signal_Used_as_Set.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s13. File: 1161_Clock_Signal_Used_as_Set.v , Line: 0
+Violated 1328: the lines of a source file < 1161_Clock_Signal_Used_as_Set.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 67.

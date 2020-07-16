@@ -1,0 +1,41 @@
+Violated 1301: no Escape should be used on < in1 >.
+Violated 1127: signal name "in1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in2 >.
+Violated 1127: signal name "in2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in3 >.
+Violated 1127: signal name "in3" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out0 >.
+Violated 1127: signal name "out0" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out0" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input [1:0] in1,in2,in3,sel; 
+Violated 1255: comment is not found following port declaration  output [1:0] out0; 
+Violated 1257: signals should be declared one per line with a comment at the end in2. File: 1028_Casexz_DontCare.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end in3. File: 1028_Casexz_DontCare.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out0. File: 1028_Casexz_DontCare.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1028_Casexz_DontCare.v , Line: 0
+Violated 1328: the lines of a source file < 1028_Casexz_DontCare.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1,in2,in3,sel ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  out0 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  out0 ").
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < in1 > should be declared by using explicit name.
+Violated 1313: port < in2 > should be declared by using explicit name.
+Violated 1313: port < in3 > should be declared by using explicit name.
+Violated 1319: memory <  out0 > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1027: "casex" statement Detected.
+Violated 1028: complex "casex" decreases circuit quality with.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1220: not all possible values of the case expression are covered in a full case but a default clause exists.
+Violated 1222: not all possible values of the case expression are covered but a default clause exists.
+TOTAL NUMBER OF VIOLATIONS ARE: 40.

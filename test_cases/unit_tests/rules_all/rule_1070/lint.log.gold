@@ -1,0 +1,135 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "clock" is detected.
+Violated 1187: wire "clock" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "reset" is detected.
+Violated 1187: wire "reset" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1187: wire "y" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration    input a; 
+Violated 1255: comment is not found following port declaration    input b; 
+Violated 1255: comment is not found following port declaration    output y1; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clock. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1070_Disable_Statement_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <        end >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on <  endtask >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < a > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < b > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < y1 >.
+Violated 1127: signal name "y1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1135: Task name "multiply" does not match to regular expression p_.
+Violated 1133: The length of task name "multiply" is unconventional and should be in the range from 3 to 16.
+Violated 1181: Task "multiply" not synthesizeble.
+Violated 1255: comment is not found following port declaration    input a; 
+Violated 1255: comment is not found following port declaration    input b; 
+Violated 1255: comment is not found following port declaration    output y1; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y1. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1070_Disable_Statement_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <        end >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on <  endtask >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1239: 
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d" is detected.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1182: process name "serialMult" does not match to regular expression *._PROC.
+Violated 1255: comment is not found following port declaration    input a; 
+Violated 1255: comment is not found following port declaration    input b; 
+Violated 1255: comment is not found following port declaration    output y1; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1070_Disable_Statement_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <    begin: serialMult
+ >
+Violated 1269: comment should be on <        end >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on <  endtask >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1239: 
+Violated 1069: task call statement multiply(...) should not be used because it is not synthesizable.
+Violated 1029: "BLOCKING" assignment is on "a" used in an edge triggered block.
+Violated 1029: "BLOCKING" assignment is on "b" used in an edge triggered block.
+Violated 1029: "BLOCKING" assignment is on "y" used in an edge triggered block.
+Violated 1075: signal "a" should not be assigned to itself.
+Violated 1075: signal "b" should not be assigned to itself.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1070: disable statement disable "multiply" should not be used because it is not synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 133.

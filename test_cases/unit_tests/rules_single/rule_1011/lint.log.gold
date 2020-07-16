@@ -1,0 +1,2 @@
+Violated 1011: The set/reset signal should not be driven by a path "U_and_1<0.0>" with potential glitch. File: 1011_Reset_is_Driven_by_a_Path.v , Line: 7
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

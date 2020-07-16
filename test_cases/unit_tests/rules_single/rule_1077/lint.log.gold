@@ -1,0 +1,2 @@
+Violated 1077: Variable "a" is assigned in another assignment in same time point. File: 1077_Variable_Updated_Twice_in_Same_Time_Point.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

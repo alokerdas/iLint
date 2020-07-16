@@ -1,0 +1,33 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < counter >.
+Violated 1097: violation as Direct Connection from Input "clock" to Output "counter".
+Violated 1127: signal name "counter" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1003: Clock signals "test.clock" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1167: active high signal name "reset" does not match to regular expression .*_p.
+Violated 1168: register ouput name "counter" does not match to regular expression .*_r.
+Violated 1169: register Input name "data" does not match to regular expression .*_nxt.
+Violated 1152: reset signal name "reset" does not match to regular expression rst_.
+Violated 1147: State register name "counter" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "data" not in library.
+Violated 1195: asynchronous signal name "reset" does not match to regular expression .*_a.
+Violated 1199: next register name "data" does not match to regular expression .*_ns.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clock, reset, data; 
+Violated 1255: comment is not found following port declaration  output counter; 
+Violated 1257: signals should be declared one per line with a comment at the end counter. File: 1152_Reset_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1152_Reset_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1152_Reset_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 32.

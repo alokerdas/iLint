@@ -1,0 +1,53 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < datain >.
+Violated 1127: signal name "datain" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < dataout >.
+Violated 1127: signal name "dataout" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "dataout" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < s >.
+Violated 1127: signal name "s" does not match to regular expression s_.
+Violated 1042: parameter name "WIDTH" does not match to regular expression p_.*.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1255: comment is not found following port declaration   output dataout; 
+Violated 1255: comment is not found following port declaration   input s; 
+Violated 1255: comment is not found following port declaration   input [WIDTH-1:0] datain; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end datain. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end dataout. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end s. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 0
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1050_Z_or_X_Used_in_Conditional_Expression.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   input clk; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  datain ").
+Violated 1269: comment should be on <      end >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < WIDTH = 4 > in module or interface < test >
+Violated 1313: port < datain > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1049: Case Like If Else.
+Violated 1049: Case Like If Else.
+Violated 1049: Case Like If Else.
+Violated 1050: 'bz or 'bx Used in Conditional Expression "e" of "s".
+Violated 1050: 'bz or 'bx Used in Conditional Expression "e" of "s".
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1030: "vector" "e" is used in a single-bit logical operation.
+Violated 1022: register "dataout" should be assigned in data clause.
+Violated 1022: register "dataout" should be assigned in data clause.
+Violated 1022: register "dataout" should be assigned in data clause.
+Violated 1022: register "dataout" should be assigned in data clause.
+TOTAL NUMBER OF VIOLATIONS ARE: 52.

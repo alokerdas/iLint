@@ -1,0 +1,16 @@
+Violated 1301: no Escape should be used on < bind >.
+Violated 1099: Signal "bind" Driven By Constant.
+Violated 1032: System Verilog Reserved Words "bind".
+Violated 1127: signal name "bind" does not match to regular expression s_.
+Violated 1187: wire "bind" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1289: Signal test.bind Assigned to 'x'.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < bind > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 15.

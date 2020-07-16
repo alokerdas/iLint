@@ -1,0 +1,3 @@
+Violated 1036: Oversized Index "32". File: 1036_oversized_index.v , Line: 8
+Violated 1121: "num" not a constant in bits selection. File: 1036_oversized_index.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

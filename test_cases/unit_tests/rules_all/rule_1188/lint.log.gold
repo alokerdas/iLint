@@ -1,0 +1,31 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1112: Nontop Module Tri-state "t" Detected.
+Violated 1124: Combinational Path Between PI "a" and PO "t" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "t" without Being Registered.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1112: Nontop Module Tri-state "t" Detected.
+Violated 1124: Combinational Path Between PI "a" and PO "t" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "t" without Being Registered.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < t >.
+Violated 1112: Nontop Module Tri-state "t" Detected.
+Violated 1124: Combinational Path Between PI "a" and PO "t" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "t" without Being Registered.
+Violated 1127: signal name "t" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "t" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "B<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "B<0>" Found.
+Violated 1179: Tri-state ouput signal name "t" does not match to regular expression .*_z.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input a,b; 
+Violated 1255: comment is not found following port declaration output t; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1188_tri_Declaration_Detected.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end t. File: 1188_tri_Declaration_Detected.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 30.

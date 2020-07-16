@@ -1,0 +1,71 @@
+Violated 1001: Signals "test.BIN" cannot be in UPPER CASE.
+Violated 1124: Combinational Path Between PI "carryin" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "ain" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "BIN" and PO "carryout" without Being Registered.
+Violated 1127: signal name "BIN" does not match to regular expression s_.
+Violated 1290: UDP Signal Name "BIN" should be named in lower case.
+Violated 1290: UDP Name "CarrY" should be named in lower case.
+Violated 1301: no Escape should be used on < ain >.
+Violated 1124: Combinational Path Between PI "carryin" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "ain" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "BIN" and PO "carryout" without Being Registered.
+Violated 1127: signal name "ain" does not match to regular expression s_.
+Violated 1290: UDP Signal Name "BIN" should be named in lower case.
+Violated 1290: UDP Name "CarrY" should be named in lower case.
+Violated 1301: no Escape should be used on < cLK >.
+Violated 1127: signal name "cLK" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1285: Signal "cLK" should not connect both input and output port of the instance.
+Violated 1301: no Escape should be used on < carryin >.
+Violated 1124: Combinational Path Between PI "carryin" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "ain" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "BIN" and PO "carryout" without Being Registered.
+Violated 1127: signal name "carryin" does not match to regular expression s_.
+Violated 1290: UDP Signal Name "BIN" should be named in lower case.
+Violated 1290: UDP Name "CarrY" should be named in lower case.
+Violated 1301: no Escape should be used on < carryout >.
+Violated 1124: Combinational Path Between PI "carryin" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "ain" and PO "carryout" without Being Registered.
+Violated 1124: Combinational Path Between PI "BIN" and PO "carryout" without Being Registered.
+Violated 1127: signal name "carryout" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1290: UDP Signal Name "BIN" should be named in lower case.
+Violated 1290: UDP Name "CarrY" should be named in lower case.
+Violated 1285: Signal "carryout" should not connect both input and output port of the instance.
+Violated 1299: Primary output pin "test.carryout" floating through wire "test.carryout".
+Violated 1123: UDP declaration "CarrY" should not be used because it is not synthesizable.
+Violated 1309: user defined primitive < CarrY > should be named in lower case.
+Violated 1175: gate name "u1" does not match to regular expression gate_.
+Violated 1178: Gate Instance "u1" Found.
+Violated 1024: UDP instance "u1" should not be used because it is not synthesizable.
+Violated 1175: gate name "a<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "a<0>" Found.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration   output carryout,cLK; 
+Violated 1255: comment is not found following port declaration   input carryin, ain, BIN; 
+Violated 1255: comment is not found following port declaration   output carryout; 
+Violated 1255: comment is not found following port declaration   input carryin, ain,bin; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end ain. File: 1290_UserDefinedPrimitiveshouldbeNamedinLowerCase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end cLK. File: 1290_UserDefinedPrimitiveshouldbeNamedinLowerCase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end carryin. File: 1290_UserDefinedPrimitiveshouldbeNamedinLowerCase.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end carryout. File: 1290_UserDefinedPrimitiveshouldbeNamedinLowerCase.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1290_UserDefinedPrimitiveshouldbeNamedinLowerCase.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1309: user defined primitive < CarrY > should be named in lower case.
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on <   endtable >
+Violated 1269: comment should be on < endprimitive >
+Violated 1313: port < ain > should be declared by using explicit name.
+Violated 1313: port < carryin > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 70.

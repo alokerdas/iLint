@@ -1,0 +1,2 @@
+Violated 1107: The length of Integer variable name "Nnnnnnnnnnnn" should not exceed 10 characters. File: 1107_Variable_Name_Too_Long.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

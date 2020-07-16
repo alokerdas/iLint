@@ -1,0 +1,54 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < i >.
+Violated 1105: Integer "smp.i" is used in concatenation/directly.
+Violated 1127: signal name "i" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "i" is detected.
+Violated 1108: variable name "i" does not match to regular expression v_.*.
+Violated 1187: wire "i" should be explicitly declared.
+Violated 1198: integer type object "i" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < in1 >.
+Violated 1127: signal name "in1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out1 >.
+Violated 1127: signal name "out1" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out1" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output [3:0] out1; 
+Violated 1255: comment is not found following port declaration  input [3:0] in1; 
+Violated 1255: comment is not found following port declaration  input clk, reset; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end i. File: 1246_Filp_flop_Reset_Logic_in_For_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end in1. File: 1246_Filp_flop_Reset_Logic_in_For_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out1. File: 1246_Filp_flop_Reset_Logic_in_For_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1246_Filp_flop_Reset_Logic_in_For_Loop.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1246_Filp_flop_Reset_Logic_in_For_Loop.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  out1 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  out1 ").
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1313: port < in1 > should be declared by using explicit name.
+Violated 1319: memory <  out1 > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1060: While/for Statement Not Synthesizable.
+Violated 1029: "BLOCKING" assignment is on "i<0>" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1244: Arithmetic operation < + > is performed on non for loop variable.
+Violated 1246: the < reset > logic should be separate from the for loop logic.
+Violated 1254: For loop Detected on < smp >.
+Violated 1250: wait statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 53.

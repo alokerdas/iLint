@@ -1,0 +1,45 @@
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration output q; 
+Violated 1255: comment is not found following port declaration output [3:0] c; 
+Violated 1255: comment is not found following port declaration input clk, d; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1315_Literal_Constant_in_Range_Definition.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1315_Literal_Constant_in_Range_Definition.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1315_Literal_Constant_in_Range_Definition.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1315_Literal_Constant_in_Range_Definition.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < c > ......
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1029: "NON-BLOCKING" assignment is on "c<0>" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1030: "vector" "+" is used in a single-bit logical operation.
+Violated 1030: "vector" "+" is used in a single-bit logical operation.
+Violated 1044: violation as case label exceed "1'b".
+Violated 1065: nested edge-triggered constructs "posedge" "clk" should not be used.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1081: signal "d" is being read asynchronously. It may cause simulation-synthesis mismatch.
+TOTAL NUMBER OF VIOLATIONS ARE: 44.

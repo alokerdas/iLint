@@ -1,0 +1,38 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input a; 
+Violated 1255: comment is not found following port declaration output d; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1248_Apparent_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1248_Apparent_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1248_Apparent_Loop.v , Line: 0
+Violated 1328: the lines of a source file < 1248_Apparent_Loop.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1248: apparent feedback detected on signal < c >.
+Violated 1249: primitive gate < _s1 > found in non_leaf module.
+TOTAL NUMBER OF VIOLATIONS ARE: 37.

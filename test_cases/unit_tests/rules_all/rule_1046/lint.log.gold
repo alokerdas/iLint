@@ -1,0 +1,50 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input [1:0] a ; 
+Violated 1255: comment is not found following port declaration  input [1:0] sel; 
+Violated 1255: comment is not found following port declaration  output [1:0] c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1046_Default_is_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1046_Default_is_Not_Found.v , Line: 0
+Violated 1328: the lines of a source file < 1046_Default_is_Not_Found.v > hould not exceed 10 lines.
+Violated 1265: Define Statements Should be Put into One File.
+Violated 1305: comment not found on <  `define ZERO 0 >.
+Violated 1305: comment not found on <  `define ZERO 0 >.
+Violated 1305: comment not found on <  `define ONE 1 >.
+Violated 1305: comment not found on <  `define ONE 1 >.
+Violated 1305: comment not found on <  `define TWO 2 >.
+Violated 1305: comment not found on <  `define TWO 2 >.
+Violated 1305: comment not found on <  `define THREE 3 >.
+Violated 1305: comment not found on <  `define THREE 3 >.
+Violated 1307: no comment is found before always
+Violated 1308: define is not allowed for defining constants < 0 >.
+Violated 1308: define is not allowed for defining constants < 1 >.
+Violated 1308: define is not allowed for defining constants < 2 >.
+Violated 1308: define is not allowed for defining constants < 3 >.
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a  ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  sel ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1046: Default Not Found.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1216: bit width mismatch in the comparison of case statement of "(2)" with "(3)".
+Violated 1221: not all possible case branches are specified.
+TOTAL NUMBER OF VIOLATIONS ARE: 49.

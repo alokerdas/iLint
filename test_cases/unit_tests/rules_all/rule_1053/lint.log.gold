@@ -1,0 +1,59 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "clk" is detected.
+Violated 1187: wire "clk" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < in >.
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "in" is detected.
+Violated 1187: wire "in" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < out >.
+Violated 1034: VHDL Reserved Words "out".
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1187: wire "out" should be explicitly declared.
+Violated 1301: no Escape should be used on < rst >.
+Violated 1127: signal name "rst" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "rst" is detected.
+Violated 1187: wire "rst" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "init" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end in. File: 1053_System_Task_Call_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1053_System_Task_Call_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst. File: 1053_System_Task_Call_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1053_System_Task_Call_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <     initial begin
+ >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on <   endmodule >
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1052:       "#2" Delay Control Ignored by Synthesis
+Violated 1052:       "#10" Delay Control Ignored by Synthesis
+Violated 1052:       "#50" Delay Control Ignored by Synthesis
+Violated 1053: System Task Call "$monitor;" Not Synthesizable.
+Violated 1053: System Task Call "$finish;" Not Synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1052:   "#4" Delay Control Ignored by Synthesis
+Violated 1087: process should be named.
+Violated 1052:   "#10" Delay Control Ignored by Synthesis
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 57.

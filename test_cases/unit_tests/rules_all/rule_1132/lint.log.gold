@@ -1,0 +1,43 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration  input a; 
+Violated 1255: comment is not found following port declaration  input b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < add >.
+Violated 1127: signal name "add" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "add" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1132: function name "add" does not match to regular expression f_.
+Violated 1255: comment is not found following port declaration  input a; 
+Violated 1255: comment is not found following port declaration  input b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1132_Function_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end add. File: 1132_Function_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 42.

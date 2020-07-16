@@ -1,0 +1,49 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s3 >.
+Violated 1127: signal name "_s3" does not match to regular expression s_.
+Violated 1187: wire "_s3" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s3" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s4" does not match to regular expression gate_.
+Violated 1180: condition expression on "a" is wider than single-bit.
+Violated 1180: condition expression on "a" is wider than single-bit.
+Violated 1189: latch signal name "c" does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "c".
+Violated 1276: "always_latch" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input [1:0] a, b; 
+Violated 1255: comment is not found following port declaration  output [1:0] c; 
+Violated 1255: comment is not found following port declaration  input [1:0] a, b; 
+Violated 1255: comment is not found following port declaration  output [1:0] c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1192_Inferred_Latch.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1192_Inferred_Latch.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s3. File: 1192_Inferred_Latch.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1192_Inferred_Latch.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1311: Multiline command should not be used here /*module test (c, a, b);
+
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 47.

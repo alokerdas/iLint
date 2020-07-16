@@ -1,0 +1,50 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1138: module name "forkjoin1" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration   input clk; 
+Violated 1255: comment is not found following port declaration   output a; 
+Violated 1255: comment is not found following port declaration   output b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1186_Fork_Statement_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1186_Fork_Statement_Not_Synthesizable.v , Line: 0
+Violated 1328: the lines of a source file < 1186_Fork_Statement_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1174: module "A" is empty.
+Violated 1186: fork statement "A" should not be used because it is not synthesizable.
+Violated 1235: Timescale Missing on Module < A >.
+Violated 1255: comment is not found following port declaration   input clk; 
+Violated 1255: comment is not found following port declaration   output a; 
+Violated 1255: comment is not found following port declaration   output b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1328: the lines of a source file < 1186_Fork_Statement_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <   fork:A
+ >
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < output > ports are declared in groups.
+Violated 1239: 
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 48.

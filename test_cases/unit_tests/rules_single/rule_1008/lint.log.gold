@@ -1,0 +1,3 @@
+Violated 1008: Multiple Tristate is not properly defined "test2.out". File: 1008_Multiple_Tri_state_Cause_Potential_BusContention.v , Line: 4
+Violated 1008: Multiple Tristate is not properly defined "test2.out". File: 1008_Multiple_Tri_state_Cause_Potential_BusContention.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

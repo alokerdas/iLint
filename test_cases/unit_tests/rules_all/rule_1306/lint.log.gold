@@ -1,0 +1,38 @@
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out >.
+Violated 1034: VHDL Reserved Words "out".
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input [2:0] data; 
+Violated 1255: comment is not found following port declaration input [1:0] sel; 
+Violated 1255: comment is not found following port declaration output out; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1306_Comment_Synthesis_Directives.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1306_Comment_Synthesis_Directives.v , Line: 0
+Violated 1328: the lines of a source file < 1306_Comment_Synthesis_Directives.v > hould not exceed 10 lines.
+Violated 1263: unknown synopsys directive < case ( sel ) //synopsys full_case > should not be used here.
+Violated 1267: case statement with both < case ( sel ) //synopsys full_case > directive clause may cause mismatch between pre-synthesis and post-synthesis.
+Violated 1306: no comment on synopsys synthesis directive.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  data ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  sel ").
+Violated 1269: comment should be on < endcase >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1046: Default Not Found.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1221: not all possible case branches are specified.
+TOTAL NUMBER OF VIOLATIONS ARE: 37.

@@ -1,0 +1,45 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "clock" is detected.
+Violated 1187: wire "clock" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1029_Blocking_Non_blocking_Assignment_in_Edge_triggered_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1029_Blocking_Non_blocking_Assignment_in_Edge_triggered_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clock. File: 1029_Blocking_Non_blocking_Assignment_in_Edge_triggered_Block.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1029_Blocking_Non_blocking_Assignment_in_Edge_triggered_Block.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1029: "BLOCKING" assignment is on "a" used in an edge triggered block.
+Violated 1029: "NON-BLOCKING" assignment is on "c" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 44.

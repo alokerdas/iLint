@@ -1,0 +1,2 @@
+Violated 1140: Unsigned vector "sel" compared with a negative value "1". File: 1140_unsigned_Vector_Compared_with_a_Negative_Value.v , Line: 7
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

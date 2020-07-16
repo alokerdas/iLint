@@ -1,0 +1,30 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < count >.
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "count" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < rst_p >.
+Violated 1127: signal name "rst_p" does not match to regular expression s_.
+Violated 1091: Edge Signal "clk" and Non Edge Signal "clk" are duplicate.
+Violated 1120: Both Edge "clk" and Non-edge "clk" Expressions in the Sensitivity List.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk, rst_p; 
+Violated 1255: comment is not found following port declaration  output [7:0] count; 
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1091_Duplicate_Signal_Found_in_Sensitivity_List.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst_p. File: 1091_Duplicate_Signal_Found_in_Sensitivity_List.v , Line: 0
+Violated 1328: the lines of a source file < 1091_Duplicate_Signal_Found_in_Sensitivity_List.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1319: memory <  count > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1022: register "count<0>" should be assigned in data clause.
+Violated 1022: register "count<0>" should be assigned in data clause.
+TOTAL NUMBER OF VIOLATIONS ARE: 29.

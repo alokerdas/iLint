@@ -1,0 +1,54 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1124: Combinational Path Between PI "data" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < rden >.
+Violated 1090: Tri-state Enable "rden" Mixed with other logic in module.
+Violated 1124: Combinational Path Between PI "a" and PO "tri_out1" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "tri_out1" without Being Registered.
+Violated 1124: Combinational Path Between PI "data" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "rden" does not match to regular expression s_.
+Violated 1187: wire "rden" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < tri_out1 >.
+Violated 1033: Keyword "tri_out1" is part of Verilog Reserved Word.
+Violated 1124: Combinational Path Between PI "data" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "tri_out1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "AA<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "AA<0>" Found.
+Violated 1175: gate name "_s5" does not match to regular expression gate_.
+Violated 1179: Tri-state ouput signal name "tri_out1" does not match to regular expression .*_z.
+Violated 1190: tri-state buffer "tri_out1" should not be mixed with other combinational logics in the module "test".
+Violated 1193: tri-state logic is inferred on signal "tri_out1".
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input data,a,b; 
+Violated 1255: comment is not found following port declaration  output tri_out1; 
+Violated 1255: comment is not found following port declaration  input rden, wren, data; 
+Violated 1255: comment is not found following port declaration  output tri_out1; 
+Violated 1255: comment is not found following port declaration  output cnt1; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1090_Tri_state_Enable_Mixed_with_Other.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1090_Tri_state_Enable_Mixed_with_Other.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rden. File: 1090_Tri_state_Enable_Mixed_with_Other.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end tri_out1. File: 1090_Tri_state_Enable_Mixed_with_Other.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1090_Tri_state_Enable_Mixed_with_Other.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1311: Multiline command should not be used here /*module smp1(rden, wren, data, tri_out1, cnt1);
+
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 52.

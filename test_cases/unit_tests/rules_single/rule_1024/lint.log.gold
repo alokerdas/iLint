@@ -1,0 +1,2 @@
+Violated 1024: UDP instance "u_test_0" should not be used because it is not synthesizable. File: 1024_UDP_Instance_Not_Synthesizable.v , Line: 4
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -1,0 +1,41 @@
+Violated 1001: Signals "smp.A" cannot be in UPPER CASE.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1001: Signals "smp.B" cannot be in UPPER CASE.
+Violated 1127: signal name "B" does not match to regular expression s_.
+Violated 1001: Signals "smp.C" cannot be in UPPER CASE.
+Violated 1127: signal name "C" does not match to regular expression s_.
+Violated 1001: Signals "smp.D" cannot be in UPPER CASE.
+Violated 1127: signal name "D" does not match to regular expression s_.
+Violated 1001: Signals "smp.S" cannot be in UPPER CASE.
+Violated 1127: signal name "S" does not match to regular expression s_.
+Violated 1001: Signals "smp.W" cannot be in UPPER CASE.
+Violated 1127: signal name "W" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "W" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input A,B,C,D,S; 
+Violated 1255: comment is not found following port declaration  output W; 
+Violated 1257: signals should be declared one per line with a comment at the end B. File: 1085_One_Statement_in_a_Single_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end C. File: 1085_One_Statement_in_a_Single_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end D. File: 1085_One_Statement_in_a_Single_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end S. File: 1085_One_Statement_in_a_Single_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end W. File: 1085_One_Statement_in_a_Single_Always_Block.v , Line: 0
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1085_One_Statement_in_a_Single_Always_Block.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <       end >
+Violated 1269: comment should be on <     endcase >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+TOTAL NUMBER OF VIOLATIONS ARE: 40.

@@ -1,0 +1,23 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on <  endtask >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1174: module "Check" is empty.
+Violated 1135: Task name "Check" does not match to regular expression p_.
+Violated 1133: The length of task name "Check" is unconventional and should be in the range from 3 to 16.
+Violated 1134: task "Check" should be named in CASE_LOWER case.
+Violated 1181: Task "Check" not synthesizeble.
+Violated 1235: Timescale Missing on Module < Check >.
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on <  endtask >
+Violated 1269: comment should be on < endmodule >
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 22.

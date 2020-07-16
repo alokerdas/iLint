@@ -1,0 +1,45 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s2 >.
+Violated 1099: Signal "_s2" Driven By Constant.
+Violated 1103: Signal "_s2" Stuck at Logic 0.
+Violated 1104: Signal "_s2" with no Load.
+Violated 1127: signal name "_s2" does not match to regular expression s_.
+Violated 1187: wire "_s2" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s2" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1120: Both Edge "clk" and Non-edge "reset" Expressions in the Sensitivity List.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1255: comment is not found following port declaration  input clk, reset, d; 
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1205_procedural_continious_assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1205_procedural_continious_assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1205_procedural_continious_assignment.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s2. File: 1205_procedural_continious_assignment.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1205_procedural_continious_assignment.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1238: 
+Violated 1239: 
+Violated 1029: "NON-BLOCKING" assignment is on "q" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1081: signal "d" is being read asynchronously. It may cause simulation-synthesis mismatch.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1068: event control reset in unsuitable place is not synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1205: procedural continuous assign statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 44.

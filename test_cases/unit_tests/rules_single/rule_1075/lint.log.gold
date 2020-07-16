@@ -1,0 +1,2 @@
+Violated 1075: Signal "out" should not be assigned to itself. File: 1075_Signal_Assigned_to_Self.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

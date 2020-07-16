@@ -1,0 +1,2 @@
+Violated 1029: Both blocking and non-blocking assignments are used in an edge triggered block. File: 1029_Blocking_Non_blocking_Assignment_in_Edge_triggered_Block.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

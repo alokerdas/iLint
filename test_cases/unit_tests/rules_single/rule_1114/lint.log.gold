@@ -1,0 +1,2 @@
+Violated 1114: Special signal "rst" is a bit select. File: 1114_Bit_of_a_Bus_Signal_Used_as_Special.v , Line: 7
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

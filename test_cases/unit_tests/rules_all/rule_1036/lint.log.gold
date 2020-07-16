@@ -1,0 +1,56 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1097: violation as Direct Connection from Input "a" to Output "b".
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < num >.
+Violated 1127: signal name "num" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s3 >.
+Violated 1004: Signals test._s3 is driven by 3 devices.
+Violated 1036: Oversized Index "5".
+Violated 1121: "num<4>" not a constant in bits selection.
+Violated 1127: signal name "_s3" does not match to regular expression s_.
+Violated 1187: wire "_s3" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s4 >.
+Violated 1004: Signals test._s4 is driven by 3 devices.
+Violated 1036: Oversized Index "5".
+Violated 1121: "num<4>" not a constant in bits selection.
+Violated 1127: signal name "_s4" does not match to regular expression s_.
+Violated 1187: wire "_s4" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "b" does not match to regular expression .*_r.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "b" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s4" not in library.
+Violated 1199: next register name "_s4" does not match to regular expression .*_ns.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1194: mux inferred on signal  "_s4".
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1255: comment is not found following port declaration  input [3:0] a; 
+Violated 1255: comment is not found following port declaration  input [4:0] num; 
+Violated 1255: comment is not found following port declaration  output b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1036_oversized_index.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1036_oversized_index.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end num. File: 1036_oversized_index.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s3. File: 1036_oversized_index.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s4. File: 1036_oversized_index.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  num ").
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 55.

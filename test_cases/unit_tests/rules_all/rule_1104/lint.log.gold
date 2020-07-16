@@ -1,0 +1,48 @@
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "a" is detected.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1188: 'tri' declaration "b" is detected.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1168: register ouput name "c" does not match to regular expression .*_r.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1144: 'wire' declaration "d" is detected.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1188: 'tri' declaration "d" is detected.
+Violated 1100: Assignment to a Signal < 0 >.
+Violated 1104: Signal < test.d > with no load < 0 >.
+Violated 1127: signal name "e" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1144: 'wire' declaration "e" is detected.
+Violated 1187: wire "e" should be explicitly declared.
+Violated 1188: 'tri' declaration "e" is detected.
+Violated 1100: Assignment to a Signal < 1 >.
+Violated 1104: Signal < test.e > with no load < 1 >.
+Violated 1255: comment is not found following port declaration  input [1:0] a, b; 
+Violated 1255: comment is not found following port declaration  output [1:0] c; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1104_Signal_with_No_Load.v , Line: 9
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1104_Signal_with_No_Load.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1238: File Name < 1104_Signal_with_No_Load > does not match with Module Name < test >.
+Violated 1239: the length < 24 > of file name < 1104_Signal_with_No_Load > should not exceed < 10 > characters.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1159: signal < b > should be included in the sensitivity list.
+Violated 1149: No Set or Reset Signal only Clock in Module < test >.
+Violated 1192: latch is inferred on signal "c".
+Violated 1192: latch is inferred on signal "c".
+Violated 1189: latch signal name < c > does not match to regular expression .*_lat.
+TOTAL NUMBER OF VIOLATIONS ARE: 47.

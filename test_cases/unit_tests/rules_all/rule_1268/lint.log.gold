@@ -1,0 +1,16 @@
+Violated 1138: module name "ALUB" does not match to regular expression .*_module.
+Violated 1137: module "ALUB" should be named in CASE_LOWER case.
+Violated 1174: module "ALUB" is empty.
+Violated 1235: Timescale Missing on Module < ALUB >.
+Violated 1263: unknown synopsys directive < //synopsys translate_off > should not be used here.
+Violated 1266: statement/expression used in < //synopsys translate_on > may cause mismatch between pre-synthesis and post-synthesis.
+Violated 1266: statement/expression used in < //synopsys translate_off > may cause mismatch between pre-synthesis and post-synthesis.
+Violated 1268: nested synopsys < translate_on > directive couldn't be used.
+Violated 1268: nested synopsys < translate_off > directive couldn't be used.
+Violated 1306: no comment on synopsys synthesis directive.
+Violated 1306: no comment on synopsys synthesis directive.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 15.

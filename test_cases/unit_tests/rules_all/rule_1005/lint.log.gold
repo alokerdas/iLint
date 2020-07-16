@@ -1,0 +1,18 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1005: Bit mismatched Signal is "test.b".
+Violated 1099: Signal "a<3>" Driven By Constant.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1005_Bit_Width_Mismatch_in_Assignment.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 17.

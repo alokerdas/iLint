@@ -1,0 +1,21 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1285: Signal "a" should not connect both input and output port of the instance.
+Violated 1299: Primary output pin "test.a" floating through wire "test.a".
+Violated 1301: no Escape should be used on < b >.
+Violated 1012: No Output Port is on "test.b".
+Violated 1098: Bidirectional Port "b" Decleared.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1021: drive strength "(pull)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s0" does not match to regular expression gate_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output a; 
+Violated 1255: comment is not found following port declaration  input b; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1021_Drive_Strength_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 20.

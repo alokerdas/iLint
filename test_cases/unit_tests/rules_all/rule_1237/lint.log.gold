@@ -1,0 +1,134 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1237: the fan-out number of signal < a > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1237: the fan-out number of signal < clk > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < r1 >.
+Violated 1127: signal name "r1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < r2 >.
+Violated 1127: signal name "r2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < r3 >.
+Violated 1127: signal name "r3" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < r4 >.
+Violated 1127: signal name "r4" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < r5 >.
+Violated 1127: signal name "r5" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "r5" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r4" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r3" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r1" does not match to regular expression .*_r.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "r5" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "a" not in library.
+Violated 1199: next register name "a" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1168: register ouput name "r5" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r4" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r3" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r1" does not match to regular expression .*_r.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "r4" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "a" not in library.
+Violated 1199: next register name "a" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1168: register ouput name "r5" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r4" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r3" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r1" does not match to regular expression .*_r.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "r3" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "a" not in library.
+Violated 1199: next register name "a" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1168: register ouput name "r5" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r4" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r3" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r1" does not match to regular expression .*_r.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "r2" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "a" not in library.
+Violated 1199: next register name "a" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1168: register ouput name "r5" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r4" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r3" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r2" does not match to regular expression .*_r.
+Violated 1168: register ouput name "r1" does not match to regular expression .*_r.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1169: register Input name "a" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "r1" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "a" not in library.
+Violated 1199: next register name "a" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input a, clk; 
+Violated 1255: comment is not found following port declaration output r1, r2, r3, r4, r5; 
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1237_Input_with_Heavy_Transitive_Fan_Out_of_End.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end r1. File: 1237_Input_with_Heavy_Transitive_Fan_Out_of_End.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end r2. File: 1237_Input_with_Heavy_Transitive_Fan_Out_of_End.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end r3. File: 1237_Input_with_Heavy_Transitive_Fan_Out_of_End.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end r4. File: 1237_Input_with_Heavy_Transitive_Fan_Out_of_End.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end r5. File: 1237_Input_with_Heavy_Transitive_Fan_Out_of_End.v , Line: 0
+Violated 1328: the lines of a source file < 1237_Input_with_Heavy_Transitive_Fan_Out_of_End.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 133.

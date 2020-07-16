@@ -1,0 +1,2 @@
+Violated 1041: Clock source "clk" should not trigger flip-flops on both rising and falling edges. File: 1041_ClockActiveonBothEdges.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

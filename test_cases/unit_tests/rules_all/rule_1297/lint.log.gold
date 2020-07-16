@@ -1,0 +1,69 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d" is detected.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1009: Parameter "k" cannot be in LOWER CASE.
+Violated 1043: The length of parameter "k" is unconventional and should be in the range from 3 to 16.
+Violated 1042: parameter name "k" does not match to regular expression p_.*.
+Violated 1115: Variable "real" "c" Not Synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1297_Real_Value_Compared_in_Case_Item.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1297_Real_Value_Compared_in_Case_Item.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1297_Real_Value_Compared_in_Case_Item.v > hould not exceed 10 lines.
+Violated 1305: comment not found on < `define AA 1.1 >.
+Violated 1305: comment not found on < `define AA 1.1 >.
+Violated 1307: no comment is found before always
+Violated 1308: define is not allowed for defining constants < 1.1 >.
+Violated 1310: synopsys template directive should be used before parameter or in place of   real c; 
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < k=1.0 > in module or interface < test >
+Violated 1238: 
+Violated 1239: 
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+Violated 1297: Real expression is used in case item.
+TOTAL NUMBER OF VIOLATIONS ARE: 68.

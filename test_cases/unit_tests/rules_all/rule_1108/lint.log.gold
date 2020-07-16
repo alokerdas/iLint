@@ -1,0 +1,51 @@
+Violated 1001: Signals "test.Nnnnnnnnnnnn" cannot be in UPPER CASE.
+Violated 1002: Signals "test.Nnnnnnnnnnnn" cannot be greater than "10" characters.
+Violated 1105: Integer "test.Nnnnnnnnnnnn" is used in concatenation/directly.
+Violated 1127: signal name "Nnnnnnnnnnnn" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "Nnnnnnnnnnnn" is detected.
+Violated 1106: Integer variable "Nnnnnnnnnnnn" should be named in CASE_LOWER case.
+Violated 1107: The length of Integer variable name "Nnnnnnnnnnnn" should not exceed 10 characters.
+Violated 1108: variable name "Nnnnnnnnnnnn" does not match to regular expression v_.*.
+Violated 1187: wire "Nnnnnnnnnnnn" should be explicitly declared.
+Violated 1198: integer type object "Nnnnnnnnnnnn" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input [7:0] a, b; 
+Violated 1255: comment is not found following port declaration  output [7:0] y; 
+Violated 1257: signals should be declared one per line with a comment at the end a. File: 1108_Variable_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1108_Variable_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1108_Variable_Name_Prefix_or_Suffix.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1108_Variable_Name_Prefix_or_Suffix.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  y > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1060: While/for Statement Not Synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1254: For loop Detected on < test >.
+Violated 1250: wait statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 50.

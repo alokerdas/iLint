@@ -1,0 +1,139 @@
+Violated 1088: more than one top module detected, top modules:.
+Violated 1138: module name "annotate" does not match to regular expression .*_module.
+Violated 1174: module "annotate" is empty.
+Violated 1235: Timescale Missing on Module < annotate >.
+Violated 1255: comment is not found following port declaration input [6:0] a; 
+Violated 1255: comment is not found following port declaration input clk; 
+Violated 1255: comment is not found following port declaration output [6:0] b; 
+Violated 1255: comment is not found following port declaration input [size-1:0] in; 
+Violated 1255: comment is not found following port declaration input clk; 
+Violated 1255: comment is not found following port declaration output [size-1:0] out; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1259: Defparam should not be used because it is not synthesizable.
+Violated 1328: the lines of a source file < 1259_Defparam_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module sub (in,clk,out); 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < size = 8,delay = 2 > in module or interface < annotate >
+Violated 1319: memory <  out > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1088: more than one top module detected, top modules:.
+Violated 1301: no Escape should be used on < a >.
+Violated 1005: Bit mismatched Signal is "top.m1.in".
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1005: Bit mismatched Signal is "top.m1.out".
+Violated 1097: violation as Direct Connection from Input "a" to Output "b".
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1172: Instance name "top" should not be the same as the module name.
+Violated 1255: comment is not found following port declaration input [6:0] a; 
+Violated 1255: comment is not found following port declaration input clk; 
+Violated 1255: comment is not found following port declaration output [6:0] b; 
+Violated 1255: comment is not found following port declaration input [size-1:0] in; 
+Violated 1255: comment is not found following port declaration input clk; 
+Violated 1255: comment is not found following port declaration output [size-1:0] out; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1259_Defparam_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1259_Defparam_Not_Synthesizable.v , Line: 0
+Violated 1259: Defparam should not be used because it is not synthesizable.
+Violated 1328: the lines of a source file < 1259_Defparam_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module sub (in,clk,out); 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1317: gate port is deliberately not connected on Module < top.m1.size = 5 ,
+ >
+Violated 1317: gate port is deliberately not connected on Module < top.m1.delay = 10;
+ >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < size = 8,delay = 2 > in module or interface < top >
+Violated 1318: gate port is not connected on module < top > .
+Violated 1319: memory <  out > should not be used because it is not synthesizable.
+Violated 1322: port < (null) > and its connection < a > should be similar.
+Violated 1322: port < (null) > and its connection < b > should be similar.
+Violated 1322: port < (null) > and its connection < clk > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1236: object < clk > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < in >.
+Violated 1005: Bit mismatched Signal is "top.a".
+Violated 1034: VHDL Reserved Words "in".
+Violated 1127: signal name "in" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out >.
+Violated 1005: Bit mismatched Signal is "top.b".
+Violated 1034: VHDL Reserved Words "out".
+Violated 1127: signal name "out" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1009: Parameter "delay" cannot be in LOWER CASE.
+Violated 1042: parameter name "delay" does not match to regular expression p_.*.
+Violated 1009: Parameter "size" cannot be in LOWER CASE.
+Violated 1042: parameter name "size" does not match to regular expression p_.*.
+Violated 1138: module name "sub" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "m1" is unconventional and should be in the range from 3 to 16.
+Violated 1196: module instance name "m1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration input [6:0] a; 
+Violated 1255: comment is not found following port declaration input clk; 
+Violated 1255: comment is not found following port declaration output [6:0] b; 
+Violated 1255: comment is not found following port declaration input [size-1:0] in; 
+Violated 1255: comment is not found following port declaration input clk; 
+Violated 1255: comment is not found following port declaration output [size-1:0] out; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end in. File: 1259_Defparam_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out. File: 1259_Defparam_Not_Synthesizable.v , Line: 0
+Violated 1259: Defparam should not be used because it is not synthesizable.
+Violated 1328: the lines of a source file < 1259_Defparam_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module sub (in,clk,out); 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1317: gate port is deliberately not connected on Module < sub m1  >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < size = 8,delay = 2 > in module or interface < top.m1 >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1313: port < in > should be declared by using explicit name.
+Violated 1319: memory <  out > should not be used because it is not synthesizable.
+Violated 1322: port < a > and its connection < clk > should be similar.
+Violated 1322: port < b > and its connection < in > should be similar.
+Violated 1322: port < clk > and its connection < out > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "m1" must be related to module Name.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 136.

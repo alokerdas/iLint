@@ -1,0 +1,92 @@
+Violated 1001: Signals "smp.IN1" cannot be in UPPER CASE.
+Violated 1127: signal name "IN1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < IN1 >.
+Violated 1188: 'tri' declaration "IN1" is detected.
+Violated 1001: Signals "smp.IN2" cannot be in UPPER CASE.
+Violated 1127: signal name "IN2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < IN2 >.
+Violated 1188: 'tri' declaration "IN2" is detected.
+Violated 1001: Signals "smp.OUT1" cannot be in UPPER CASE.
+Violated 1127: signal name "OUT1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < OUT1 >.
+Violated 1168: register ouput name "OUT1" does not match to regular expression .*_r.
+Violated 1143: 'reg' declaration "OUT1" is detected.
+Violated 1001: Signals "smp.OUT2" cannot be in UPPER CASE.
+Violated 1127: signal name "OUT2" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < OUT2 >.
+Violated 1168: register ouput name "OUT2" does not match to regular expression .*_r.
+Violated 1143: 'reg' declaration "OUT2" is detected.
+Violated 1255: comment is not found following port declaration  input [16:0] IN1; 
+Violated 1255: comment is not found following port declaration  input [15:0] IN2; 
+Violated 1255: comment is not found following port declaration  output [16:0] OUT1; 
+Violated 1255: comment is not found following port declaration  output [15:0] OUT2; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end IN2. File: 1273_LargeMultiplierInferred.v , Line: 13
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1273_LargeMultiplierInferred.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  IN1 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  IN2 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  OUT1 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  OUT2 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  OUT1 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  OUT2 ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  OUT1 > should not be used because it is not synthesizable.
+Violated 1319: memory <  OUT2 > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: File Name < 1273_LargeMultiplierInferred > does not match with Module Name < smp >.
+Violated 1239: the length < 28 > of file name < 1273_LargeMultiplierInferred > should not exceed < 10 > characters.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1180: Multiple Bits < 17'b > in condition, when single bit expected in < IN1 >  Signal.
+Violated 1272: Arithmetic/Relational Operations Sharing with Large Operand < IN1 17 > Not Allowed.It Exceed imit 16 Bit.
+Violated 1272: Arithmetic/Relational Operations Sharing with Large Operand < IN1 17 > Not Allowed.It Exceed imit 16 Bit.
+Violated 1273: Do not infer large multiplier by the operand < IN1 17 > < * > < ... > whose bit-width is larger than 16.
+Violated 1149: No Set or Reset Signal only Clock in Module < smp >.
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1189: latch signal name < OUT1 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1189: latch signal name < OUT1 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1189: latch signal name < OUT1 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT1".
+Violated 1189: latch signal name < OUT1 > does not match to regular expression .*_lat.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1049: Case Like If Else.
+Violated 1049: Case Like If Else.
+Violated 1049: Case Like If Else.
+Violated 1277: If statement describing asynchronous set/reset should be put before any other logic statement in always block.
+Violated 1149: No Set or Reset Signal only Clock in Module < smp >.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+Violated 1192: latch is inferred on signal "OUT2".
+Violated 1189: latch signal name < OUT2 > does not match to regular expression .*_lat.
+TOTAL NUMBER OF VIOLATIONS ARE: 91.

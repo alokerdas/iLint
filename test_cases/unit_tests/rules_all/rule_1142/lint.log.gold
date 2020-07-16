@@ -1,0 +1,32 @@
+Violated 1301: no Escape should be used on < in1 >.
+Violated 1127: signal name "in1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in2 >.
+Violated 1127: signal name "in2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < out0 >.
+Violated 1127: signal name "out0" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "out0" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input sel; 
+Violated 1255: comment is not found following port declaration  input in1,in2; 
+Violated 1255: comment is not found following port declaration  output out0; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end in2. File: 1142_Conditional_Assignment_Detected.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end out0. File: 1142_Conditional_Assignment_Detected.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1142_Conditional_Assignment_Detected.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < in1 > should be declared by using explicit name.
+Violated 1313: port < in2 > should be declared by using explicit name.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1142: no conditional assignment allowd on "sel".
+Violated 1142: no conditional assignment allowd on "sel".
+TOTAL NUMBER OF VIOLATIONS ARE: 31.

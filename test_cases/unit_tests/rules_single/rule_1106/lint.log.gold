@@ -1,0 +1,2 @@
+Violated 1106: Integer variable "N" should be named in CASE_LOWER case. File: 1106_Variable_Name_Case.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -1,0 +1,8 @@
+Violated 1138: module name "document" does not match to regular expression .*_module.
+Violated 1174: module "document" is empty.
+Violated 1235: Timescale Missing on Module < document >.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 7.

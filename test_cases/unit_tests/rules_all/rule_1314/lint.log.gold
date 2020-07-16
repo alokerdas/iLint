@@ -1,0 +1,84 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < control >.
+Violated 1127: signal name "control" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < current >.
+Violated 1127: signal name "current" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "current" is detected.
+Violated 1187: wire "current" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < next >.
+Violated 1034: VHDL Reserved Words "next".
+Violated 1127: signal name "next" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "next" is detected.
+Violated 1187: wire "next" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1042: parameter name "ST0" does not match to regular expression p_.*.
+Violated 1042: parameter name "ST1" does not match to regular expression p_.*.
+Violated 1042: parameter name "ST2" does not match to regular expression p_.*.
+Violated 1042: parameter name "ST3" does not match to regular expression p_.*.
+Violated 1120: Both Edge "clock" and Non-edge "control" Expressions in the Sensitivity List.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clock,reset,control; 
+Violated 1255: comment is not found following port declaration output [2:0] y; 
+Violated 1257: signals should be declared one per line with a comment at the end control. File: 1314_Unconventional_Port_Declaration_Order.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end current. File: 1314_Unconventional_Port_Declaration_Order.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end next. File: 1314_Unconventional_Port_Declaration_Order.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1314_Unconventional_Port_Declaration_Order.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1314_Unconventional_Port_Declaration_Order.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1327: should not use 4 spaces for indentation
+Violated 1328: the lines of a source file < 1314_Unconventional_Port_Declaration_Order.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  //warning here 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  current, next ").
+Violated 1269: comment should be on < ST0: begin y = 1; next = ST1; end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < ST2: begin y = 3; next = ST3; end >
+Violated 1269: comment should be on < ST3: begin y = 4; next = ST0; end >
+Violated 1269: comment should be on < default: begin y = 1; next = ST0; end >
+Violated 1269: comment should be on < endcase >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < ST0 = 0,ST1 = 1,ST2 = 2,ST3 = 3 > in module or interface < test >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1319: memory <  y > should not be used because it is not synthesizable.
+Violated 1319: memory <  current, next > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1026: Violation "z" Used in Case Label.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1216: bit width mismatch in the comparison of case statement of "(2)" with "(1)".
+Violated 1216: bit width mismatch in the comparison of case statement of "(2)" with "(3)".
+Violated 1216: bit width mismatch in the comparison of case statement of "(2)" with "(3)".
+Violated 1219: default branch is unreachable because case alternatives have covered all the possibilities of case expression.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+Violated 1085: more than one statement (if/case/while/for/forever/repeat) is described in a single always block.
+TOTAL NUMBER OF VIOLATIONS ARE: 83.

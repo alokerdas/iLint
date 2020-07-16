@@ -1,0 +1,2 @@
+Violated 1090: Tri-state Enable "rden" Mixed with other logic in module. File: 1090_Tri_state_Enable_Mixed_with_Other.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

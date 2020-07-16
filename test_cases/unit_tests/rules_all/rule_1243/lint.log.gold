@@ -1,0 +1,48 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < i >.
+Violated 1105: Integer "test.i" is used in concatenation/directly.
+Violated 1127: signal name "i" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "i" is detected.
+Violated 1108: variable name "i" does not match to regular expression v_.*.
+Violated 1187: wire "i" should be explicitly declared.
+Violated 1198: integer type object "i" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1009: Parameter "loopcount" cannot be in LOWER CASE.
+Violated 1042: parameter name "loopcount" does not match to regular expression p_.*.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration   input [loopcount:0] a,b; 
+Violated 1255: comment is not found following port declaration   output [loopcount:0] y; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1243_Loop_Variable_Changed_in_For_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end i. File: 1243_Loop_Variable_Changed_in_For_Loop.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1243_Loop_Variable_Changed_in_For_Loop.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1243_Loop_Variable_Changed_in_For_Loop.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of  module test (a,b,y); 
+Violated 1269: comment should be on <     end >
+Violated 1269: comment should be on <   end >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < loopcount = 3 > in module or interface < test >
+Violated 1319: memory <  y > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+Violated 1060: While/for Statement Not Synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1243: loop variable < i > should not be modified inside the loop.
+Violated 1254: For loop Detected on < test >.
+Violated 1250: wait statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 47.

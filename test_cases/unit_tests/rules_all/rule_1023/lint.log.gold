@@ -1,0 +1,63 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1124: Combinational Path Between PI "y" and PO "d" without Being Registered.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y >.
+Violated 1124: Combinational Path Between PI "y" and PO "d" without Being Registered.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s5 >.
+Violated 1124: Combinational Path Between PI "a" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "d" without Being Registered.
+Violated 1127: signal name "_s5" does not match to regular expression s_.
+Violated 1187: wire "_s5" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s5" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1124: Combinational Path Between PI "c" and PO "d" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "d" without Being Registered.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s7" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s10 >.
+Violated 1127: signal name "_s10" does not match to regular expression s_.
+Violated 1187: wire "_s10" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s11 >.
+Violated 1127: signal name "_s11" does not match to regular expression s_.
+Violated 1187: wire "_s11" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s11" is detected.
+Violated 1175: gate name "_s6" does not match to regular expression gate_.
+Violated 1176: Implicit and Confusing Operator Precedence on "a".
+Violated 1175: gate name "_s8" does not match to regular expression gate_.
+Violated 1175: gate name "_s16" does not match to regular expression gate_.
+Violated 1179: Tri-state ouput signal name "d" does not match to regular expression .*_z.
+Violated 1190: tri-state buffer "d" should not be mixed with other combinational logics in the module "test".
+Violated 1193: tri-state logic is inferred on signal "d".
+Violated 1023: tri-state enable port should not be connect to an expression.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input a, b, c, y; 
+Violated 1255: comment is not found following port declaration output d; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s5. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s10. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s11. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 0
+Violated 1328: the lines of a source file < 1023_Special_Type_Port_Connected_to_an_Expression.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 62.

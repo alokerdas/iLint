@@ -1,0 +1,26 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1099: Signal "y<3>" Driven By Constant.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1125: Non-constant Divisor "b<2>".
+Violated 1126: Non-constant Divident "a<2>".
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input [2:0] a, b; 
+Violated 1255: comment is not found following port declaration output [3:0] y; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1126_Non-constant_Dividend.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1126_Non-constant_Dividend.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a, b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  y ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  y > should not be used because it is not synthesizable.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 25.

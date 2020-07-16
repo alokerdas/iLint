@@ -1,0 +1,3 @@
+Violated 1001: Signals "A" cannot be in UPPER CASE. File: 1001_Signal_Name_Case.v , Line: 2
+Violated 1001: Signals "C" cannot be in UPPER CASE. File: 1001_Signal_Name_Case.v , Line: 3
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

@@ -1,0 +1,363 @@
+Violated 1301: no Escape should be used on < ck >.
+Violated 1127: signal name "ck" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < fin >.
+Violated 1112: Nontop Module Tri-state "_s6" Detected.
+Violated 1127: signal name "fin" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < fout >.
+Violated 1127: signal name "fout" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1284: The input of register "fout" comes from more than one clock source.
+Violated 1301: no Escape should be used on < res >.
+Violated 1127: signal name "res" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < sel >.
+Violated 1127: signal name "sel" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < zo >.
+Violated 1004: Signals smp.zo is driven by 3 devices.
+Violated 1004: Signals smp.zo is driven by 3 devices.
+Violated 1004: Signals smp.zo is driven by 3 devices.
+Violated 1004: Signals smp.zo is driven by 3 devices.
+Violated 1127: signal name "zo" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s6 >.
+Violated 1004: Signals smp._s6 is driven by 3 devices.
+Violated 1112: Nontop Module Tri-state "_s6" Detected.
+Violated 1127: signal name "_s6" does not match to regular expression s_.
+Violated 1187: wire "_s6" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1004: Signals smp._s7 is driven by 2 devices.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s7" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s12 >.
+Violated 1004: Signals smp._s12 is driven by 2 devices.
+Violated 1099: Signal "_s12<0>" Driven By Constant.
+Violated 1099: Signal "_s12<0>" Driven By Constant.
+Violated 1099: Signal "_s12<0>" Driven By Constant.
+Violated 1099: Signal "_s12<0>" Driven By Constant.
+Violated 1103: Signal "_s12<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s12<0>" with no Load.
+Violated 1127: signal name "_s12" does not match to regular expression s_.
+Violated 1187: wire "_s12" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s12" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s14 >.
+Violated 1127: signal name "_s14" does not match to regular expression s_.
+Violated 1187: wire "_s14" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s14" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s19 >.
+Violated 1004: Signals smp._s19 is driven by 2 devices.
+Violated 1099: Signal "_s19<0>" Driven By Constant.
+Violated 1099: Signal "_s19<0>" Driven By Constant.
+Violated 1099: Signal "_s19<0>" Driven By Constant.
+Violated 1099: Signal "_s19<0>" Driven By Constant.
+Violated 1103: Signal "_s19<0>" Stuck at Logic 0.
+Violated 1104: Signal "_s19<0>" with no Load.
+Violated 1127: signal name "_s19" does not match to regular expression s_.
+Violated 1187: wire "_s19" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s19" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1289: Signal smp._s19 Assigned to 'x'.
+Violated 1289: Signal smp._s19 Assigned to 'x'.
+Violated 1289: Signal smp._s19 Assigned to 'x'.
+Violated 1289: Signal smp._s19 Assigned to 'x'.
+Violated 1301: no Escape should be used on < _s21 >.
+Violated 1112: Nontop Module Tri-state "_s6" Detected.
+Violated 1127: signal name "_s21" does not match to regular expression s_.
+Violated 1187: wire "_s21" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s21" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s23 >.
+Violated 1127: signal name "_s23" does not match to regular expression s_.
+Violated 1187: wire "_s23" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s24 >.
+Violated 1127: signal name "_s24" does not match to regular expression s_.
+Violated 1187: wire "_s24" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s24" is detected.
+Violated 1301: no Escape should be used on < _s28 >.
+Violated 1004: Signals smp._s28 is driven by 3 devices.
+Violated 1112: Nontop Module Tri-state "_s6" Detected.
+Violated 1127: signal name "_s28" does not match to regular expression s_.
+Violated 1187: wire "_s28" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s30 >.
+Violated 1004: Signals smp._s30 is driven by 3 devices.
+Violated 1004: Signals smp._s30 is driven by 2 devices.
+Violated 1004: Signals smp._s30 is driven by 2 devices.
+Violated 1004: Signals smp._s30 is driven by 2 devices.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1109: Signal "_s31<0>" Stuck at Logic 1.
+Violated 1105: Integer "smp._s30" is used in concatenation/directly.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1127: signal name "_s30" does not match to regular expression s_.
+Violated 1106: Integer variable "_s30" should be named in CASE_LOWER case.
+Violated 1108: variable name "_s30" does not match to regular expression v_.*.
+Violated 1187: wire "_s30" should be explicitly declared.
+Violated 1198: integer type object "_s30" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s31 >.
+Violated 1004: Signals smp._s31 is driven by 3 devices.
+Violated 1004: Signals smp._s31 is driven by 2 devices.
+Violated 1004: Signals smp._s31 is driven by 2 devices.
+Violated 1004: Signals smp._s31 is driven by 2 devices.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1099: Signal "_s31<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1109: Signal "_s31<0>" Stuck at Logic 1.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1104: Signal "_s31<0>" with no Load.
+Violated 1127: signal name "_s31" does not match to regular expression s_.
+Violated 1187: wire "_s31" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s31" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s33 >.
+Violated 1004: Signals smp._s33 is driven by 3 devices.
+Violated 1004: Signals smp._s33 is driven by 2 devices.
+Violated 1004: Signals smp._s33 is driven by 2 devices.
+Violated 1004: Signals smp._s33 is driven by 2 devices.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1103: Signal "_s34<0>" Stuck at Logic 0.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1127: signal name "_s33" does not match to regular expression s_.
+Violated 1187: wire "_s33" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s34 >.
+Violated 1004: Signals smp._s34 is driven by 3 devices.
+Violated 1004: Signals smp._s34 is driven by 2 devices.
+Violated 1004: Signals smp._s34 is driven by 2 devices.
+Violated 1004: Signals smp._s34 is driven by 2 devices.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1099: Signal "_s34<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1103: Signal "_s34<0>" Stuck at Logic 0.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1104: Signal "_s34<0>" with no Load.
+Violated 1127: signal name "_s34" does not match to regular expression s_.
+Violated 1187: wire "_s34" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s34" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s36 >.
+Violated 1004: Signals smp._s36 is driven by 3 devices.
+Violated 1004: Signals smp._s36 is driven by 2 devices.
+Violated 1004: Signals smp._s36 is driven by 2 devices.
+Violated 1004: Signals smp._s36 is driven by 2 devices.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1103: Signal "_s37<0>" Stuck at Logic 0.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1127: signal name "_s36" does not match to regular expression s_.
+Violated 1187: wire "_s36" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s37 >.
+Violated 1004: Signals smp._s37 is driven by 3 devices.
+Violated 1004: Signals smp._s37 is driven by 2 devices.
+Violated 1004: Signals smp._s37 is driven by 2 devices.
+Violated 1004: Signals smp._s37 is driven by 2 devices.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1099: Signal "_s37<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1103: Signal "_s37<0>" Stuck at Logic 0.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1104: Signal "_s37<0>" with no Load.
+Violated 1127: signal name "_s37" does not match to regular expression s_.
+Violated 1187: wire "_s37" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s37" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s39 >.
+Violated 1004: Signals smp._s39 is driven by 3 devices.
+Violated 1004: Signals smp._s39 is driven by 2 devices.
+Violated 1004: Signals smp._s39 is driven by 2 devices.
+Violated 1004: Signals smp._s39 is driven by 2 devices.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1103: Signal "_s40<0>" Stuck at Logic 0.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1127: signal name "_s39" does not match to regular expression s_.
+Violated 1187: wire "_s39" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1289: Signal smp._s39 Assigned to 'x'.
+Violated 1289: Signal smp._s39 Assigned to 'x'.
+Violated 1289: Signal smp._s39 Assigned to 'x'.
+Violated 1289: Signal smp._s39 Assigned to 'x'.
+Violated 1301: no Escape should be used on < _s40 >.
+Violated 1004: Signals smp._s40 is driven by 3 devices.
+Violated 1004: Signals smp._s40 is driven by 2 devices.
+Violated 1004: Signals smp._s40 is driven by 2 devices.
+Violated 1004: Signals smp._s40 is driven by 2 devices.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1099: Signal "_s40<0>" Driven By Constant.
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1035: Insufficiant Index "2".
+Violated 1103: Signal "_s40<0>" Stuck at Logic 0.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1121: "sel<1>" not a constant in bits selection.
+Violated 1104: Signal "_s40<0>" with no Load.
+Violated 1127: signal name "_s40" does not match to regular expression s_.
+Violated 1187: wire "_s40" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s40" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1289: Signal smp._s40 Assigned to 'x'.
+Violated 1289: Signal smp._s40 Assigned to 'x'.
+Violated 1289: Signal smp._s40 Assigned to 'x'.
+Violated 1289: Signal smp._s40 Assigned to 'x'.
+Violated 1043: The length of parameter "D1" is unconventional and should be in the range from 3 to 16.
+Violated 1042: parameter name "D1" does not match to regular expression p_.*.
+Violated 1175: gate name "_s8" does not match to regular expression gate_.
+Violated 1139: Combinational Logic Found in Sequential "ck" Block.
+Violated 1175: gate name "_s43" does not match to regular expression gate_.
+Violated 1003: Clock signals "smp.ck" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Async" Reset dtected.
+Violated 1166: active low signal name "res" does not match to regular expression .*_n.
+Violated 1168: register ouput name "fout" does not match to regular expression .*_r.
+Violated 1152: reset signal name "res" does not match to regular expression rst_.
+Violated 1147: State register name "fout" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s6" not in library.
+Violated 1195: asynchronous signal name "res" does not match to regular expression .*_a.
+Violated 1197: active low reset signal name "res" does not follow the regular expression rst_.*_n.
+Violated 1199: next register name "_s6" does not match to regular expression .*_ns.
+Violated 1278: Don't use complex expression in the condition expression for asynchronous set or reset.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1194: mux inferred on signal  "zo<0>".
+Violated 1194: mux inferred on signal  "zo<1>".
+Violated 1194: mux inferred on signal  "zo<2>".
+Violated 1194: mux inferred on signal  "zo<3>".
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input[1:0] sel; 
+Violated 1255: comment is not found following port declaration  input        res, ck, fin; 
+Violated 1255: comment is not found following port declaration  output[3:0] zo; 
+Violated 1255: comment is not found following port declaration  output        fout; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end fin. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end fout. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end res. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sel. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end zo. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s6. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s12. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s14. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s19. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s21. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s23. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s24. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s28. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s30. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s31. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s33. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s34. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s36. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s37. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s39. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s40. File: 1289_Signal_Assigned_to_x.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1289_Signal_Assigned_to_x.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1310: synopsys template directive should be used before parameter or in place of   reg fout; 
+Violated 1315: literal numbers should not be used in specifying a range (in object "  sel ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  zo ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  zo ").
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1312: use localparam instead of parameter to declare < D1=1 > in module or interface < smp >
+Violated 1313: port < fin > should be declared by using explicit name.
+Violated 1319: memory <  zo > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 362.

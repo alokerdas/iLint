@@ -1,0 +1,3 @@
+Violated 1072: Delay should not be used in a non-blocking assignment. File: 1072_Delay_in_Nonblocking_Assignment.v , Line: 9
+Violated 1072: Delay should not be used in a non-blocking assignment. File: 1072_Delay_in_Nonblocking_Assignment.v , Line: 12
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

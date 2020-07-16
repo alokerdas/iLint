@@ -1,0 +1,53 @@
+Violated 1001: Signals "smp.A" cannot be in UPPER CASE.
+Violated 1124: Combinational Path Between PI "A" and PO "Z" without Being Registered.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1001: Signals "smp.B" cannot be in UPPER CASE.
+Violated 1124: Combinational Path Between PI "B" and PO "Z" without Being Registered.
+Violated 1127: signal name "B" does not match to regular expression s_.
+Violated 1001: Signals "smp.Y" cannot be in UPPER CASE.
+Violated 1127: signal name "Y" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1001: Signals "smp.Z" cannot be in UPPER CASE.
+Violated 1097: violation as Direct Connection from Input "B" to Output "Z".
+Violated 1124: Combinational Path Between PI "A" and PO "Z" without Being Registered.
+Violated 1127: signal name "Z" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s9 >.
+Violated 1124: Combinational Path Between PI "B" and PO "Y" without Being Registered.
+Violated 1127: signal name "_s9" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s9" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s17" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "smp._s9".
+Violated 1175: gate name "_s0" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "smp.A".
+Violated 1175: gate name "_s8" does not match to regular expression gate_.
+Violated 1177: reduction operation should not be performed on single-bit signal "smp.B".
+Violated 1176: Implicit and Confusing Operator Precedence on "B".
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input A,B; 
+Violated 1255: comment is not found following port declaration output Y,Z; 
+Violated 1257: signals should be declared one per line with a comment at the end B. File: 1303_Nested_Text_Macro.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end Y. File: 1303_Nested_Text_Macro.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end Z. File: 1303_Nested_Text_Macro.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s9. File: 1303_Nested_Text_Macro.v , Line: 0
+Violated 1265: Define Statements Should be Put into One File.
+Violated 1304: Macro name < macro1 1 > must be upper case
+Violated 1304: Macro name < macro2 `macro1 > must be upper case
+Violated 1305: comment not found on < `define macro1 1 >.
+Violated 1305: comment not found on < `define macro1 1 >.
+Violated 1305: comment not found on < `define macro2 `macro1 >.
+Violated 1305: comment not found on < `define macro2 `macro1 >.
+Violated 1307: no comment is found before always
+Violated 1308: define is not allowed for defining constants < 1 >.
+Violated 1308: define is not allowed for defining constants < `macro1 >.
+Violated 1269: comment should be on < endmodule >
+Violated 1303: Nested text macros < macro2  > found
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 52.

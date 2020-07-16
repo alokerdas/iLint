@@ -1,0 +1,21 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration input A; 
+Violated 1265: Define Statements Should be Put into One File.
+Violated 1304: Macro name < bytesize 1 > must be upper case
+Violated 1304: Macro name < var_nand(dly) nand #dly > must be upper case
+Violated 1304: Macro name < wordsize 8 > must be upper case
+Violated 1305: comment not found on < `define bytesize 1 >.
+Violated 1305: comment not found on < `define bytesize 1 >.
+Violated 1305: comment not found on < `define var_nand(dly) nand #dly >.
+Violated 1305: comment not found on < `define var_nand(dly) nand #dly >.
+Violated 1305: comment not found on < `define wordsize 8 >.
+Violated 1305: comment not found on < `define wordsize 8 >.
+Violated 1307: no comment is found before always
+Violated 1308: define is not allowed for defining constants < 1 >.
+Violated 1308: define is not allowed for defining constants < 8 >.
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 20.

@@ -1,0 +1,2 @@
+Violated 1002: Signals "a1234567890123456" cannot be greater than "10" characters. File: 1002_Signal_Name_Too_Long.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

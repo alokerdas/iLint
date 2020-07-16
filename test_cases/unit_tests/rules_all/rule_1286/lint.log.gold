@@ -1,0 +1,52 @@
+Violated 1001: Signals "top.B" cannot be in UPPER CASE.
+Violated 1004: Signals top.B is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "top.i_test.a".
+Violated 1005: Bit mismatched Signal is "top.i_test.in1".
+Violated 1127: signal name "B" does not match to regular expression s_.
+Violated 1185: descending bit order and zero bound are not used for range declaration of "B".
+Violated 1187: wire "B" should be explicitly declared.
+Violated 1286: Bus direction of "top.B" is not consistent with "top.i_test.in1".
+Violated 1286: Bus direction of "top.B" is not consistent with "top.i_test.in1".
+Violated 1286: Bus direction of "top.B" is not consistent with "top.i_test.in1".
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1235: Timescale Missing on Module < top >.
+Violated 1255: comment is not found following port declaration input [3:6] in1; 
+Violated 1255: comment is not found following port declaration input a; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  B ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in1 >.
+Violated 1127: signal name "in1" does not match to regular expression s_.
+Violated 1185: descending bit order and zero bound are not used for range declaration of "in1".
+Violated 1185: descending bit order and zero bound are not used for range declaration of "in1".
+Violated 1286: Bus direction of "top.i_test.in1" is not consistent with "top.B".
+Violated 1286: Bus direction of "top.i_test.in1" is not consistent with "top.B".
+Violated 1286: Bus direction of "top.i_test.in1" is not consistent with "top.B".
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1196: module instance name "i_test" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration input [3:6] in1; 
+Violated 1255: comment is not found following port declaration input a; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end in1. File: 1286_Bus_Direction_Consist_on_Port_Binding.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  in1 ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  B ").
+Violated 1317: gate port is deliberately not connected on Module < test i_test >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < in1 > should be declared by using explicit name.
+Violated 1318: gate port is not connected on module < top.i_test > .
+Violated 1322: port < B > and its connection < a > should be similar.
+Violated 1322: port < (null) > and its connection < in1 > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 51.

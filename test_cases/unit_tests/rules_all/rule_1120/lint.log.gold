@@ -1,0 +1,32 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < rst >.
+Violated 1127: signal name "rst" does not match to regular expression s_.
+Violated 1120: Both Edge "clk" and Non-edge "rst" Expressions in the Sensitivity List.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk, rst; 
+Violated 1255: comment is not found following port declaration  input d; 
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1120_Edge_No_edge.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1120_Edge_No_edge.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst. File: 1120_Edge_No_edge.v , Line: 0
+Violated 1328: the lines of a source file < 1120_Edge_No_edge.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clk > ......
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1077: variable "q" is assigned in another assignment in same time point.
+Violated 1081: signal "d" is being read asynchronously. It may cause simulation-synthesis mismatch.
+TOTAL NUMBER OF VIOLATIONS ARE: 31.

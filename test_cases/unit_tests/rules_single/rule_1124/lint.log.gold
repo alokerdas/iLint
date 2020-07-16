@@ -1,0 +1,4 @@
+Violated 1124: Combinational Path Between PI "a" and PO "c" without Being Registered. File: 1124_CombinationalPathBetweenPIandPO.v , Line: 2
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered. File: 1124_CombinationalPathBetweenPIandPO.v , Line: 3
+Violated 1124: Combinational Path Between PI "k" and PO "c" without Being Registered. File: 1124_CombinationalPathBetweenPIandPO.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 3.

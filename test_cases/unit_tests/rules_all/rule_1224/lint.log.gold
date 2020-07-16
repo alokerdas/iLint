@@ -1,0 +1,50 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1005: Bit mismatched Signal is "test._s5".
+Violated 1124: Combinational Path Between PI "a" and PO "result" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "result" without Being Registered.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1124: Combinational Path Between PI "a" and PO "result" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "result" without Being Registered.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < result >.
+Violated 1097: violation as Direct Connection from Input "b" to Output "result".
+Violated 1099: Signal "result<3>" Driven By Constant.
+Violated 1124: Combinational Path Between PI "a" and PO "result" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "result" without Being Registered.
+Violated 1127: signal name "result" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s5 >.
+Violated 1005: Bit mismatched Signal is "test.a".
+Violated 1124: Combinational Path Between PI "a" and PO "result" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "result" without Being Registered.
+Violated 1127: signal name "_s5" does not match to regular expression s_.
+Violated 1187: wire "_s5" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s5" is detected.
+Violated 1175: gate name "_s7" does not match to regular expression gate_.
+Violated 1224: bit width of operand "a(3)" does not match that of operand "b(4)" in bitwise operation.
+Violated 1175: gate name "_s8" does not match to regular expression gate_.
+Violated 1224: bit width of operand "a(3)" does not match that of operand "b(4)" in bitwise operation.
+Violated 1175: gate name "_s9" does not match to regular expression gate_.
+Violated 1224: bit width of operand "a(3)" does not match that of operand "b(4)" in bitwise operation.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input [2:0] a; 
+Violated 1255: comment is not found following port declaration  input [3:0] b; 
+Violated 1255: comment is not found following port declaration  output [3:0] result; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1224_Bit_WidthMismatchinBitwiseOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end result. File: 1224_Bit_WidthMismatchinBitwiseOperation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s5. File: 1224_Bit_WidthMismatchinBitwiseOperation.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  result ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  result ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  result > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 49.

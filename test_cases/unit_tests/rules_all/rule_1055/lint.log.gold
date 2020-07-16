@@ -1,0 +1,242 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1237: the fan-out number of signal < a > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < b >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1237: the fan-out number of signal < b > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < c >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1187: wire "c" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1237: the fan-out number of signal < c > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "d" is detected.
+Violated 1187: wire "d" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < e >.
+Violated 1004: Signals top.e is driven by 2 devices.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "e" does not match to regular expression s_.
+Violated 1187: wire "e" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s0 >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "_s0" does not match to regular expression s_.
+Violated 1187: wire "_s0" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s2 >.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "_s2" does not match to regular expression s_.
+Violated 1187: wire "_s2" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s5 >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "_s5" does not match to regular expression s_.
+Violated 1187: wire "_s5" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s10 >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "_s10" does not match to regular expression s_.
+Violated 1187: wire "_s10" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s12 >.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "_s12" does not match to regular expression s_.
+Violated 1187: wire "_s12" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1176: Implicit and Confusing Operator Precedence on "a".
+Violated 1176: Implicit and Confusing Operator Precedence on "a".
+Violated 1175: gate name "_s3" does not match to regular expression gate_.
+Violated 1175: gate name "_s6" does not match to regular expression gate_.
+Violated 1175: gate name "_s8" does not match to regular expression gate_.
+Violated 1175: gate name "_s11" does not match to regular expression gate_.
+Violated 1175: gate name "_s13" does not match to regular expression gate_.
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output e; 
+Violated 1255: comment is not found following port declaration  input a,b,c; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end e. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s0. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s2. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s5. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s10. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s12. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1055_Matching_Release_Statement_Not_Found.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < a > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < a > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < b >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < b > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < b > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < c >.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < c > should not share the same name with another object in the outer scope.
+Violated 1237: the fan-out number of signal < c > is < 6 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < e >.
+Violated 1004: Signals top.u_test_0.e is driven by 2 devices.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "c" and PO "e" without Being Registered.
+Violated 1127: signal name "e" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < e > should not share the same name with another object in the outer scope.
+Violated 1175: gate name "and1<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "and1<0>" Found.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1196: module instance name "u_test_0" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  output e; 
+Violated 1255: comment is not found following port declaration  input a,b,c; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end e. File: 1055_Matching_Release_Statement_Not_Found.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1055_Matching_Release_Statement_Not_Found.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <  test u_test_0 >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1318: gate port is not connected on module < top.u_test_0 > .
+Violated 1322: port < d > and its connection < e > should be similar.
+Violated 1238: 
+Violated 1239: 
+Violated 1089: Initial Block Not Synthesizable.
+Violated 1052:       "#10" Delay Control Ignored by Synthesis
+Violated 1052:       "#10" Delay Control Ignored by Synthesis
+Violated 1053: System Task Call "$finish;" Not Synthesizable.
+Violated 1054: Force Statement Not Synthesizable.
+Violated 1054: Force Statement Not Synthesizable.
+Violated 1055: Matching Release Not Found.
+Violated 1055: Matching Release Not Found.
+Violated 1055: Matching Release Not Found.
+Violated 1055: Matching Release Not Found.
+Violated 1055: Matching Release Not Found.
+Violated 1059: Signal "d" Has Never Been Refferenced.
+Violated 1058: Signal "_s2" Has Never Been Assigned.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1086: A negative value is assigned to an integer.
+Violated 1205: procedural continuous assign statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 241.

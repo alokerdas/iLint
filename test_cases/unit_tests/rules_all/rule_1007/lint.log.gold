@@ -1,0 +1,45 @@
+Violated 1001: Signals "Test.I1" cannot be in UPPER CASE.
+Violated 1007: Tristate Buffer is not properly defined on "o".
+Violated 1124: Combinational Path Between PI "i2" and PO "o" without Being Registered.
+Violated 1124: Combinational Path Between PI "e" and PO "o" without Being Registered.
+Violated 1127: signal name "I1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < e >.
+Violated 1124: Combinational Path Between PI "I1" and PO "o" without Being Registered.
+Violated 1124: Combinational Path Between PI "i2" and PO "o" without Being Registered.
+Violated 1124: Combinational Path Between PI "e" and PO "o" without Being Registered.
+Violated 1127: signal name "e" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < i2 >.
+Violated 1124: Combinational Path Between PI "I1" and PO "o" without Being Registered.
+Violated 1124: Combinational Path Between PI "i2" and PO "o" without Being Registered.
+Violated 1124: Combinational Path Between PI "e" and PO "o" without Being Registered.
+Violated 1127: signal name "i2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < o >.
+Violated 1004: Signals Test.o is driven by 2 devices.
+Violated 1007: Tristate Buffer is not properly defined on "o".
+Violated 1124: Combinational Path Between PI "I1" and PO "o" without Being Registered.
+Violated 1124: Combinational Path Between PI "i2" and PO "o" without Being Registered.
+Violated 1124: Combinational Path Between PI "e" and PO "o" without Being Registered.
+Violated 1127: signal name "o" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s5" does not match to regular expression gate_.
+Violated 1179: Tri-state ouput signal name "o" does not match to regular expression .*_z.
+Violated 1193: tri-state logic is inferred on signal "o".
+Violated 1138: module name "Test" does not match to regular expression .*_module.
+Violated 1137: module "Test" should be named in CASE_LOWER case.
+Violated 1255: comment is not found following port declaration   input I1, i2, e; 
+Violated 1255: comment is not found following port declaration   output o; 
+Violated 1255: comment is not found following port declaration   input e1,i22; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end e. File: 1007_tristate_not_properly_defined.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end i2. File: 1007_tristate_not_properly_defined.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end o. File: 1007_tristate_not_properly_defined.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 44.

@@ -1,0 +1,34 @@
+Violated 1001: Signals "test.WE" cannot be in UPPER CASE.
+Violated 1124: Combinational Path Between PI "test_mode" and PO "WE_mem" without Being Registered.
+Violated 1124: Combinational Path Between PI "WE" and PO "WE_mem" without Being Registered.
+Violated 1127: signal name "WE" does not match to regular expression s_.
+Violated 1001: Signals "test.WE_mem" cannot be in UPPER CASE.
+Violated 1097: violation as Direct Connection from Input "WE" to Output "WE_mem".
+Violated 1124: Combinational Path Between PI "test_mode" and PO "WE_mem" without Being Registered.
+Violated 1124: Combinational Path Between PI "WE" and PO "WE_mem" without Being Registered.
+Violated 1127: signal name "WE_mem" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1048: write enable signal "test.WE_mem" for memories should be disabled in the test mode.
+Violated 1301: no Escape should be used on < test_mode >.
+Violated 1124: Combinational Path Between PI "test_mode" and PO "WE_mem" without Being Registered.
+Violated 1124: Combinational Path Between PI "WE" and PO "WE_mem" without Being Registered.
+Violated 1127: signal name "test_mode" does not match to regular expression s_.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input test_mode; 
+Violated 1255: comment is not found following port declaration  input WE; 
+Violated 1255: comment is not found following port declaration  output WE_mem; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end WE_mem. File: 1048_Write_Enable_Signals_for_Memory.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end test_mode. File: 1048_Write_Enable_Signals_for_Memory.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <  input test_mode;
+ >
+Violated 1317: gate port is deliberately not connected on Module <  assign WE_mem = test_mode | WE;
+ >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 31.

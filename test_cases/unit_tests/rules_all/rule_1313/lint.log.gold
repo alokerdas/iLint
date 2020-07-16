@@ -1,0 +1,36 @@
+Violated 1301: no Escape should be used on < carry_in >.
+Violated 1127: signal name "carry_in" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < carry_out >.
+Violated 1127: signal name "carry_out" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "carry_out" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < in1 >.
+Violated 1127: signal name "in1" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < in2 >.
+Violated 1127: signal name "in2" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < sum >.
+Violated 1127: signal name "sum" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "sum" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "adder0" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration output sum,carry_out; 
+Violated 1255: comment is not found following port declaration input in1,in2,carry_in; 
+Violated 1257: signals should be declared one per line with a comment at the end carry_out. File: 1313_Implicit_Port_Declaration.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end in1. File: 1313_Implicit_Port_Declaration.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end in2. File: 1313_Implicit_Port_Declaration.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sum. File: 1313_Implicit_Port_Declaration.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1313: port < carry_in > should be declared by using explicit name.
+Violated 1313: port < carry_in > should be declared by using explicit name.
+Violated 1313: port < carry_out > should be declared by using explicit name.
+Violated 1313: port < in1 > should be declared by using explicit name.
+Violated 1313: port < in2 > should be declared by using explicit name.
+Violated 1313: port < sum > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 35.

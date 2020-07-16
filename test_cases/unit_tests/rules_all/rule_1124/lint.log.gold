@@ -1,0 +1,42 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1124: Combinational Path Between PI "k" and PO "c" without Being Registered.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < k >.
+Violated 1124: Combinational Path Between PI "k" and PO "c" without Being Registered.
+Violated 1127: signal name "k" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s0 >.
+Violated 1124: Combinational Path Between PI "a" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "k" and PO "c" without Being Registered.
+Violated 1127: signal name "_s0" does not match to regular expression s_.
+Violated 1187: wire "_s0" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1176: Implicit and Confusing Operator Precedence on "a".
+Violated 1175: gate name "_s4" does not match to regular expression gate_.
+Violated 1224: bit width of operand "a(1)" does not match that of operand "k(3)" in bitwise operation.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input a; 
+Violated 1255: comment is not found following port declaration  input b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1255: comment is not found following port declaration  input [2:0] k; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1124_CombinationalPathBetweenPIandPO.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1124_CombinationalPathBetweenPIandPO.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end k. File: 1124_CombinationalPathBetweenPIandPO.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s0. File: 1124_CombinationalPathBetweenPIandPO.v , Line: 0
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  k ").
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 41.

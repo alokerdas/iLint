@@ -1,0 +1,3 @@
+Violated 1037: Inout port "io" should be input only in shift. File: 1037_Inout_as_Input_Only_in_Shift.v , Line: 14
+Violated 1049: Case Like If Else. File: 1037_Inout_as_Input_Only_in_Shift.v , Line: 9
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

@@ -1,0 +1,45 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < cin >.
+Violated 1127: signal name "cin" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "cin" is detected.
+Violated 1187: wire "cin" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < sum >.
+Violated 1127: signal name "sum" does not match to regular expression s_.
+Violated 1187: wire "sum" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1123: UDP declaration "test" should not be used because it is not synthesizable.
+Violated 1309: user defined primitive < test > should be named in lower case.
+Violated 1175: gate name "u_test_0" does not match to regular expression gate_.
+Violated 1178: Gate Instance "u_test_0" Found.
+Violated 1024: UDP instance "u_test_0" should not be used because it is not synthesizable.
+Violated 1138: module name "top" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output sum; 
+Violated 1255: comment is not found following port declaration  input cin,a,b; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1024_UDP_Instance_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end cin. File: 1024_UDP_Instance_Not_Synthesizable.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end sum. File: 1024_UDP_Instance_Not_Synthesizable.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1024_UDP_Instance_Not_Synthesizable.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on <  endtable >
+Violated 1269: comment should be on < endprimitive >
+Violated 1313: port < cin > should be declared by using explicit name.
+Violated 1313: port < sum > should be declared by using explicit name.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 44.

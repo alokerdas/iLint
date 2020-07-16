@@ -1,0 +1,189 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1004: Signals test.c is driven by 2 devices.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < count >.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1004: Signals test.count is driven by 2 devices.
+Violated 1127: signal name "count" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s5 >.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1004: Signals test._s5 is driven by 3 devices.
+Violated 1127: signal name "_s5" does not match to regular expression s_.
+Violated 1187: wire "_s5" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s6 >.
+Violated 1127: signal name "_s6" does not match to regular expression s_.
+Violated 1187: wire "_s6" should be explicitly declared.
+Violated 1301: no Escape should be used on < _s7 >.
+Violated 1127: signal name "_s7" does not match to regular expression s_.
+Violated 1187: wire "_s7" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s7" is detected.
+Violated 1301: no Escape should be used on < _s9 >.
+Violated 1004: Signals test._s9 is driven by 2 devices.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1099: Signal "_s9<0>" Driven By Constant.
+Violated 1109: Signal "_s9<0>" Stuck at Logic 1.
+Violated 1104: Signal "_s9<0>" with no Load.
+Violated 1127: signal name "_s9" does not match to regular expression s_.
+Violated 1187: wire "_s9" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s9" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s11 >.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1004: Signals test._s11 is driven by 3 devices.
+Violated 1127: signal name "_s11" does not match to regular expression s_.
+Violated 1187: wire "_s11" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s11" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s14 >.
+Violated 1004: Signals test._s14 is driven by 3 devices.
+Violated 1127: signal name "_s14" does not match to regular expression s_.
+Violated 1187: wire "_s14" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s15 >.
+Violated 1004: Signals test._s15 is driven by 3 devices.
+Violated 1127: signal name "_s15" does not match to regular expression s_.
+Violated 1187: wire "_s15" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s15" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s16" does not match to regular expression gate_.
+Violated 1176: Implicit and Confusing Operator Precedence on "a".
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1031: "Sync" Reset dtected.
+Violated 1168: register ouput name "count<8>" does not match to regular expression .*_r.
+Violated 1168: register ouput name "c" does not match to regular expression .*_r.
+Violated 1152: reset signal name "c" does not match to regular expression rst_.
+Violated 1147: State register name "count<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<1>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<2>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<3>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<4>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<5>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<6>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<7>" does not match to regular expression .*_cs.
+Violated 1147: State register name "count<8>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s5<0>" not in library.
+Violated 1191: register inferred on signal "_s5<1>" not in library.
+Violated 1191: register inferred on signal "_s5<2>" not in library.
+Violated 1191: register inferred on signal "_s5<3>" not in library.
+Violated 1191: register inferred on signal "_s5<4>" not in library.
+Violated 1191: register inferred on signal "_s5<5>" not in library.
+Violated 1191: register inferred on signal "_s5<6>" not in library.
+Violated 1191: register inferred on signal "_s5<7>" not in library.
+Violated 1191: register inferred on signal "_s5<8>" not in library.
+Violated 1199: next register name "_s5<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<2>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<3>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<4>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<5>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<6>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<7>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s5<8>" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1226: possible loss of carry in addition left operand and right operand.
+Violated 1272: Arithmetic/Relational Operations Sharing with Large Operand Not Allowed. It Exceed Limit 8 Bit.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1102: more than one clock signal in a module.
+Violated 1168: register ouput name "count<8>" does not match to regular expression .*_r.
+Violated 1168: register ouput name "c" does not match to regular expression .*_r.
+Violated 1163: Reset "c" Driven by Sequential Logic.
+Violated 1147: State register name "c" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s15" not in library.
+Violated 1199: next register name "_s15" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clk" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clk, a, b; 
+Violated 1255: comment is not found following port declaration output [8:0] count; 
+Violated 1255: comment is not found following port declaration output c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end count. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s5. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s6. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s7. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s9. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s11. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s14. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s15. File: 1163_Reset_Driven_by_Sequential_Logic.v , Line: 0
+Violated 1324: more than one port is declared in one line. c = a & b; //"c" is output of registe, warning here
+
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1163_Reset_Driven_by_Sequential_Logic.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  count ").
+Violated 1269: comment should be on < end >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  count > should not be used because it is not synthesizable.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 187.

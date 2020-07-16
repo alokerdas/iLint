@@ -1,0 +1,17 @@
+Violated 1138: module name "sub" does not match to regular expression .*_module.
+Violated 1174: module "sub" is empty.
+Violated 1235: Timescale Missing on Module < sub >.
+Violated 1255: comment is not found following port declaration input clk, i; 
+Violated 1255: comment is not found following port declaration output o; 
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1311: Multiline command should not be used here /*Module
+
+Violated 1311: Multiline command should not be used here module sub(clk, i, o);/*sub module*/ //*******warning here*******
+
+Violated 1317: gate port is deliberately not connected on Module < **sub
+ >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 13.

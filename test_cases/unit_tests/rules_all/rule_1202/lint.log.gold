@@ -1,0 +1,65 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1105: Integer "test.a" is used in concatenation/directly.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1108: variable name "a" does not match to regular expression v_.*.
+Violated 1187: wire "a" should be explicitly declared.
+Violated 1198: integer type object "a" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1105: Integer "test.b" is used in concatenation/directly.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1108: variable name "b" does not match to regular expression v_.*.
+Violated 1187: wire "b" should be explicitly declared.
+Violated 1198: integer type object "b" should not be used.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "q" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s3 >.
+Violated 1127: signal name "_s3" does not match to regular expression s_.
+Violated 1187: wire "_s3" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s3" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1225: possible loss value between left operand and right operand in Multiplication "_s3".
+Violated 1272: Arithmetic/Relational Operations Sharing with Large Operand Not Allowed. It Exceed Limit 8 Bit.
+Violated 1273: Do not infer large multiplier by the operand "test.a" whose bit-width is larger than 16.
+Violated 1120: Both Edge "clk" and Non-edge "reset" Expressions in the Sensitivity List.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1255: comment is not found following port declaration  input clk, reset, d; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1202_Operator_not_Allowed.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1202_Operator_not_Allowed.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1202_Operator_not_Allowed.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1202_Operator_not_Allowed.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1202_Operator_not_Allowed.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s3. File: 1202_Operator_not_Allowed.v , Line: 0
+Violated 1328: the lines of a source file < 1202_Operator_not_Allowed.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1029: "NON-BLOCKING" assignment is on "q" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1081: signal "d" is being read asynchronously. It may cause simulation-synthesis mismatch.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1061: Matching Dassign Statement Not Found.
+Violated 1068: event control reset in unsuitable place is not synthesizable.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1202: operator "*" should not be used.
+Violated 1205: procedural continuous assign statement should not be used because it is not synthesizable.
+TOTAL NUMBER OF VIOLATIONS ARE: 64.

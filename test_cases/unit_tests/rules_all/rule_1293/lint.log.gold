@@ -1,0 +1,95 @@
+Violated 1301: no Escape should be used on < i >.
+Violated 1004: Signals GTECHtest.i is driven by 2 devices.
+Violated 1127: signal name "i" does not match to regular expression s_.
+Violated 1187: wire "i" should be explicitly declared.
+Violated 1301: no Escape should be used on < o >.
+Violated 1004: Signals GTECHtest.o is driven by 2 devices.
+Violated 1127: signal name "o" does not match to regular expression s_.
+Violated 1144: 'wire' declaration "o" is detected.
+Violated 1187: wire "o" should be explicitly declared.
+Violated 1188: 'tri' declaration "o" is detected.
+Violated 1138: module name "GTECHtest" does not match to regular expression .*_module.
+Violated 1137: module "GTECHtest" should be named in CASE_LOWER case.
+Violated 1255: comment is not found following port declaration  input i; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1255: comment is not found following port declaration  input i; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end o. File: 1293_Module_Name_Follow_Predefined_Pattern.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1293_Module_Name_Follow_Predefined_Pattern.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < i >.
+Violated 1127: signal name "i" does not match to regular expression s_.
+Violated 1236: object < i > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < o >.
+Violated 1004: Signals GTECHtest.inst_1.o is driven by 2 devices.
+Violated 1127: signal name "o" does not match to regular expression s_.
+Violated 1236: object < o > should not share the same name with another object in the outer scope.
+Violated 1138: module name "mGTECH1" does not match to regular expression .*_module.
+Violated 1196: module instance name "inst_1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input i; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1255: comment is not found following port declaration  input i; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end o. File: 1293_Module_Name_Follow_Predefined_Pattern.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1293_Module_Name_Follow_Predefined_Pattern.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <  mGTECH1oo1 inst_2  >
+Violated 1317: gate port is deliberately not connected on Module <  mGTECH1 inst_1  >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "inst_1" must be related to module Name.
+Violated 1293: Module "mGTECH1" (of instance "inst_1") is named in the predefined pattern ".*GTECH*.
+Violated 1301: no Escape should be used on < i >.
+Violated 1127: signal name "i" does not match to regular expression s_.
+Violated 1236: object < i > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < o >.
+Violated 1004: Signals GTECHtest.inst_1.inst_2.o is driven by 2 devices.
+Violated 1127: signal name "o" does not match to regular expression s_.
+Violated 1236: object < o > should not share the same name with another object in the outer scope.
+Violated 1138: module name "mGTECH1oo1" does not match to regular expression .*_module.
+Violated 1196: module instance name "inst_2" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input i; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1255: comment is not found following port declaration  input i; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end o. File: 1293_Module_Name_Follow_Predefined_Pattern.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1293_Module_Name_Follow_Predefined_Pattern.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <  mGTECH1oo1 inst_2  >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "inst_2" must be related to module Name.
+Violated 1293: Module "mGTECH1oo1" (of instance "inst_2") is named in the predefined pattern ".*GTECH*.
+TOTAL NUMBER OF VIOLATIONS ARE: 94.

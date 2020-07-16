@@ -1,0 +1,62 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1109: Signal "a" Stuck at Logic 1.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < d >.
+Violated 1004: Signals test.d is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "test._s2".
+Violated 1099: Signal "_s2<0>" Driven By Constant.
+Violated 1109: Signal "_s2<0>" Stuck at Logic 1.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < e >.
+Violated 1109: Signal "a" Stuck at Logic 1.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1127: signal name "e" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s2 >.
+Violated 1004: Signals test._s2 is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "test.d".
+Violated 1099: Signal "_s2<0>" Driven By Constant.
+Violated 1099: Signal "_s2<0>" Driven By Constant.
+Violated 1109: Signal "_s2<0>" Stuck at Logic 1.
+Violated 1104: Signal "_s2<0>" with no Load.
+Violated 1127: signal name "_s2" does not match to regular expression s_.
+Violated 1128: unsigned "e" to signed "_s2" assignment occurs.
+Violated 1187: wire "_s2" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s2" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s4 >.
+Violated 1109: Signal "a" Stuck at Logic 1.
+Violated 1109: Signal "a" Stuck at Logic 1.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "e" without Being Registered.
+Violated 1127: signal name "_s4" does not match to regular expression s_.
+Violated 1128: unsigned "e" to signed "_s2" assignment occurs.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1187: wire "_s4" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s4" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s5" does not match to regular expression gate_.
+Violated 1175: gate name "_s7" does not match to regular expression gate_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output d, e; 
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1109_Signal_Stuck_at_Logic_1.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end e. File: 1109_Signal_Stuck_at_Logic_1.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s2. File: 1109_Signal_Stuck_at_Logic_1.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s4. File: 1109_Signal_Stuck_at_Logic_1.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1109_Signal_Stuck_at_Logic_1.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 61.

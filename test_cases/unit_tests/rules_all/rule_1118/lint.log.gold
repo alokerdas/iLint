@@ -1,0 +1,33 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1116: Memory "mem" Not Synthesizable.
+Violated 1117: Too Many Words "4097" in Memory "mem".
+Violated 1118: Too Many Bits "32776" in Memory.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input [1:0] a,b; 
+Violated 1255: comment is not found following port declaration output [1:0] c; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1118_Too_Bits_Many_in_Memory.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1118_Too_Bits_Many_in_Memory.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mem[0:4096] ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a,b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  c ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  mem > should not be used because it is not synthesizable.
+Violated 1319: memory <  c > should not be used because it is not synthesizable.
+Violated 1320: total bits in <  mem > should be less than 1024
+Violated 1321: total word in <  mem > should be less than 1024
+Violated 1238: 
+Violated 1239: 
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 32.

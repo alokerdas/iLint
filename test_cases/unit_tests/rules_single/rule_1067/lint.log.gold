@@ -1,0 +1,2 @@
+Violated 1067: Repeat statement should not be used because it is not synthesizable. File: 1067_Repeat_Statement_Not_Synthesizable.v , Line: 9
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

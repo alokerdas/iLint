@@ -1,0 +1,2 @@
+Violated 1070: Disable statement "disable multiply" should not be used because it is not synthesizable. File: 1070_Disable_Statement_Not_Synthesizable.v , Line: 9
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

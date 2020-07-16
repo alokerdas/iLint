@@ -1,0 +1,90 @@
+Violated 1001: Signals "test.A" cannot be in UPPER CASE.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clk >.
+Violated 1097: violation as Direct Connection from Input "clk" to Output "b".
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < num >.
+Violated 1127: signal name "num" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < _s3 >.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1004: Signals test._s3 is driven by 4 devices.
+Violated 1127: signal name "_s3" does not match to regular expression s_.
+Violated 1187: wire "_s3" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < _s4 >.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1004: Signals test._s4 is driven by 4 devices.
+Violated 1127: signal name "_s4" does not match to regular expression s_.
+Violated 1187: wire "_s4" should be explicitly declared.
+Violated 1188: 'tri' declaration "_s4" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1168: register ouput name "b<7>" does not match to regular expression .*_r.
+Violated 1149: No Set or Reset Signal only Clock "clk".
+Violated 1147: State register name "b<0>" does not match to regular expression .*_cs.
+Violated 1147: State register name "b<1>" does not match to regular expression .*_cs.
+Violated 1147: State register name "b<2>" does not match to regular expression .*_cs.
+Violated 1147: State register name "b<3>" does not match to regular expression .*_cs.
+Violated 1147: State register name "b<4>" does not match to regular expression .*_cs.
+Violated 1147: State register name "b<5>" does not match to regular expression .*_cs.
+Violated 1147: State register name "b<6>" does not match to regular expression .*_cs.
+Violated 1147: State register name "b<7>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "_s4<0>" not in library.
+Violated 1191: register inferred on signal "_s4<1>" not in library.
+Violated 1191: register inferred on signal "_s4<2>" not in library.
+Violated 1191: register inferred on signal "_s4<3>" not in library.
+Violated 1191: register inferred on signal "_s4<4>" not in library.
+Violated 1191: register inferred on signal "_s4<5>" not in library.
+Violated 1191: register inferred on signal "_s4<6>" not in library.
+Violated 1191: register inferred on signal "_s4<7>" not in library.
+Violated 1199: next register name "_s4<0>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s4<1>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s4<2>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s4<3>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s4<4>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s4<5>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s4<6>" does not match to regular expression .*_ns.
+Violated 1199: next register name "_s4<7>" does not match to regular expression .*_ns.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1162: number of bits to shift ("num<7>") should be a constant.
+Violated 1229: All Bits of signal "A" shifted Out.
+Violated 1274: Use "always_comb" to model combinational behavior.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk; 
+Violated 1255: comment is not found following port declaration  input [7:0] A, num; 
+Violated 1255: comment is not found following port declaration  output [7:0] b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1162_Non_constant_Shift_Amount.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end clk. File: 1162_Non_constant_Shift_Amount.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end num. File: 1162_Non_constant_Shift_Amount.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s3. File: 1162_Non_constant_Shift_Amount.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end _s4. File: 1162_Non_constant_Shift_Amount.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  A, num ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  b > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 89.

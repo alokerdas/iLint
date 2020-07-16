@@ -1,0 +1,164 @@
+Violated 1301: no Escape should be used on < clkn >.
+Violated 1004: Signals test.clkn is driven by 3 devices.
+Violated 1127: signal name "clkn" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1156: Test Clock "clkn" should be Resolved to Primary Input.
+Violated 1187: wire "clkn" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1301: no Escape should be used on < d >.
+Violated 1005: Bit mismatched Signal is "test.i_dffn_1.d".
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1156: Test Clock "clkn" should be Resolved to Primary Input.
+Violated 1301: no Escape should be used on < q >.
+Violated 1004: Signals test.q is driven by 2 devices.
+Violated 1004: Signals test.q is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "test.i_dffn_1.q".
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1156: Test Clock "clkn" should be Resolved to Primary Input.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input clk, d; 
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1255: comment is not found following port declaration  input clock; 
+Violated 1255: comment is not found following port declaration  input [3:0] d; 
+Violated 1255: comment is not found following port declaration  output [3:0] q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end clock. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 0
+Violated 1328: the lines of a source file < 1040_fALLIUN_aCTIV_CLK.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  d ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1156: Test Clock "clkn" should be Resolved to Primary Input.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < d >.
+Violated 1005: Bit mismatched Signal is "test.d".
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1156: Test Clock "clkn" should be Resolved to Primary Input.
+Violated 1236: object < d > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < q >.
+Violated 1004: Signals test.i_dffn_1.q is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "test.q".
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1156: Test Clock "clkn" should be Resolved to Primary Input.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < q > should not share the same name with another object in the outer scope.
+Violated 1003: Clock signals "test.i_dffn_1.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1013: Gated Clock is on "_s1".
+Violated 1014: Inverted Clock is on "_s1".
+Violated 1157: Clock "clkn" feeds the Primary Output signal directly or indirectly.
+Violated 1040: falling active clock "clkn" should not be used.
+Violated 1168: register ouput name "q<0>" does not match to regular expression .*_r.
+Violated 1169: register Input name "d<0>" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clkn".
+Violated 1147: State register name "q<0>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d<0>" not in library.
+Violated 1199: next register name "d<0>" does not match to regular expression .*_ns.
+Violated 1209: reconverged clock "test.clkn" found.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "dffn" does not match to regular expression .*_module.
+Violated 1196: module instance name "i_dffn_1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input clk, d; 
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1255: comment is not found following port declaration  input clock; 
+Violated 1255: comment is not found following port declaration  input [3:0] d; 
+Violated 1255: comment is not found following port declaration  output [3:0] q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 0
+Violated 1328: the lines of a source file < 1040_fALLIUN_aCTIV_CLK.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  d ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1317: gate port is deliberately not connected on Module <  dffn i_dffn_1 >
+Violated 1317: gate port is deliberately not connected on Module <  dffn i_dffn_2 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1318: gate port is not connected on module < test.i_dffn_1 > .
+Violated 1322: port < clkn > and its connection < clk > should be similar.
+Violated 1322: port < clock > and its connection < d > should be similar.
+Violated 1322: port < d > and its connection < q > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1141: bitwise operators should be used instead of logic "NotOp" operators in single-bit operations.
+Violated 1236: object < clk > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < d >.
+Violated 1005: Bit mismatched Signal is "test.d".
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1236: object < d > should not share the same name with another object in the outer scope.
+Violated 1301: no Escape should be used on < q >.
+Violated 1004: Signals test.i_dffn_2.q is driven by 2 devices.
+Violated 1005: Bit mismatched Signal is "test.q".
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < q > should not share the same name with another object in the outer scope.
+Violated 1003: Clock signals "test.i_dffn_2.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1157: Clock "clock" feeds the Primary Output signal directly or indirectly.
+Violated 1102: more than one clock signal in a module.
+Violated 1145: Mutiple Clock Source Not Recommended.
+Violated 1040: falling active clock "clock" should not be used.
+Violated 1168: register ouput name "q<1>" does not match to regular expression .*_r.
+Violated 1169: register Input name "d<1>" does not match to regular expression .*_nxt.
+Violated 1149: No Set or Reset Signal only Clock "clock".
+Violated 1147: State register name "q<1>" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d<1>" not in library.
+Violated 1199: next register name "d<1>" does not match to regular expression .*_ns.
+Violated 1211: the clock generate circuit should be separated in different module.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "dffn" does not match to regular expression .*_module.
+Violated 1196: module instance name "i_dffn_2" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input clk, d; 
+Violated 1255: comment is not found following port declaration  output q; 
+Violated 1255: comment is not found following port declaration  input clock; 
+Violated 1255: comment is not found following port declaration  input [3:0] d; 
+Violated 1255: comment is not found following port declaration  output [3:0] q; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1040_fALLIUN_aCTIV_CLK.v , Line: 0
+Violated 1328: the lines of a source file < 1040_fALLIUN_aCTIV_CLK.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  d ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  q ").
+Violated 1317: gate port is deliberately not connected on Module <  dffn i_dffn_1 >
+Violated 1317: gate port is deliberately not connected on Module <  dffn i_dffn_2 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 163.

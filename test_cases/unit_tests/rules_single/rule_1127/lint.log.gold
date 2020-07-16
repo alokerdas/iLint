@@ -1,0 +1,3 @@
+Violated 1127: Signal name "a" does not match the expression "s_*". File: 1127_Signal_Name_Prefix_or_Suffix.v , Line: 2
+Violated 1127: Signal name "b" does not match the expression "s_*". File: 1127_Signal_Name_Prefix_or_Suffix.v , Line: 3
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

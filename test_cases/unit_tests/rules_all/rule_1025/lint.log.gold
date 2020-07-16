@@ -1,0 +1,35 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "c" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < en >.
+Violated 1127: signal name "en" does not match to regular expression s_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input a, b, en; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1025_Signal_Driven_by_Both_Blocking_and_Non_blocking_Assignments.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1025_Signal_Driven_by_Both_Blocking_and_Non_blocking_Assignments.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end en. File: 1025_Signal_Driven_by_Both_Blocking_and_Non_blocking_Assignments.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1025_Signal_Driven_by_Both_Blocking_and_Non_blocking_Assignments.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+Violated 1025: signal "c" is assigned by both blocking and non-blocking assignments.
+Violated 1025: signal "c" is assigned by both blocking and non-blocking assignments.
+Violated 1025: signal "c" is assigned by both blocking and non-blocking assignments.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1051: Blocking and Non-blocking Statements in the Same Always Block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1081: signal "b" is being read asynchronously. It may cause simulation-synthesis mismatch.
+Violated 1022: register "c" should be assigned in data clause.
+TOTAL NUMBER OF VIOLATIONS ARE: 34.

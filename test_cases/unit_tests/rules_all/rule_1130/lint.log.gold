@@ -1,0 +1,103 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1255: comment is not found following port declaration  input [12:0] a; 
+Violated 1255: comment is not found following port declaration  input [15:0] b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1130_Function_Name_Length.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mu ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mcnd,mpy ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " 
+ ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " 
+ ").
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  mcnd,mpy > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < a >.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "a" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < b >.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "b" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < mu >.
+Violated 1127: signal name "mu" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "mu" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1132: function name "mu" does not match to regular expression f_.
+Violated 1130: The length of function name "mu" is unconventional and should be in the range from 3 to 16.
+Violated 1255: comment is not found following port declaration  input [12:0] a; 
+Violated 1255: comment is not found following port declaration  input [15:0] b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1130_Function_Name_Length.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end mu. File: 1130_Function_Name_Length.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1130_Function_Name_Length.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mu ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mcnd,mpy ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " 
+ ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " 
+ ").
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  mcnd,mpy > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1239: 
+Violated 1301: no Escape should be used on < mcnd >.
+Violated 1127: signal name "mcnd" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "mcnd" is detected.
+Violated 1187: wire "mcnd" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < mpy >.
+Violated 1127: signal name "mpy" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "mpy" is detected.
+Violated 1187: wire "mpy" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1182: process name "serialMult" does not match to regular expression *._PROC.
+Violated 1255: comment is not found following port declaration  input [12:0] a; 
+Violated 1255: comment is not found following port declaration  input [15:0] b; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end mpy. File: 1130_Function_Name_Length.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1130_Function_Name_Length.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mu ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  a ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  b ").
+Violated 1315: literal numbers should not be used in specifying a range (in object "  mcnd,mpy ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " 
+ ").
+Violated 1315: literal numbers should not be used in specifying a range (in object " 
+ ").
+Violated 1317: gate port is deliberately not connected on Module <  begin: serialMult
+ >
+Violated 1269: comment should be on <    end >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on <  endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1319: memory <  mcnd,mpy > should not be used because it is not synthesizable.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 95.

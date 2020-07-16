@@ -1,0 +1,29 @@
+Violated 1301: no Escape should be used on < clock >.
+Violated 1127: signal name "clock" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < data >.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < y >.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "y" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input clock; 
+Violated 1255: comment is not found following port declaration input data; 
+Violated 1255: comment is not found following port declaration output y; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1326_TAB_Used_in_Indentation.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1326_TAB_Used_in_Indentation.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1326: should not use TAB for indentation 		y = data; 
+
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1314: Unconventional port declaration in order < clock > ......
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1029: "BLOCKING" assignment is on "y" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+TOTAL NUMBER OF VIOLATIONS ARE: 27.

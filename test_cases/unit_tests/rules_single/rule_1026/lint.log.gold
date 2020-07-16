@@ -1,0 +1,3 @@
+Violated 1026: Violation "z or Z" Used in Case Label. File: 1026_xz_Used_in_Case_Label.v , Line: 9
+Violated 1026: Violation "x or X" Used in Case Label. File: 1026_xz_Used_in_Case_Label.v , Line: 10
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

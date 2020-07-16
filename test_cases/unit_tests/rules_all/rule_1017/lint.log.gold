@@ -1,0 +1,47 @@
+Violated 1301: no Escape should be used on < clk >.
+Violated 1127: signal name "clk" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < d >.
+Violated 1127: signal name "d" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < en >.
+Violated 1127: signal name "en" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < q >.
+Violated 1127: signal name "q" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < reset >.
+Violated 1127: signal name "reset" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < rst_en >.
+Violated 1004: Signals test.rst_en is driven by 2 devices.
+Violated 1127: signal name "rst_en" does not match to regular expression s_.
+Violated 1187: wire "rst_en" should be explicitly declared.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1175: gate name "U_and_1<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "U_and_1<0>" Found.
+Violated 1003: Clock signals "test.clk" doesn't follow name conventinon "clk_[_a-zA-Z0-9]*".
+Violated 1017: Violation on Reset Gate "U_and_1<0>".
+Violated 1031: "Async" Reset dtected.
+Violated 1167: active high signal name "rst_en" does not match to regular expression .*_p.
+Violated 1168: register ouput name "q" does not match to regular expression .*_r.
+Violated 1169: register Input name "d" does not match to regular expression .*_nxt.
+Violated 1147: State register name "q" does not match to regular expression .*_cs.
+Violated 1191: register inferred on signal "d" not in library.
+Violated 1195: asynchronous signal name "rst_en" does not match to regular expression .*_a.
+Violated 1199: next register name "d" does not match to regular expression .*_ns.
+Violated 1011: the set/reset signal should not be driven by a path "U_and_1<0>" with potential glitch.
+Violated 1275: "always_ff" is not used to model sequential blocks.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration output q; 
+Violated 1255: comment is not found following port declaration input clk, en, reset, d; 
+Violated 1257: signals should be declared one per line with a comment at the end d. File: 1017_Reset_Driven_by_Combinational_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end en. File: 1017_Reset_Driven_by_Combinational_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end q. File: 1017_Reset_Driven_by_Combinational_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end reset. File: 1017_Reset_Driven_by_Combinational_Logic.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rst_en. File: 1017_Reset_Driven_by_Combinational_Logic.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1017_Reset_Driven_by_Combinational_Logic.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 46.

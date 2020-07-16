@@ -1,0 +1,267 @@
+Violated 1301: no Escape should be used on < a >.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1127: signal name "a" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < b >.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1127: signal name "b" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < c >.
+Violated 1004: Signals test2.c is driven by 5 devices.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1127: signal name "c" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1285: Signal "c" should not connect both input and output port of the instance.
+Violated 1285: Signal "c" should not connect both input and output port of the instance.
+Violated 1299: Primary output pin "test2.c" floating through wire "test2.c".
+Violated 1237: the fan-out number of signal < c > is < 8 > whereas the limitation is 5.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "test2" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input m, n; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1255: comment is not found following port declaration  input x, y; 
+Violated 1255: comment is not found following port declaration  output z; 
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end b. File: 1285_input_output_instance.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end c. File: 1285_input_output_instance.v , Line: 0
+Violated 1324: more than one port is declared in one line.  test u1( c, b, c ); //here signal connected to output "c" goes into
+
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1285_input_output_instance.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1301: no Escape should be used on < m >.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1127: signal name "m" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1237: the fan-out number of signal < m > is < 8 > whereas the limitation is 5.
+Violated 1301: no Escape should be used on < n >.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1127: signal name "n" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < o >.
+Violated 1004: Signals test2.u1.o is driven by 5 devices.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1127: signal name "o" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1285: Signal "o" should not connect both input and output port of the instance.
+Violated 1285: Signal "o" should not connect both input and output port of the instance.
+Violated 1299: Primary output pin "test2.u1.o" floating through wire "test2.u1.o".
+Violated 1237: the fan-out number of signal < o > is < 8 > whereas the limitation is 5.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "u1" is unconventional and should be in the range from 3 to 16.
+Violated 1196: module instance name "u1" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input m, n; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1255: comment is not found following port declaration  input x, y; 
+Violated 1255: comment is not found following port declaration  output z; 
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end n. File: 1285_input_output_instance.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end o. File: 1285_input_output_instance.v , Line: 0
+Violated 1324: more than one port is declared in one line.  test u1( c, b, c ); //here signal connected to output "c" goes into
+
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1285_input_output_instance.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <  test u1 >
+Violated 1317: gate port is deliberately not connected on Module <                //input "a" of test1 again.
+ >
+Violated 1317: gate port is deliberately not connected on Module <  test1 u2 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1322: port < a > and its connection < m > should be similar.
+Violated 1322: port < b > and its connection < n > should be similar.
+Violated 1322: port < c > and its connection < o > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "u1" must be related to module Name.
+Violated 1301: no Escape should be used on < x >.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1127: signal name "x" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1301: no Escape should be used on < y >.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1127: signal name "y" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < z >.
+Violated 1004: Signals test2.u2.z is driven by 5 devices.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "y" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "n" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "b" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "x" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "a" and PO "c" without Being Registered.
+Violated 1124: Combinational Path Between PI "m" and PO "z" without Being Registered.
+Violated 1127: signal name "z" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1285: Signal "z" should not connect both input and output port of the instance.
+Violated 1285: Signal "z" should not connect both input and output port of the instance.
+Violated 1299: Primary output pin "test2.u2.z" floating through wire "test2.u2.z".
+Violated 1237: the fan-out number of signal < z > is < 8 > whereas the limitation is 5.
+Violated 1175: gate name "_s1" does not match to regular expression gate_.
+Violated 1138: module name "test1" does not match to regular expression .*_module.
+Violated 1171: The length of Module instance "u2" is unconventional and should be in the range from 3 to 16.
+Violated 1196: module instance name "u2" does not match to regular expression U_.*.
+Violated 1255: comment is not found following port declaration  input m, n; 
+Violated 1255: comment is not found following port declaration  output o; 
+Violated 1255: comment is not found following port declaration  input x, y; 
+Violated 1255: comment is not found following port declaration  output z; 
+Violated 1255: comment is not found following port declaration  input a, b; 
+Violated 1255: comment is not found following port declaration  output c; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end y. File: 1285_input_output_instance.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end z. File: 1285_input_output_instance.v , Line: 0
+Violated 1324: more than one port is declared in one line.  test u1( c, b, c ); //here signal connected to output "c" goes into
+
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1285_input_output_instance.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1317: gate port is deliberately not connected on Module <                //input "a" of test1 again.
+ >
+Violated 1317: gate port is deliberately not connected on Module <  test1 u2 >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1269: comment should be on < endmodule >
+Violated 1322: port < m > and its connection < x > should be similar.
+Violated 1322: port < n > and its connection < y > should be similar.
+Violated 1322: port < o > and its connection < z > should be similar.
+Violated 1323: the < input > ports are declared in groups.
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1292: Instance name "u2" must be related to module Name.
+TOTAL NUMBER OF VIOLATIONS ARE: 261.

@@ -1,0 +1,11 @@
+Violated 1138: module name "test" does not match to regular expression .*_module.
+Violated 1174: module "test" is empty.
+Violated 1235: Timescale Missing on Module < test >.
+Violated 1325: Only one statement is allowed per line.
+Violated 1263: unknown synopsys directive < module test(); // synopsys aaa > should not be used here.
+Violated 1306: no comment on synopsys synthesis directive.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 10.

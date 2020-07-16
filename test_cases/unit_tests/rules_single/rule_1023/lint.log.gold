@@ -1,0 +1,2 @@
+Violated 1023: Tri-state enable port should not be connected to an expression. File: 1023_Special_Type_Port_Connected_to_an_Expression.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

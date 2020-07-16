@@ -1,0 +1,110 @@
+Violated 1001: Signals "smp.A" cannot be in UPPER CASE.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1001: Signals "smp.B" cannot be in UPPER CASE.
+Violated 1127: signal name "B" does not match to regular expression s_.
+Violated 1001: Signals "smp.C" cannot be in UPPER CASE.
+Violated 1127: signal name "C" does not match to regular expression s_.
+Violated 1001: Signals "smp.CK" cannot be in UPPER CASE.
+Violated 1127: signal name "CK" does not match to regular expression s_.
+Violated 1001: Signals "smp.D" cannot be in UPPER CASE.
+Violated 1127: signal name "D" does not match to regular expression s_.
+Violated 1001: Signals "smp.G" cannot be in UPPER CASE.
+Violated 1127: signal name "G" does not match to regular expression s_.
+Violated 1001: Signals "smp.H" cannot be in UPPER CASE.
+Violated 1127: signal name "H" does not match to regular expression s_.
+Violated 1001: Signals "smp.ZF" cannot be in UPPER CASE.
+Violated 1127: signal name "ZF" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "ZF" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1138: module name "smp" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration input CK; 
+Violated 1255: comment is not found following port declaration input A,B,C,D,G,H; 
+Violated 1255: comment is not found following port declaration output ZF; 
+Violated 1255: comment is not found following port declaration input A,B,C,D,G,H; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end B. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end C. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end CK. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end D. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end G. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end H. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end ZF. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1328: the lines of a source file < 1230_Function_Called_in_an_Always_Block.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+Violated 1001: Signals "smp.ZFC.A" cannot be in UPPER CASE.
+Violated 1127: signal name "A" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "A" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < A > should not share the same name with another object in the outer scope.
+Violated 1001: Signals "smp.ZFC.B" cannot be in UPPER CASE.
+Violated 1127: signal name "B" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "B" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < B > should not share the same name with another object in the outer scope.
+Violated 1001: Signals "smp.ZFC.C" cannot be in UPPER CASE.
+Violated 1127: signal name "C" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "C" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < C > should not share the same name with another object in the outer scope.
+Violated 1001: Signals "smp.ZFC.D" cannot be in UPPER CASE.
+Violated 1127: signal name "D" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "D" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < D > should not share the same name with another object in the outer scope.
+Violated 1001: Signals "smp.ZFC.G" cannot be in UPPER CASE.
+Violated 1127: signal name "G" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "G" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < G > should not share the same name with another object in the outer scope.
+Violated 1001: Signals "smp.ZFC.H" cannot be in UPPER CASE.
+Violated 1127: signal name "H" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "H" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1236: object < H > should not share the same name with another object in the outer scope.
+Violated 1001: Signals "smp.ZFC.ZFC" cannot be in UPPER CASE.
+Violated 1127: signal name "ZFC" does not match to regular expression s_.
+Violated 1143: 'reg' declaration "ZFC" is detected.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1132: function name "ZFC" does not match to regular expression f_.
+Violated 1131: function "ZFC" should be named in CASE_LOWER case.
+Violated 1255: comment is not found following port declaration input CK; 
+Violated 1255: comment is not found following port declaration input A,B,C,D,G,H; 
+Violated 1255: comment is not found following port declaration output ZF; 
+Violated 1255: comment is not found following port declaration input A,B,C,D,G,H; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end B. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end C. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end D. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end G. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end H. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end ZFC. File: 1230_Function_Called_in_an_Always_Block.v , Line: 0
+Violated 1328: the lines of a source file < 1230_Function_Called_in_an_Always_Block.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on <    endcase >
+Violated 1269: comment should be on <  end >
+Violated 1269: comment should be on < endfunction >
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < input > ports are declared in groups.
+Violated 1239: 
+Violated 1029: "NON-BLOCKING" assignment is on "ZF" used in an edge triggered block.
+Violated 1087: process should be named.
+Violated 1087: process should be named.
+Violated 1230: function "ZFC" is called in an always block.
+TOTAL NUMBER OF VIOLATIONS ARE: 109.

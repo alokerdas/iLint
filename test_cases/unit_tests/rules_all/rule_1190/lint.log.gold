@@ -1,0 +1,54 @@
+Violated 1301: no Escape should be used on < cnt1 >.
+Violated 1124: Combinational Path Between PI "wren" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "cnt1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1285: Signal "cnt1" should not connect both input and output port of the instance.
+Violated 1301: no Escape should be used on < data >.
+Violated 1097: violation as Direct Connection from Input "data" to Output "cnt1".
+Violated 1124: Combinational Path Between PI "rden" and PO "tri_out1" without Being Registered.
+Violated 1124: Combinational Path Between PI "data" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "data" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < rden >.
+Violated 1124: Combinational Path Between PI "rden" and PO "tri_out1" without Being Registered.
+Violated 1124: Combinational Path Between PI "data" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "rden" does not match to regular expression s_.
+Violated 1301: no Escape should be used on < tri_out1 >.
+Violated 1092: Tri-state Output "tri_out1" Mixed with Other Logic in a Module.
+Violated 1033: Keyword "tri_out1" is part of Verilog Reserved Word.
+Violated 1124: Combinational Path Between PI "rden" and PO "tri_out1" without Being Registered.
+Violated 1124: Combinational Path Between PI "data" and PO "tri_out1" without Being Registered.
+Violated 1124: Combinational Path Between PI "wren" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "tri_out1" does not match to regular expression s_.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1021: drive strength "(strong)" should not be used because it is not synthesizable.
+Violated 1285: Signal "tri_out1" should not connect both input and output port of the instance.
+Violated 1299: Primary output pin "smp1.tri_out1" floating through wire "smp1.tri_out1".
+Violated 1301: no Escape should be used on < wren >.
+Violated 1092: Tri-state Output "tri_out1" Mixed with Other Logic in a Module.
+Violated 1124: Combinational Path Between PI "wren" and PO "tri_out1" without Being Registered.
+Violated 1127: signal name "wren" does not match to regular expression s_.
+Violated 1175: gate name "BUF<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "BUF<0>" Found.
+Violated 1179: Tri-state ouput signal name "tri_out1" does not match to regular expression .*_z.
+Violated 1175: gate name "AA<0>" does not match to regular expression gate_.
+Violated 1178: Gate Instance "AA<0>" Found.
+Violated 1179: Tri-state ouput signal name "tri_out1" does not match to regular expression .*_z.
+Violated 1190: tri-state buffer "BUF<0>" should not be mixed with other combinational logics in the module "smp1".
+Violated 1138: module name "smp1" does not match to regular expression .*_module.
+Violated 1255: comment is not found following port declaration  input rden, wren, data; 
+Violated 1255: comment is not found following port declaration  output tri_out1; 
+Violated 1255: comment is not found following port declaration  output cnt1; 
+Violated 1256: input, output and inout signals should be grouped and separated by blank line in port declarations.
+Violated 1257: signals should be declared one per line with a comment at the end data. File: 1190_Tri_state_Buffer_Should_Not_Coexist_With_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end rden. File: 1190_Tri_state_Buffer_Should_Not_Coexist_With_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end tri_out1. File: 1190_Tri_state_Buffer_Should_Not_Coexist_With_Other_Logic_in_a_Module.v , Line: 0
+Violated 1257: signals should be declared one per line with a comment at the end wren. File: 1190_Tri_state_Buffer_Should_Not_Coexist_With_Other_Logic_in_a_Module.v , Line: 0
+Violated 1325: Only one statement is allowed per line.
+Violated 1328: the lines of a source file < 1190_Tri_state_Buffer_Should_Not_Coexist_With_Other_Logic_in_a_Module.v > hould not exceed 10 lines.
+Violated 1307: no comment is found before always
+Violated 1269: comment should be on < endmodule >
+Violated 1323: the < output > ports are declared in groups.
+Violated 1238: 
+Violated 1239: 
+TOTAL NUMBER OF VIOLATIONS ARE: 53.

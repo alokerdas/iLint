@@ -16,5 +16,6 @@ lint.tgt: $(OBJECTS)
 	$(CC) $(LDFLAGS) -o $@ $(OBJECTS)
 install: lint.tgt
 	cp lint.tgt $(IVERILOG_INSTALL_DIR)/lib/ivl
+	cp lint*.conf $(IVERILOG_INSTALL_DIR)/lib/ivl
 clean:
 	rm -rf lint.tgt *.o

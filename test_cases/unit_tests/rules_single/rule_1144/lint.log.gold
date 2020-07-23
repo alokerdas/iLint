@@ -1,0 +1,3 @@
+Violated 1144: 'wire' declaration "a" is detected. File: 1144_Wire_Declaration_Detected.v , Line: 2
+Violated 1144: 'wire' declaration "b" is detected. File: 1144_Wire_Declaration_Detected.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

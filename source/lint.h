@@ -246,7 +246,6 @@ extern void checkCombinationalPiPoPath(map<int, map<string, string> > & table, i
 extern void checkSignalPrefixSuffix(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void checkSignedUnSigned(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void checkConditionalAssignment(map<int, map<string, string> > & table, ivl_signal_t & mySig);
-extern void checkRegister(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void checkWire(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void checkLogicalOperatorsInSinglebitOperations(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void checkTestClockPrimaryInput(map<int, map<string, string> > & table, ivl_signal_t & sig);

@@ -73,6 +73,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
       checkPin(table, mySig);
       checkMemory(table, mySig);  
       checkNetType(table, mySig);  
+      checkRegister(table, mySig);
       SignalAssigned(table, mySig);
       checkDriveSynth(table, mySig);
       checkSignalName(table, mySig);

@@ -168,7 +168,7 @@ const char* giveMassage(int num)
     massages[1139] = "Combinational Logic Found in Sequential Block.";
     massages[1140] = "Unsigned vector \"%s\" compared with a negative value \"%s\".";
     massages[1141] = "Bitwise operators should be used instead of logic \"NotOp\" operators in single-bit operations.";
-    massages[1142] = "No conditional assignment allowd on \"%s\".";
+    massages[1142] = "No conditional assignment allowd.";
     massages[1143] = "'reg' declaration \"%s\" is detected.";
     massages[1144] = "'wire' declaration \"%s\" is detected.";
     massages[1145] = "Mutiple Clock Source Not Recommended.";

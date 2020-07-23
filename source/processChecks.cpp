@@ -809,6 +809,15 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
       }
     }
     break;
+    case IVL_EX_TERNARY:
+    {
+      rule = 1142;
+      if (table[rule][sAct] == "yes")
+      {
+        printViolation(rule, line, file);
+      }
+    }
+    break;
     case IVL_EX_SELECT:
     {
       checkVectorIndexSufficient(table, expr);

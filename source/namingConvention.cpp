@@ -20,6 +20,22 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkWire(map<int, map<string, string> > & table, ivl_signal_t & mySig)
+{
+  int rule = 1144;
+  const char *sAct = "active";
+  int line = ivl_signal_lineno(mySig);
+  const char *file = ivl_signal_file(mySig);
+  if (table[rule][sAct] == "yes")
+  {
+    if ((ivl_signal_type(mySig) == IVL_SIT_TRI) &&
+        (ivl_signal_port(mySig) == IVL_SIP_NONE))
+    {
+      printViolation(rule, line, file, ivl_signal_basename(mySig));
+    } 
+  } 
+}
+
 void checkRegister(map<int, map<string, string> > & table, ivl_signal_t & mySig)
 {
   int rule = 1143;

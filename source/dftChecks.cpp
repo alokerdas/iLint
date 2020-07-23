@@ -568,43 +568,10 @@ void checkSetDataInput(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
 	    }
 	  }
 	}
-        else
-	{
-          if (ivl_nexus_ptr_pin(setCon))
-          {
-            rule = 1095;
-            if (table[rule][sAct] == "yes")
-            {
-              file = ivl_logic_file(aLogic);
-              line = ivl_logic_lineno(aLogic);
-//              printViolation(rule, line, file, setSigName);
-            }
-          }
-          else
-          {
-            rule = 1094;
-            if (table[rule][sAct] == "yes")
-            {
-              file = ivl_lpm_file(lpm);
-              line = ivl_lpm_lineno(lpm);
-//              printViolation(rule, line, file, setSigName);
-            }
-          }
-        }
       }
       ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(setCon);
       if(anLpm)
       {
-        if (ivl_lpm_q(anLpm) == setNex)
-        {
-          rule = 1094;
-          if (table[rule][sAct] == "yes")
-          {
-            file = ivl_lpm_file(lpm);
-            line = ivl_lpm_lineno(lpm);
-//            printViolation(rule, line, file, setSigName);
-          }
-        }
         if (ivl_lpm_data(anLpm, 0) == setNex)
         {
           rule = 1110;
@@ -962,6 +929,29 @@ void checkClockSeqLogic(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
         if (ivl_lpm_data(anLpm, 0) == ckNex)
         {
           rule = 1095;
+          if (table[rule][sAct] == "yes")
+          {
+            file = ivl_lpm_file(anLpm);
+            line = ivl_lpm_lineno(anLpm);
+            printViolation(rule, line, file, ckSigName);
+          }
+        }
+        if ((ivl_lpm_type(anLpm) == IVL_LPM_MUX) &&
+            (ivl_lpm_select(anLpm) == ckNex))
+        {
+          rule = 1146;
+          if (table[rule][sAct] == "yes")
+          {
+            file = ivl_lpm_file(anLpm);
+            line = ivl_lpm_lineno(anLpm);
+            printViolation(rule, line, file, ckSigName);
+          }
+        }
+        if ((ivl_lpm_type(anLpm) == IVL_LPM_FF) &&
+            ((ivl_lpm_sync_clr(anLpm) == ckNex) ||
+             (ivl_lpm_async_clr(anLpm) == ckNex)))
+        {
+          rule = 1146;
           if (table[rule][sAct] == "yes")
           {
             file = ivl_lpm_file(anLpm);

@@ -71,6 +71,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     if (!ivl_signal_local(mySig))
     {
       checkPin(table, mySig);
+      checkWire(table, mySig);  
       checkMemory(table, mySig);  
       checkNetType(table, mySig);  
       checkRegister(table, mySig);

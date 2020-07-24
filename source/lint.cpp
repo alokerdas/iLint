@@ -114,6 +114,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     checkSyncAsyncReset(table, lpm);
     checkNonConstDivisor(table, lpm);
     checkActiveLowSignal(table, lpm);
+    checkRegPrefixSuffix(table, lpm);
     checkClockActiveBothEdges(table, lpm);
     checkSpecialSignalBitSelect(table, lpm);
     checkSpecialTypePortConnectedtoanExpression(table, lpm);

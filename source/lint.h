@@ -314,7 +314,7 @@ extern void checkAsynchronousLoop(map<int, map<string, string> > & table, ivl_lp
 extern void checkSynchronousLoop(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkSetDrivenSequentialLogic(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkNoSetReset(map<int, map<string, string> > & table, ivl_lpm_t & net);
-extern void checkCurrentStatePrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net);
+extern void checkRegPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkLatchNamePrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkInferredStorageNotinLibrary(map<int, map<string, string> > & table,ivl_lpm_t & lpm);
 extern void checkInferredLatch(map<int, map<string, string> > & table, ivl_lpm_t & lpm);

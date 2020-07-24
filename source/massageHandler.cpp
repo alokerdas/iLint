@@ -173,8 +173,8 @@ const char* giveMassage(int num)
     massages[1144] = "'wire' declaration \"%s\" is detected.";
     massages[1145] = "Mutiple Clock Source Not Recommended.";
     massages[1146] = "Clock Signal \"%s\" Used as Reset.";
-    massages[1147] = "State register name \"%s\" does not match to regular expression .*_cs.";
-    massages[1148] = "Set \"%s\" Driven by Sequential Logic.";
+    massages[1147] = "State register name \"%s\" does not match to regular expression *_cs.";
+    massages[1148] = "Set signal \"%s\" Driven by Sequential Logic.";
     massages[1149] = "No Set or Reset Signal only Clock \"%s\".";
     massages[1150] = "Synchronous Loop %s --> %s without set reset.";
     massages[1151] = "Asynchronous Loop %s --> %s --> %s.";

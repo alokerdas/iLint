@@ -511,6 +511,16 @@ void checkEnableSetReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
             printViolation(rule, line, file, setSigName);
           }
         }
+        if (ivl_lpm_q(anLpm) == setNex)
+        {
+          rule = 1148;
+          if (table[rule][sAct] == "yes")
+          {
+            file = ivl_lpm_file(anLpm);
+            line = ivl_lpm_lineno(anLpm);
+            printViolation(rule, line, file, setSigName);
+          }
+        }
       }
     }
   }

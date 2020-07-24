@@ -20,6 +20,34 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkRegPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
+{
+  int rule = 1147;
+  const char *sAct = "active";
+  if (ivl_lpm_type(lpm) == IVL_LPM_FF)
+  {
+    const char *qSigName = NULL;
+    ivl_nexus_t qNex = ivl_lpm_q(lpm);
+    unsigned connect = ivl_nexus_ptrs(qNex);
+    for(unsigned i = 0 ; i < connect ; i++)
+    {
+      ivl_nexus_ptr_t qCon = ivl_nexus_ptr(qNex, i);
+      ivl_signal_t qSig = ivl_nexus_ptr_sig(qCon);
+      if(qSig)
+      {
+        qSigName = ivl_signal_basename(qSig);
+        const char *patt = "*_cs"; 
+        if(fnmatch(patt, qSigName, 0))
+        {
+          int line = ivl_signal_lineno(qSig);
+          const char *file = ivl_signal_file(qSig);
+          printViolation(rule, line, file, qSigName);
+        }
+      }
+    }
+  }
+}
+
 void checkWire(map<int, map<string, string> > & table, ivl_signal_t & mySig)
 {
   int rule = 1144;

@@ -1,0 +1,2 @@
+Violated 1147: State register name "current" does not match to regular expression *_cs. File: 1147_Current_State_Name_Prefix_or_Suffix.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

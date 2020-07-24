@@ -1,17 +1,19 @@
-module test (q, clk, c, d);
+module test (q, clk, rst, d, e);
 output q;
-output [3:0] c;
-input clk, d;
+reg c;
+input rst, clk, d, e;
 reg q;
-reg [3:0] c;
-always @(posedge clk)
-c <= c + 1; //warning on "c[3]", set
+always @(posedge clk or posedge rst)
+if (rst)
+c = 0;
+else
+c = d; //warning on "c[3]", set
 //signal is an output of
 //sequential device
-always @(posedge clk or posedge c[3])
-if (~c[3])
-q <= 1;
+always @(posedge clk or posedge c)
+if (c)
+q = 1;
 else
-q <= d;
+q = e;
 endmodule
 

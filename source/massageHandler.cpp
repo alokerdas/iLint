@@ -175,7 +175,7 @@ const char* giveMassage(int num)
     massages[1146] = "Clock Signal \"%s\" Used as Reset.";
     massages[1147] = "State register name \"%s\" does not match to regular expression *_cs.";
     massages[1148] = "Set signal \"%s\" Driven by Sequential Logic.";
-    massages[1149] = "No Set or Reset Signal only Clock \"%s\".";
+    massages[1149] = "No Set or Reset Signal for the flop \"%s\".";
     massages[1150] = "Synchronous Loop %s --> %s without set reset.";
     massages[1151] = "Asynchronous Loop %s --> %s --> %s.";
     massages[1152] = "Reset signal name \"%s\" does not match to regular expression rst_.";
@@ -183,7 +183,7 @@ const char* giveMassage(int num)
     massages[1154] = "Test Clock \"%s\" Passed Only One 2x1 Multiplex.";
     massages[1155] = "Clock Signal \"%s\" Used as a Control.";
     massages[1156] = "Test Clock \"%s\" should be Resolved to Primary Input.";
-    massages[1157] = "Clock \"%s\" feeds the Primary Output signal directly or indirectly.";  
+    massages[1157] = "Clock \"%s\" feeds the Primary Output signal \"%s\" directly or indirectly.";  
     massages[1158] = "Test Clock Signal \"%s\" Used as Data Input.";
     massages[1159] = "Signal \"%s\" should be included in the sensitivity list.";
     massages[1160] = "Bit select \"%s\" in Sensitivity List.";

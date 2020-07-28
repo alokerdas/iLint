@@ -20,28 +20,99 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkSetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net)
+{
+  int rule = 1153;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_lpm_type(net) == IVL_LPM_FF)
+    {
+      const char *stSigName = NULL;
+      ivl_nexus_t stNex = ivl_lpm_async_set(net);
+      if (!stNex)
+        stNex = ivl_lpm_sync_set(net);
+
+      unsigned connect = stNex ? ivl_nexus_ptrs(stNex) : 0;
+      for(unsigned i = 0 ; i < connect ; i++)
+      {
+        ivl_nexus_ptr_t stCon = ivl_nexus_ptr(stNex, i);
+        ivl_signal_t stSig = ivl_nexus_ptr_sig(stCon);
+        if(stSig)
+        {
+          stSigName = ivl_signal_basename(stSig);
+          const char *patt = "set_*"; 
+          if(fnmatch(patt, stSigName, 0))
+          {
+            int line = ivl_signal_lineno(stSig);
+            const char *file = ivl_signal_file(stSig);
+            printViolation(rule, line, file, stSigName);
+          }
+        }
+      }
+    }
+  }
+}
+
+void checkResetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net)
+{
+  int rule = 1152;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_lpm_type(net) == IVL_LPM_FF)
+    {
+      const char *rstSigName = NULL;
+      ivl_nexus_t rstNex = ivl_lpm_async_clr(net);
+      if (!rstNex)
+        rstNex = ivl_lpm_sync_clr(net);
+
+      unsigned connect = rstNex ? ivl_nexus_ptrs(rstNex) : 0;
+      for(unsigned i = 0 ; i < connect ; i++)
+      {
+        ivl_nexus_ptr_t rstCon = ivl_nexus_ptr(rstNex, i);
+        ivl_signal_t rstSig = ivl_nexus_ptr_sig(rstCon);
+        if(rstSig)
+        {
+          rstSigName = ivl_signal_basename(rstSig);
+          const char *patt = "rst_*"; 
+          if(fnmatch(patt, rstSigName, 0))
+          {
+            int line = ivl_signal_lineno(rstSig);
+            const char *file = ivl_signal_file(rstSig);
+            printViolation(rule, line, file, rstSigName);
+          }
+        }
+      }
+    }
+  }
+}
+
 void checkRegPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
 {
   int rule = 1147;
   const char *sAct = "active";
-  if (ivl_lpm_type(lpm) == IVL_LPM_FF)
+  if (table[rule][sAct] == "yes")
   {
-    const char *qSigName = NULL;
-    ivl_nexus_t qNex = ivl_lpm_q(lpm);
-    unsigned connect = ivl_nexus_ptrs(qNex);
-    for(unsigned i = 0 ; i < connect ; i++)
+    if (ivl_lpm_type(lpm) == IVL_LPM_FF)
     {
-      ivl_nexus_ptr_t qCon = ivl_nexus_ptr(qNex, i);
-      ivl_signal_t qSig = ivl_nexus_ptr_sig(qCon);
-      if(qSig)
+      const char *qSigName = NULL;
+      ivl_nexus_t qNex = ivl_lpm_q(lpm);
+      unsigned connect = ivl_nexus_ptrs(qNex);
+      for(unsigned i = 0 ; i < connect ; i++)
       {
-        qSigName = ivl_signal_basename(qSig);
-        const char *patt = "*_cs"; 
-        if(fnmatch(patt, qSigName, 0))
+        ivl_nexus_ptr_t qCon = ivl_nexus_ptr(qNex, i);
+        ivl_signal_t qSig = ivl_nexus_ptr_sig(qCon);
+        if(qSig)
         {
-          int line = ivl_signal_lineno(qSig);
-          const char *file = ivl_signal_file(qSig);
-          printViolation(rule, line, file, qSigName);
+          qSigName = ivl_signal_basename(qSig);
+          const char *patt = "*_cs"; 
+          if(fnmatch(patt, qSigName, 0))
+          {
+            int line = ivl_signal_lineno(qSig);
+            const char *file = ivl_signal_file(qSig);
+            printViolation(rule, line, file, qSigName);
+          }
         }
       }
     }

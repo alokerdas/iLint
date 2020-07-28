@@ -20,6 +20,28 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkNoSetReset(map<int, map<string, string> > & table, ivl_lpm_t & net)
+{
+  int rule = 1149;
+  const char *sAct = "active";
+  int line = ivl_lpm_lineno(net);
+  const char *file = ivl_lpm_file(net);
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_lpm_type(net) == IVL_LPM_FF)
+    {
+      bool setFound = false;
+      bool clrFound = false;
+      if (ivl_lpm_async_clr(net) || ivl_lpm_sync_clr(net))
+        clrFound = true;
+      if (ivl_lpm_async_set(net) || ivl_lpm_sync_set(net))
+        setFound = true;
+      if(!(setFound || clrFound))
+        printViolation(rule, line, file, ivl_lpm_basename(net)); 
+    }  
+  }
+}
+
 void checkComboInSequential(map<int, map<string, string> > & table, ivl_statement_t stmt)
 {
   int rule = 1139;
@@ -256,6 +278,108 @@ void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
   }
 }
 
+bool traverseBackward(ivl_nexus_t aNex)
+{
+  bool piFound = false;
+  unsigned connections = aNex ? ivl_nexus_ptrs(aNex) : 0;
+  for (int j = 0; j < connections; j++)
+  {
+    ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aNex, j);
+    ivl_signal_t aSig = ivl_nexus_ptr_sig(aConn);
+    if (aSig && (ivl_signal_port(aSig) == IVL_SIP_INOUT ||
+                 ivl_signal_port(aSig) == IVL_SIP_INPUT))
+    {
+      piFound = true;
+      break;
+    }
+    ivl_net_logic_t aLog = ivl_nexus_ptr_log(aConn);
+    if(aLog && (ivl_nexus_ptr_pin(aConn) == 0))
+    {
+      unsigned pins = ivl_logic_pins(aLog);
+      for (int i = 1; i < pins; i++)
+      {
+        ivl_nexus_t aJoint = ivl_logic_pin(aLog, i);
+        piFound = traverseBackward(aJoint);
+	if (piFound)
+          break;
+      }
+    }
+    ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(aConn);
+    if(anLpm && (ivl_lpm_q(anLpm) == aNex))
+    {
+      if ((ivl_lpm_type(anLpm) != IVL_LPM_FF) &&
+          (ivl_lpm_type(anLpm) != IVL_LPM_LATCH))
+      {
+        unsigned lpmSize = 2;
+        for (int i = 0; i < lpmSize; i++)
+        {
+          ivl_nexus_t inLpm = ivl_lpm_data(anLpm, i); 
+          piFound = traverseBackward(inLpm);
+          if (piFound)
+            break;
+        }
+      }
+    }
+    ivl_branch_t aBrnc = ivl_nexus_ptr_branch(aConn);
+    if(aBrnc && (ivl_branch_terminal(aBrnc, 0) == aNex))
+    {
+      ivl_nexus_t inBrnc = ivl_branch_terminal(aBrnc, 1); 
+      piFound = traverseBackward(inBrnc);
+	if (piFound)
+          break;
+    }
+    ivl_switch_t aSwc = ivl_nexus_ptr_switch(aConn);
+    if(aSwc && (ivl_switch_b(aSwc) == aNex))
+    {
+      ivl_nexus_t inSwc = ivl_switch_a(aSwc); 
+      piFound = traverseBackward(inSwc);
+	if (piFound)
+          break;
+    }
+  }
+  return piFound;
+}
+
+void checkTestClockPrimaryInput(map<int, map<string, string> > & table, ivl_lpm_t & net)
+{
+  int rule = 1156;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    if ((ivl_lpm_type(net) == IVL_LPM_FF) ||
+        (ivl_lpm_type(net) == IVL_LPM_LATCH))
+    {
+      const char *aSigName = NULL;
+      ivl_nexus_t aNex = ivl_lpm_clk(net);
+      unsigned connect = aNex ? ivl_nexus_ptrs(aNex) : 0;
+      for(unsigned i = 0 ; i < connect ; i++)
+      {
+        ivl_nexus_ptr_t aCon = ivl_nexus_ptr(aNex, i);
+        ivl_signal_t aSig = ivl_nexus_ptr_sig(aCon);
+        if (aSig)
+        {
+          aSigName = ivl_signal_basename(aSig);
+        }
+        ivl_net_logic_t aLog = ivl_nexus_ptr_log(aCon);
+        if (aLog && (ivl_nexus_ptr_pin(aCon) == 0))
+        {
+          unsigned pins = ivl_logic_pins(aLog);
+          for (int i = 1; i < pins; i++)
+          {
+            ivl_nexus_t aJoint = ivl_logic_pin(aLog, i);
+            if (traverseBackward(aJoint))
+            {
+              int line = ivl_lpm_lineno(net);
+              const char *file = ivl_lpm_file(net);
+              printViolation(rule, line, file, aSigName);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 void traverseForward(ivl_nexus_t aNex, ivl_signal_t piSig, int aRule)
 {
   unsigned connections = 0;
@@ -307,6 +431,30 @@ void traverseForward(ivl_nexus_t aNex, ivl_signal_t piSig, int aRule)
       ivl_nexus_t outSwc = ivl_switch_b(aSwc); 
       if (outSwc != aNex)
         traverseForward(outSwc, piSig, aRule);
+    }
+  }
+}
+
+void checkClockSignalOutput(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
+{
+  int rule = 1157;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    if ((ivl_lpm_type(lpm) == IVL_LPM_FF) ||
+        (ivl_lpm_type(lpm) == IVL_LPM_LATCH))
+    {
+      ivl_nexus_t aNex = ivl_lpm_clk(lpm);
+      unsigned connect = aNex ? ivl_nexus_ptrs(aNex) : 0;
+      for(unsigned i = 0 ; i < connect ; i++)
+      {
+        ivl_nexus_ptr_t aCon = ivl_nexus_ptr(aNex, i);
+        ivl_signal_t aSig = ivl_nexus_ptr_sig(aCon);
+        if (aSig)
+        {
+          traverseForward(aNex, aSig, rule);
+        }
+      }
     }
   }
 }
@@ -950,10 +1098,15 @@ void checkClockSeqLogic(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
             (ivl_lpm_select(anLpm) == ckNex))
         {
           rule = 1146;
+          file = ivl_lpm_file(anLpm);
+          line = ivl_lpm_lineno(anLpm);
           if (table[rule][sAct] == "yes")
           {
-            file = ivl_lpm_file(anLpm);
-            line = ivl_lpm_lineno(anLpm);
+            printViolation(rule, line, file, ckSigName);
+          }
+          rule = 1155;
+          if (table[rule][sAct] == "yes")
+          {
             printViolation(rule, line, file, ckSigName);
           }
         }

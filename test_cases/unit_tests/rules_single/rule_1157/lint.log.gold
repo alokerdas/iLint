@@ -1,0 +1,2 @@
+Violated 1157: Clock "clock" feeds the Primary Output signal "clk_out" directly or indirectly. File: 1157_Clock_Feeds_into_Primary_Output.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

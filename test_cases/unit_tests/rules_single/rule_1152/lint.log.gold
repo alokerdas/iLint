@@ -1,0 +1,2 @@
+Violated 1152: Reset signal name "reset" does not match to regular expression rst_. File: 1152_Reset_Name_Prefix_or_Suffix.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

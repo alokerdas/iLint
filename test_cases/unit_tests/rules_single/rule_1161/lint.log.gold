@@ -1,0 +1,2 @@
+Violated 1161: Clock Signal "clk_1"  Used as Set. File: 1161_Clock_Signal_Used_as_Set.v , Line: 11
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

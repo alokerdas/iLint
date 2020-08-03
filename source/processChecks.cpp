@@ -20,6 +20,45 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkNonConstShiftAmt(map<int, map<string, string> > & table, ivl_expr_t expr, bool firsTime)
+{
+  int rule = 1162;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  { 
+    switch (ivl_expr_type(expr))
+    {
+      case IVL_EX_SIGNAL:
+      {
+        ivl_signal_t aSig = ivl_expr_signal(expr);
+	const char *aSigName = ivl_signal_basename(aSig);
+        int line = ivl_expr_lineno(expr);
+        const char *file = ivl_expr_file(expr);
+        printViolation(rule, line, file, aSigName);
+      }
+      break;
+      case IVL_EX_BINARY:
+      {
+	if (firsTime)
+        {
+          if (ivl_expr_opcode(expr) == 'l')
+          {
+            checkNonConstShiftAmt(table, ivl_expr_oper2(expr), false);
+          }
+        }
+	else
+        {
+          checkNonConstShiftAmt(table, ivl_expr_oper1(expr), false);
+          checkNonConstShiftAmt(table, ivl_expr_oper2(expr), false);
+        }
+      }
+      break;
+      default:
+      break;
+    }
+  }
+}
+
 void checkIntegerNegative(map<int, map<string, string> > & table, ivl_statement_t & myStmt)
 {
   int rule = 1086;
@@ -332,10 +371,9 @@ void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_
                 opr1 = NULL;
 	      }
 	    }
-
             if (sigLst && (sigLst->find(rvSig) == sigLst->end()))
             {
-              rule = 1081;
+              rule = 1081; // same as 1159, not implemented
               if (table[rule][sAct] == "yes")
               {
                 printViolation(rule, line, file, rvSigName);
@@ -552,6 +590,7 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
   const char *sAct = "active";
   int line = ivl_event_lineno(evt);
   const char *file = ivl_event_file(evt);
+  const char *senSigName = NULL;
 
   for(unsigned i = 0; i < ivl_event_nany(evt); i++)
   {
@@ -559,19 +598,10 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
     for(unsigned j = 0 ; j < ivl_nexus_ptrs(aLevel); j++)
     {
       ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aLevel, j);
-      ivl_net_logic_t aConnGate = ivl_nexus_ptr_log(aConn);
-      if(aConnGate)
-      {
-        rule = 1096; // same as 1020
-        if (table[rule][sAct] == "yes")
-        { 
-          printViolation(rule, line, file);
-        }
-      }
-
       ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
       if(aConnSig)
       {
+        senSigName = ivl_signal_basename(aConnSig);
         if (sigLst)
         {
           if (sigLst->find(aConnSig) == sigLst->end())
@@ -583,9 +613,29 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
             rule = 1091;
             if (table[rule][sAct] == "yes")
             { 
-              printViolation(rule, line, file, ivl_signal_basename(aConnSig));
+              printViolation(rule, line, file, senSigName);
             }
           }
+        }
+      }
+
+      ivl_net_logic_t aConnGate = ivl_nexus_ptr_log(aConn);
+      if(aConnGate)
+      {
+        rule = 1096; // same as 1020
+        if (table[rule][sAct] == "yes")
+        { 
+          printViolation(rule, line, file);
+        }
+      }
+
+      ivl_lpm_t aConnLpm = ivl_nexus_ptr_lpm(aConn);
+      if(aConnLpm && (ivl_lpm_type(aConnLpm) == IVL_LPM_PART_VP))
+      {
+        rule = 1160;
+        if (table[rule][sAct] == "yes")
+        { 
+          printViolation(rule, line, file);
         }
       }
 
@@ -607,19 +657,10 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
     for(unsigned j = 0 ; j < connections; j++)
     {
       ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aNegEdge, j);
-      ivl_net_logic_t aConnGate = ivl_nexus_ptr_log(aConn);
-      if(aConnGate)
-      {
-        rule = 1096; // same as 1020
-        if (table[rule][sAct] == "yes")
-        { 
-          printViolation(rule, line, file);
-        }
-      }
-
       ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
       if(aConnSig)
       {
+        senSigName = ivl_signal_basename(aConnSig);
         if (sigLst)
         {
           if (sigLst->find(aConnSig) == sigLst->end())
@@ -631,9 +672,29 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
             rule = 1091;
             if (table[rule][sAct] == "yes")
             { 
-              printViolation(rule, line, file, ivl_signal_basename(aConnSig));
+              printViolation(rule, line, file);
             }
           }
+        }
+      }
+
+      ivl_net_logic_t aConnGate = ivl_nexus_ptr_log(aConn);
+      if(aConnGate)
+      {
+        rule = 1096; // same as 1020
+        if (table[rule][sAct] == "yes")
+        { 
+          printViolation(rule, line, file);
+        }
+      }
+
+      ivl_lpm_t aConnLpm = ivl_nexus_ptr_lpm(aConn);
+      if(aConnLpm && (ivl_lpm_type(aConnLpm) == IVL_LPM_PART_VP))
+      {
+        rule = 1160;
+        if (table[rule][sAct] == "yes")
+        { 
+          printViolation(rule, line, file);
         }
       }
 
@@ -655,19 +716,10 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
     for(unsigned j = 0 ; j < connections; j++)
     {
       ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aPosEdge, j);
-      ivl_net_logic_t aConnGate = ivl_nexus_ptr_log(aConn);
-      if(aConnGate)
-      {
-        rule = 1096; // same as 1020
-        if (table[rule][sAct] == "yes")
-        { 
-          printViolation(rule, line, file);
-        }
-      }
-
       ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
       if(aConnSig)
       {
+        senSigName = ivl_signal_basename(aConnSig);
         if (sigLst)
         {
           if (sigLst->find(aConnSig) == sigLst->end())
@@ -679,9 +731,29 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
             rule = 1091;
             if (table[rule][sAct] == "yes")
             { 
-              printViolation(rule, line, file, ivl_signal_basename(aConnSig));
+              printViolation(rule, line, file, senSigName);
             }
           }
+        }
+      }
+
+      ivl_net_logic_t aConnGate = ivl_nexus_ptr_log(aConn);
+      if(aConnGate)
+      {
+        rule = 1096; // same as 1020
+        if (table[rule][sAct] == "yes")
+        { 
+          printViolation(rule, line, file);
+        }
+      }
+
+      ivl_lpm_t aConnLpm = ivl_nexus_ptr_lpm(aConn);
+      if(aConnLpm && (ivl_lpm_type(aConnLpm) == IVL_LPM_PART_VP))
+      {
+        rule = 1160;
+        if (table[rule][sAct] == "yes")
+        { 
+          printViolation(rule, line, file, senSigName);
         }
       }
 
@@ -984,6 +1056,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
         DelayControl(table, aStmt, sigLst);
         checkNetStuck(table, aStmt);
         checkIntegerNegative(table, aStmt);
+        checkNonConstShiftAmt(table, ivl_stmt_rval(aStmt), true);
         if (ivl_statement_type(aStmt) == IVL_ST_ASSIGN)
           blkStmtFound = true;
 	else
@@ -1182,6 +1255,7 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
       SignalAssignedToSelf(table, net, sensitivityList);
       checkNetStuck(table, net);
       checkUnsignedVector(table, ivl_stmt_rval(net));
+      checkNonConstShiftAmt(table, ivl_stmt_rval(net), true);
       checkIntegerNegative(table, net);
       for (unsigned idx = 0; idx < ivl_stmt_lvals(net); idx++)
       {

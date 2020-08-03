@@ -105,9 +105,10 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
   for (int k = 0; k < lpms; k++)
   {
     ivl_lpm_t lpm = ivl_scope_lpm(scope, k);
-    checkTriEnb(table, lpm);
     checkLPM(table, lpm);
+    checkTriEnb(table, lpm);
     checkGlitch(table, lpm);
+    checkClockSet(table, lpm);
     checkNoSetReset(table, lpm);
     checkSetDataInput(table, lpm);
     checkClockSeqLogic(table, lpm);

@@ -186,7 +186,7 @@ const char* giveMassage(int num)
     massages[1157] = "Clock \"%s\" feeds the Primary Output signal \"%s\" directly or indirectly.";  
     massages[1158] = "Test Clock Signal \"%s\" Used as Data Input.";
     massages[1159] = "Signal \"%s\" should be included in the sensitivity list.";
-    massages[1160] = "Bit select \"%s\" in Sensitivity List.";
+    massages[1160] = "Bit select in Sensitivity List.";
     massages[1161] = "Clock Signal \"%s\"  Used as Set."; 
     massages[1162] = "Number of bits to shift (\"%s\") should be a constant.";
     massages[1163] = "Reset \"%s\" Driven by Sequential Logic."; 

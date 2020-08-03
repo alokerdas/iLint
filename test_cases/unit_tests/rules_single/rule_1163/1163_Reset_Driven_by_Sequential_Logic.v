@@ -5,12 +5,10 @@ output c;
 reg c;
 reg [8:0] count;
 always @( posedge clk )
-c = a & b; //"c" is output of registe, warning here
-always @(posedge clk)
-begin
+c = a; //"c" is output of registe, warning here
+always @(posedge clk or posedge c)
 if (c) //"c" is used as reset
 count = 0;
 else
-count = count + 1;
-end
+count = b;
 endmodule

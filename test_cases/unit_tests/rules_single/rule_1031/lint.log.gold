@@ -1,2 +1,2 @@
-Violated 1031: "clear" is used as both synchronous and asynchronous reset. File: 1031_Signal_Used_as_Synchronous_and_Asynchronous_Reset.v , Line: 6
+Violated 1031: "clear" is used as both synchronous and asynchronous reset. File: 1031_Signal_Used_as_Synchronous_and_Asynchronous_Reset.v , Line: 14
 TOTAL NUMBER OF VIOLATIONS ARE: 1.

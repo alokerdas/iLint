@@ -1,0 +1,2 @@
+Violated 1162: Number of bits to shift ("num") should be a constant. File: 1162_Non_constant_Shift_Amount.v , Line: 7
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

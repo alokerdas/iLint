@@ -299,7 +299,7 @@ extern void checkClockReset(map<int, map<string, string> > & table,ivl_lpm_t & n
 extern void checkSyncAsyncSet(map<int, map<string, string> > & table,ivl_lpm_t & net);
 extern void checkResetDataInput(map<int, map<string, string> > & table,ivl_lpm_t & net);
 extern void checkResetSequential(map<int, map<string, string> > & table,ivl_lpm_t & net);
-extern void checkNonConstShiftAmt(map<int, map<string, string> > & table,ivl_lpm_t & net);
+extern void checkNonConstShiftAmt(map<int, map<string, string> > & table, ivl_expr_t & net, bool ft);
 extern void checkClockSet(map<int, map<string, string> > & table,ivl_lpm_t & net);
 extern void checkBitSelectSensitivity(map<int, map<string, string> > & table,ivl_lpm_t & net);
 extern void checkRightHandSideVarSensitivity(map<int, map<string, string> > & table,ivl_lpm_t & net);

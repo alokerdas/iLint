@@ -192,8 +192,8 @@ const char* giveMassage(int num)
     massages[1163] = "Reset \"%s\" Driven by Sequential Logic."; 
     massages[1164] = "Reset Signal \"%s\" Used as Data Input."; 
     massages[1165] = "Signal \"%s\" Used as Synchronous and Asynchronous Set.";
-    massages[1166] = "Active low signal name \"%s\" does not match to regular expression .*_n."; 
-    massages[1167] = "Active high signal name \"%s\" does not match to regular expression .*_p.";
+    massages[1166] = "Active low signal name \"%s\" does not match to regular expression *_n."; 
+    massages[1167] = "Active high signal name \"%s\" does not match to regular expression *_p.";
     massages[1168] = "Register ouput name \"%s\" does not match to regular expression .*_r.";
     massages[1169] = "Register Input name \"%s\" does not match to regular expression .*_nxt."; 
     massages[1170] = "Instance/Module Name \"%s\" uses the same name as an ASIC library cell name."; 

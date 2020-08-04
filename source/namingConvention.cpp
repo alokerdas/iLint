@@ -20,6 +20,61 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkActiveSignalName(map<int, map<string, string> > & table, ivl_event_t & evt)
+{
+  int rule = 1166;
+  const char *sAct = "active";
+  int line = ivl_event_lineno(evt);
+  const char *file = ivl_event_file(evt);
+  if (table[rule][sAct] == "yes")
+  {
+    for(unsigned i = 0; i < ivl_event_nneg(evt); i++)
+    {
+      ivl_nexus_t evtNex  = ivl_event_neg(evt, i);
+      for(unsigned j = 0; j < ivl_nexus_ptrs(evtNex); j++)
+      {       
+        ivl_nexus_ptr_t aConn = ivl_nexus_ptr(evtNex, j);
+        ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
+        if(aConnSig)
+        {
+          const char *nameNedge = ivl_signal_basename(aConnSig);
+          const char *patt = "*_n"; 
+          if(fnmatch(patt, nameNedge, 0))
+          {
+            int line = ivl_signal_lineno(aConnSig);
+            const char *file = ivl_signal_file(aConnSig);
+            printViolation(rule, line, file, nameNedge);
+          }
+        }
+      }
+    }
+  }
+  rule = 1167;
+  if (table[rule][sAct] == "yes")
+  {
+    for(unsigned i = 0; i < ivl_event_npos(evt); i++)
+    {
+      ivl_nexus_t evtNex  = ivl_event_pos(evt, i);
+      for(unsigned j = 0; j < ivl_nexus_ptrs(evtNex); j++)
+      {       
+        ivl_nexus_ptr_t aConn = ivl_nexus_ptr(evtNex, j);
+        ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
+        if(aConnSig)
+        {
+          const char *namePedge = ivl_signal_basename(aConnSig);
+          const char *patt = "*_p"; 
+          if(fnmatch(patt, namePedge, 0))
+          {
+            int line = ivl_signal_lineno(aConnSig);
+            const char *file = ivl_signal_file(aConnSig);
+            printViolation(rule, line, file, namePedge);
+          }
+        }
+      }
+    }
+  }
+}
+
 void checkSetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net)
 {
   int rule = 1153;
@@ -90,28 +145,59 @@ void checkResetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & 
 
 void checkRegPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
 {
-  int rule = 1147;
+  int rule = 0;
   const char *sAct = "active";
-  if (table[rule][sAct] == "yes")
+  if (ivl_lpm_type(lpm) == IVL_LPM_FF)
   {
-    if (ivl_lpm_type(lpm) == IVL_LPM_FF)
+    ivl_nexus_t qNex = ivl_lpm_q(lpm);
+    unsigned connect = ivl_nexus_ptrs(qNex);
+    for(unsigned i = 0 ; i < connect ; i++)
     {
-      const char *qSigName = NULL;
-      ivl_nexus_t qNex = ivl_lpm_q(lpm);
-      unsigned connect = ivl_nexus_ptrs(qNex);
-      for(unsigned i = 0 ; i < connect ; i++)
+      ivl_nexus_ptr_t qCon = ivl_nexus_ptr(qNex, i);
+      ivl_signal_t qSig = ivl_nexus_ptr_sig(qCon);
+      if(qSig)
       {
-        ivl_nexus_ptr_t qCon = ivl_nexus_ptr(qNex, i);
-        ivl_signal_t qSig = ivl_nexus_ptr_sig(qCon);
-        if(qSig)
+        int line = ivl_signal_lineno(qSig);
+        const char *file = ivl_signal_file(qSig);
+        const char *qSigName = ivl_signal_basename(qSig);
+        rule = 1147;
+        if (table[rule][sAct] == "yes")
         {
-          qSigName = ivl_signal_basename(qSig);
           const char *patt = "*_cs"; 
           if(fnmatch(patt, qSigName, 0))
           {
-            int line = ivl_signal_lineno(qSig);
-            const char *file = ivl_signal_file(qSig);
             printViolation(rule, line, file, qSigName);
+          }
+        }
+        rule = 1168;
+        if (table[rule][sAct] == "yes")
+        {
+          const char *patt = "*_r"; 
+          if(fnmatch(patt, qSigName, 0))
+          {
+            printViolation(rule, line, file, qSigName);
+          }
+        }
+      }
+    }
+    ivl_nexus_t dataNex = ivl_lpm_data(lpm, 0);
+    connect = ivl_nexus_ptrs(dataNex);
+    for(unsigned i = 0 ; i < connect ; i++)
+    {
+      ivl_nexus_ptr_t dataCon = ivl_nexus_ptr(dataNex, i);
+      ivl_signal_t dataSig = ivl_nexus_ptr_sig(dataCon);
+      if(dataSig)
+      {
+        int line = ivl_signal_lineno(dataSig);
+        const char *file = ivl_signal_file(dataSig);
+        const char *dataSigName = ivl_signal_basename(dataSig);
+        rule = 1169;
+        if (table[rule][sAct] == "yes")
+        {
+          const char *patt = "*_nxt"; 
+          if(fnmatch(patt, dataSigName, 0))
+          {
+            printViolation(rule, line, file, dataSigName);
           }
         }
       }

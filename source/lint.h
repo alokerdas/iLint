@@ -291,7 +291,7 @@ extern void checkSpecialSignalBitSelect(map<int, map<string, string> > & table, 
 extern void checkTestClockSignalDataInput(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkMultipleBitSpecialSignal(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkMultipleClockSource(map<int, map<string, string> > & table,ivl_lpm_t & net);
-extern void checkActiveLowSignal(map<int, map<string, string> > & table,ivl_lpm_t & net);
+extern void checkActiveSignalName(map<int, map<string, string> > & table, ivl_event_t & net);
 extern void checkActiveHighSignal(map<int, map<string, string> > & table,ivl_lpm_t & lpm);
 extern void checkRegisterOutputPrefixSuffix(map<int, map<string, string> > & table,ivl_lpm_t & lpm);
 extern void checkRegisterInputPrefixSuffix(map<int, map<string, string> > & table,ivl_lpm_t & lpm);
@@ -307,6 +307,7 @@ extern void checkNonConstDivisor(map<int, map<string, string> > & table, ivl_lpm
 extern void checkNonConstDivident(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkTestClock2_1Mux(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkClockControl(map<int, map<string, string> > & table, ivl_lpm_t & net);
+extern void checkFallingActiveClock(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkResetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkSetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net);
 extern void checkUnsignedVector(map<int, map<string, string> > & table, ivl_lpm_t & lpm);

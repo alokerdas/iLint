@@ -1,0 +1,2 @@
+Violated 1167: Active high signal name "clk" does not match to regular expression *_p. File: 1167_Active_High_Signal.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

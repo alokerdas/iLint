@@ -1,0 +1,2 @@
+Violated 1166: Active low signal name "rst" does not match to regular expression *_n. File: 1166_Active_Low_Signal_Name_Prefix_or_Suffix.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

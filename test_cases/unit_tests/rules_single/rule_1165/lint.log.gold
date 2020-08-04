@@ -1,0 +1,2 @@
+Violated 1165: Signal "preset" Used as Synchronous and Asynchronous Set. File: 1165_Signal_Used_as_Synchronous_and.v , Line: 13
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

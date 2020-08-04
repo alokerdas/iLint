@@ -1,0 +1,2 @@
+Violated 1168: Register ouput name "dataout" does not match to regular expression .*_r. File: 1168_Register_Output_Name_Prefix_or_Suffix.v , Line: 4
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -1,0 +1,2 @@
+Violated 1169: Register Input name "datain" does not match to regular expression .*_nxt. File: 1169_Register_Input_Signal_Name_Prefix_or_Suffix.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

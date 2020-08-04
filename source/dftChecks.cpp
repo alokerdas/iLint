@@ -176,7 +176,7 @@ void checkComboInSequential(map<int, map<string, string> > & table, ivl_statemen
   }
 }
 
-void checkActiveLowSignal(map<int, map<string, string> > & table,ivl_lpm_t & lpm)
+void checkFallingActiveClock(map<int, map<string, string> > & table,ivl_lpm_t & lpm)
 {
   int rule = 1040;
   const char *sAct = "active";
@@ -243,18 +243,6 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName)
         {
           ivl_nexus_t outNex = ivl_lpm_q(anLpm);
           found = traverseTillFF(outNex, "DATA");
-/*          ivl_nexus_t outNex = ivl_lpm_q(anLpm);
-          unsigned conn = ivl_nexus_ptrs(outNex);
-          if (conn == 3)
-          {
-            ivl_nexus_ptr_t aCon = ivl_nexus_ptr(outNex, 2);
-            ivl_lpm_t anFF = ivl_nexus_ptr_lpm(aCon);
-            if (anFF && ivl_lpm_type(anFF) == IVL_LPM_FF)
-            {
-              found = anFF;
-	      break;
-            }
-          } */
         }
       }
       if (ivl_lpm_type(anLpm) == IVL_LPM_FF)
@@ -352,6 +340,17 @@ void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
         }
       }
     }
+    rule = 1031;
+    if (table[rule][sAct] == "yes")
+    {
+      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "SYNCCLR") : NULL;
+      if (foundFF)
+      {
+        file = ivl_lpm_file(foundFF);
+        line = ivl_lpm_lineno(foundFF);
+        printViolation(rule, line, file, clrSigName);  
+      }
+    }
     rule = 1163;
     if (table[rule][sAct] == "yes")
     {
@@ -363,15 +362,15 @@ void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
         printViolation(rule, line, file, clrSigName);
       }
     }
-    rule = 1031;
+    rule = 1164;
     if (table[rule][sAct] == "yes")
     {
-      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "SYNCCLR") : NULL;
+      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "DATA") : NULL;
       if (foundFF)
       {
         file = ivl_lpm_file(foundFF);
         line = ivl_lpm_lineno(foundFF);
-        printViolation(rule, line, file, clrSigName);  
+        printViolation(rule, line, file, clrSigName);
       }
     }
   }
@@ -723,51 +722,64 @@ void checkEnableSetReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
   const char *file = ivl_lpm_file(lpm);
   if (ivl_lpm_type(lpm) == IVL_LPM_FF)
   {
+    ivl_signal_t setSig = NULL;
     const char *setSigName = NULL;
-    ivl_nexus_t setNex = ivl_lpm_sync_set(lpm);
-    if (!setNex)
-    {
-      setNex = ivl_lpm_async_set(lpm);
-      if (!setNex)
-        return;
-    }
-    unsigned connect = ivl_nexus_ptrs(setNex);
+    ivl_nexus_t setNex = ivl_lpm_async_set(lpm);
+    unsigned connect = setNex ? ivl_nexus_ptrs(setNex) : 0;
     for(unsigned i = 0 ; i < connect ; i++)
     {
+      if (i >= ivl_nexus_ptrs(setNex))
+        continue;
       ivl_nexus_ptr_t setCon = ivl_nexus_ptr(setNex, i);
-      ivl_signal_t setSig = ivl_nexus_ptr_sig(setCon);
-      if(setSig)
+      setSig = setSig ? setSig : ivl_nexus_ptr_sig(setCon);
+      setSigName = setSig ? ivl_signal_basename(setSig) : NULL;
+      ivl_net_logic_t aLogic = ivl_nexus_ptr_log(setCon);
+      if (aLogic)
       {
-        setSigName = ivl_signal_basename(setSig);
+        if (ivl_signal_local(setSig))
+        {
+          if (ivl_logic_type(aLogic) == IVL_LO_NOT)
+          {
+            setNex = ivl_logic_pin(aLogic, 1);
+	    setSig = NULL;
+	    i = -1; // so that it bocome 0 in the next iteration
+	    continue; //cant change connect, no need
+          }
+        }
       }
-      ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(setCon);
-      if(anLpm)
+    }
+    rule = 1111;
+    if (table[rule][sAct] == "yes")
+    {
+      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "ASYNCCLR") : NULL;
+      foundFF = foundFF ? foundFF : setNex ? traverseTillFF(setNex, "SYNCCLR") : NULL;
+      if (foundFF)
       {
-        ivl_nexus_t clrNex = ivl_lpm_sync_clr(anLpm);
-        if (!clrNex)
-        {
-          clrNex = ivl_lpm_async_clr(anLpm);
-        }
-        if (clrNex && (clrNex == setNex))
-        {
-          rule = 1111;
-          if (table[rule][sAct] == "yes")
-          {
-            file = ivl_lpm_file(anLpm);
-            line = ivl_lpm_lineno(anLpm);
-            printViolation(rule, line, file, setSigName);
-          }
-        }
-        if (ivl_lpm_q(anLpm) == setNex)
-        {
-          rule = 1148;
-          if (table[rule][sAct] == "yes")
-          {
-            file = ivl_lpm_file(anLpm);
-            line = ivl_lpm_lineno(anLpm);
-            printViolation(rule, line, file, setSigName);
-          }
-        }
+        file = ivl_lpm_file(foundFF);
+        line = ivl_lpm_lineno(foundFF);
+        printViolation(rule, line, file, setSigName);
+      }
+    }
+    rule = 1148;
+    if (table[rule][sAct] == "yes")
+    {
+      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "OUT") : NULL;
+      if (foundFF)
+      {
+        file = ivl_lpm_file(foundFF);
+        line = ivl_lpm_lineno(foundFF);
+        printViolation(rule, line, file, setSigName);
+      }
+    }
+    rule = 1165;
+    if (table[rule][sAct] == "yes")
+    {
+      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "SYNCSET") : NULL;
+      if (foundFF)
+      {
+        file = ivl_lpm_file(foundFF);
+        line = ivl_lpm_lineno(foundFF);
+        printViolation(rule, line, file, setSigName);
       }
     }
   }
@@ -782,10 +794,10 @@ void checkSetDataInput(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
   if (ivl_lpm_type(lpm) == IVL_LPM_FF)
   {
     const char *setSigName = NULL;
-    ivl_nexus_t setNex = ivl_lpm_sync_set(lpm);
+    ivl_nexus_t setNex = ivl_lpm_async_set(lpm);
     if (!setNex)
     {
-      setNex = ivl_lpm_async_set(lpm);
+      setNex = ivl_lpm_sync_set(lpm);
       if (!setNex)
         return;
     }

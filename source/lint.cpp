@@ -115,11 +115,11 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     checkEnableSetReset(table, lpm);
     checkSyncAsyncReset(table, lpm);
     checkNonConstDivisor(table, lpm);
-    checkActiveLowSignal(table, lpm);
     checkRegPrefixSuffix(table, lpm);
     checkSetPrefixSuffix(table, lpm);
     checkResetPrefixSuffix(table, lpm);
     checkClockSignalOutput(table, lpm);
+    checkFallingActiveClock(table, lpm);
     checkClockActiveBothEdges(table, lpm);
     checkTestClockPrimaryInput(table, lpm);
     checkSpecialSignalBitSelect(table, lpm);
@@ -144,6 +144,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
       checkEvent(table, evt, NULL);
       checkEdgeNonEdge(table, evt);
       checkMultipleClock(table, evt);
+      checkActiveSignalName(table, evt);
     }
     else
     {

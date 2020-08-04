@@ -4,9 +4,7 @@ output [8:0] count;
 reg [8:0] count;
 output y;
 reg y;
-initial
-count <= 0;
-always @(posedge clock)
+always @(posedge clock or posedge reset)
 begin
 if (reset)//"reset" is reset signal
 count = 0;

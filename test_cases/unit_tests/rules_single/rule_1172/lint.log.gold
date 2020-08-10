@@ -1,0 +1,2 @@
+Violated 1172: Instance name "test" should not be the same as the module name. File: 1172_Identical_Module_Name_and_Instance_Name.v , Line: 4
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

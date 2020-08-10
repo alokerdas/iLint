@@ -1,0 +1,3 @@
+Violated 1185: Descending bit order and zero bound are not used for range declaration of "a". File: 1185UnconventionalVectorRangeDefinition.v , Line: 4
+Violated 1185: Descending bit order and zero bound are not used for range declaration of "b". File: 1185UnconventionalVectorRangeDefinition.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

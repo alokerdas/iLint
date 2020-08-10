@@ -201,14 +201,14 @@ const char* giveMassage(int num)
     massages[1172] = "Instance name \"%s\" should not be the same as the module name.";
     massages[1173] = "Module instance \"%s\" should be named in CASE_LOWER case.";
     massages[1174] = "Module \"%s\" is empty.";
-    massages[1175] = "Gate name \"%s\" does not match to regular expression gate_.";
+    massages[1175] = "Gate name \"%s\" does not match to regular expression \"gate_*< >\"";
     massages[1176] = "Implicit and Confusing Operator Precedence on \"%s\".";
     massages[1177] = "Reduction operation should not be performed on single-bit signal \"%s\"."; 
-    massages[1178] = "Gate Instance \"%s\" Found."; 
+    massages[1178] = "Gate Instance \"%s\" Found in the top module."; 
     massages[1179] = "Tri-state ouput signal name \"%s\" does not match to regular expression .*_z.";
     massages[1180] = "Condition expression on \"%s\" is wider than single-bit."; 
     massages[1181] = "Task \"%s\" not synthesizeble.";
-    massages[1182] = "Process name \"%s\" does not match to regular expression *._PROC.";
+    massages[1182] = "Process name \"%s\" does not match to regular expression \"*_PROC\".";
     massages[1183] = "The length of Process \"%s\" is unconventional and should be in the range from 3 to 16.";
     massages[1184] = "The Process \"%s\" is unconventional and should be in CASE_LOWER.";
     massages[1185] = "Descending bit order and zero bound are not used for range declaration of \"%s\".";

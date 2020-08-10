@@ -861,14 +861,36 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
     break;
     case IVL_EX_UNARY:
     {
-      checkConditExpr(table, ivl_expr_oper1(expr));
+      ivl_expr_t unExpr = ivl_expr_oper1(expr);
+      if (ivl_expr_opcode(expr) == '&')
+      {
+        if (ivl_expr_width(unExpr) == 1)
+        {
+          const char *aSigName = NULL;
+          if (ivl_expr_type(unExpr) == IVL_EX_SIGNAL)
+          {
+            ivl_signal_t aSig = ivl_expr_signal(unExpr);
+            aSigName = ivl_signal_basename(aSig);
+          }
+	  else
+          {
+            aSigName = ivl_expr_name(unExpr);
+          }
+          rule = 1177;
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file, aSigName);
+          }
+        }
+      }
+      checkConditExpr(table, unExpr);
     }
     break;
     case IVL_EX_BINARY:
     {
       if (ivl_expr_opcode(expr) == 'n')
       {
-        rule = 1030;
+        rule = 1030; // same as 1180, not implemented
         if (table[rule][sAct] == "yes")
         {
           printViolation(rule, line, file);
@@ -887,6 +909,11 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
       if (table[rule][sAct] == "yes")
       {
         printViolation(rule, line, file);
+      }
+      ivl_expr_t opr3rd = ivl_expr_oper3(expr);
+      if (ivl_expr_type(opr3rd) == IVL_EX_NUMBER)
+      {
+        const char *someBits = ivl_expr_bits(opr3rd);
       }
     }
     break;
@@ -1309,6 +1336,19 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
     {
       // if repeat statement has z or x in the value then it becomes NOOP
       checkRepeatExpression(table, net);
+    }
+    break;
+    case IVL_ST_FORK:
+    {
+      ivl_scope_t forkScp = ivl_stmt_block_scope(net);
+      if (!forkScp)
+      {
+        int rule = 1186;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, NULL);
+        }
+      }
     }
     break;
     case IVL_ST_TRIGGER:

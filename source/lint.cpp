@@ -40,6 +40,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
   {
     checkNOoutput(table, scope);
     checkModuleName(table, scope);
+    checkEmptyModule(table, scope);
   }
 
   if (ivl_scope_type(scope) == IVL_SCT_TASK)
@@ -52,6 +53,11 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     checkFunctionName(table, scope);
     ivl_signal_t retVal = ivl_scope_port(scope, 0);
     checkIntegerFunction(table, retVal);
+  }
+
+  if (ivl_scope_type(scope) == IVL_SCT_FORK)
+  {
+    checkForkStatementNotSynthesizable(table, scope);
   }
 
   if (ivl_scope_is_cell(scope))
@@ -98,6 +104,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
   {
     ivl_net_logic_t gate = ivl_scope_log(scope, j);
     checkGATE(table, gate);
+    checkGatePrefixSuffix(table, gate);
     checkUDPInstanceNotSynthesizable(table, gate);
   }
 
@@ -117,13 +124,16 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     checkNonConstDivisor(table, lpm);
     checkRegPrefixSuffix(table, lpm);
     checkSetPrefixSuffix(table, lpm);
+    checkTristateBuffers(table, lpm);
     checkResetPrefixSuffix(table, lpm);
     checkClockSignalOutput(table, lpm);
     checkFallingActiveClock(table, lpm);
     checkClockActiveBothEdges(table, lpm);
     checkTestClockPrimaryInput(table, lpm);
+    checkLatchNamePrefixSuffix(table, lpm);
     checkSpecialSignalBitSelect(table, lpm);
     checkSpecialTypePortConnectedtoanExpression(table, lpm);
+
   }
 
   unsigned params = ivl_scope_params(scope);

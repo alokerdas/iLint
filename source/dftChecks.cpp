@@ -20,17 +20,86 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkTristateBuffers(map<int, map<string, string> > & table, ivl_lpm_t & net)
+{
+  int rule = 0;
+  const char *sAct = "active";
+  unsigned line = ivl_lpm_lineno(net);
+  const char *file = ivl_lpm_file(net);
+  if (ivl_lpm_type(net) == IVL_LPM_MUX)
+  {
+    // e ? i2 : 1'bz type of definition will be MUX lpm
+    for(unsigned j = 0 ; j < 2 ; j++)
+    {
+      ivl_nexus_t muxIn = ivl_lpm_data(net, j);
+      unsigned connect = ivl_nexus_ptrs(muxIn);
+      for(unsigned i = 0 ; i < connect ; i++)
+      {
+        ivl_nexus_ptr_t inCon = ivl_nexus_ptr(muxIn, i);
+        ivl_signal_t aSig = ivl_nexus_ptr_sig(inCon);
+        if(aSig && ivl_signal_local(aSig) && (connect == 2))
+        {
+          const char *outSigName = NULL;
+          ivl_nexus_t muxOut = ivl_lpm_q(net);
+          unsigned joints = ivl_nexus_ptrs(muxOut);
+          for(unsigned k = 0 ; k < joints ; k++)
+          {
+            ivl_nexus_ptr_t outConn = ivl_nexus_ptr(muxOut, k);
+            ivl_signal_t outSig = ivl_nexus_ptr_sig(outConn);
+            if (outSig)
+            {
+              outSigName = ivl_signal_basename(outSig);
+              rule = 1179;
+              if (table[rule][sAct] == "yes")
+              {
+                const char *patt = "*_z";
+                if(fnmatch(patt, outSigName, 0))
+                {
+                  printViolation(rule, line, file, outSigName);
+                }
+              }
+            }
+            rule = 1007;
+            if (table[rule][sAct] == "yes")
+            {
+              ivl_lpm_t anLPM = ivl_nexus_ptr_lpm(outConn);
+              if (anLPM && (anLPM != net))
+              {
+                if (ivl_lpm_q(anLPM) == muxOut)
+                  printViolation(rule, line, file, outSigName);
+              }
+              ivl_net_logic_t aLogic = ivl_nexus_ptr_log(outConn);
+              if (aLogic)
+              {
+		if (ivl_logic_pin(aLogic, 0) == muxOut)
+                  printViolation(rule, line, file, outSigName);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 void checkClockSet(map<int, map<string, string> > & table,ivl_lpm_t & net)
 {
   int rule = 1161;
   const char *sAct = "active";
   if (table[rule][sAct] == "yes")
   {
-    if ((ivl_lpm_type(net) == IVL_LPM_FF) ||
-        (ivl_lpm_type(net) == IVL_LPM_LATCH))
+    ivl_nexus_t ckNex = NULL;
+    if (ivl_lpm_type(net) == IVL_LPM_FF)
+    {
+      ckNex = ivl_lpm_clk(net);
+    }
+    if (ivl_lpm_type(net) == IVL_LPM_LATCH)
+    {
+      ckNex = ivl_lpm_enable(net);
+    }
+    if (ckNex)
     {
       const char *ckSigName = NULL;
-      ivl_nexus_t ckNex = ivl_lpm_clk(net);
       unsigned connect = ivl_nexus_ptrs(ckNex);
       for(unsigned i = 0 ; i < connect ; i++)
       {
@@ -444,12 +513,19 @@ void checkTestClockPrimaryInput(map<int, map<string, string> > & table, ivl_lpm_
   const char *sAct = "active";
   if (table[rule][sAct] == "yes")
   {
-    if ((ivl_lpm_type(net) == IVL_LPM_FF) ||
-        (ivl_lpm_type(net) == IVL_LPM_LATCH))
+    ivl_nexus_t aNex = NULL;
+    if (ivl_lpm_type(net) == IVL_LPM_FF)
+    {
+      aNex = ivl_lpm_clk(net);
+    }
+    if (ivl_lpm_type(net) == IVL_LPM_LATCH)
+    {
+      aNex = ivl_lpm_enable(net);
+    }
+    if (aNex)
     {
       const char *aSigName = NULL;
-      ivl_nexus_t aNex = ivl_lpm_clk(net);
-      unsigned connect = aNex ? ivl_nexus_ptrs(aNex) : 0;
+      unsigned connect = ivl_nexus_ptrs(aNex);
       for(unsigned i = 0 ; i < connect ; i++)
       {
         ivl_nexus_ptr_t aCon = ivl_nexus_ptr(aNex, i);
@@ -539,11 +615,18 @@ void checkClockSignalOutput(map<int, map<string, string> > & table, ivl_lpm_t & 
   const char *sAct = "active";
   if (table[rule][sAct] == "yes")
   {
-    if ((ivl_lpm_type(lpm) == IVL_LPM_FF) ||
-        (ivl_lpm_type(lpm) == IVL_LPM_LATCH))
+    ivl_nexus_t aNex = NULL;
+    if (ivl_lpm_type(lpm) == IVL_LPM_FF)
     {
-      ivl_nexus_t aNex = ivl_lpm_clk(lpm);
-      unsigned connect = aNex ? ivl_nexus_ptrs(aNex) : 0;
+      aNex = ivl_lpm_clk(lpm);
+    }
+    if (ivl_lpm_type(lpm) == IVL_LPM_LATCH)
+    {
+      aNex = ivl_lpm_enable(lpm);
+    }
+    if (aNex)
+    {
+      unsigned connect = ivl_nexus_ptrs(aNex);
       for(unsigned i = 0 ; i < connect ; i++)
       {
         ivl_nexus_ptr_t aCon = ivl_nexus_ptr(aNex, i);
@@ -1680,6 +1763,17 @@ void checkGATE(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
   const char *file = ivl_logic_file(gate);
   const char *logicName = ivl_logic_basename(gate);
 
+  if (ivl_logic_scope(gate))
+  {
+    if (!ivl_scope_parent(ivl_logic_scope(gate)))
+    {
+      rule = 1178;
+      if (table[rule][sAct] == "yes")
+      {
+        printViolation(rule, line, file, logicName);
+      }
+    }
+  }
   unsigned pins = ivl_logic_pins(gate);
   for (int i = 0; i < pins; i++)
   {
@@ -1698,15 +1792,6 @@ void checkGATE(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
         if (table[rule][sAct] == "yes")
         {
           printViolation(rule, line, file, logicName, lpmName);
-        }
-        rule = 1007;
-        if (table[rule][sAct] == "yes")
-        {
-          if (ivl_lpm_type(anLPM) == IVL_LPM_MUX)
-          {
-            // e ? i2 : 1'bz type of definition will be MUX lpm
-            printViolation(rule, line, file, lpmName);
-          }
         }
       }
     }

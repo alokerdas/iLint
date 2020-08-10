@@ -1,0 +1,2 @@
+Violated 1175: Gate name "and1<0.0>" does not match to regular expression "gate_*< >" File: 1175_Gate_Name_Prefix_or_Suffix.v , Line: 4
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

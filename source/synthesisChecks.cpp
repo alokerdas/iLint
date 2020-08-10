@@ -20,9 +20,39 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkForkStatementNotSynthesizable(map<int, map<string, string> > & table, ivl_scope_t net)
+{    
+  int rule = 1186;
+  const char *sAct = "active";
+  int line = ivl_scope_lineno(net);
+  const char *file = ivl_scope_file(net);
+  if (table[rule][sAct] == "yes")
+  {
+    const char *FName = ivl_scope_basename(net);
+    printViolation(rule, line, file, FName);
+  }
+}
+
+void checkEmptyModule(map<int, map<string, string> > & table, ivl_scope_t & myMod)
+{   
+  int rule = 1174;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    if (!(ivl_scope_logs(myMod) ||
+          ivl_scope_events(myMod) ||
+          ivl_scope_lpms(myMod)))
+    {
+      int line = ivl_scope_lineno(myMod);
+      const char *file = ivl_scope_file(myMod);
+      const char *modName = ivl_scope_basename(myMod);
+      printViolation(rule, line, file, modName);
+    }
+  }
+}
+
 void checkNetType(map<int, map<string, string> > & table, ivl_signal_t & mySig)
 {   
-
   int rule = 1119;
   const char *sAct = "active";
   int line = ivl_signal_lineno(mySig);

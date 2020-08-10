@@ -1,2 +1,2 @@
-Violated 1007: Tristate Buffer is not properly defined on "_ivl_5". File: 1007_tristate_not_properly_defined.v , Line: 5
+Violated 1007: Tristate Buffer is not properly defined on "o". File: 1007_tristate_not_properly_defined.v , Line: 5
 TOTAL NUMBER OF VIOLATIONS ARE: 1.

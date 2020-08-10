@@ -1,0 +1,2 @@
+Violated 1186: Fork statement "A" should not be used because it is not synthesizable. File: 1186_Fork_Statement_Not_Synthesizable.v , Line: 12
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

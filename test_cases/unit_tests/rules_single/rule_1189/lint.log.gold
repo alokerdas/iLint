@@ -1,0 +1,2 @@
+Violated 1189: Latch signal name "c" does not match to regular expression .*_lat. File: 1189_Latch_Name_Prefix_or_Suffix.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

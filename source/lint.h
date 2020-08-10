@@ -205,13 +205,13 @@ extern void checkTaskName(map<int, map<string, string> > & table, ivl_scope_t & 
 extern void checkInstanceModuleLibrary(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void checkTaskSynthesizeble(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void checkInstanceModuleNmaeCase(map<int, map<string, string> > & table, ivl_scope_t & scope);
-extern void checkInstanceModuleNmaelength(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void checkInstanceModuleNmaeSame(map<int, map<string, string> > & table, ivl_scope_t & scope);
+extern void checkEmptyModule(map<int, map<string, string> > & table, ivl_scope_t & myMod);
 extern void checkProcessPrefixSuffix(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void checkProcessNameLength(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void checkProcessNameCase(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void EdgeTriggerTask(map<int, map<string, string> > & table, ivl_scope_t & scope);
-extern void checkForkStatementNotSynthesizable(map<int, map<string, string> > & table, ivl_scope_t & scope);
+extern void checkForkStatementNotSynthesizable(map<int, map<string, string> > & table, ivl_scope_t scope);
 extern void checkInstanceNamePrefixSuffix(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void checkFunctionReturningReal(map<int, map<string, string> > & table, ivl_scope_t & scope);
 extern void InstanceNameRelatedModuleName(map<int, map<string, string> > & table, ivl_scope_t scope);
@@ -374,8 +374,8 @@ extern void checkClockActiveBothEdges(map<int, map<string, string> > & table, iv
 extern void checkNoFallingActiveClock(map<int, map<string, string> > & table, ivl_event_t & evt);
 extern void MissingProcessLabelName(map<int, map<string, string> > & table, ivl_statement_t net);
 extern void IBlock(map<int, map<string, string> > & table, ivl_process_t proc);
-extern void checkTriEnb(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
-;
+extern void checkTriEnb(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
+extern void checkTristateBuffers(map<int, map<string, string> > & table, ivl_lpm_t & net);
 
 
 extern void KeywordChangedNotSynthesizable(map<int, map<string, string> > & table, ivl_event_t & evt);

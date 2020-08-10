@@ -20,6 +20,49 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkLatchNamePrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
+{
+  int rule = 1189;
+  const char *sAct = "active";
+  unsigned line = ivl_lpm_lineno(lpm);
+  const char *file = ivl_lpm_file(lpm);
+  if (table[rule][sAct] == "yes")
+  {
+    if(ivl_lpm_type(lpm)==IVL_LPM_LATCH)
+    {
+      ivl_nexus_t outNex  = ivl_lpm_q(lpm);
+      ivl_nexus_ptr_t aConn = ivl_nexus_ptr(outNex, 0);
+      ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
+      if(aConnSig)
+      {
+        const char *latName = ivl_signal_basename(aConnSig);
+        const char *patt = "*_lat"; 
+        if(fnmatch(patt, latName, 0))
+        {
+          printViolation(rule, line, file, latName);
+        }
+      }
+    }
+  }
+}
+
+void checkGatePrefixSuffix(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
+{  
+  int rule = 1175;
+  const char *sAct = "active";
+  if (table[1175][sAct] == "yes")
+  {   
+    const char *gateName = ivl_logic_basename(gate);
+    const char *patt = "gate_*"; 
+    if(fnmatch(patt, gateName, 0))
+    {
+      int line = ivl_logic_lineno(gate);
+      const char *file = ivl_logic_file(gate);
+      printViolation(rule, line, file, gateName);
+    }
+  } 
+}
+
 void checkActiveSignalName(map<int, map<string, string> > & table, ivl_event_t & evt)
 {
   int rule = 1166;
@@ -207,7 +250,7 @@ void checkRegPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & lp
 
 void checkWire(map<int, map<string, string> > & table, ivl_signal_t & mySig)
 {
-  int rule = 1144;
+  int rule = 1144; // similar to 1187 but nut same. Not possible to implement
   const char *sAct = "active";
   int line = ivl_signal_lineno(mySig);
   const char *file = ivl_signal_file(mySig);
@@ -236,7 +279,7 @@ void checkRegister(map<int, map<string, string> > & table, ivl_signal_t & mySig)
 
 void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope)
 {
-  int rule = 1136;
+  int rule = 1136; // same as 1171, not implemented
   const char *sAct = "active";
   int line = ivl_scope_lineno(scope);
   const char *file = ivl_scope_file(scope);
@@ -260,7 +303,7 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
       printViolation(rule, line, file, moduleName);
     }
   }
-  rule = 1137;
+  rule = 1137; // same as 1173, not implemented
   if (table[rule][sAct] == "yes")
   {
     const char *patt = "[a-z]*"; 
@@ -281,6 +324,18 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
     if(fnmatch(patt, moduleName, 0))
     {
       printViolation(rule, line, file, moduleName, patt); 
+    }
+  }
+  rule = 1172;
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_scope_parent(scope))
+    {
+      const char *instName = ivl_scope_tname(scope);
+      if (moduleName && instName && !strcasecmp(instName, moduleName))
+      {
+        printViolation(rule, line, file, moduleName); 
+      }
     }
   }
 }
@@ -333,6 +388,11 @@ void checkTaskName(map<int, map<string, string> > & table, ivl_scope_t & scope)
     {
       printViolation(rule, line, file, taskName); 
     }
+  }
+  rule = 1181;
+  if (table[rule][sAct] == "yes")
+  {
+    printViolation(rule, line, file, taskName); 
   }
 }
 
@@ -456,17 +516,64 @@ void checkVariableName(map<int, map<string, string> > & table, ivl_signal_t & my
 
 void MissingProcessLabelName(map<int, map<string, string> > & table,ivl_statement_t net)
 {
-  int rule = 1087;
+  int rule = 0;
   const char *sAct = "active";
   int line = ivl_stmt_lineno(net);
   const char *file = ivl_stmt_file(net);
-
-  if (table[rule][sAct] == "yes")
+  ivl_scope_t sscope = ivl_stmt_block_scope(net);
+  if(!sscope)
   {
-    ivl_scope_t sscope = ivl_stmt_block_scope(net);
-    if(!sscope)
+    rule = 1087;
+    if (table[rule][sAct] == "yes")
     {
       printViolation(rule, line, file);
+    }
+  }
+  else
+  {
+    const char *blockName = ivl_scope_basename(sscope);
+    rule = 1182;
+    if (table[rule][sAct] == "yes")
+    {
+      const char *patt = "*_PROC";
+      if(fnmatch(patt, blockName, 0))
+      {
+        printViolation(rule, line, file, blockName); 
+      }
+    }
+    rule = 1183;
+    if (table[rule][sAct] == "yes")
+    {
+      int nml1 = 3;
+      const char *sNml1 = "namelengthMin";
+      if (table[rule].find(sNml1) != table[rule].end())
+      {
+        nml1 = stoi(table[rule][sNml1]);
+      }
+      int nml2 = 16;
+      const char *sNml2 = "namelengthMax";
+      if (table[rule].find(sNml2) != table[rule].end())
+      {
+        nml2 = stoi(table[rule][sNml2]);
+      }
+      if ((strlen(blockName) < nml1) || (strlen(blockName) > nml2))    
+      {
+        printViolation(rule, line, file, blockName);
+      }
+    }
+    rule = 1184;
+    if (table[rule][sAct] == "yes")
+    {
+      const char *patt = "[a-z]*"; 
+      const char *sPat = "pattern";
+      if (table[rule].find(sPat) != table[rule].end())
+      {
+        patt = (char*) table[rule][sPat].c_str();
+      }
+      if(fnmatch(patt, blockName, 0))
+      {
+        printViolation(rule, line, file, blockName); 
+      }
     }
   }
 }
@@ -725,6 +832,20 @@ void checkSignalName(map<int, map<string, string> > & table, ivl_signal_t & sig)
     if(fnmatch(patt, sigName, 0))
     {
       printViolation(rule, line, file, sigName, patt); 
+    }
+  }
+  rule = 1185;
+  if (table[rule][sAct] == "yes")
+  {
+    unsigned sigDim = ivl_signal_packed_dimensions(sig);
+    for (int i = 0; i < sigDim; i++)
+    {
+      int sigLSB = ivl_signal_packed_lsb(sig, i);
+      int sigMSB = ivl_signal_packed_msb(sig, i);
+      if (sigLSB > sigMSB)
+        printViolation(rule, line, file, sigName);
+      if (sigLSB && sigMSB)
+        printViolation(rule, line, file, sigName);
     }
   }
   rule = 1301; // this rule does not work. signame doesn't have the \ character

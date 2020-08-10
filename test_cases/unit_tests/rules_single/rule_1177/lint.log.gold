@@ -1,0 +1,2 @@
+Violated 1177: Reduction operation should not be performed on single-bit signal "a". File: 1177_Reduction_Operation_on_Single_bitSignal.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

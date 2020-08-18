@@ -1,0 +1,2 @@
+Violated 1196: Module instance name "test_0" does not match to regular expression U_*. File: 1196_Instance_Name_Prefix_or_Suffix.v , Line: 4
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

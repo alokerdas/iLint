@@ -222,7 +222,7 @@ const char* giveMassage(int num)
     massages[1193] = "Tri-state logic is inferred on signal \"%s\".";
     massages[1194] = "Mux inferred on signal  \"%s\".";
     massages[1195] = "Asynchronous signal name \"%s\" does not match to regular expression .*_a.";
-    massages[1196] = "Module instance name \"%s\" does not match to regular expression U_.*."; 
+    massages[1196] = "Module instance name \"%s\" does not match to regular expression U_*."; 
     massages[1197] = "Active low reset signal name \"%s\" does not follow the regular expression rst_.*_n.";
     massages[1198] = "Integer type object \"%s\" should not be used.";
     massages[1199] = "Next register name \"%s\" does not match to regular expression .*_ns."; 

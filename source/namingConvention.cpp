@@ -22,25 +22,31 @@
 
 void checkLatchNamePrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
 {
-  int rule = 1189;
+  int rule = 0;
   const char *sAct = "active";
   unsigned line = ivl_lpm_lineno(lpm);
   const char *file = ivl_lpm_file(lpm);
-  if (table[rule][sAct] == "yes")
+  if(ivl_lpm_type(lpm)==IVL_LPM_LATCH)
   {
-    if(ivl_lpm_type(lpm)==IVL_LPM_LATCH)
+    ivl_nexus_t outNex  = ivl_lpm_q(lpm);
+    ivl_nexus_ptr_t aConn = ivl_nexus_ptr(outNex, 0);
+    ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
+    if(aConnSig)
     {
-      ivl_nexus_t outNex  = ivl_lpm_q(lpm);
-      ivl_nexus_ptr_t aConn = ivl_nexus_ptr(outNex, 0);
-      ivl_signal_t aConnSig = ivl_nexus_ptr_sig(aConn);
-      if(aConnSig)
+      const char *latName = ivl_signal_basename(aConnSig);
+      rule = 1189;
+      if (table[rule][sAct] == "yes")
       {
-        const char *latName = ivl_signal_basename(aConnSig);
         const char *patt = "*_lat"; 
         if(fnmatch(patt, latName, 0))
         {
           printViolation(rule, line, file, latName);
         }
+      }
+      rule = 1192;
+      if (table[rule][sAct] == "yes")
+      {
+        printViolation(rule, line, file, latName);
       }
     }
   }
@@ -65,7 +71,7 @@ void checkGatePrefixSuffix(map<int, map<string, string> > & table, ivl_net_logic
 
 void checkActiveSignalName(map<int, map<string, string> > & table, ivl_event_t & evt)
 {
-  int rule = 1166;
+  int rule = 1166; // same as 1197, not implemented
   const char *sAct = "active";
   int line = ivl_event_lineno(evt);
   const char *file = ivl_event_file(evt);
@@ -92,7 +98,7 @@ void checkActiveSignalName(map<int, map<string, string> > & table, ivl_event_t &
       }
     }
   }
-  rule = 1167;
+  rule = 1167; // same as 1197, not implemented
   if (table[rule][sAct] == "yes")
   {
     for(unsigned i = 0; i < ivl_event_npos(evt); i++)
@@ -120,30 +126,40 @@ void checkActiveSignalName(map<int, map<string, string> > & table, ivl_event_t &
 
 void checkSetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net)
 {
-  int rule = 1153;
+  int rule = 0;
   const char *sAct = "active";
-  if (table[rule][sAct] == "yes")
+  if (ivl_lpm_type(net) == IVL_LPM_FF)
   {
-    if (ivl_lpm_type(net) == IVL_LPM_FF)
-    {
-      const char *stSigName = NULL;
-      ivl_nexus_t stNex = ivl_lpm_async_set(net);
-      if (!stNex)
-        stNex = ivl_lpm_sync_set(net);
+    const char *stSigName = NULL;
+    ivl_nexus_t stNex = ivl_lpm_async_set(net);
+    if (!stNex)
+      stNex = ivl_lpm_sync_set(net);
 
-      unsigned connect = stNex ? ivl_nexus_ptrs(stNex) : 0;
-      for(unsigned i = 0 ; i < connect ; i++)
+    unsigned connect = stNex ? ivl_nexus_ptrs(stNex) : 0;
+    for(unsigned i = 0 ; i < connect ; i++)
+    {
+      ivl_nexus_ptr_t stCon = ivl_nexus_ptr(stNex, i);
+      ivl_signal_t stSig = ivl_nexus_ptr_sig(stCon);
+      if(stSig)
       {
-        ivl_nexus_ptr_t stCon = ivl_nexus_ptr(stNex, i);
-        ivl_signal_t stSig = ivl_nexus_ptr_sig(stCon);
-        if(stSig)
+        stSigName = ivl_signal_basename(stSig);
+        int line = ivl_signal_lineno(stSig);
+        const char *file = ivl_signal_file(stSig);
+        rule = 1153;
+        if (table[rule][sAct] == "yes")
         {
-          stSigName = ivl_signal_basename(stSig);
           const char *patt = "set_*"; 
           if(fnmatch(patt, stSigName, 0))
           {
-            int line = ivl_signal_lineno(stSig);
-            const char *file = ivl_signal_file(stSig);
+            printViolation(rule, line, file, stSigName);
+          }
+        }
+        rule = 1195;
+        if (table[rule][sAct] == "yes")
+        {
+          const char *patt = "*_a"; 
+          if(fnmatch(patt, stSigName, 0))
+          {
             printViolation(rule, line, file, stSigName);
           }
         }
@@ -154,30 +170,40 @@ void checkSetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & ne
 
 void checkResetPrefixSuffix(map<int, map<string, string> > & table, ivl_lpm_t & net)
 {
-  int rule = 1152;
+  int rule = 0;
   const char *sAct = "active";
-  if (table[rule][sAct] == "yes")
+  if (ivl_lpm_type(net) == IVL_LPM_FF)
   {
-    if (ivl_lpm_type(net) == IVL_LPM_FF)
-    {
-      const char *rstSigName = NULL;
-      ivl_nexus_t rstNex = ivl_lpm_async_clr(net);
-      if (!rstNex)
-        rstNex = ivl_lpm_sync_clr(net);
+    const char *rstSigName = NULL;
+    ivl_nexus_t rstNex = ivl_lpm_async_clr(net);
+    if (!rstNex)
+      rstNex = ivl_lpm_sync_clr(net);
 
-      unsigned connect = rstNex ? ivl_nexus_ptrs(rstNex) : 0;
-      for(unsigned i = 0 ; i < connect ; i++)
+    unsigned connect = rstNex ? ivl_nexus_ptrs(rstNex) : 0;
+    for(unsigned i = 0 ; i < connect ; i++)
+    {
+      ivl_nexus_ptr_t rstCon = ivl_nexus_ptr(rstNex, i);
+      ivl_signal_t rstSig = ivl_nexus_ptr_sig(rstCon);
+      if(rstSig)
       {
-        ivl_nexus_ptr_t rstCon = ivl_nexus_ptr(rstNex, i);
-        ivl_signal_t rstSig = ivl_nexus_ptr_sig(rstCon);
-        if(rstSig)
+        rstSigName = ivl_signal_basename(rstSig);
+        int line = ivl_signal_lineno(rstSig);
+        const char *file = ivl_signal_file(rstSig);
+        rule = 1152;
+        if (table[rule][sAct] == "yes")
         {
-          rstSigName = ivl_signal_basename(rstSig);
           const char *patt = "rst_*"; 
           if(fnmatch(patt, rstSigName, 0))
           {
-            int line = ivl_signal_lineno(rstSig);
-            const char *file = ivl_signal_file(rstSig);
+            printViolation(rule, line, file, rstSigName);
+          }
+        }
+        rule = 1195;
+        if (table[rule][sAct] == "yes")
+        {
+          const char *patt = "*_a"; 
+          if(fnmatch(patt, rstSigName, 0))
+          {
             printViolation(rule, line, file, rstSigName);
           }
         }
@@ -333,6 +359,19 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
     {
       const char *instName = ivl_scope_tname(scope);
       if (moduleName && instName && !strcasecmp(instName, moduleName))
+      {
+        printViolation(rule, line, file, moduleName); 
+      }
+    }
+  }
+  rule = 1196;
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_scope_parent(scope))
+    {
+      const char *instName = ivl_scope_tname(scope);
+      const char *patt = "u_*"; 
+      if (instName && fnmatch(patt, instName, 0))
       {
         printViolation(rule, line, file, moduleName); 
       }
@@ -510,6 +549,11 @@ void checkVariableName(map<int, map<string, string> > & table, ivl_signal_t & my
       {
         printViolation(rule, line, file, sigName); 
       }
+    }
+    rule = 1198;
+    if (table[rule][sAct] == "yes")
+    {
+      printViolation(rule, line, file, sigName); 
     }
   }
 }

@@ -1,0 +1,2 @@
+Violated 1194: Mux inferred on signal  "q". File: 1194_Inferred_Mux.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

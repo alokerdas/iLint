@@ -1,0 +1,2 @@
+Violated 1195: Asynchronous signal name "rst_pa" does not match to regular expression .*_a. File: 1195_Asynchronous_Signal_Name_Prefix_or_Suffix.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -1,0 +1,2 @@
+Violated 1192: Latch is inferred on signal "c". File: 1192_Inferred_Latch.v , Line: 16
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

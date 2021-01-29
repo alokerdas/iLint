@@ -56,7 +56,7 @@ void checkGatePrefixSuffix(map<int, map<string, string> > & table, ivl_net_logic
 {  
   int rule = 1175;
   const char *sAct = "active";
-  if (table[1175][sAct] == "yes")
+  if (table[rule][sAct] == "yes")
   {   
     const char *gateName = ivl_logic_basename(gate);
     const char *patt = "gate_*"; 
@@ -65,6 +65,19 @@ void checkGatePrefixSuffix(map<int, map<string, string> > & table, ivl_net_logic
       int line = ivl_logic_lineno(gate);
       const char *file = ivl_logic_file(gate);
       printViolation(rule, line, file, gateName);
+    }
+  } 
+  rule = 1309;
+  if (table[rule][sAct] == "yes")
+  { 
+	  ivl_udp_t aUDP = ivl_logic_udp(gate);
+    const char *udpName = aUDP ? ivl_udp_name(aUDP) : NULL;
+    const char *patt = "([a-z])*"; 
+    if(udpName && fnmatch(patt, udpName, 0))
+    {
+      int line = ivl_udp_lineno(aUDP);
+      const char *file = ivl_udp_file(aUDP);
+      printViolation(rule, line, file, udpName);
     }
   } 
 }
@@ -332,7 +345,7 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
   rule = 1137; // same as 1173, not implemented
   if (table[rule][sAct] == "yes")
   {
-    const char *patt = "[a-z]*"; 
+    const char *patt = "([a-z])*"; 
     if(fnmatch(patt, moduleName, 0))
     {
       printViolation(rule, line, file, moduleName); 
@@ -408,7 +421,7 @@ void checkTaskName(map<int, map<string, string> > & table, ivl_scope_t & scope)
   rule = 1134;
   if (table[rule][sAct] == "yes")
   {
-    const char *patt = "[a-z]*"; 
+    const char *patt = "([a-z])*"; 
     const char *sPat = "pattern";
     if (table[rule].find(sPat) != table[rule].end())
     {
@@ -464,7 +477,7 @@ void checkFunctionName(map<int, map<string, string> > & table, ivl_scope_t & sco
   rule = 1131;
   if (table[rule][sAct] == "yes")
   {
-    const char *patt = "[a-z]*"; 
+    const char *patt = "([a-z])*"; 
     const char *sPat = "pattern";
     if (table[rule].find(sPat) != table[rule].end())
     {
@@ -516,7 +529,7 @@ void checkVariableName(map<int, map<string, string> > & table, ivl_signal_t & my
     rule = 1106;
     if (table[rule][sAct] == "yes")
     {
-      const char *patt = "[a-z]*"; 
+      const char *patt = "([a-z])*"; 
       const char *sPat = "pattern";
       if (table[rule].find(sPat) != table[rule].end())
       {
@@ -608,7 +621,7 @@ void MissingProcessLabelName(map<int, map<string, string> > & table,ivl_statemen
     rule = 1184;
     if (table[rule][sAct] == "yes")
     {
-      const char *patt = "[a-z]*"; 
+      const char *patt = "([a-z])*"; 
       const char *sPat = "pattern";
       if (table[rule].find(sPat) != table[rule].end())
       {

@@ -336,7 +336,7 @@ const char* giveMassage(int num)
     massages[1309] = "User defined primitive < %s > should be named in lower case.";
     massages[1310] = "Synopsys template directive should be used before parameter ";
     massages[1311] = "Multiline command should not be used here %s";
-    massages[1312] = "use localparam instead of parameter to declare < %s > in module or interface < %s >";
+    massages[1312] = "use localparam instead of parameter to declare < %s >";
     massages[1313] = "Port < %s > should be declared by using explicit name.";
     massages[1314] = "Unconventional port declaration in order < %s > ......";
     massages[1315] = "Literal numbers should not be used in specifying a range (in object \" %s \").";

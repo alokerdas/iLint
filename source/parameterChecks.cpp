@@ -31,12 +31,19 @@ void checkPMETER(map<int, map<string, string> > & table , ivl_parameter_t & para
   int rule = 1009;
   if (table[rule][sAct] == "yes")
   {
-    const char *patt = "[_A-Z0-9]*"; 
+    const char *patt = "([_A-Z0-9])*"; 
     if (table[rule].find(sPat) != table[rule].end())
       patt = (char*) table[rule][sPat].c_str();
       
-    if (fnmatch(patt, paraname, 0))
+    if (paraname && fnmatch(patt, paraname, 0))
       printViolation(rule, line, file, paraname, patt);
+  } 
+
+  rule = 1312;
+  if (table[rule][sAct] == "yes")
+  {
+    if (paraname && !ivl_parameter_local(param))
+      printViolation(rule, line, file, paraname);
   } 
 }
 

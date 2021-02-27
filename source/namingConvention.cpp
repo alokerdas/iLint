@@ -69,8 +69,8 @@ void checkGatePrefixSuffix(map<int, map<string, string> > & table, ivl_net_logic
   } 
   rule = 1309;
   if (table[rule][sAct] == "yes")
-  { 
-	  ivl_udp_t aUDP = ivl_logic_udp(gate);
+  {
+    ivl_udp_t aUDP = (ivl_logic_type(gate) == IVL_LO_UDP) ? ivl_logic_udp(gate) : NULL;
     const char *udpName = aUDP ? ivl_udp_name(aUDP) : NULL;
     const char *patt = "([a-z])*"; 
     if(udpName && fnmatch(patt, udpName, 0))

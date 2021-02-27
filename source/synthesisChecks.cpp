@@ -131,11 +131,11 @@ void checkMemory(map<int, map<string, string> > & table, ivl_signal_t & mem)
 
 void variable_synthesizeble(map<int, map<string, string> > & table, ivl_signal_t &mySig)
 {
-  int rule = 1115;
+  int rule = 1115; // also 1329
   const char *sAct = "active";
   if (table[rule][sAct] == "yes")
   {
-    if (ivl_signal_data_type(mySig) == IVL_VT_REAL)
+    if (ivl_signal_data_type(mySig) == IVL_VT_REAL) // also realtime
     {
       unsigned line = ivl_signal_lineno(mySig);
       const char *file = ivl_signal_file(mySig);

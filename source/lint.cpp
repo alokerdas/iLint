@@ -68,6 +68,16 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
   unsigned scopePorts = ivl_scope_ports(scope);
   for (int i = 0; i < scopePorts; i++)
   {
+    int rule = 1313;
+    const char *sAct = "active";
+    if (table[rule][sAct] == "yes")
+    {
+      const char *portSig = ivl_scope_mod_module_port_name(scope, i);
+      int aline = ivl_scope_lineno(scope);
+      const char *afile = ivl_scope_file(scope);
+      // there is no suitable API to implement 1313
+      //printViolation(rule, aline, afile, portSig);
+    }
   }
 
   unsigned sigs = ivl_scope_sigs(scope);

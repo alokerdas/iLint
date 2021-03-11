@@ -1,2 +1,3 @@
-Violated 1115: Variable "c" of type "real" is not Synthesizable. File: 1115_Real_Variable_Not_Synthesizable.v , Line: 4
-TOTAL NUMBER OF VIOLATIONS ARE: 1.
+Violated 1115: Variable or Function "c" of type "real" is not Synthesizable. File: 1115_Real_Variable_Not_Synthesizable.v , Line: 4
+Violated 1115: Variable or Function "testfun" of type "real" is not Synthesizable. File: 1115_Real_Variable_Not_Synthesizable.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

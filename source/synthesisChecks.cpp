@@ -131,7 +131,7 @@ void checkMemory(map<int, map<string, string> > & table, ivl_signal_t & mem)
 
 void variable_synthesizeble(map<int, map<string, string> > & table, ivl_signal_t &mySig)
 {
-  int rule = 1115; // also 1329
+  int rule = 1115; // also 1200 and 1329
   const char *sAct = "active";
   if (table[rule][sAct] == "yes")
   {

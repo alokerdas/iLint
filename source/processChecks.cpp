@@ -286,6 +286,122 @@ void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_statemen
   }
 }
 
+void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t rvExp, ivl_signal_t lvSig, set<ivl_signal_t> *sigLst)
+{
+  int rule = 0;
+  const char *sAct = "active";
+  int line = ivl_expr_lineno(rvExp);
+  const char *file = ivl_expr_file(rvExp);
+  ivl_expr_t opr1 = NULL;
+  while (rvExp)
+  {
+    switch (ivl_expr_type(rvExp))
+    {
+      case IVL_EX_SIGNAL:
+      {
+        ivl_signal_t rvSig = ivl_expr_signal(rvExp);
+        const char *rvSigName = ivl_signal_basename(rvSig);
+        if (rvSig == lvSig)
+        {
+          rule = 1075;
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file, rvSigName);
+          }
+        }
+        rule = 1128;
+        if (table[rule][sAct] == "yes")
+        {
+	  if (lvSig)
+	  {
+            const char *lvSigName = ivl_signal_basename(lvSig);
+	    if (ivl_signal_signed(lvSig))
+	    {
+	      if (!ivl_signal_signed(rvSig))
+	      {
+                printViolation(rule, line, file, rvSigName, lvSigName);
+	      }
+	    }
+            else
+            {
+              if (ivl_signal_signed(rvSig))
+              {
+                printViolation(rule, line, file, lvSigName, rvSigName);
+              }
+            }
+          }
+        }
+	if (rvExp == opr1)
+	{
+          rvExp = NULL;
+	}
+	else
+	{
+	  rvExp = opr1;
+	  if (opr1 && (ivl_expr_type(opr1) == IVL_EX_UNARY ||
+	               ivl_expr_type(opr1) == IVL_EX_SELECT))
+	  {
+            opr1 = NULL;
+	  }
+	}
+        if (sigLst && (sigLst->find(rvSig) == sigLst->end()))
+        {
+          rule = 1081; // same as 1159, not implemented
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file, rvSigName);
+          }
+        }
+      }
+      break;
+      case IVL_EX_UNARY:
+      {
+        rvExp = ivl_expr_oper1(rvExp);
+      }
+      break;
+      case IVL_EX_BINARY:
+      {
+        opr1 = ivl_expr_oper1(rvExp);
+        rvExp = ivl_expr_oper2(rvExp);
+      }
+      break;
+      case IVL_EX_SELECT:
+      {
+        rvExp = ivl_expr_oper1(rvExp);
+      }
+      break;
+      case IVL_EX_NUMBER:
+      {
+        const char *valBits = ivl_expr_bits(rvExp);
+        if (strchr(valBits, 'x') || strchr(valBits, 'X'))
+        {
+          rule = 1201;
+          const char *file = ivl_expr_file(rvExp);
+          int line = ivl_expr_lineno(rvExp);
+          printViolation(rule, line, file);
+        }
+        rvExp = NULL;
+      }
+      break;
+      case IVL_EX_STRING:
+      {
+        rule = 1082;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, ivl_expr_string(rvExp));
+        }
+        rvExp = NULL;
+      }
+      break;
+      default:
+      {
+        rvExp = NULL;
+      }
+      break;
+    }
+  }
+}
+
 void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst)
 {
   static set<ivl_signal_t> *sigSet = NULL;
@@ -323,97 +439,7 @@ void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_
       }
 
       ivl_expr_t rvExp = ivl_stmt_rval(net);
-      ivl_expr_t opr1 = NULL;
-      while (rvExp)
-      {
-        switch (ivl_expr_type(rvExp))
-	{
-          case IVL_EX_SIGNAL:
-          {
-            ivl_signal_t rvSig = ivl_expr_signal(rvExp);
-            const char *rvSigName = ivl_signal_basename(rvSig);
-            if (rvSig == lvSig)
-            {
-              rule = 1075;
-              if (table[rule][sAct] == "yes")
-              {
-                printViolation(rule, line, file, rvSigName);
-              }
-            }
-            rule = 1128;
-            if (table[rule][sAct] == "yes")
-            {
-	      if (ivl_signal_signed(lvSig))
-	      {
-	        if (!ivl_signal_signed(rvSig))
-	        {
-                  printViolation(rule, line, file, rvSigName, lvSigName);
-	        }
-	      }
-              else
-              {
-                if (ivl_signal_signed(rvSig))
-                {
-                  printViolation(rule, line, file, lvSigName, rvSigName);
-                }
-              }
-            }
-	    if (rvExp == opr1)
-	    {
-              rvExp = NULL;
-	    }
-	    else
-	    {
-	      rvExp = opr1;
-	      if (opr1 && (ivl_expr_type(opr1) == IVL_EX_UNARY ||
-	                   ivl_expr_type(opr1) == IVL_EX_SELECT))
-	      {
-                opr1 = NULL;
-	      }
-	    }
-            if (sigLst && (sigLst->find(rvSig) == sigLst->end()))
-            {
-              rule = 1081; // same as 1159, not implemented
-              if (table[rule][sAct] == "yes")
-              {
-                printViolation(rule, line, file, rvSigName);
-              }
-            }
-          }
-	  break;
-          case IVL_EX_UNARY:
-          {
-            rvExp = ivl_expr_oper1(rvExp);
-          }
-          break;
-          case IVL_EX_BINARY:
-          {
-            opr1 = ivl_expr_oper1(rvExp);
-            rvExp = ivl_expr_oper2(rvExp);
-	  }
-          break;
-          case IVL_EX_SELECT:
-          {
-            rvExp = ivl_expr_oper1(rvExp);
-	  }
-          break;
-          case IVL_EX_STRING:
-          {
-            rule = 1082;
-            if (table[rule][sAct] == "yes")
-            {
-              printViolation(rule, line, file, ivl_expr_string(rvExp));
-            }
-            rvExp = NULL;
-          }
-          break;
-	  default:
-	  {
-            rvExp = NULL;
-	  }
-	  break;
-        }
-      }
+      traverseExpression(table, rvExp, lvSig, sigLst);
     }
   }
 }
@@ -1056,6 +1082,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
     {
       case IVL_ST_CASSIGN:
       {
+        traverseExpression(table, ivl_stmt_rval(aStmt), NULL, NULL);
         if (!asgnSigs)
         {
           asgnSigs = new set<ivl_signal_t>;
@@ -1296,6 +1323,11 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
           }
         }
       }
+    }
+    break; 
+    case IVL_ST_CASSIGN:
+    {
+      traverseExpression(table, ivl_stmt_rval(net), NULL, NULL);
     }
     break;
     case IVL_ST_DELAY:

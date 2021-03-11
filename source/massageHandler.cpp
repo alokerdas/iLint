@@ -141,7 +141,7 @@ const char* giveMassage(int num)
     massages[1112] = "Nontop Module Tri-state \"%s\" Detected.";
     massages[1113] = "Combinational Path Too Long.";
     massages[1114] = "Special signal \"%s\" is a bit select.";
-    massages[1115] = "Variable \"%s\" of type \"%s\" is not Synthesizable.";
+    massages[1115] = "Variable or Function \"%s\" of type \"%s\" is not Synthesizable.";
     massages[1116] = "Memory \"%s\" Not Synthesizable.";
     massages[1117] = "Too Many Words \"%d\" in Memory \"%s\".";
     massages[1118] = "Too Many Bits \"%d\" in Memory \"%s\".";

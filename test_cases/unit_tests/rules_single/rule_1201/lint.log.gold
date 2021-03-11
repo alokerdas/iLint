@@ -1,0 +1,2 @@
+Violated 1201: Operation on X directly assigned by X should not be used because it will result in simulation mismatch. File: 1201_operation_on_x_z.v , Line: 10
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

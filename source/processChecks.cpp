@@ -286,10 +286,11 @@ void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_statemen
   }
 }
 
-void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t rvExp, ivl_signal_t lvSig, set<ivl_signal_t> *sigLst)
+void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t net, ivl_signal_t lvSig, set<ivl_signal_t> *sigLst)
 {
   int rule = 0;
   const char *sAct = "active";
+  ivl_expr_t rvExp = ivl_stmt_rval(net);
   int line = ivl_expr_lineno(rvExp);
   const char *file = ivl_expr_file(rvExp);
   ivl_expr_t opr1 = NULL;
@@ -300,7 +301,7 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t rvExp
       case IVL_EX_SIGNAL:
       {
         ivl_signal_t rvSig = ivl_expr_signal(rvExp);
-        const char *rvSigName = ivl_signal_basename(rvSig);
+        const char *rvSigName = rvSig ? ivl_signal_basename(rvSig) : NULL;
         if (rvSig == lvSig)
         {
           rule = 1075;
@@ -347,6 +348,15 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t rvExp
         if (sigLst && (sigLst->find(rvSig) == sigLst->end()))
         {
           rule = 1081; // same as 1159, not implemented
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file, rvSigName);
+          }
+        }
+        if (rvSig && (ivl_signal_port(rvSig) == IVL_SIP_NONE)
+                  && (ivl_statement_type(net) == IVL_ST_ASSIGN_NB))
+        {
+          rule = 1204;
           if (table[rule][sAct] == "yes")
           {
             printViolation(rule, line, file, rvSigName);
@@ -452,9 +462,7 @@ void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_
 	sigSet = new set<ivl_signal_t>;
         sigSet->insert(lvSig);
       }
-
-      ivl_expr_t rvExp = ivl_stmt_rval(net);
-      traverseExpression(table, rvExp, lvSig, sigLst);
+      traverseExpression(table, net, lvSig, sigLst);
     }
   }
 }
@@ -1097,7 +1105,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
     {
       case IVL_ST_CASSIGN:
       {
-        traverseExpression(table, ivl_stmt_rval(aStmt), NULL, NULL);
+        traverseExpression(table, aStmt, NULL, NULL);
         if (!asgnSigs)
         {
           asgnSigs = new set<ivl_signal_t>;
@@ -1342,7 +1350,7 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
     break; 
     case IVL_ST_CASSIGN:
     {
-      traverseExpression(table, ivl_stmt_rval(net), NULL, NULL);
+      traverseExpression(table, net, NULL, NULL);
     }
     break;
     case IVL_ST_DELAY:

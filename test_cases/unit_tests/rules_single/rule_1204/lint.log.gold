@@ -1,0 +1,3 @@
+Violated 1204: "tmp2"is used like a temporary variable; by non-blocking assignment, it will reduce one more storage element. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 10
+Violated 1204: "tmp1"is used like a temporary variable; by non-blocking assignment, it will reduce one more storage element. File: 1204_TemporaryVariableUsedinNonblocking.v , Line: 10
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

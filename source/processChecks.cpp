@@ -361,6 +361,11 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t rvExp
       break;
       case IVL_EX_BINARY:
       {
+        rule = 1202;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, ivl_expr_opcode(rvExp));
+        }
         opr1 = ivl_expr_oper1(rvExp);
         rvExp = ivl_expr_oper2(rvExp);
       }
@@ -389,6 +394,16 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t rvExp
         if (table[rule][sAct] == "yes")
         {
           printViolation(rule, line, file, ivl_expr_string(rvExp));
+        }
+        rvExp = NULL;
+      }
+      break;
+      case IVL_EX_TERNARY:
+      {
+        rule = 1202;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, ivl_expr_opcode(rvExp));
         }
         rvExp = NULL;
       }

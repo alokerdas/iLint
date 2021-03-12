@@ -228,7 +228,7 @@ const char* giveMassage(int num)
     massages[1199] = "Next register name \"%s\" does not match to regular expression .*_ns."; 
     massages[1200] = "Function \"%s\" returning real type value should not be used because it is not synthesizable.";
     massages[1201] = "Operation on X directly assigned by X should not be used because it will result in simulation mismatch.";  
-    massages[1202] = "Operator \"%s\" should not be used.";
+    massages[1202] = "Operator \"%c\" should not be used.";
     massages[1203] = "Variable \"%s\" assigned here is completely overwrited by following assignments.";
     massages[1204] = "\"%s\"is used like a temporary variable; by non-blocking assignment, it will reduce one more storage element."; 
     massages[1205] = "Procedural continuous assign statement should not be used because it is not synthesizable.";

@@ -133,6 +133,7 @@ extern void InferredLatch(map<int, map<string, string> > & table,ivl_statement_t
 /************************ ivl_statement_t net *****************************/
 extern void ivl_lpm_latch_tristate(map<int, map<string, string> > & table,ivl_statement_t net);
 extern void checkComboInSequential(map<int, map<string, string> > & table, ivl_statement_t stmt);
+extern void ProceduralContinuousAssignmentNotSynthesizable(map<int, map<string, string>> &table, ivl_statement_t net);
 /************************ new_rules ***************************************/ 
 extern void UninitializedVariableReferencedinanEdgetriggeredBlock(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t PR);
 extern void UnAssignedVariableReferencedinanEdgetriggeredBlock(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t PR);

@@ -1105,6 +1105,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
     {
       case IVL_ST_CASSIGN:
       {
+        ProceduralContinuousAssignmentNotSynthesizable(table, aStmt); 
         traverseExpression(table, aStmt, NULL, NULL);
         if (!asgnSigs)
         {
@@ -1350,6 +1351,7 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
     break; 
     case IVL_ST_CASSIGN:
     {
+      ProceduralContinuousAssignmentNotSynthesizable(table, net); 
       traverseExpression(table, net, NULL, NULL);
     }
     break;

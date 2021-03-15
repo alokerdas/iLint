@@ -1,0 +1,2 @@
+Violated 1205: Procedural continuous assign statement should not be used because it is not synthesizable. File: 1205_procedural_continious_assignment.v , Line: 10
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

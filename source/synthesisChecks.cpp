@@ -20,6 +20,18 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void ProceduralContinuousAssignmentNotSynthesizable(map<int, map<string, string>> &table, ivl_statement_t net)
+{
+  int rule = 1205;
+  const char *sAct = "active";
+  int line = ivl_stmt_lineno(net);
+  const char *file = ivl_stmt_file(net);
+  if (table[rule][sAct] == "yes")
+  {
+    printViolation(rule, line, file);
+  }
+}
+
 void checkForkStatementNotSynthesizable(map<int, map<string, string> > & table, ivl_scope_t net)
 {    
   int rule = 1186;

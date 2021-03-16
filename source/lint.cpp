@@ -29,7 +29,8 @@ int check_process(ivl_process_t pros, void *X)
   IBlock(table, pros);
 
   set <ivl_signal_t> *senLst = new set<ivl_signal_t>;
-  checkProcesStatement(table, ivl_process_stmt(pros), senLst);
+  set <ivl_signal_t> *sigSet = new set<ivl_signal_t>;
+  checkProcesStatement(table, ivl_process_stmt(pros), senLst, sigSet);
   delete senLst;
   return fail;
 }

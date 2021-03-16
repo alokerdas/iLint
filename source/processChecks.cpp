@@ -286,7 +286,7 @@ void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_statemen
   }
 }
 
-void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t net, ivl_signal_t lvSig, set<ivl_signal_t> *sigLst)
+void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t net, ivl_signal_t lvSig, set<ivl_signal_t> *lhSigs, set<ivl_signal_t> *sigLst)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -362,6 +362,14 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
             printViolation(rule, line, file, rvSigName);
           }
         }
+        if (rvSig && lhSigs && (lhSigs->find(rvSig) != lhSigs->end()))
+        {
+          rule = 1206;
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file, rvSigName);
+          }
+        }
       }
       break;
       case IVL_EX_UNARY:
@@ -427,9 +435,8 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
   }
 }
 
-void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst)
+void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
 {
-  static set<ivl_signal_t> *sigSet = NULL;
   int rule = 0;
   const char *sAct = "active";
   int line = ivl_stmt_lineno(net);
@@ -441,28 +448,28 @@ void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_
     if (lvSig)
     {
       const char *lvSigName = ivl_signal_basename(lvSig);
-      if (sigSet)
+      if (lhSigs)
       {
-        if (sigSet->find(lvSig) == sigSet->end())
+        if (lhSigs->find(lvSig) == lhSigs->end())
         {
-          sigSet->insert(lvSig);
+          lhSigs->insert(lvSig);
         }
         else
         {
-          rule = 1077;
+          rule = 1077; // same as 1203, not implemented
           if (table[rule][sAct] == "yes")
           {
             printViolation(rule, line, file, lvSigName);
           }
-	  //delete sigSet; can't delete, its complecated.
+	  //delete lhSigs; can't delete, its complecated.
         }
       }
       else
       {
-	sigSet = new set<ivl_signal_t>;
-        sigSet->insert(lvSig);
+	lhSigs = new set<ivl_signal_t>;
+        lhSigs->insert(lvSig);
       }
-      traverseExpression(table, net, lvSig, sigLst);
+      traverseExpression(table, net, lvSig, lhSigs, sigLst);
     }
   }
 }
@@ -520,7 +527,7 @@ void checkCaseXZ(map<int, map<string, string> > & table, ivl_statement_t net)
   }
 }
 
-void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst)
+void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
 {
   const char *sAct = "active";
 
@@ -619,7 +626,7 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
       // Here default case, using rule as a flag
       rule = 0;
     }
-    checkProcesStatement(table, ivl_stmt_case_stmt(net, idx), sigLst);
+    checkProcesStatement(table, ivl_stmt_case_stmt(net, idx), sigLst, lhSigs);
   }
   if (casCnt && rule)
   {
@@ -978,7 +985,7 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
   }
 }
 
-void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t cls, set<ivl_signal_t> *sigLst)
+void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t cls, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -1077,15 +1084,20 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
 
   if (tCls)
   {
-    checkProcesStatement(table, tCls, sigLst);
+    checkProcesStatement(table, tCls, sigLst, lhSigs);
   }
   if (fCls)
   {
-    checkProcesStatement(table, fCls, sigLst);
+    checkProcesStatement(table, fCls, sigLst, lhSigs);
   }
 }
 
-void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, bool edge)
+void checkMemoryisReadandWrittenatSameTime(map<int, map<string, string>> &table, ivl_statement_t net, set<ivl_signal_t> *lhSigs)
+{
+  traverseExpression(table, net, NULL, lhSigs, NULL);
+}
+
+void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *sigSet, bool edge)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -1106,7 +1118,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
       case IVL_ST_CASSIGN:
       {
         ProceduralContinuousAssignmentNotSynthesizable(table, aStmt); 
-        traverseExpression(table, aStmt, NULL, NULL);
+        SignalAssignedToSelf(table, aStmt, sigLst, sigSet);
         if (!asgnSigs)
         {
           asgnSigs = new set<ivl_signal_t>;
@@ -1130,8 +1142,8 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
       case IVL_ST_ASSIGN_NB:
       {
         checkDirectInputOutput(table, aStmt);
-        SignalAssignedToSelf(table, aStmt, sigLst);
-        DelayControl(table, aStmt, sigLst);
+        SignalAssignedToSelf(table, aStmt, sigLst, sigSet);
+        DelayControl(table, aStmt, sigLst, sigSet);
         checkNetStuck(table, aStmt);
         checkIntegerNegative(table, aStmt);
         checkNonConstShiftAmt(table, ivl_stmt_rval(aStmt), true);
@@ -1146,7 +1158,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
         moreIfCaseForRepWhileStmt++;
         checkConditExpr(table, ivl_stmt_cond_expr(aStmt));
         checkUnsignedVector(table, ivl_stmt_cond_expr(aStmt));
-        checkConditClauses(table, aStmt, sigLst);
+        checkConditClauses(table, aStmt, sigLst, sigSet);
       }
       break;
       case IVL_ST_RELEASE:
@@ -1177,7 +1189,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
       case IVL_ST_DELAY:
       case IVL_ST_DELAYX:
       {
-        DelayControl(table, aStmt, sigLst);
+        DelayControl(table, aStmt, sigLst, sigSet);
       }
       break;
       case IVL_ST_WHILE:
@@ -1215,6 +1227,24 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
       default:
       {
         moreIfCaseForRepWhileStmt++;
+      }
+      break;
+    }
+  }
+  for (unsigned idx = 0; idx < noStmt; idx++)
+  {
+    ivl_statement_t aStmt = ivl_stmt_block_stmt(net, idx);
+    switch (ivl_statement_type(aStmt))
+    {
+      case IVL_ST_ASSIGN:
+      case IVL_ST_CASSIGN:
+      case IVL_ST_ASSIGN_NB:
+      {
+        checkMemoryisReadandWrittenatSameTime(table, aStmt, sigSet);
+      }
+      break;
+      default:
+      {
       }
       break;
     }
@@ -1279,7 +1309,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
   }
 }
 
-void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sensitivityList, bool edge, bool firsTime)
+void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sensitivityList, set<ivl_signal_t> *lhSigs, bool edge, bool firsTime)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -1299,23 +1329,23 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
       if (edge)
         checkComboInSequential(table, ivl_stmt_sub_stmt(net));
       checkNestedEvents(table, net, firsTime);
-      checkProcesStatement(table, ivl_stmt_sub_stmt(net), sensitivityList, edge, false);
+      checkProcesStatement(table, ivl_stmt_sub_stmt(net), sensitivityList, lhSigs, edge, false);
     }
     break; 
     case IVL_ST_CONDIT:
     {
-      checkConditClauses(table, net, sensitivityList);
+      checkConditClauses(table, net, sensitivityList, lhSigs);
     }
     break;
     case IVL_ST_BLOCK:
     {
       MissingProcessLabelName(table, net);
-      checkBlockStatements(table, net, sensitivityList, edge);
+      checkBlockStatements(table, net, sensitivityList, lhSigs, edge);
     }
     break; 
     case IVL_ST_CASE:
     {
-      checkCaseLabels(table, net, sensitivityList);  
+      checkCaseLabels(table, net, sensitivityList, lhSigs);
     }
     break; 
     case IVL_ST_CASEX:
@@ -1327,10 +1357,10 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
     case IVL_ST_ASSIGN:
     case IVL_ST_ASSIGN_NB:
     {
-      DelayControl(table, net, sensitivityList);
+      DelayControl(table, net, sensitivityList, lhSigs);
       checkConditExpr(table, ivl_stmt_rval(net));
       checkDirectInputOutput(table, net);
-      SignalAssignedToSelf(table, net, sensitivityList);
+      SignalAssignedToSelf(table, net, sensitivityList, lhSigs);
       checkNetStuck(table, net);
       checkUnsignedVector(table, ivl_stmt_rval(net));
       checkNonConstShiftAmt(table, ivl_stmt_rval(net), true);
@@ -1352,13 +1382,13 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
     case IVL_ST_CASSIGN:
     {
       ProceduralContinuousAssignmentNotSynthesizable(table, net); 
-      traverseExpression(table, net, NULL, NULL);
+      SignalAssignedToSelf(table, net, sensitivityList, lhSigs);
     }
     break;
     case IVL_ST_DELAY:
     case IVL_ST_DELAYX:
     {
-      DelayControl(table, net, sensitivityList);
+      DelayControl(table, net, sensitivityList, lhSigs);
     }
     break;
     case IVL_ST_UTASK:

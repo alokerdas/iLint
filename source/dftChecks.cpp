@@ -199,7 +199,8 @@ void checkComboInSequential(map<int, map<string, string> > & table, ivl_statemen
         ivl_statement_t tCls = ivl_stmt_cond_true(stmt);
         checkComboInSequential(table, tCls);
         ivl_statement_t fCls = ivl_stmt_cond_false(stmt);
-        checkComboInSequential(table, fCls);
+        if (fCls)
+          checkComboInSequential(table, fCls);
         anExpr = ivl_stmt_cond_expr(stmt);
       }
       break;

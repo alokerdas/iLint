@@ -8,8 +8,8 @@ reg [1:0] macroram [5:0];
 reg [1:0] dataout;
 assign data = R_W ? dataout : 8'hz;
 always @(posedge (clock & VMA))
-begin
 if (R_W == 1)
+begin
 dataout=macroram[addr];
 macroram[addr]=data; //"macroram" is read and written at same time
 end

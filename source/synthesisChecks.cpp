@@ -496,7 +496,7 @@ void SystemTaskCall(map<int, map<string, string> > & table, ivl_statement_t net)
   }
 }
 
-void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst)
+void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *sigSet)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -541,7 +541,7 @@ void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, s
             printViolation(rule, line, file);
           }
 	}
-	checkProcesStatement(table, dlyStmt, sigLst);
+	checkProcesStatement(table, dlyStmt, sigLst, sigSet);
       }
       break;
       default:

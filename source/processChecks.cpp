@@ -491,6 +491,20 @@ void checkCaseXZ(map<int, map<string, string> > & table, ivl_statement_t net)
     }
   }
 
+  rule = 1064; // 1061, 1062, 1063 are not implemented
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_expr_type(casCondExpr) == IVL_EX_UNARY ||
+        ivl_expr_type(casCondExpr) == IVL_EX_BINARY)
+    {
+      printViolation(rule, line, file, ivl_expr_opcode(casCondExpr));
+    }
+    if (ivl_expr_type(casCondExpr) == IVL_EX_TERNARY)
+    {
+      printViolation(rule, line, file, '?');
+    }
+  }
+
   switch (ivl_statement_type(net))
   {
     case IVL_ST_CASEZ:
@@ -548,10 +562,13 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
   if (table[rule][sAct] == "yes")
   {
     if (ivl_expr_type(casCondExpr) == IVL_EX_UNARY ||
-        ivl_expr_type(casCondExpr) == IVL_EX_BINARY ||
-	ivl_expr_type(casCondExpr) == IVL_EX_TERNARY)
+        ivl_expr_type(casCondExpr) == IVL_EX_BINARY)
     {
       printViolation(rule, line, file, ivl_expr_opcode(casCondExpr));
+    }
+    if (ivl_expr_type(casCondExpr) == IVL_EX_TERNARY)
+    {
+      printViolation(rule, line, file, '?');
     }
   }
 

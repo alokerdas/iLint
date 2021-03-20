@@ -476,11 +476,20 @@ void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_
 
 void checkCaseXZ(map<int, map<string, string> > & table, ivl_statement_t net)
 {
-  int rule = 0;
+  int rule = 1076; // same as 1207, not implemented
   const char *sAct = "active";
   const char *casexz = NULL;
   int line = ivl_stmt_lineno(net);
   const char *file = ivl_stmt_file(net);
+
+  ivl_expr_t casCondExpr = ivl_stmt_cond_expr(net);
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_expr_type(casCondExpr) == IVL_EX_NUMBER)
+    {
+      printViolation(rule, line, file);
+    }
+  }
 
   switch (ivl_statement_type(net))
   {

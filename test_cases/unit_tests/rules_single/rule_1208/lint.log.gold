@@ -1,0 +1,2 @@
+Violated 1208: Reset signal "reset" should not feed into primary output "y". File: 1208_Reset_Signal_Feeds_into_Primary_Output.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

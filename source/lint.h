@@ -273,6 +273,7 @@ extern void InputFloating(map<int, map<string, string> > & table, ivl_signal_t &
 extern void checkLPM(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkClockSignal(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkClockSignalOutput(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
+extern void checkResetSignalOutput(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkLogic(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkGatedClock(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkInvertedClock(map<int, map<string, string> > & table, ivl_lpm_t & lpm);

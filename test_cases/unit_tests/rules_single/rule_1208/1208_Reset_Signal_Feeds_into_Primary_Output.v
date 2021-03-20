@@ -3,9 +3,7 @@ module test (y, count, clock, reset);
  output [8:0] count;
  reg [8:0] count;
  output y;
- initial
-   count <= 0;
- always @(posedge clock or negedge reset)
+ always @(posedge clock or posedge reset)
    begin
    if (reset)
      count = 0;

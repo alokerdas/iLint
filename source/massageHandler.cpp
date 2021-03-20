@@ -234,7 +234,7 @@ const char* giveMassage(int num)
     massages[1205] = "Procedural continuous assign statement should not be used because it is not synthesizable.";
     massages[1206] = "Memory written and read at same time.";
     massages[1207] = "\"%s\" is detected in \"%s\" expression.";
-    massages[1208] = "Reset signal should not feed into primary output.";
+    massages[1208] = "Reset signal \"%s\" should not feed into primary output \"%s\".";
     massages[1209] = "Reconverged clock \"%s\" found.";
     massages[1210] = "Empty block detected.";
     massages[1211] = "The clock generate circuit should be separated in different module.";

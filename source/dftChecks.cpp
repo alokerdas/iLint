@@ -654,6 +654,34 @@ void checkClockSignalOutput(map<int, map<string, string> > & table, ivl_lpm_t & 
   }
 }
 
+void checkResetSignalOutput(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
+{
+  int rule = 1208;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    ivl_nexus_t aNex = NULL;
+    if (ivl_lpm_type(lpm) == IVL_LPM_FF)
+    {
+      aNex = ivl_lpm_sync_clr(lpm);
+      aNex = aNex ? aNex : ivl_lpm_async_clr(lpm);
+    }
+    if (aNex)
+    {
+      unsigned connect = ivl_nexus_ptrs(aNex);
+      for(unsigned i = 0 ; i < connect ; i++)
+      {
+        ivl_nexus_ptr_t aCon = ivl_nexus_ptr(aNex, i);
+        ivl_signal_t aSig = ivl_nexus_ptr_sig(aCon);
+        if (aSig)
+        {
+          traverseForward(aNex, aSig, rule);
+        }
+      }
+    }
+  }
+}
+
 void checkCombinationalPiPoPath(map<int, map<string, string> > & table, ivl_signal_t & mySig)
 {
   if (ivl_signal_port(mySig) == IVL_SIP_INPUT ||

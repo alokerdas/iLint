@@ -140,6 +140,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     checkTristateBuffers(table, lpm);
     checkResetPrefixSuffix(table, lpm);
     checkClockSignalOutput(table, lpm);
+    checkResetSignalOutput(table, lpm);
     checkFallingActiveClock(table, lpm);
     checkClockActiveBothEdges(table, lpm);
     checkTestClockPrimaryInput(table, lpm);

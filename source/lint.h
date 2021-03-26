@@ -368,6 +368,7 @@ extern void checkInferredTristate(map<int, map<string, string> > & table, ivl_ne
 extern void checkTriStateDisabledShift(map<int, map<string, string> > & table, ivl_net_logic_t & log);
 extern void checkSpecialTypePortConnectedtoanExpression(map<int, map<string, string> > & table, ivl_lpm_t &lpm);
 extern void checkBitWidthMismatchinBitwiseOperation(map<int, map<string, string> > & table, ivl_net_logic_t & log);
+extern void checkReconvClock(map<int, map<string, string> > & table, ivl_net_logic_t & log);
 /**************************************** ivl_event_t ********************************/
 extern bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<ivl_signal_t> *senLst);
 extern void checkDuplicate(map<int, map<string, string> > & table, ivl_event_t & evt);

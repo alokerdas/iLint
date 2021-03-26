@@ -119,6 +119,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     checkGATE(table, gate);
     checkGatePrefixSuffix(table, gate);
     checkUDPInstanceNotSynthesizable(table, gate);
+    checkReconvClock(table, gate);
   }
 
   unsigned lpms = ivl_scope_lpms(scope);

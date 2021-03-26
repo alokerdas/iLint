@@ -370,6 +370,14 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName)
             found = anLpm;
           }
         }
+        if (pinName == "CLOCK")
+        {
+          ivl_nexus_t assNex = ivl_lpm_clk(anLpm);
+          if (assNex == nex)
+          {
+            found = anLpm;
+          }
+        }
         if (pinName == "OUT")
         {
           ivl_nexus_t outNex = ivl_lpm_q(anLpm);
@@ -459,9 +467,9 @@ void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
   }
 }
 
-bool traverseBackward(ivl_nexus_t aNex)
+ivl_signal_t traverseBackward(ivl_nexus_t aNex)
 {
-  bool piFound = false;
+  ivl_signal_t piFound = NULL;
   unsigned connections = aNex ? ivl_nexus_ptrs(aNex) : 0;
   for (int j = 0; j < connections; j++)
   {
@@ -470,7 +478,7 @@ bool traverseBackward(ivl_nexus_t aNex)
     if (aSig && (ivl_signal_port(aSig) == IVL_SIP_INOUT ||
                  ivl_signal_port(aSig) == IVL_SIP_INPUT))
     {
-      piFound = true;
+      piFound = aSig;
       break;
     }
     ivl_net_logic_t aLog = ivl_nexus_ptr_log(aConn);
@@ -519,6 +527,53 @@ bool traverseBackward(ivl_nexus_t aNex)
     }
   }
   return piFound;
+}
+
+void checkReconvClock(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
+{
+  int rule = 1209;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    unsigned nPins = ivl_logic_pins(gate);
+    if (nPins > 2)
+    {
+      int line = ivl_logic_lineno(gate);
+      const char *file = ivl_logic_file(gate);
+      ivl_nexus_t pin1 = ivl_logic_pin(gate, 1);
+      ivl_nexus_t pin2 = ivl_logic_pin(gate, 2);
+      ivl_signal_t piFound1 = traverseBackward(pin1);
+      if (piFound1)
+      {
+        ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound1, 0), "CLOCK");
+	piFound1 = ifPIclock ? piFound1 : NULL;
+      }
+      ivl_signal_t piFound2 = traverseBackward(pin2);
+      if (piFound2)
+      {
+        ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound2, 0), "CLOCK");
+	piFound2 = ifPIclock ? piFound2 : NULL;
+      }
+      if (piFound1 && (piFound1 == piFound2))
+      {
+        printViolation(rule, line, file, ivl_signal_basename(piFound1));
+      }
+      if (nPins > 3)
+      {
+        ivl_nexus_t pin3 = ivl_logic_pin(gate, 3);
+        ivl_signal_t piFound3 = traverseBackward(pin3);
+        if (piFound3)
+        {
+          ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound3, 0), "CLOCK");
+	  piFound3 = ifPIclock ? piFound3 : NULL;
+        }
+        if (piFound3 && ((piFound1 == piFound3) || (piFound2 == piFound3)))
+        {
+          printViolation(rule, line, file, ivl_signal_basename(piFound3));
+        }
+      }
+    }
+  }
 }
 
 void checkTestClockPrimaryInput(map<int, map<string, string> > & table, ivl_lpm_t & net)

@@ -1013,13 +1013,28 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
 
 void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t cls, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
 {
-  int rule = 0;
+  int rule = 1210;
   const char *sAct = "active";
+  int line = ivl_stmt_lineno(cls);
+  const char *file = ivl_stmt_file(cls);
 
   ivl_statement_t tCls = ivl_stmt_cond_true(cls);
   ivl_statement_t fCls = ivl_stmt_cond_false(cls);
-  int line = ivl_stmt_lineno(tCls);
-  const char *file = ivl_stmt_file(tCls);
+  if (!tCls)
+  {
+    if (table[rule][sAct] == "yes")
+    {
+      printViolation(rule, line, file, "IF");
+    }
+  }
+  if (!fCls)
+  {
+    if (table[rule][sAct] == "yes")
+    {
+      printViolation(rule, line, file, "ELSE");
+    }
+  }
+
   if (tCls && (ivl_statement_type(tCls) == IVL_ST_FORCE ||
                ivl_statement_type(tCls) == IVL_ST_ASSIGN ||
                ivl_statement_type(tCls) == IVL_ST_RELEASE ||
@@ -1027,6 +1042,8 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
                ivl_statement_type(tCls) == IVL_ST_DEASSIGN ||
                ivl_statement_type(tCls) == IVL_ST_ASSIGN_NB))
   {
+    line = ivl_stmt_lineno(tCls);
+    file = ivl_stmt_file(tCls);
     for (unsigned idx = 0 ;  idx < ivl_stmt_lvals(tCls) ;  idx++)
     {
       ivl_lval_t tLvl = ivl_stmt_lval(tCls, idx);

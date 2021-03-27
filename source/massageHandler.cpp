@@ -236,7 +236,7 @@ const char* giveMassage(int num)
     massages[1207] = "\"%s\" is detected in \"%s\" expression.";
     massages[1208] = "Reset signal \"%s\" should not feed into primary output \"%s\".";
     massages[1209] = "Reconverged clock \"%s\" found.";
-    massages[1210] = "Empty block detected.";
+    massages[1210] = "Empty \"%s\" block detected.";
     massages[1211] = "The clock generate circuit should be separated in different module.";
     massages[1212] = "Flip-flop \"%s\" with asynchronous reset/set and flip-flop \"%s\" without asynchronous reset/set in the same always construct.";
     massages[1213] = "Latch \"%s\" should not be mixed with combinational logic.";

@@ -1,0 +1,3 @@
+Violated 1210: Empty "IF" block detected. File: 1210_Empty_Block.v , Line: 6
+Violated 1210: Empty "ELSE" block detected. File: 1210_Empty_Block.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

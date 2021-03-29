@@ -1,0 +1,2 @@
+Violated 1218: Case label "LOGIC SIGNAL" is not a constant. File: 1218_Non_constant_Case_Label.v , Line: 10
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

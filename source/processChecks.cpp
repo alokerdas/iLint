@@ -617,40 +617,65 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
   for (unsigned idx = 0; idx < casCnt; idx ++) 
   {
     ivl_expr_t lblExp = ivl_stmt_case_expr(net, idx);
-    if (ivl_expr_type(lblExp) == IVL_EX_NUMBER)
+    switch (ivl_expr_type(lblExp))
     {
-      rule = 1026;
-      if (table[rule][sAct] == "yes")
+      case IVL_EX_NUMBER:
       {
+        rule = 1026;
         line = ivl_expr_lineno(lblExp);
         file = ivl_expr_file(lblExp);
-        const char *lblBits = ivl_expr_bits(lblExp);
-        if (strchr(lblBits, 'z') || strchr(lblBits, 'Z'))
-        {
-          printViolation(rule, line, file, "z or Z");
-        }
-        if (strchr(lblBits, 'x') || strchr(lblBits, 'X'))
-        {
-          printViolation(rule, line, file, "x or X");
-        }
-      }
-
-      rule = 1044;
-      unsigned lblExpWidth = ivl_expr_uvalue(lblExp);
-      if (lblExpWidth >= pow(2, casExpWidth))
-      {
         if (table[rule][sAct] == "yes")
         {
-          line = ivl_expr_lineno(lblExp);
-          file = ivl_expr_file(lblExp);
-          printViolation(rule, line, file, casExpWidth);
+          const char *lblBits = ivl_expr_bits(lblExp);
+          if (strchr(lblBits, 'z') || strchr(lblBits, 'Z'))
+          {
+            printViolation(rule, line, file, "z or Z");
+          }
+          if (strchr(lblBits, 'x') || strchr(lblBits, 'X'))
+          {
+            printViolation(rule, line, file, "x or X");
+          }
+        }
+
+        rule = 1044;
+        unsigned lblExpWidth = ivl_expr_uvalue(lblExp);
+        if (lblExpWidth >= pow(2, casExpWidth))
+        {
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file, casExpWidth);
+          }
         }
       }
-    }
-    else
-    {
-      // Here default case, using rule as a flag
-      rule = 0;
+      break;
+      case IVL_EX_SELECT:
+      {
+        rule = 1218;
+        line = ivl_expr_lineno(lblExp);
+        file = ivl_expr_file(lblExp);
+        if (table[rule][sAct] == "yes")
+        {
+          string somStr;
+          switch (ivl_expr_value(lblExp))
+	  {
+            case IVL_VT_LOGIC:
+            {
+              somStr = "LOGIC SIGNAL";
+	    }
+	    break;
+	    default:
+	    break;
+	  }
+          printViolation(rule, line, file, somStr.c_str());
+        }
+      }
+      break;
+      default:
+      {
+        // Here default case, using rule as a flag
+        rule = 0;
+      }
+      break;
     }
     checkProcesStatement(table, ivl_stmt_case_stmt(net, idx), sigLst, lhSigs);
   }
@@ -1013,7 +1038,7 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
 
 void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t cls, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
 {
-  int rule = 1210;
+  int rule = 1210; // also 1214
   const char *sAct = "active";
   int line = ivl_stmt_lineno(cls);
   const char *file = ivl_stmt_file(cls);
@@ -1395,6 +1420,7 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
     case IVL_ST_CASEZ:
     {
       checkCaseXZ(table, net);  
+      checkCaseLabels(table, net, sensitivityList, lhSigs);
     }
     break; 
     case IVL_ST_ASSIGN:

@@ -581,7 +581,17 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
     }
   }
 
-  unsigned casExpWidth = 0;
+  unsigned casCnt = ivl_stmt_case_count(net);
+  unsigned casExpWidth = ivl_expr_width(casCondExpr);
+  if (casCnt < pow(2, casExpWidth))
+  {
+    rule = 1221;
+    if (table[rule][sAct] == "yes")
+    {
+      printViolation(rule, line, file);
+    }
+  }
+
   unsigned operWidth = 0;
   ivl_expr_t opr1 = NULL;
   if (ivl_expr_type(casCondExpr) != IVL_EX_NUMBER)
@@ -613,7 +623,6 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
     }
   }
 
-  unsigned casCnt = ivl_stmt_case_count(net);
   for (unsigned idx = 0; idx < casCnt; idx ++) 
   {
     ivl_expr_t lblExp = ivl_stmt_case_expr(net, idx);
@@ -672,7 +681,7 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
       break;
       default:
       {
-        if (idx >= pow(2, ivl_expr_width(casCondExpr)))
+        if (casCnt > pow(2, ivl_expr_width(casCondExpr)))
         {
           rule = 1219;
           if (table[rule][sAct] == "yes")

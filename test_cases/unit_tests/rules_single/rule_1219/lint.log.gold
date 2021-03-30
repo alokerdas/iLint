@@ -1,0 +1,2 @@
+Violated 1219: Default branch is unreachable because case alternatives have covered all the possibilities of case expression. File: 1219_Unreachable_Default_Branch_of_Case_Statement.v , Line: 11
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

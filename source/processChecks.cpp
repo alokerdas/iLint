@@ -609,7 +609,7 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
     else
     {
       casCondExpr = opr1;
-      opr1 = ivl_expr_oper1(opr1);
+      opr1 = (ivl_expr_type(casCondExpr) != IVL_EX_NUMBER) ? ivl_expr_oper1(opr1) : NULL;
     }
   }
 
@@ -672,6 +672,14 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
       break;
       default:
       {
+        if (idx >= pow(2, ivl_expr_width(casCondExpr)))
+        {
+          rule = 1219;
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file);
+          }
+        }
         // Here default case, using rule as a flag
         rule = 0;
       }

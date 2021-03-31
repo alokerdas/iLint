@@ -689,6 +689,14 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
             printViolation(rule, line, file);
           }
         }
+	else
+        {
+          rule = 1222;
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file);
+          }
+        }
         // Here default case, using rule as a flag
         rule = 0;
       }

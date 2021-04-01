@@ -147,8 +147,8 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     checkTestClockPrimaryInput(table, lpm);
     checkLatchNamePrefixSuffix(table, lpm);
     checkSpecialSignalBitSelect(table, lpm);
+    checkPossibleLossofCarryorBorrow(table, lpm);
     checkSpecialTypePortConnectedtoanExpression(table, lpm);
-
   }
 
   unsigned params = ivl_scope_params(scope);

@@ -20,6 +20,402 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_lpm_t &net)
+{
+  int rule = 0;
+  const char *sAct = "active";
+  int line = ivl_lpm_lineno(net);
+  const char *file = ivl_lpm_file(net);
+  switch (ivl_lpm_type(net))
+  {
+    case IVL_LPM_MULT:
+    {
+      rule = 1225;
+      if (table[rule][sAct] == "yes")
+      {
+        const char *outSigName = NULL; 
+	unsigned widthA, widthB, widthQ;
+	widthA = widthB = widthQ = 0;
+        ivl_nexus_t nexA = ivl_lpm_data(net, 0);
+        if(nexA)
+	{
+          for(unsigned i = 0; i < ivl_nexus_ptrs(nexA); i++)
+          {
+            ivl_nexus_ptr_t conA = ivl_nexus_ptr(nexA, i);
+            ivl_signal_t sigA = ivl_nexus_ptr_sig(conA);
+            if(sigA)
+            {
+              widthA = ivl_signal_width(sigA);
+            }
+          }
+      	}
+        ivl_nexus_t nexB = ivl_lpm_data(net, 1);
+        if(nexB)
+	{
+          for(unsigned i = 0; i < ivl_nexus_ptrs(nexB); i++)
+          {
+            ivl_nexus_ptr_t conB = ivl_nexus_ptr(nexB, i);
+            ivl_signal_t sigB = ivl_nexus_ptr_sig(conB);
+            if(sigB)
+            {
+              widthB = ivl_signal_width(sigB);
+            }
+          }
+        }
+        ivl_nexus_t nexQ = ivl_lpm_q(net);
+        if(nexQ)
+	{
+          for(unsigned i = 0; i < ivl_nexus_ptrs(nexQ); i++)
+          {
+            ivl_nexus_ptr_t conQ = ivl_nexus_ptr(nexQ, i);
+            ivl_signal_t sigQ = ivl_nexus_ptr_sig(conQ);
+            if(sigQ)
+            {
+              widthQ = ivl_signal_width(sigQ);
+	      outSigName = ivl_signal_basename(sigQ);
+            }
+          }
+        }
+        if(widthA + widthB > widthQ)
+        {
+          printViolation(rule, line, file, outSigName);
+        }
+      }
+    }
+    break;      
+    default:
+    {
+	    /*
+
+
+
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                {     
+                      i = idx; //printf("%s\n",ivl_nexus_name(ivl_lpm_q(net, idx)));
+                      //printf("Q : %s\n",ivl_nexus_name(ivl_lpm_q(net, idx)));
+                }
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                {
+                      const char* lname = ivl_nexus_name(ivl_lpm_data(net, idx));
+                      char buf[20];
+                      strcpy(buf,lname);
+
+                      t1 = strtok(buf,"<");
+
+                      j = idx; //printf("%s\n",ivl_nexus_name(ivl_lpm_data(net, idx)));
+                     // printf("A : %s\n",ivl_nexus_name(ivl_lpm_data(net, idx)));
+                }
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                {
+                      const char* rname = ivl_nexus_name(ivl_lpm_datab(net, idx));
+                      char buf[20];
+                      strcpy(buf,rname);
+
+                      t2 = strtok(buf,"<");
+
+                      k =idx;  //printf("%s\n",ivl_nexus_name(ivl_lpm_datab(net, idx))); 
+                      //printf("B : %s\n",ivl_nexus_name(ivl_lpm_datab(net, idx)));
+                }
+
+
+       if( i && j && k)
+           if((j+k)>=i)
+             printViolation(1225,line,file,t1,t2);
+              //printf("possible loss value in Multiplication\n");  
+    if (table[1229][sAct] == "yes")
+    {
+           unsigned idx;
+           unsigned width = ivl_lpm_width(net);
+           static unsigned Ac = 0;
+           static unsigned Sc = 0; 
+
+           static const char*Signame ;
+
+           switch(ivl_lpm_type(net))
+           {
+               case IVL_LPM_SHIFTL:
+               // printf("  LPM_SHIFTL %s: <width=%u, selects=%u %s>\n",
+                    //    ivl_lpm_basename(net), width, ivl_lpm_selects(net),
+                  //      ivl_lpm_signed(net)? "signed" : "unsigned");
+                //for (idx = 0 ;  idx < width ;  idx += 1)
+                     // printf("    Q %u: %s\n", idx,
+                       //       ivl_nexus_name(ivl_lpm_q(net, idx)));
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                  if(!strstr(ivl_nexus_name(ivl_lpm_data(net, idx)),"_s")){
+                    Ac++;
+                     Signame = ivl_nexus_name(ivl_lpm_data(net, idx));}
+                for (idx = 0 ;  idx < ivl_lpm_selects(net) ;  idx += 1)
+                    Sc++;
+
+
+                 if(Ac && Sc)
+                   if(Ac==Sc)
+                    {
+                       char buf[20];
+                       strcpy(buf,Signame);   
+                       char* t = strtok(buf,"<");
+                       printViolation(1229,line,file,t);
+                    }
+                    // printf("All Bits shifted Out\n");   
+ 
+                      //printf("    Shift %u: %s\n", idx,ivl_nexus_name(ivl_lpm_select(net, idx)));
+               break;  
+           } 
+
+
+
+
+
+    }
+         //////////////////// MAKE 22249 ///////////  
+    if (table[1228][sAct] == "yes")
+    {
+     
+         static int AC = 0 ;
+         static int AC1 = 0 ;
+         static int AC2 = 0 ;
+         unsigned idx;
+         unsigned width = ivl_lpm_width(net);
+
+
+        switch(ivl_lpm_type(net))
+        {  
+            case IVL_LPM_MUX:
+            {
+                unsigned sdx;
+                printf("  LPM_MUX %s: <width=%u, size=%u, sel_wid=%u>\n",
+                        ivl_lpm_basename(net), width, ivl_lpm_size(net),
+                        ivl_lpm_selects(net));
+
+                for (idx = 0 ;  idx < width ;  idx += 1) {
+                      ivl_nexus_t nex = ivl_lpm_q(net, idx);
+                      printf("    Q %u: %s\n", idx,
+                              nex? ivl_nexus_name(nex) : "");
+                }
+
+                for (idx = 0 ;  idx < ivl_lpm_selects(net) ;  idx += 1)
+                      printf("    S %u: %s\n", idx,
+                              ivl_nexus_name(ivl_lpm_select(net, idx)));
+                for (sdx = 0 ;  sdx < ivl_lpm_size(net) ;  sdx += 1)
+                {
+                      for (idx = 0 ;  idx < width ;  idx += 1)
+                      {
+                            AC++;
+                            ivl_nexus_t nex = ivl_lpm_data2(net,sdx,idx);
+                     
+                            if(idx == 0)
+                            {
+                               if(AC==1)
+                                 AC1 = ivl_nexus_ptrs(nex);
+                               
+                               if(AC > 1)
+                                 AC2 = ivl_nexus_ptrs(nex);
+
+
+
+
+                                if(AC1 && AC2)
+                                  if(AC1!=AC2)
+                                     printViolation(1228,line,file);
+                                     //printf("the bit widths of the conditional assignment operans are different.\n");
+
+                            }
+
+
+
+
+                      }
+                }         
+                break;
+            }
+        }
+
+     }
+
+
+
+    if (table[1227][sAct] == "yes")
+    { 
+  
+      static unsigned AC3;
+      static unsigned AC4; 
+      const char*type = "?";
+
+
+      unsigned idx;
+      unsigned width = ivl_lpm_width(net);
+      switch (ivl_lpm_type(net)) {
+
+          case IVL_LPM_ADD: {
+                type = "Addition"; 
+                for (idx = 0 ;  idx < width ;  idx += 1) 
+                {
+                      ivl_nexus_t nex = ivl_lpm_data(net, idx);
+                                       
+
+                      if(idx==0)
+                          AC3 = ivl_nexus_ptrs(nex);
+
+
+                }
+                for (idx = 0 ;  idx < width ;  idx += 1) 
+                {
+                      ivl_nexus_t nex = ivl_lpm_datab(net, idx);
+
+                      if(idx==0)
+                          AC4 = ivl_nexus_ptrs(nex);
+
+
+                     // if(AC3 && AC4)
+                       // if(AC3!=AC4)
+                         // printViolation(1227,line,file);
+                          // printf("Operand Bit Size Mismatch in Addition or Subtraction\n");
+
+
+                }
+                break;
+          }
+          case IVL_LPM_SUB: {
+                type = "Subtraction";
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                {
+                      ivl_nexus_t nex = ivl_lpm_data(net, idx);
+
+
+                      if(idx==0)
+                          AC3 = ivl_nexus_ptrs(nex);
+                       
+
+                }
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                {
+                      ivl_nexus_t nex = ivl_lpm_datab(net, idx);
+
+                      if(idx==0)
+                          AC4 = ivl_nexus_ptrs(nex);
+
+
+                     // if(AC3 && AC4)
+                       // if(AC3!=AC4)
+                         // printViolation(1227,line,file);
+                          // printf("Operand Bit Size Mismatch in Addition or Subtraction\n");
+
+
+                }
+                break;
+          }
+
+
+
+       }
+
+           if(AC3 && AC4)
+               if(AC3!=AC4)
+                   printViolation(1227,line,file,type);
+
+
+
+    }
+
+    if (table[1226][sAct] == "yes")
+    {
+
+       unsigned idx;
+       unsigned width = ivl_lpm_width(net);
+
+
+
+       static unsigned AC5;
+       static unsigned AC6;    
+       static unsigned AC7;
+       static unsigned F;   
+
+       static int i,j,k;        
+
+       switch (ivl_lpm_type(net)) 
+       {
+            case IVL_LPM_ADD: 
+            {
+
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                { 
+                     ivl_nexus_t nex = ivl_lpm_data(net, idx);
+                     if(nex){
+                     for(unsigned i = 0 ; i < ivl_nexus_ptrs(nex) ;i++)
+                     {
+                         ivl_nexus_ptr_t Con = ivl_nexus_ptr(nex,i);
+                         ivl_signal_t Sig1 = ivl_nexus_ptr_sig(Con);
+                         if(Sig1)
+                         {
+                            i = ivl_signal_pins(Sig1);
+                            
+                         } 
+                     }  }
+                }
+ 
+
+
+
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                { 
+                     ivl_nexus_t nex = ivl_lpm_datab(net, idx);
+                     if(nex){
+                     for(unsigned i = 0 ; i < ivl_nexus_ptrs(nex) ;i++)
+                     {
+                         ivl_nexus_ptr_t Con = ivl_nexus_ptr(nex,i);
+                         ivl_signal_t Sig2 = ivl_nexus_ptr_sig(Con);
+                         if(Sig2)
+                         {
+                            j = ivl_signal_pins(Sig2);
+                         } 
+                     } }
+                }
+  
+
+
+                for (idx = 0 ;  idx < width ;  idx += 1)
+                { 
+                     ivl_nexus_t nex = ivl_lpm_q(net);
+                     for(unsigned i = 0 ; i < ivl_nexus_ptrs(nex) ;i++)
+                     {
+                         ivl_nexus_ptr_t Con = ivl_nexus_ptr(nex,i);
+                         ivl_signal_t Sig = ivl_nexus_ptr_sig(Con);
+                         if(Sig)
+                         {
+                            k = ivl_signal_pins(Sig);
+                          
+                            if(AC5>AC6)
+                            {
+                               F =AC5;
+                            } 
+                            if(AC6>AC5)
+                            {
+                               F =AC6;
+                            }  
+                            if(AC6=AC5)
+                            {
+                               F =AC6;
+                            }    
+                            
+                            if((ivl_signal_pins(Sig)+1)!=F) 
+                              printViolation(1226,line,file);
+                         } 
+                     }  
+                } 
+
+                break;
+            }
+       }
+           
+       
+       
+    }
+    */
+    }
+    break;      
+  }
+}
+
 void ProceduralContinuousAssignmentNotSynthesizable(map<int, map<string, string>> &table, ivl_statement_t net)
 {
   int rule = 1205;

@@ -957,7 +957,7 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
   {
     case IVL_EX_SIGNAL:
     {
-      rule = 1019;
+      rule = 1019; // same as 1224, not implemnted
       if (table[rule][sAct] == "yes")
       {
         unsigned nBit = ivl_expr_width(expr);

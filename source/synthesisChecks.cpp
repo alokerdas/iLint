@@ -26,65 +26,84 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
   const char *sAct = "active";
   int line = ivl_lpm_lineno(net);
   const char *file = ivl_lpm_file(net);
-  switch (ivl_lpm_type(net))
+  const char *outSigName = NULL; 
+  unsigned widthA, widthB, widthQ;
+  widthA = widthB = widthQ = 0;
+
+  if ((ivl_lpm_type(net) == IVL_LPM_ADD) ||
+      (ivl_lpm_type(net) == IVL_LPM_MULT))
   {
-    case IVL_LPM_MULT:
+    ivl_nexus_t nexA = ivl_lpm_data(net, 0);
+    if(nexA)
     {
-      rule = 1225;
-      if (table[rule][sAct] == "yes")
+      for(unsigned i = 0; i < ivl_nexus_ptrs(nexA); i++)
       {
-        const char *outSigName = NULL; 
-	unsigned widthA, widthB, widthQ;
-	widthA = widthB = widthQ = 0;
-        ivl_nexus_t nexA = ivl_lpm_data(net, 0);
-        if(nexA)
-	{
-          for(unsigned i = 0; i < ivl_nexus_ptrs(nexA); i++)
-          {
-            ivl_nexus_ptr_t conA = ivl_nexus_ptr(nexA, i);
-            ivl_signal_t sigA = ivl_nexus_ptr_sig(conA);
-            if(sigA)
-            {
-              widthA = ivl_signal_width(sigA);
-            }
-          }
-      	}
-        ivl_nexus_t nexB = ivl_lpm_data(net, 1);
-        if(nexB)
-	{
-          for(unsigned i = 0; i < ivl_nexus_ptrs(nexB); i++)
-          {
-            ivl_nexus_ptr_t conB = ivl_nexus_ptr(nexB, i);
-            ivl_signal_t sigB = ivl_nexus_ptr_sig(conB);
-            if(sigB)
-            {
-              widthB = ivl_signal_width(sigB);
-            }
-          }
-        }
-        ivl_nexus_t nexQ = ivl_lpm_q(net);
-        if(nexQ)
-	{
-          for(unsigned i = 0; i < ivl_nexus_ptrs(nexQ); i++)
-          {
-            ivl_nexus_ptr_t conQ = ivl_nexus_ptr(nexQ, i);
-            ivl_signal_t sigQ = ivl_nexus_ptr_sig(conQ);
-            if(sigQ)
-            {
-              widthQ = ivl_signal_width(sigQ);
-	      outSigName = ivl_signal_basename(sigQ);
-            }
-          }
-        }
-        if(widthA + widthB > widthQ)
+        ivl_nexus_ptr_t conA = ivl_nexus_ptr(nexA, i);
+        ivl_signal_t sigA = ivl_nexus_ptr_sig(conA);
+        if(sigA)
         {
-          printViolation(rule, line, file, outSigName);
+          widthA = ivl_signal_width(sigA);
         }
       }
     }
-    break;      
-    default:
+    ivl_nexus_t nexB = ivl_lpm_data(net, 1);
+    if(nexB)
     {
+      for(unsigned i = 0; i < ivl_nexus_ptrs(nexB); i++)
+      {
+        ivl_nexus_ptr_t conB = ivl_nexus_ptr(nexB, i);
+        ivl_signal_t sigB = ivl_nexus_ptr_sig(conB);
+        if(sigB)
+        {
+          widthB = ivl_signal_width(sigB);
+        }
+      }
+    }
+    ivl_nexus_t nexQ = ivl_lpm_q(net);
+    if(nexQ)
+    {
+      for(unsigned i = 0; i < ivl_nexus_ptrs(nexQ); i++)
+      {
+        ivl_nexus_ptr_t conQ = ivl_nexus_ptr(nexQ, i);
+        ivl_signal_t sigQ = ivl_nexus_ptr_sig(conQ);
+        if(sigQ)
+        {
+          widthQ = ivl_signal_width(sigQ);
+          outSigName = ivl_signal_basename(sigQ);
+        }
+      }
+    }
+  }
+  if (ivl_lpm_type(net) == IVL_LPM_MULT)
+  {
+    rule = 1225;
+    if (table[rule][sAct] == "yes")
+    {
+      if(widthA + widthB > widthQ)
+      {
+        printViolation(rule, line, file, outSigName);
+      }
+    }
+  }
+  if (ivl_lpm_type(net) == IVL_LPM_ADD)
+  {
+    rule = 1226;
+    if (table[rule][sAct] == "yes")
+    {
+      unsigned maxWidth;
+      if(widthA > widthB)
+        maxWidth = widthA;
+      else
+        maxWidth = widthB;
+
+      if(maxWidth + 1 > widthQ)
+      {
+	// for adder, the compiler changes the width of inputs = outputs
+	// so, 1226 will always be shown. can't do anything
+        printViolation(rule, line, file, outSigName);
+      }
+    }
+  }
 	    /*
 
 
@@ -334,86 +353,12 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
 
        switch (ivl_lpm_type(net)) 
        {
-            case IVL_LPM_ADD: 
-            {
-
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                { 
-                     ivl_nexus_t nex = ivl_lpm_data(net, idx);
-                     if(nex){
-                     for(unsigned i = 0 ; i < ivl_nexus_ptrs(nex) ;i++)
-                     {
-                         ivl_nexus_ptr_t Con = ivl_nexus_ptr(nex,i);
-                         ivl_signal_t Sig1 = ivl_nexus_ptr_sig(Con);
-                         if(Sig1)
-                         {
-                            i = ivl_signal_pins(Sig1);
-                            
-                         } 
-                     }  }
-                }
- 
-
-
-
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                { 
-                     ivl_nexus_t nex = ivl_lpm_datab(net, idx);
-                     if(nex){
-                     for(unsigned i = 0 ; i < ivl_nexus_ptrs(nex) ;i++)
-                     {
-                         ivl_nexus_ptr_t Con = ivl_nexus_ptr(nex,i);
-                         ivl_signal_t Sig2 = ivl_nexus_ptr_sig(Con);
-                         if(Sig2)
-                         {
-                            j = ivl_signal_pins(Sig2);
-                         } 
-                     } }
-                }
-  
-
-
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                { 
-                     ivl_nexus_t nex = ivl_lpm_q(net);
-                     for(unsigned i = 0 ; i < ivl_nexus_ptrs(nex) ;i++)
-                     {
-                         ivl_nexus_ptr_t Con = ivl_nexus_ptr(nex,i);
-                         ivl_signal_t Sig = ivl_nexus_ptr_sig(Con);
-                         if(Sig)
-                         {
-                            k = ivl_signal_pins(Sig);
-                          
-                            if(AC5>AC6)
-                            {
-                               F =AC5;
-                            } 
-                            if(AC6>AC5)
-                            {
-                               F =AC6;
-                            }  
-                            if(AC6=AC5)
-                            {
-                               F =AC6;
-                            }    
-                            
-                            if((ivl_signal_pins(Sig)+1)!=F) 
-                              printViolation(1226,line,file);
-                         } 
-                     }  
-                } 
-
-                break;
-            }
        }
            
        
        
     }
     */
-    }
-    break;      
-  }
 }
 
 void ProceduralContinuousAssignmentNotSynthesizable(map<int, map<string, string>> &table, ivl_statement_t net)

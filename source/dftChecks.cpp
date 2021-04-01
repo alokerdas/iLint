@@ -1926,7 +1926,7 @@ void SignalAssigned(map<int, map<string, string> > & table, ivl_signal_t sig)
 
 void checkPin(map<int, map<string, string> > & table, ivl_signal_t & sig)
 {
-  int rule = 1005;
+  int rule = 1005; //same as 1227, 1228, not implemented
   const char *sAct = "active";
 
   const char* signameHier = ivl_signal_name(sig);

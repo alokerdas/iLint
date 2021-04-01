@@ -28,10 +28,14 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
   const char *file = ivl_lpm_file(net);
   const char *outSigName = NULL; 
   unsigned widthA, widthB, widthQ;
+  ivl_signal_t sigA, sigB, sigQ;
   widthA = widthB = widthQ = 0;
+  sigA = sigB = sigQ = NULL;
 
   if ((ivl_lpm_type(net) == IVL_LPM_ADD) ||
-      (ivl_lpm_type(net) == IVL_LPM_MULT))
+      (ivl_lpm_type(net) == IVL_LPM_MULT) ||
+      (ivl_lpm_type(net) == IVL_LPM_SHIFTL) ||
+      (ivl_lpm_type(net) == IVL_LPM_SHIFTR))
   {
     ivl_nexus_t nexA = ivl_lpm_data(net, 0);
     if(nexA)
@@ -39,10 +43,11 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
       for(unsigned i = 0; i < ivl_nexus_ptrs(nexA); i++)
       {
         ivl_nexus_ptr_t conA = ivl_nexus_ptr(nexA, i);
-        ivl_signal_t sigA = ivl_nexus_ptr_sig(conA);
+        sigA = ivl_nexus_ptr_sig(conA);
         if(sigA)
         {
           widthA = ivl_signal_width(sigA);
+	  break;
         }
       }
     }
@@ -52,10 +57,11 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
       for(unsigned i = 0; i < ivl_nexus_ptrs(nexB); i++)
       {
         ivl_nexus_ptr_t conB = ivl_nexus_ptr(nexB, i);
-        ivl_signal_t sigB = ivl_nexus_ptr_sig(conB);
+        sigB = ivl_nexus_ptr_sig(conB);
         if(sigB)
         {
           widthB = ivl_signal_width(sigB);
+	  break;
         }
       }
     }
@@ -65,11 +71,11 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
       for(unsigned i = 0; i < ivl_nexus_ptrs(nexQ); i++)
       {
         ivl_nexus_ptr_t conQ = ivl_nexus_ptr(nexQ, i);
-        ivl_signal_t sigQ = ivl_nexus_ptr_sig(conQ);
+        sigQ = ivl_nexus_ptr_sig(conQ);
         if(sigQ)
         {
           widthQ = ivl_signal_width(sigQ);
-          outSigName = ivl_signal_basename(sigQ);
+	  break;
         }
       }
     }
@@ -81,7 +87,7 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
     {
       if(widthA + widthB > widthQ)
       {
-        printViolation(rule, line, file, outSigName);
+        printViolation(rule, line, file, ivl_signal_basename(sigQ));
       }
     }
   }
@@ -100,7 +106,19 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
       {
 	// for adder, the compiler changes the width of inputs = outputs
 	// so, 1226 will always be shown. can't do anything
-        printViolation(rule, line, file, outSigName);
+        printViolation(rule, line, file);
+      }
+    }
+  }
+  if ((ivl_lpm_type(net) == IVL_LPM_SHIFTL) ||
+      (ivl_lpm_type(net) == IVL_LPM_SHIFTR))
+  {
+    rule = 1229;
+    if (table[rule][sAct] == "yes")
+    {
+      if (widthB >= widthA)
+      {
+        printViolation(rule, line, file, ivl_signal_basename(sigA));
       }
     }
   }
@@ -186,178 +204,10 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
 
 
     }
-         //////////////////// MAKE 22249 ///////////  
-    if (table[1228][sAct] == "yes")
-    {
-     
-         static int AC = 0 ;
-         static int AC1 = 0 ;
-         static int AC2 = 0 ;
-         unsigned idx;
-         unsigned width = ivl_lpm_width(net);
-
-
-        switch(ivl_lpm_type(net))
-        {  
-            case IVL_LPM_MUX:
-            {
-                unsigned sdx;
-                printf("  LPM_MUX %s: <width=%u, size=%u, sel_wid=%u>\n",
-                        ivl_lpm_basename(net), width, ivl_lpm_size(net),
-                        ivl_lpm_selects(net));
-
-                for (idx = 0 ;  idx < width ;  idx += 1) {
-                      ivl_nexus_t nex = ivl_lpm_q(net, idx);
-                      printf("    Q %u: %s\n", idx,
-                              nex? ivl_nexus_name(nex) : "");
-                }
-
-                for (idx = 0 ;  idx < ivl_lpm_selects(net) ;  idx += 1)
-                      printf("    S %u: %s\n", idx,
-                              ivl_nexus_name(ivl_lpm_select(net, idx)));
-                for (sdx = 0 ;  sdx < ivl_lpm_size(net) ;  sdx += 1)
-                {
-                      for (idx = 0 ;  idx < width ;  idx += 1)
-                      {
-                            AC++;
-                            ivl_nexus_t nex = ivl_lpm_data2(net,sdx,idx);
-                     
-                            if(idx == 0)
-                            {
-                               if(AC==1)
-                                 AC1 = ivl_nexus_ptrs(nex);
-                               
-                               if(AC > 1)
-                                 AC2 = ivl_nexus_ptrs(nex);
 
 
 
 
-                                if(AC1 && AC2)
-                                  if(AC1!=AC2)
-                                     printViolation(1228,line,file);
-                                     //printf("the bit widths of the conditional assignment operans are different.\n");
-
-                            }
-
-
-
-
-                      }
-                }         
-                break;
-            }
-        }
-
-     }
-
-
-
-    if (table[1227][sAct] == "yes")
-    { 
-  
-      static unsigned AC3;
-      static unsigned AC4; 
-      const char*type = "?";
-
-
-      unsigned idx;
-      unsigned width = ivl_lpm_width(net);
-      switch (ivl_lpm_type(net)) {
-
-          case IVL_LPM_ADD: {
-                type = "Addition"; 
-                for (idx = 0 ;  idx < width ;  idx += 1) 
-                {
-                      ivl_nexus_t nex = ivl_lpm_data(net, idx);
-                                       
-
-                      if(idx==0)
-                          AC3 = ivl_nexus_ptrs(nex);
-
-
-                }
-                for (idx = 0 ;  idx < width ;  idx += 1) 
-                {
-                      ivl_nexus_t nex = ivl_lpm_datab(net, idx);
-
-                      if(idx==0)
-                          AC4 = ivl_nexus_ptrs(nex);
-
-
-                     // if(AC3 && AC4)
-                       // if(AC3!=AC4)
-                         // printViolation(1227,line,file);
-                          // printf("Operand Bit Size Mismatch in Addition or Subtraction\n");
-
-
-                }
-                break;
-          }
-          case IVL_LPM_SUB: {
-                type = "Subtraction";
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                {
-                      ivl_nexus_t nex = ivl_lpm_data(net, idx);
-
-
-                      if(idx==0)
-                          AC3 = ivl_nexus_ptrs(nex);
-                       
-
-                }
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                {
-                      ivl_nexus_t nex = ivl_lpm_datab(net, idx);
-
-                      if(idx==0)
-                          AC4 = ivl_nexus_ptrs(nex);
-
-
-                     // if(AC3 && AC4)
-                       // if(AC3!=AC4)
-                         // printViolation(1227,line,file);
-                          // printf("Operand Bit Size Mismatch in Addition or Subtraction\n");
-
-
-                }
-                break;
-          }
-
-
-
-       }
-
-           if(AC3 && AC4)
-               if(AC3!=AC4)
-                   printViolation(1227,line,file,type);
-
-
-
-    }
-
-    if (table[1226][sAct] == "yes")
-    {
-
-       unsigned idx;
-       unsigned width = ivl_lpm_width(net);
-
-
-
-       static unsigned AC5;
-       static unsigned AC6;    
-       static unsigned AC7;
-       static unsigned F;   
-
-       static int i,j,k;        
-
-       switch (ivl_lpm_type(net)) 
-       {
-       }
-           
-       
-       
-    }
     */
 }
 

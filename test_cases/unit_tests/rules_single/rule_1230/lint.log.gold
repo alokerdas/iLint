@@ -1,0 +1,2 @@
+Violated 1230: Function "ZFC" is called in an always block. File: 1230_Function_Called_in_an_Always_Block.v , Line: 19
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

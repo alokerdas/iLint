@@ -20,7 +20,79 @@
 #include "ivl_target.h"
 #include "lint.h"
 
-void checkNonConstShiftAmt(map<int, map<string, string> > & table, ivl_expr_t expr, bool firsTime)
+void functionCalledInAnAlwaysBlock(map<int, map<string, string>> &table, ivl_expr_t fExp)
+{
+  int rule = 1230;
+  const char *sAct = "active";
+  int line = ivl_expr_lineno(fExp);
+  const char *file = ivl_expr_file(fExp); 
+
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_expr_type(fExp) == IVL_EX_UFUNC)
+    {
+      ivl_scope_t func = ivl_expr_def(fExp);
+      printViolation(rule, line, file, ivl_scope_basename(func));
+    }
+
+    /////////////////// MAKE 22123 /////////////////////////////////
+/*    if (table[1231][sAct] == "yes")
+    {
+
+    const ivl_statement_type_t code = ivl_statement_type(net);
+    static const char*rstName;
+    static const char*evtName; 
+
+    switch (code)
+    {
+
+      default:
+        printf("%d\n",code);
+      break;
+
+       case IVL_ST_WAIT:
+        {       
+                const char*comma = "";
+                for (unsigned idx = 0 ;  idx < ivl_stmt_nevent(net) ;  idx += 1) 
+                {
+                      ivl_event_t evnt = ivl_stmt_events(net, idx);
+                      switch(ivl_event_type(evnt))
+                      {
+                          case IVL_EV_NEG:
+                            //printf("%s\n",ivl_nexus_name(ivl_event_neg(evnt,0))); 
+                            rstName = ivl_nexus_name(ivl_event_neg(evnt,0));
+                          break;
+                      } 
+                }
+
+                printf(")\n");
+                FunctionCalledInAnAlwaysBlock(table,ivl_stmt_sub_stmt(net), ind+4);
+                break;
+        }
+      
+        case IVL_ST_CONDIT: {
+                ivl_expr_t ex = ivl_stmt_cond_expr(net);
+                //if(ex) 
+                   switch(ivl_expr_type(ex))
+                   {
+                       case IVL_EX_SIGNAL:
+                         evtName = ivl_expr_name(ex);
+                         printf("%s\n",evtName);
+                       break;   
+                   }
+                break;
+          }
+
+    } 
+    if(rstName && evtName)
+       if(strcmp(rstName,evtName))
+          printf("asynchronous reset signal %s should be specified only by negedge.\n",evtName); 
+    
+    }*/
+  }
+}
+
+void checkNonConstShiftAmt(map<int, map<string, string>> &table, ivl_expr_t expr, bool firsTime)
 {
   int rule = 1162;
   const char *sAct = "active";
@@ -1234,12 +1306,14 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
       case IVL_ST_ASSIGN:
       case IVL_ST_ASSIGN_NB:
       {
+        ivl_expr_t rhs = ivl_stmt_rval(aStmt);
         checkDirectInputOutput(table, aStmt);
         SignalAssignedToSelf(table, aStmt, sigLst, sigSet);
         DelayControl(table, aStmt, sigLst, sigSet);
         checkNetStuck(table, aStmt);
         checkIntegerNegative(table, aStmt);
-        checkNonConstShiftAmt(table, ivl_stmt_rval(aStmt), true);
+        checkNonConstShiftAmt(table, rhs, true);
+        functionCalledInAnAlwaysBlock(table, rhs);
         if (ivl_statement_type(aStmt) == IVL_ST_ASSIGN)
           blkStmtFound = true;
 	else
@@ -1451,14 +1525,16 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
     case IVL_ST_ASSIGN:
     case IVL_ST_ASSIGN_NB:
     {
+      ivl_expr_t rhs = ivl_stmt_rval(net);
       DelayControl(table, net, sensitivityList, lhSigs);
-      checkConditExpr(table, ivl_stmt_rval(net));
+      checkConditExpr(table, rhs);
       checkDirectInputOutput(table, net);
       SignalAssignedToSelf(table, net, sensitivityList, lhSigs);
       checkNetStuck(table, net);
-      checkUnsignedVector(table, ivl_stmt_rval(net));
-      checkNonConstShiftAmt(table, ivl_stmt_rval(net), true);
+      checkUnsignedVector(table, rhs);
+      checkNonConstShiftAmt(table, rhs, true);
       checkIntegerNegative(table, net);
+      functionCalledInAnAlwaysBlock(table, rhs);
       for (unsigned idx = 0; idx < ivl_stmt_lvals(net); idx++)
       {
         rule = 1045;

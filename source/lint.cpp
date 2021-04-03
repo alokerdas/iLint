@@ -21,16 +21,23 @@
 #include "general.h"
 #include "lint.h"
 
-int check_process(ivl_process_t pros, void *X)
+int checkProcess(ivl_process_t pros, void *X)
 {
   int fail = 0;
   chkProsVoid *voidVar = (chkProsVoid*) X;
-  map<int, map<string, string> > table = voidVar->configTable;
-  IBlock(table, pros);
+  IBlock(voidVar->configTable, pros);
 
   set <ivl_signal_t> senLst;
   set <ivl_signal_t> sigSet;
-  checkProcesStatement(table, ivl_process_stmt(pros), senLst, sigSet);
+  checkProcesStatement(voidVar->configTable, ivl_process_stmt(pros), senLst, sigSet, voidVar->allAssnSigs);
+  return fail;
+}
+
+int checkProcess2nd(ivl_process_t pros, void *X)
+{
+  int fail = 0;
+  chkProsVoid *voidVar = (chkProsVoid*) X;
+  checkUnasndVar(voidVar->configTable, ivl_process_stmt(pros), voidVar->allAssnSigs);
   return fail;
 }
 
@@ -224,7 +231,8 @@ int target_design(ivl_design_t des)
  
     draw_scope_port(proStruct.configTable, aScope);
   }
-  ivl_design_process(des, check_process, &proStruct);
+  ivl_design_process(des, checkProcess, &proStruct);
+  ivl_design_process(des, checkProcess2nd, &proStruct);
 
   fprintf(logFptr, "TOTAL NUMBER OF VIOLATIONS ARE: %d.\n", logViolationCount());
   printf("TOTAL NUMBER OF VIOLATIONS ARE: %d.\n", logViolationCount());

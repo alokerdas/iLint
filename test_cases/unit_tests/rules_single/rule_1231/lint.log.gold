@@ -1,0 +1,2 @@
+Violated 1231: Variable "t" is not fully initialized before being referenced. File: 1231_Un_initialized_Variable_Referenced_in_an_Edge_triggered_Block.v , Line: 11
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

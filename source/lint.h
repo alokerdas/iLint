@@ -22,6 +22,12 @@
 
 #include "general.h"
 
+typedef struct tricToPasVoidStar
+{
+  map<int, map<string, string>> configTable;
+  set <ivl_signal_t> allAssnSigs;
+} chkProsVoid;
+
 extern FILE * openLogFile(const char *fileName = NULL);
 extern void readConfiguration(map< int, map<string, string> > & table);
 extern int logViolationCount(int incr = 0);
@@ -116,7 +122,7 @@ extern const char* ivl_lpm_latch(ivl_statement_t net);
 
 /************************ ivl_statement_t net,ivl_process_t pr  *****************************/
 extern void XZCaseLabel(map<int, map<string, string> > & table, ivl_statement_t net);
-extern void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *senLst, set<ivl_signal_t> *sigSet, bool eg = false, bool time = true);
+extern void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &senLst, set<ivl_signal_t> &sigSet, bool eg = false, bool time = true);
 extern void Reset_is_Driven_by_a_Path_with_Potential_Glitch(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t pr);
 extern void set_is_Driven_by_Combinational_logic(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t pr);
 void Reset_is_Driven_by_by_Combinational_logic(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t pr);
@@ -370,7 +376,7 @@ extern void checkSpecialTypePortConnectedtoanExpression(map<int, map<string, str
 extern void checkBitWidthMismatchinBitwiseOperation(map<int, map<string, string> > & table, ivl_net_logic_t & log);
 extern void checkReconvClock(map<int, map<string, string> > & table, ivl_net_logic_t & log);
 /**************************************** ivl_event_t ********************************/
-extern bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<ivl_signal_t> *senLst);
+extern bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<ivl_signal_t> &senLst);
 extern void checkDuplicate(map<int, map<string, string> > & table, ivl_event_t & evt);
 extern void checkEdgeNonEdge(map<int, map<string, string> > & table, ivl_event_t & evt);
 extern void checkClockActiveBothEdges(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
@@ -386,7 +392,7 @@ extern void IffConstructNotSynthesizable(map<int, map<string, string> > & table,
 
 /**************************************** ivl_variable_t ********************************/
 extern void variable_synthesizeble(map<int, map<string, string> > & table, ivl_signal_t & net);
-extern void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *senLst, set<ivl_signal_t> *sigSet);
+extern void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &senLst, set<ivl_signal_t> &sigSet);
 extern void SystemTaskCall(map<int, map<string, string> > & table, ivl_statement_t net);
 extern void ForceStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigList = NULL);
 extern void ReleaseStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigList = NULL);

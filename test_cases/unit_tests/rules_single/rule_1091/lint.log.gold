@@ -1,2 +1,3 @@
 Violated 1091: Both Edge and Non Edge Signal "clk" are duplicate. File: 1091_Duplicate_Signal_Found_in_Sensitivity_List.v , Line: 5
-TOTAL NUMBER OF VIOLATIONS ARE: 1.
+Violated 1091: Both Edge and Non Edge Signal "clk" are duplicate. File: 1091_Duplicate_Signal_Found_in_Sensitivity_List.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

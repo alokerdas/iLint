@@ -687,7 +687,7 @@ void SystemTaskCall(map<int, map<string, string> > & table, ivl_statement_t net)
   }
 }
 
-void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *sigSet)
+void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &sigLst, set<ivl_signal_t> &sigSet)
 {
   int rule = 0;
   const char *sAct = "active";

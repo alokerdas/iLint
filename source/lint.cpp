@@ -24,14 +24,13 @@
 int check_process(ivl_process_t pros, void *X)
 {
   int fail = 0;
-  map<int, map<string, string> > *confTable = (map<int, map<string, string> >*) X;
-  map<int, map<string, string> > table = *confTable;
+  chkProsVoid *voidVar = (chkProsVoid*) X;
+  map<int, map<string, string> > table = voidVar->configTable;
   IBlock(table, pros);
 
-  set <ivl_signal_t> *senLst = new set<ivl_signal_t>;
-  set <ivl_signal_t> *sigSet = new set<ivl_signal_t>;
+  set <ivl_signal_t> senLst;
+  set <ivl_signal_t> sigSet;
   checkProcesStatement(table, ivl_process_stmt(pros), senLst, sigSet);
-  delete senLst;
   return fail;
 }
 
@@ -166,7 +165,8 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     ivl_event_t evt = ivl_scope_event(scope, j);
     if (ivl_event_nany(evt) || ivl_event_npos(evt) || ivl_event_nneg(evt))
     {
-      checkEvent(table, evt, NULL);
+      set<ivl_signal_t> dummy;
+      checkEvent(table, evt, dummy);
       checkEdgeNonEdge(table, evt);
       checkMultipleClock(table, evt);
       checkActiveSignalName(table, evt);
@@ -205,8 +205,9 @@ void checkMultipleTopModule(map<int, map<string, string> > & table, ivl_scope_t 
 
 int target_design(ivl_design_t des)
 {
-  map< int, map<string, string> > configTable;
-  readConfiguration(configTable);
+//  map< int, map<string, string> > configTable;
+  chkProsVoid proStruct;
+  readConfiguration(proStruct.configTable);
 
   printf("\n\n\n");
   FILE *logFptr = openLogFile("lint.log");
@@ -219,11 +220,11 @@ int target_design(ivl_design_t des)
   {
     ivl_scope_t aScope = root_scopes[idx];
     if(nroot > 1)
-      checkMultipleTopModule(configTable, aScope);
+      checkMultipleTopModule(proStruct.configTable, aScope);
  
-    draw_scope_port(configTable, aScope);
+    draw_scope_port(proStruct.configTable, aScope);
   }
-  ivl_design_process(des, check_process, &configTable);
+  ivl_design_process(des, check_process, &proStruct);
 
   fprintf(logFptr, "TOTAL NUMBER OF VIOLATIONS ARE: %d.\n", logViolationCount());
   printf("TOTAL NUMBER OF VIOLATIONS ARE: %d.\n", logViolationCount());

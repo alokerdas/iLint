@@ -358,7 +358,7 @@ void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_statemen
   }
 }
 
-void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t net, ivl_signal_t lvSig, set<ivl_signal_t> *lhSigs, set<ivl_signal_t> *sigLst)
+void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t net, ivl_signal_t lvSig, set<ivl_signal_t> &lhSigs, set<ivl_signal_t> &sigLst)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -417,7 +417,7 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
             opr1 = NULL;
 	  }
 	}
-        if (sigLst && (sigLst->find(rvSig) == sigLst->end()))
+        if (!sigLst.empty() && (sigLst.find(rvSig) == sigLst.end()))
         {
           rule = 1081; // same as 1159, not implemented
           if (table[rule][sAct] == "yes")
@@ -434,7 +434,7 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
             printViolation(rule, line, file, rvSigName);
           }
         }
-        if (rvSig && lhSigs && (lhSigs->find(rvSig) != lhSigs->end()))
+        if (lhSigs.find(rvSig) != lhSigs.end())
         {
           rule = 1206;
           if (table[rule][sAct] == "yes")
@@ -507,7 +507,7 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
   }
 }
 
-void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
+void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &sigLst, set<ivl_signal_t> &lhSigs)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -520,26 +520,18 @@ void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_
     if (lvSig)
     {
       const char *lvSigName = ivl_signal_basename(lvSig);
-      if (lhSigs)
+      if (lhSigs.find(lvSig) == lhSigs.end())
       {
-        if (lhSigs->find(lvSig) == lhSigs->end())
-        {
-          lhSigs->insert(lvSig);
-        }
-        else
-        {
-          rule = 1077; // same as 1203, not implemented
-          if (table[rule][sAct] == "yes")
-          {
-            printViolation(rule, line, file, lvSigName);
-          }
-	  //delete lhSigs; can't delete, its complecated.
-        }
+        lhSigs.insert(lvSig);
       }
       else
       {
-	lhSigs = new set<ivl_signal_t>;
-        lhSigs->insert(lvSig);
+        rule = 1077; // same as 1203, not implemented
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, lvSigName);
+        }
+	  //delete lhSigs; can't delete, its complecated.
       }
       traverseExpression(table, net, lvSig, lhSigs, sigLst);
     }
@@ -622,7 +614,7 @@ void checkCaseXZ(map<int, map<string, string> > & table, ivl_statement_t net)
   }
 }
 
-void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
+void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &sigLst, set<ivl_signal_t> &lhSigs)
 {
   const char *sAct = "active";
 
@@ -788,7 +780,7 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
   }
 }
 
-bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<ivl_signal_t> *sigLst)
+bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<ivl_signal_t> &sigLst)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -806,19 +798,16 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
       if(aConnSig)
       {
         senSigName = ivl_signal_basename(aConnSig);
-        if (sigLst)
+        if (sigLst.find(aConnSig) == sigLst.end())
         {
-          if (sigLst->find(aConnSig) == sigLst->end())
-          {
-            sigLst->insert(aConnSig);
-          }
-          else
-          {
-            rule = 1091;
-            if (table[rule][sAct] == "yes")
-            { 
-              printViolation(rule, line, file, senSigName);
-            }
+          sigLst.insert(aConnSig);
+        }
+        else
+        {
+          rule = 1091;
+          if (table[rule][sAct] == "yes")
+          { 
+            printViolation(rule, line, file, senSigName);
           }
         }
       }
@@ -865,19 +854,16 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
       if(aConnSig)
       {
         senSigName = ivl_signal_basename(aConnSig);
-        if (sigLst)
+        if (sigLst.find(aConnSig) == sigLst.end())
         {
-          if (sigLst->find(aConnSig) == sigLst->end())
-          {
-            sigLst->insert(aConnSig);
-          }
-          else
-          {
-            rule = 1091;
-            if (table[rule][sAct] == "yes")
-            { 
-              printViolation(rule, line, file);
-            }
+          sigLst.insert(aConnSig);
+        }
+        else
+        {
+          rule = 1091;
+          if (table[rule][sAct] == "yes")
+          { 
+            printViolation(rule, line, file);
           }
         }
       }
@@ -924,19 +910,16 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
       if(aConnSig)
       {
         senSigName = ivl_signal_basename(aConnSig);
-        if (sigLst)
+        if (sigLst.find(aConnSig) == sigLst.end())
         {
-          if (sigLst->find(aConnSig) == sigLst->end())
-          {
-            sigLst->insert(aConnSig);
-          }
-          else
-          {
-            rule = 1091;
-            if (table[rule][sAct] == "yes")
-            { 
-              printViolation(rule, line, file, senSigName);
-            }
+          sigLst.insert(aConnSig);
+        }
+        else
+        {
+          rule = 1091;
+          if (table[rule][sAct] == "yes")
+          { 
+            printViolation(rule, line, file, senSigName);
           }
         }
       }
@@ -1133,7 +1116,7 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
   }
 }
 
-void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t cls, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *lhSigs)
+void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t cls, set<ivl_signal_t> &sigLst, set<ivl_signal_t> &lhSigs)
 {
   int rule = 1210; // also 1214
   const char *sAct = "active";
@@ -1257,12 +1240,13 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
   }
 }
 
-void checkMemoryisReadandWrittenatSameTime(map<int, map<string, string>> &table, ivl_statement_t net, set<ivl_signal_t> *lhSigs)
+void checkMemoryisReadandWrittenatSameTime(map<int, map<string, string>> &table, ivl_statement_t net, set<ivl_signal_t> &lhSigs)
 {
-  traverseExpression(table, net, NULL, lhSigs, NULL);
+  set<ivl_signal_t> dummy;
+  traverseExpression(table, net, NULL, lhSigs, dummy);
 }
 
-void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigLst, set<ivl_signal_t> *sigSet, bool edge)
+void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &sigLst, set<ivl_signal_t> &sigSet, bool edge)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -1476,7 +1460,7 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
   }
 }
 
-void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sensitivityList, set<ivl_signal_t> *lhSigs, bool edge, bool firsTime)
+void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &sensitivityList, set<ivl_signal_t> &lhSigs, bool edge, bool firsTime)
 {
   int rule = 0;
   const char *sAct = "active";

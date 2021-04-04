@@ -1,4 +1,2 @@
 Violated 1038: Tri-state "io" should be disabled in shift. File: 1038_TriStateDisabledinShift.v , Line: 2
-Violated 1037: Inout port "io" should be input only in shift. File: 1038_TriStateDisabledinShift.v , Line: 14
-Violated 1049: Case Like If Else. File: 1038_TriStateDisabledinShift.v , Line: 9
-TOTAL NUMBER OF VIOLATIONS ARE: 3.
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

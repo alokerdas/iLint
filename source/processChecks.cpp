@@ -416,9 +416,12 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
         if (strchr(valBits, 'x') || strchr(valBits, 'X'))
         {
           rule = 1201;
-          const char *file = ivl_expr_file(rvExp);
-          int line = ivl_expr_lineno(rvExp);
-          printViolation(rule, line, file);
+          if (table[rule][sAct] == "yes")
+          {
+            const char *file = ivl_expr_file(rvExp);
+            int line = ivl_expr_lineno(rvExp);
+            printViolation(rule, line, file);
+          }
         }
         rvExp = NULL;
       }
@@ -1233,7 +1236,10 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
       {
         // nested if-else-if
         rule = 1049;
-        printViolation(rule, line, file);
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file);
+        }
       }
     }
   }
@@ -1341,6 +1347,12 @@ void checkBlockStatements(map<int, map<string, string> > & table, ivl_statement_
 	  forceSigs = new set<ivl_signal_t>;
         }
         ForceStatement(table, aStmt, forceSigs);
+      }
+      break;
+      case IVL_ST_UTASK:
+      case IVL_ST_DISABLE:
+      {
+        checkUserTask(table, aStmt);
       }
       break;
       case IVL_ST_STASK:
@@ -1556,6 +1568,27 @@ void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_
       DelayControl(table, net, sensitivityList, lhSigs, alLhSigs);
     }
     break;
+    case IVL_ST_UTASK:
+    case IVL_ST_DISABLE:
+    {
+      checkUserTask(table, net);
+    }
+    break;
+    case IVL_ST_STASK:
+    {
+      SystemTaskCall(table, net);
+    }
+    break;
+    case IVL_ST_RELEASE:
+    {
+      ReleaseStatement(table, net);
+    }
+    break;
+    case IVL_ST_FORCE:
+    {
+      ForceStatement(table, net);
+    }
+    break;
     case IVL_ST_WHILE:
     case IVL_ST_DO_WHILE:
     {
@@ -1602,7 +1635,7 @@ void checkUnasndVar(map<int, map<string, string> > & table, ivl_statement_t net,
 {
   int rule = 0;
   const char *sAct = "active";
-  ivl_statement_type_t code = ivl_statement_type(net);
+  ivl_statement_type_t code = net ? ivl_statement_type(net) : IVL_ST_NONE;
   switch (code)
   { 
     case IVL_ST_WAIT:

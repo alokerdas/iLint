@@ -1,6 +1,4 @@
-Violated 1049: Case Like If Else. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 11
 Violated 1050: Used "z or Z" in Conditional Expression. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 10
 Violated 1050: Used "x or X" in Conditional Expression. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 13
-Violated 1049: Case Like If Else. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 14
 Violated 1050: Used "x or X" in Conditional Expression. File: 1050_Z_or_X_Used_in_Conditional_Expression.v , Line: 13
-TOTAL NUMBER OF VIOLATIONS ARE: 5.
+TOTAL NUMBER OF VIOLATIONS ARE: 3.

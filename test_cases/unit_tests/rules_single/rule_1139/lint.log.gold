@@ -1,5 +1,4 @@
 Violated 1139: Combinational Logic Found in Sequential Block. File: 1139_Combinational_Logic_Found_in_Sequential_Block.v , Line: 13
 Violated 1139: Combinational Logic Found in Sequential Block. File: 1139_Combinational_Logic_Found_in_Sequential_Block.v , Line: 10
 Violated 1139: Combinational Logic Found in Sequential Block. File: 1139_Combinational_Logic_Found_in_Sequential_Block.v , Line: 8
-Violated 1049: Case Like If Else. File: 1139_Combinational_Logic_Found_in_Sequential_Block.v , Line: 9
-TOTAL NUMBER OF VIOLATIONS ARE: 4.
+TOTAL NUMBER OF VIOLATIONS ARE: 3.

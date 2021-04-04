@@ -1592,27 +1592,30 @@ void checkInoutInputOnlyShift(map<int, map<string, string> > & table, ivl_signal
     }
 
     rule = 1037;
-    unsigned elements = ivl_signal_array_count(sig);
-    for (int i = 0; i < elements; i++)
+    if (table[rule][sAct] == "yes")
     {
-      ivl_nexus_t aJoint = ivl_signal_nex(sig, i);
-      unsigned connections = ivl_nexus_ptrs(aJoint);
-      for (int j = 0; j < connections; j++)
+      unsigned elements = ivl_signal_array_count(sig);
+      for (int i = 0; i < elements; i++)
       {
-        ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aJoint, j);
-        ivl_net_logic_t aLog = ivl_nexus_ptr_log(aConn);
-        if (aLog && (ivl_nexus_ptr_pin(aConn) == 0))
+        ivl_nexus_t aJoint = ivl_signal_nex(sig, i);
+        unsigned connections = ivl_nexus_ptrs(aJoint);
+        for (int j = 0; j < connections; j++)
         {
-          line = ivl_logic_lineno(aLog);
-          file = ivl_logic_file(aLog);
-          printViolation(rule, line, file, sigName);
-        }
-        ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(aConn);
-        if (anLpm && (ivl_lpm_q(anLpm) == aJoint))
-        {
-          line = ivl_lpm_lineno(anLpm);
-          file = ivl_lpm_file(anLpm);
-          printViolation(rule, line, file, sigName);
+          ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aJoint, j);
+          ivl_net_logic_t aLog = ivl_nexus_ptr_log(aConn);
+          if (aLog && (ivl_nexus_ptr_pin(aConn) == 0))
+          {
+            line = ivl_logic_lineno(aLog);
+            file = ivl_logic_file(aLog);
+            printViolation(rule, line, file, sigName);
+          }
+          ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(aConn);
+          if (anLpm && (ivl_lpm_q(anLpm) == aJoint))
+          {
+            line = ivl_lpm_lineno(anLpm);
+            file = ivl_lpm_file(anLpm);
+            printViolation(rule, line, file, sigName);
+          }
         }
       }
     }

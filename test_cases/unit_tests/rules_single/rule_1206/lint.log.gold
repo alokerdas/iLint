@@ -1,3 +1,2 @@
-Violated 1037: Inout port "data" should be input only in shift. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 9
 Violated 1206: Memory written and read at same time. File: 1206_Memory_is_Read_and_Written_at_Same_Time.v , Line: 13
-TOTAL NUMBER OF VIOLATIONS ARE: 2.
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

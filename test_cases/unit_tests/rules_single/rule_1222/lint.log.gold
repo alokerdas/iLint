@@ -1,3 +1,2 @@
-Violated 1201: Operation on X directly assigned by X should not be used because it will result in simulation mismatch. File: 1222_Incomplete_Case_Expression_with_Default_Clause.v , Line: 8
 Violated 1222: Not all possible values of the case expression are covered but a default clause exists. File: 1222_Incomplete_Case_Expression_with_Default_Clause.v , Line: 8
-TOTAL NUMBER OF VIOLATIONS ARE: 2.
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

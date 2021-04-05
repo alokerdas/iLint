@@ -1902,7 +1902,7 @@ void checkGATE(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
 void SignalAssigned(map<int, map<string, string> > & table, ivl_signal_t sig)
 {
 	// in this function we can not check if the signal is assigned or referenced. Hence, 1059 is not implemented.
-  int rule = 1058;
+  int rule = 1058; // same as 1232, 1233, 1234, not implemented
   const char *sAct = "active";
 
   const char* signameHier = ivl_signal_name(sig);

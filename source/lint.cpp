@@ -191,6 +191,24 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
     }
   }
 
+  int timPreci;
+  int timUnit = ivl_scope_time_units(scope);
+  if (timUnit)
+  {
+    timPreci = ivl_scope_time_precision(scope);
+  }
+  else
+  {
+    int rule = 1235;
+    const char *sAct = "active";
+    if (table[rule][sAct] == "yes")
+    {
+      int aline = ivl_scope_lineno(scope);
+      const char *afile = ivl_scope_file(scope);
+      printViolation(rule, aline, afile, ivl_scope_name(scope));
+    }
+  }
+
   unsigned nScope = ivl_scope_childs(scope);
   for (int k = 0; k < nScope; k++)
   {

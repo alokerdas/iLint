@@ -398,6 +398,20 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
       printViolation(rule, line, file, file, moduleName); 
     }
   }
+  rule = 1239;
+  if (table[rule][sAct] == "yes")
+  {
+    int nml = 10;
+    const char *sNml = "namelength";
+    if (table[rule].find(sNml) != table[rule].end())
+    {
+      nml = stoi(table[rule][sNml]);
+    }
+    if (strlen(file) > nml)
+    {
+      printViolation(rule, line, file, strlen(file), nml);
+    }
+  }
 }
 
 void checkTaskName(map<int, map<string, string> > & table, ivl_scope_t & scope)

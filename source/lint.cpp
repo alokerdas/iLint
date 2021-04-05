@@ -225,12 +225,13 @@ void checkMultipleTopModule(map<int, map<string, string> > & table, ivl_scope_t 
   int line = ivl_scope_lineno(scp);
   const char *file = ivl_scope_file(scp);
   if (table[rule][sAct] == "yes")
+  {
     printViolation(rule, line, file);
+  }
 }
 
 int target_design(ivl_design_t des)
 {
-//  map< int, map<string, string> > configTable;
   chkProsVoid proStruct;
   readConfiguration(proStruct.configTable);
 

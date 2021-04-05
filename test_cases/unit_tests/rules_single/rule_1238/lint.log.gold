@@ -1,0 +1,3 @@
+Violated 1238: File Name "1238_Module_Name_Different_from_File_Name.v" does not match with Module Name "testini". File: 1238_Module_Name_Different_from_File_Name.v , Line: 1
+Violated 1238: File Name "1238_Module_Name_Different_from_File_Name.v" does not match with Module Name "u_test_0". File: 1238_Module_Name_Different_from_File_Name.v , Line: 3
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

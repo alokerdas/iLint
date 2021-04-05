@@ -390,6 +390,14 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
       }
     }
   }
+  rule = 1238;
+  if (table[rule][sAct] == "yes")
+  {
+    if (file && moduleName && strcasecmp(file, moduleName))
+    {
+      printViolation(rule, line, file, file, moduleName); 
+    }
+  }
 }
 
 void checkTaskName(map<int, map<string, string> > & table, ivl_scope_t & scope)

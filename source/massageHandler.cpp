@@ -264,7 +264,7 @@ const char* giveMassage(int num)
     massages[1235] = "Timescale Missing on Module \" %s \".";  
     massages[1236] = "Object \" %s \" should not share the same name with another object in the outer scope.";
     massages[1237] = "The fan-out number of signal \" %s \" is < %d > whereas the limitation is 5.";
-    //massages[1238] = "File Name < %s > does not match with Module Name < %s >.";
+    massages[1238] = "File Name \"%s\" does not match with Module Name \"%s\".";
     //massages[1239] = "The length < %d > of file name < %s > should not exceed < %d > characters.";
     //massages[1240] = "Bit width of left-hand-side variable < %s > (%d) does not match that of right-hand-side variable < %s > (%d) in the assignment.";
     //massages[1241] = "Port on < %s > < %s > should not be connected to a constant < %s >.";

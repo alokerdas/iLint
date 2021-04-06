@@ -318,33 +318,71 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
       case IVL_EX_SIGNAL:
       {
         ivl_signal_t rvSig = ivl_expr_signal(rvExp);
-        const char *rvSigName = rvSig ? ivl_signal_basename(rvSig) : NULL;
-        if (rvSig == lvSig)
-        {
+	if (rvSig)
+	{
+          const char *rvSigName = ivl_signal_basename(rvSig);
           rule = 1075;
           if (table[rule][sAct] == "yes")
           {
-            printViolation(rule, line, file, rvSigName);
+            if (rvSig == lvSig)
+            {
+              printViolation(rule, line, file, rvSigName);
+            }
           }
-        }
-        rule = 1128;
-        if (table[rule][sAct] == "yes")
-        {
+          rule = 1081; // same as 1159, not implemented
+          if (table[rule][sAct] == "yes")
+          {
+            if (!sigLst.empty() && (sigLst.find(rvSig) == sigLst.end()))
+            {
+              printViolation(rule, line, file, rvSigName);
+            }
+          }
+          rule = 1204;
+          if (table[rule][sAct] == "yes")
+          {
+            if ((ivl_signal_port(rvSig) == IVL_SIP_NONE) &&
+                (ivl_statement_type(net) == IVL_ST_ASSIGN_NB))
+            {
+              printViolation(rule, line, file, rvSigName);
+            }
+          }
+          rule = 1206;
+          if (table[rule][sAct] == "yes")
+          {
+            if (lhSigs.find(rvSig) != lhSigs.end())
+            {
+              printViolation(rule, line, file, rvSigName);
+            }
+          }
 	  if (lvSig)
 	  {
             const char *lvSigName = ivl_signal_basename(lvSig);
-	    if (ivl_signal_signed(lvSig))
-	    {
-	      if (!ivl_signal_signed(rvSig))
-	      {
-                printViolation(rule, line, file, rvSigName, lvSigName);
-	      }
-	    }
-            else
+            rule = 1128;
+            if (table[rule][sAct] == "yes")
             {
-              if (ivl_signal_signed(rvSig))
+  	      if (ivl_signal_signed(lvSig))
               {
-                printViolation(rule, line, file, lvSigName, rvSigName);
+                if (!ivl_signal_signed(rvSig))
+                {
+                  printViolation(rule, line, file, rvSigName, lvSigName);
+                }
+              }
+              else
+              {
+                if (ivl_signal_signed(rvSig))
+                {
+                  printViolation(rule, line, file, lvSigName, rvSigName);
+                }
+              }
+            }
+            rule = 1240;
+            if (table[rule][sAct] == "yes")
+            {
+              unsigned lvWidth = ivl_signal_width(lvSig);
+              unsigned rvWidth = ivl_signal_width(rvSig);
+	      if (lvWidth != rvWidth)
+	      {
+                printViolation(rule, line, file, lvSigName, lvWidth, rvSigName, rvWidth);
               }
             }
           }
@@ -362,31 +400,6 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
             opr1 = NULL;
 	  }
 	}
-        if (!sigLst.empty() && (sigLst.find(rvSig) == sigLst.end()))
-        {
-          rule = 1081; // same as 1159, not implemented
-          if (table[rule][sAct] == "yes")
-          {
-            printViolation(rule, line, file, rvSigName);
-          }
-        }
-        if (rvSig && (ivl_signal_port(rvSig) == IVL_SIP_NONE)
-                  && (ivl_statement_type(net) == IVL_ST_ASSIGN_NB))
-        {
-          rule = 1204;
-          if (table[rule][sAct] == "yes")
-          {
-            printViolation(rule, line, file, rvSigName);
-          }
-        }
-        if (lhSigs.find(rvSig) != lhSigs.end())
-        {
-          rule = 1206;
-          if (table[rule][sAct] == "yes")
-          {
-            printViolation(rule, line, file, rvSigName);
-          }
-        }
       }
       break;
       case IVL_EX_UNARY:
@@ -412,11 +425,11 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_statement_t 
       break;
       case IVL_EX_NUMBER:
       {
-        const char *valBits = ivl_expr_bits(rvExp);
-        if (strchr(valBits, 'x') || strchr(valBits, 'X'))
+        rule = 1201;
+        if (table[rule][sAct] == "yes")
         {
-          rule = 1201;
-          if (table[rule][sAct] == "yes")
+          const char *valBits = ivl_expr_bits(rvExp);
+          if (strchr(valBits, 'x') || strchr(valBits, 'X'))
           {
             const char *file = ivl_expr_file(rvExp);
             int line = ivl_expr_lineno(rvExp);
@@ -1679,7 +1692,6 @@ void checkUnasndVar(map<int, map<string, string> > & table, ivl_statement_t net,
     case IVL_ST_CASSIGN:
     case IVL_ST_ASSIGN_NB:
     {
-      set<ivl_signal_t> dummy;
       traverseExpression2nd(table, net, alLhSigs);
     }
     break; 

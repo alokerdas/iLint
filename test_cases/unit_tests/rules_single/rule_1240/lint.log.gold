@@ -1,0 +1,2 @@
+Violated 1240: Bit width of left-hand-side variable "a" (4) does not match that of right-hand-side variable "b" (3) in the assignment. File: 1240_Bit_width_missmatch.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

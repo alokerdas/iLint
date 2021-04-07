@@ -1,0 +1,2 @@
+Violated 1242: Loop condition should be a constant. File: 1242_Non-constant_For_Loop_Count.v , Line: 20
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

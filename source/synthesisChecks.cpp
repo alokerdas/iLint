@@ -594,11 +594,20 @@ void WhileLoop(map<int, map<string, string> > & table, ivl_statement_t net)
 
   int rule = 1060;
   const char *sAct = "active";
+  int line = ivl_stmt_lineno(net);
+  const char *file = ivl_stmt_file(net);
   if (table[rule][sAct] == "yes")
   {
-    int line = ivl_stmt_lineno(net);
-    const char *file = ivl_stmt_file(net);
     printViolation(rule, line, file);
+  }
+  rule = 1242;
+  if (table[rule][sAct] == "yes")
+  {
+    ivl_expr_t whlCond = ivl_stmt_cond_expr(net);
+    if (whlCond && (ivl_expr_value(whlCond) == IVL_VT_LOGIC))
+    {
+        printViolation(rule, line, file, "");
+    }
   }
 }
 

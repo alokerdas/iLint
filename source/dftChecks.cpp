@@ -1895,6 +1895,24 @@ void checkGATE(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
           printViolation(rule, line, file, logicName, lpmName);
         }
       }
+      ivl_signal_t aSig = ivl_nexus_ptr_sig(aConn);
+      if(aSig && ivl_signal_local(aSig))
+      {
+        rule = 1241;
+        if (table[rule][sAct] == "yes")
+        {
+          const char *constBits = NULL;
+          for (int k = j + 1; k < connections; k++)
+          {
+            ivl_nexus_ptr_t aConstCon = ivl_nexus_ptr(aJoint, k);
+            ivl_net_const_t aConst = ivl_nexus_ptr_con(aConstCon);
+	    if (aConst)
+	      constBits = ivl_const_bits(aConst);
+          }
+          line = ivl_logic_lineno(gate);
+          printViolation(rule, line, file, logicName, constBits);
+        }
+      }
     }
   }
 }

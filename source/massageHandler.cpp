@@ -267,7 +267,7 @@ const char* giveMassage(int num)
     massages[1238] = "File Name \"%s\" does not match with Module Name \"%s\".";
     massages[1239] = "The length \"%d\" of the file name should not exceed \"%d\" characters.";
     massages[1240] = "Bit width of left-hand-side variable \"%s\" (%d) does not match that of right-hand-side variable \"%s\" (%d) in the assignment.";
-    //massages[1241] = "Port on < %s > < %s > should not be connected to a constant < %s >.";
+    massages[1241] = "Port on \"%s\" should not be connected to a constant \"%s\".";
     massages[1242] = "Loop count < %s > should be a constant.";
     massages[1243] = "Loop variable < %s > should not be modified inside the loop.";
     massages[1244] = "Arithmetic operation < %c > is performed on non for loop variable.";

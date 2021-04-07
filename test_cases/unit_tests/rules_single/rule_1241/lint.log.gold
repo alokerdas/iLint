@@ -1,0 +1,2 @@
+Violated 1241: Port on "and1<0.0>" should not be connected to a constant "1". File: 1241_Constant_Connected_to_Instance.v , Line: 17
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

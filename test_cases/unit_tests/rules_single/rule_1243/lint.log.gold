@@ -1,0 +1,2 @@
+Violated 1243: Loop variable < i > should not be modified inside the loop. File: 1243_Loop_Variable_Changed_in_For_Loop.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -29,7 +29,8 @@ int checkProcess(ivl_process_t pros, void *X)
 
   set <ivl_signal_t> senLst;
   set <ivl_signal_t> sigSet;
-  checkProcesStatement(voidVar->configTable, ivl_process_stmt(pros), senLst, sigSet, voidVar->allAssnSigs);
+  ivl_signal_t loopIdx = NULL;
+  checkProcesStatement(voidVar->configTable, ivl_process_stmt(pros), loopIdx, senLst, sigSet, voidVar->allAssnSigs);
   return fail;
 }
 

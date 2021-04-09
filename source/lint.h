@@ -122,7 +122,7 @@ extern const char* ivl_lpm_latch(ivl_statement_t net);
 
 /************************ ivl_statement_t net,ivl_process_t pr  *****************************/
 extern void XZCaseLabel(map<int, map<string, string> > & table, ivl_statement_t net);
-extern void checkProcesStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &senLst, set<ivl_signal_t> &sigSet, set<ivl_signal_t> &allSigSet, bool eg = false, bool time = true);
+extern void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t net, ivl_signal_t &loopVar, set<ivl_signal_t> &senLst, set<ivl_signal_t> &sigSet, set<ivl_signal_t> &allSigSet, bool eg = false, bool time = true);
 extern void checkUnasndVar(map<int, map<string, string>> &table, ivl_statement_t net, set<ivl_signal_t> &allSigSet);
 extern void Reset_is_Driven_by_a_Path_with_Potential_Glitch(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t pr);
 extern void set_is_Driven_by_Combinational_logic(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t pr);
@@ -398,7 +398,7 @@ extern void SystemTaskCall(map<int, map<string, string> > & table, ivl_statement
 extern void ForceStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigList = NULL);
 extern void ReleaseStatement(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> *sigList = NULL);
 extern void SignalAssigned(map<int, map<string, string> > & table, ivl_signal_t sig);
-extern void WhileLoop(map<int, map<string, string> > & table, ivl_statement_t net);
+extern void WhileLoop(map<int, map<string, string>> &table, ivl_statement_t net);
 extern void checkNestedEvents(map<int, map<string, string> > & table, ivl_statement_t net, bool time = false);
 extern void checkRepeatExpression(map<int, map<string, string> > & table, ivl_statement_t net);
 extern void checkUserTask(map<int, map<string, string> > & table, ivl_statement_t net);

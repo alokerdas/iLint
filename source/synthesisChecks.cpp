@@ -589,7 +589,93 @@ void checkRepeatExpression(map<int, map<string, string> > & table, ivl_statement
 //      ivl_expr_type_t expTyp = ivl_expr_type(repExpr);
 }
 
-void WhileLoop(map<int, map<string, string> > & table, ivl_statement_t net)
+void traverseLoopExpression(map<int, map<string, string>> &table, ivl_expr_t loopExp, ivl_signal_t &loopVar)
+{
+  int rule = 0;
+  const char *sAct = "active";
+  int line = ivl_expr_lineno(loopExp);
+  const char *file = ivl_expr_file(loopExp);
+  ivl_expr_t opr1 = NULL;
+  ivl_expr_t opr2 = NULL;
+  ivl_expr_t opr3 = NULL;
+  switch (ivl_expr_type(loopExp))
+  {
+    case IVL_EX_SIGNAL:
+    {
+      ivl_signal_t loopSig = ivl_expr_signal(loopExp);
+      if (loopSig)
+      {
+        const char *loopSigName = ivl_signal_basename(loopSig);
+        if (loopVar)
+	{
+          rule = 1242;
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file, loopSigName);
+          }
+	}
+	else
+	{
+          loopVar = loopSig;
+	}
+      }
+    }
+    break;
+    case IVL_EX_NUMBER:
+    {
+      rule = 1201;
+      if (table[rule][sAct] == "yes")
+      {
+        const char *valBits = ivl_expr_bits(loopExp);
+        if (strchr(valBits, 'x') || strchr(valBits, 'X'))
+        {
+          printViolation(rule, line, file);
+        }
+      }
+    }
+    break;
+    case IVL_EX_STRING:
+    {
+      rule = 1082;
+      if (table[rule][sAct] == "yes")
+      {
+          printViolation(rule, line, file, ivl_expr_string(loopExp));
+      }
+    }
+    break;
+    case IVL_EX_UNARY:
+    case IVL_EX_SELECT:
+    {
+      opr1 = ivl_expr_oper1(loopExp);
+      traverseLoopExpression(table, opr1, loopVar);
+    }
+    break;
+    case IVL_EX_BINARY:
+    {
+      opr1 = ivl_expr_oper1(loopExp);
+      traverseLoopExpression(table, opr1, loopVar);
+      opr2 = ivl_expr_oper2(loopExp);
+      traverseLoopExpression(table, opr2, loopVar);
+    }
+    break;
+    case IVL_EX_TERNARY:
+    {
+      opr1 = ivl_expr_oper1(loopExp);
+      traverseLoopExpression(table, opr1, loopVar);
+      opr2 = ivl_expr_oper2(loopExp);
+      traverseLoopExpression(table, opr2, loopVar);
+      opr3 = ivl_expr_oper3(loopExp);
+      traverseLoopExpression(table, opr3, loopVar);
+    }
+    break;
+    default:
+    {
+    }
+    break;
+  }
+}
+
+void WhileLoop(map<int, map<string, string>> &table, ivl_statement_t net)
 {
 
   int rule = 1060;
@@ -599,15 +685,6 @@ void WhileLoop(map<int, map<string, string> > & table, ivl_statement_t net)
   if (table[rule][sAct] == "yes")
   {
     printViolation(rule, line, file);
-  }
-  rule = 1242;
-  if (table[rule][sAct] == "yes")
-  {
-    ivl_expr_t whlCond = ivl_stmt_cond_expr(net);
-    if (whlCond && (ivl_expr_value(whlCond) == IVL_VT_LOGIC))
-    {
-        printViolation(rule, line, file, "");
-    }
   }
 }
 
@@ -741,7 +818,8 @@ void DelayControl(map<int, map<string, string> > & table, ivl_statement_t net, s
             printViolation(rule, line, file);
           }
 	}
-	checkProcesStatement(table, dlyStmt, sigLst, sigSet, alLhSigs);
+	ivl_signal_t dummy = NULL;
+	checkProcesStatement(table, dlyStmt, dummy, sigLst, sigSet, alLhSigs);
       }
       break;
       default:

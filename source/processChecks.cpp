@@ -303,7 +303,7 @@ void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_statemen
   }
 }
 
-void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExpr, ivl_signal_t lvSig, ivl_signal_t &loopVar, set<ivl_signal_t> &lhSigs, set<ivl_signal_t> &sigLst)
+void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExpr, ivl_signal_t lvSig, ivl_signal_t &loopVar, set<ivl_signal_t> &lhSigs, set<ivl_signal_t> &sigLst, bool first = true)
 {
   int rule = 0;
   const char *sAct = "active";
@@ -320,175 +320,138 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
       if (expSig)
       {
         const char *expSigName = ivl_signal_basename(expSig);
-        if (loopVar)
+	if (first)
 	{
-          rule = 1242;
+          if (loopVar)
+	  {
+            rule = 1242;
+            if (table[rule][sAct] == "yes")
+            {
+              printViolation(rule, line, file, expSigName);
+            }
+	  }
+          else
+	  {
+            loopVar = expSig;
+	  }
+          rule = 1075;
           if (table[rule][sAct] == "yes")
           {
-            printViolation(rule, line, file, expSigName);
+            if (expSig == lvSig)
+            {
+              printViolation(rule, line, file, expSigName);
+            }
+          }
+          rule = 1081; // same as 1159, not implemented
+          if (table[rule][sAct] == "yes")
+          {
+            if (!sigLst.empty() && (sigLst.find(expSig) == sigLst.end()))
+            {
+              printViolation(rule, line, file, expSigName);
+            }
+          }
+          rule = 1204;
+          if (table[rule][sAct] == "yes")
+          {
+            if (ivl_signal_port(expSig) == IVL_SIP_NONE)// && (ivl_statement_type(net) == IVL_ST_ASSIGN_NB))
+            {
+              printViolation(rule, line, file, expSigName);
+            }
+          }
+          rule = 1206;
+          if (table[rule][sAct] == "yes")
+          {
+            if (lhSigs.find(expSig) != lhSigs.end())
+            {
+              printViolation(rule, line, file, expSigName);
+            }
+          }
+	  if (lvSig)
+	  {
+            const char *lvSigName = ivl_signal_basename(lvSig);
+            rule = 1128;
+            if (table[rule][sAct] == "yes")
+            {
+              if (ivl_signal_signed(lvSig))
+              {
+                if (!ivl_signal_signed(expSig))
+                {
+                  printViolation(rule, line, file, expSigName, lvSigName);
+                }
+              }
+              else
+              {
+                if (ivl_signal_signed(expSig))
+                {
+                  printViolation(rule, line, file, lvSigName, expSigName);
+                }
+              }
+            }
+            rule = 1240;
+            if (table[rule][sAct] == "yes")
+            {
+              unsigned lvSigWidth = ivl_signal_width(lvSig);
+              unsigned expSigWidth = ivl_signal_width(expSig);
+    	    if (lvSigWidth != expSigWidth)
+  	    {
+                printViolation(rule, line, file, lvSigName, lvSigWidth, expSigName, expSigWidth);
+              }
+            }
           }
 	}
 	else
 	{
-          loopVar = expSig;
-	}
-        rule = 1075;
-        if (table[rule][sAct] == "yes")
-        {
-          if (expSig == lvSig)
-          {
-            printViolation(rule, line, file, expSigName);
-          }
-        }
-        rule = 1081; // same as 1159, not implemented
-        if (table[rule][sAct] == "yes")
-        {
-          if (!sigLst.empty() && (sigLst.find(expSig) == sigLst.end()))
-          {
-            printViolation(rule, line, file, expSigName);
-          }
-        }
-        rule = 1204;
-        if (table[rule][sAct] == "yes")
-        {
-          if (ivl_signal_port(expSig) == IVL_SIP_NONE)// && (ivl_statement_type(net) == IVL_ST_ASSIGN_NB))
-          {
-            printViolation(rule, line, file, expSigName);
-          }
-        }
-        rule = 1206;
-        if (table[rule][sAct] == "yes")
-        {
-          if (lhSigs.find(expSig) != lhSigs.end())
-          {
-            printViolation(rule, line, file, expSigName);
-          }
-        }
-	if (lvSig)
-	{
-          const char *lvSigName = ivl_signal_basename(lvSig);
-          rule = 1128;
+          rule = 1231;
           if (table[rule][sAct] == "yes")
           {
-  	    if (ivl_signal_signed(lvSig))
+            if (lhSigs.find(expSig) == lhSigs.end())
             {
-              if (!ivl_signal_signed(expSig))
+              if (ivl_signal_port(expSig) == IVL_SIP_NONE)
               {
-                printViolation(rule, line, file, expSigName, lvSigName);
-              }
-            }
-            else
-            {
-              if (ivl_signal_signed(expSig))
-              {
-                printViolation(rule, line, file, lvSigName, expSigName);
+                printViolation(rule, line, file, expSigName);
               }
             }
           }
-          rule = 1240;
+          rule = 1063;
           if (table[rule][sAct] == "yes")
           {
-            unsigned lvSigWidth = ivl_signal_width(lvSig);
-            unsigned expSigWidth = ivl_signal_width(expSig);
-	    if (lvSigWidth != expSigWidth)
+	    if (lvSig)
 	    {
-              printViolation(rule, line, file, lvSigName, lvSigWidth, expSigName, expSigWidth);
+              const char *lvSigName = ivl_signal_basename(lvSig);
+              if (lhSigs.find(lvSig) != lhSigs.end())
+              {
+                printViolation(rule, line, file, lvSigName);
+              }
             }
           }
-        }
+	}
       }
     }
     break;
     case IVL_EX_NUMBER:
     {
-      rule = 1201;
-      if (table[rule][sAct] == "yes")
+      if (first)
       {
-        const char *valBits = ivl_expr_bits(anExpr);
-        if (strchr(valBits, 'x') || strchr(valBits, 'X'))
+        rule = 1201;
+        if (table[rule][sAct] == "yes")
         {
-          printViolation(rule, line, file);
+          const char *valBits = ivl_expr_bits(anExpr);
+          if (strchr(valBits, 'x') || strchr(valBits, 'X'))
+          {
+            printViolation(rule, line, file);
+          }
         }
       }
     }
     break;
     case IVL_EX_STRING:
     {
-      rule = 1082;
-      if (table[rule][sAct] == "yes")
+      if (first)
       {
-          printViolation(rule, line, file, ivl_expr_string(anExpr));
-      }
-    }
-    break;
-    case IVL_EX_UNARY:
-    case IVL_EX_SELECT:
-    {
-      opr1 = ivl_expr_oper1(anExpr);
-      traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst);
-    }
-    break;
-    case IVL_EX_BINARY:
-    {
-      rule = 1202;
-      if (table[rule][sAct] == "yes")
-      {
-        printViolation(rule, line, file, ivl_expr_opcode(anExpr));
-      }
-      opr1 = ivl_expr_oper1(anExpr);
-      traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst);
-      opr2 = ivl_expr_oper2(anExpr);
-      traverseExpression(table, opr2, lvSig, loopVar, lhSigs, sigLst);
-    }
-    break;
-    case IVL_EX_TERNARY:
-    {
-      rule = 1202;
-      if (table[rule][sAct] == "yes")
-      {
-        printViolation(rule, line, file, ivl_expr_opcode(anExpr));
-      }
-      opr1 = ivl_expr_oper1(anExpr);
-      traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst);
-      opr2 = ivl_expr_oper2(anExpr);
-      traverseExpression(table, opr2, lvSig, loopVar, lhSigs, sigLst);
-      opr3 = ivl_expr_oper3(anExpr);
-      traverseExpression(table, opr3, lvSig, loopVar, lhSigs, sigLst);
-    }
-    break;
-    default:
-    {
-    }
-    break;
-  }
-}
-
-void traverseExpression2nd(map<int, map<string, string>> &table, ivl_expr_t rvExp, set<ivl_signal_t> &lhSigs)
-{
-  int rule = 0;
-  const char *sAct = "active";
-  int line = ivl_expr_lineno(rvExp);
-  const char *file = ivl_expr_file(rvExp);
-
-  ivl_expr_t opr1, opr2, opr3;
-  switch (ivl_expr_type(rvExp))
-  {
-    case IVL_EX_SIGNAL:
-    {
-      ivl_signal_t rvSig = ivl_expr_signal(rvExp);
-      if (rvSig)
-      {
-        const char *rvSigName = ivl_signal_basename(rvSig);
-        if (lhSigs.find(rvSig) == lhSigs.end())
+        rule = 1082;
+        if (table[rule][sAct] == "yes")
         {
-          if (ivl_signal_port(rvSig) == IVL_SIP_NONE)
-          {
-            rule = 1231;
-            if (table[rule][sAct] == "yes")
-            {
-              printViolation(rule, line, file, rvSigName);
-            }
-          }
+          printViolation(rule, line, file, ivl_expr_string(anExpr));
         }
       }
     }
@@ -496,26 +459,42 @@ void traverseExpression2nd(map<int, map<string, string>> &table, ivl_expr_t rvEx
     case IVL_EX_UNARY:
     case IVL_EX_SELECT:
     {
-      opr1 = ivl_expr_oper1(rvExp);
-      traverseExpression2nd(table, opr1, lhSigs);
+      opr1 = ivl_expr_oper1(anExpr);
+      traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst, first);
     }
     break;
     case IVL_EX_BINARY:
     {
-      opr1 = ivl_expr_oper1(rvExp);
-      traverseExpression2nd(table, opr1, lhSigs);
-      opr2 = ivl_expr_oper2(rvExp);
-      traverseExpression2nd(table, opr2, lhSigs);
+      if (first)
+      {
+        rule = 1202;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, ivl_expr_opcode(anExpr));
+        }
+      }
+      opr1 = ivl_expr_oper1(anExpr);
+      traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst, first);
+      opr2 = ivl_expr_oper2(anExpr);
+      traverseExpression(table, opr2, lvSig, loopVar, lhSigs, sigLst, first);
     }
     break;
     case IVL_EX_TERNARY:
     {
-      opr1 = ivl_expr_oper1(rvExp);
-      traverseExpression2nd(table, opr1, lhSigs);
-      opr2 = ivl_expr_oper2(rvExp);
-      traverseExpression2nd(table, opr2, lhSigs);
-      opr3 = ivl_expr_oper3(rvExp);
-      traverseExpression2nd(table, opr3, lhSigs);
+      if (first)
+      {
+        rule = 1202;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, ivl_expr_opcode(anExpr));
+        }
+      }
+      opr1 = ivl_expr_oper1(anExpr);
+      traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst, first);
+      opr2 = ivl_expr_oper2(anExpr);
+      traverseExpression(table, opr2, lvSig, loopVar, lhSigs, sigLst, first);
+      opr3 = ivl_expr_oper3(anExpr);
+      traverseExpression(table, opr3, lvSig, loopVar, lhSigs, sigLst, first);
     }
     break;
     default:
@@ -1658,37 +1637,8 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
 
 void checkUnasndVar(map<int, map<string, string> > & table, ivl_statement_t net, set<ivl_signal_t> &alLhSigs)
 {
-  int rule = 1063;
-  const char *sAct = "active";
   if (net)
   {
-    if ((ivl_statement_type(net) == IVL_ST_FORCE) ||
-        (ivl_statement_type(net) == IVL_ST_ASSIGN) ||
-        (ivl_statement_type(net) == IVL_ST_CASSIGN) ||
-        (ivl_statement_type(net) == IVL_ST_RELEASE) ||
-        (ivl_statement_type(net) == IVL_ST_DEASSIGN) ||
-        (ivl_statement_type(net) == IVL_ST_ASSIGN_NB))
-    {
-      for (unsigned idx = 0; idx < ivl_stmt_lvals(net);  idx++)
-      {
-        ivl_lval_t lv =  ivl_stmt_lval(net, idx);
-        ivl_signal_t lvSig =  ivl_lval_sig(lv);
-        if (lvSig)
-        {
-          const char *lvSigName = ivl_signal_basename(lvSig);
-          if (alLhSigs.find(lvSig) != alLhSigs.end())
-          {
-            if (table[rule][sAct] == "yes")
-            {
-              int line = ivl_stmt_lineno(net);
-              const char *file = ivl_stmt_file(net);
-              printViolation(rule, line, file, lvSigName);
-            }
-          }
-        }
-      }
-    }
-
     ivl_statement_type_t code = ivl_statement_type(net);
     switch (code)
     { 
@@ -1733,7 +1683,17 @@ void checkUnasndVar(map<int, map<string, string> > & table, ivl_statement_t net,
       case IVL_ST_CASSIGN:
       case IVL_ST_ASSIGN_NB:
       {
-        traverseExpression2nd(table, ivl_stmt_rval(net), alLhSigs);
+        for (unsigned idx = 0; idx < ivl_stmt_lvals(net);  idx++)
+        {
+          ivl_lval_t lv =  ivl_stmt_lval(net, idx);
+          ivl_signal_t lvSig =  ivl_lval_sig(lv);
+          if (lvSig)
+          {
+            set<ivl_signal_t> dummy;
+            ivl_signal_t lpIdxDummy = NULL;
+            traverseExpression(table, ivl_stmt_rval(net), lvSig, lpIdxDummy, alLhSigs, dummy, false);
+          }
+        }
       }
       break; 
       case IVL_ST_DELAY:
@@ -1748,5 +1708,5 @@ void checkUnasndVar(map<int, map<string, string> > & table, ivl_statement_t net,
       }
       break;
     } 
-  } 
+  }
 }

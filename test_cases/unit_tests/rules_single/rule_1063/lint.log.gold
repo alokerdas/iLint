@@ -1,0 +1,3 @@
+Violated 1063: Signal "a" Assigned more than one Block. File: 1063_Signal_Has_Been_Assigned_in_More.v , Line: 4
+Violated 1063: Signal "a" Assigned more than one Block. File: 1063_Signal_Has_Been_Assigned_in_More.v , Line: 7
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

@@ -873,10 +873,10 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
     if (ivl_expr_type(opr1) == IVL_EX_SIGNAL)
     {
       operWidth = ivl_signal_width(ivl_expr_signal(opr1));
-      if (operWidth > casExpWidth)
-      {
-	casExpWidth = operWidth;
-      }
+//      if (operWidth > casExpWidth)
+//      {
+//	casExpWidth = operWidth;
+//      }
       if (ivl_expr_oper2(casCondExpr) == opr1)
       {
 	break;
@@ -918,11 +918,13 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
 
         rule = 1044;
         unsigned lblExpWidth = ivl_expr_uvalue(lblExp);
-        if (lblExpWidth >= pow(2, casExpWidth))
+//        if (lblExpWidth >= pow(2, casExpWidth))
+        if (lblExpWidth >= pow(2, operWidth))
         {
           if (table[rule][sAct] == "yes")
           {
-            printViolation(rule, line, file, casExpWidth);
+            printViolation(rule, line, file, operWidth);
+//            printViolation(rule, line, file, casExpWidth);
           }
         }
       }

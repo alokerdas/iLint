@@ -123,7 +123,7 @@ extern const char* ivl_lpm_latch(ivl_statement_t net);
 
 /************************ ivl_statement_t net,ivl_process_t pr  *****************************/
 extern void XZCaseLabel(map<int, map<string, string> > & table, ivl_statement_t net);
-extern void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t net, ivl_signal_t &loopVar, set<ivl_signal_t> &senLst, set<ivl_signal_t> &sigSet, bool eg = false, bool time = true);
+extern void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t net, ivl_signal_t &loopVar, set<ivl_signal_t> &senLst, set<ivl_signal_t> &sigSet, bool eg = false, bool time = false);
 extern void checkUnasndVar(map<int, map<string, string>> &table, ivl_statement_t net, set<ivl_signal_t> &allSigSet);
 extern void Reset_is_Driven_by_a_Path_with_Potential_Glitch(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t pr);
 extern void set_is_Driven_by_Combinational_logic(map<int, map<string, string> > & table,ivl_statement_t net,ivl_process_t pr);

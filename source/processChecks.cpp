@@ -1498,10 +1498,20 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
         ivl_event_t anEv = ivl_stmt_events(net, idx);
         edge |= checkEvent(table, anEv, sensitivityList);
       }
+      ivl_statement_t procStmt = ivl_stmt_sub_stmt(net);
       if (edge)
-        checkComboInSequential(table, ivl_stmt_sub_stmt(net));
+        checkComboInSequential(table, procStmt);
       checkNestedEvents(table, net, firsTime);
-      checkProcesStatement(table, ivl_stmt_sub_stmt(net), loopVar, sensitivityList, lhSigs, edge, false);
+//      if (ivl_statement_type(procStmt) != IVL_ST_NOOP)
+        checkProcesStatement(table, procStmt, loopVar, sensitivityList, lhSigs, edge);
+      if (!firsTime)
+      {
+        rule = 1250;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file);
+        }
+      }
     }
     break; 
     case IVL_ST_CONDIT:

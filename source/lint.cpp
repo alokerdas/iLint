@@ -31,7 +31,7 @@ int checkProcess(ivl_process_t pros, void *X)
   if (voidVar->firsTime)
   {
     IBlock(voidVar->configTable, pros);
-    checkProcesStatement(voidVar->configTable, ivl_process_stmt(pros), loopIdx, senLst, sigSet);
+    checkProcesStatement(voidVar->configTable, ivl_process_stmt(pros), loopIdx, senLst, sigSet, false, true);
     voidVar->allAssnSigs.insert(sigSet.begin(), sigSet.end());
   }
   else

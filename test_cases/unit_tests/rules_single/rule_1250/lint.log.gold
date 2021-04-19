@@ -1,0 +1,2 @@
+Violated 1250: Wait statement should not be used because it is not synthesizable. File: 1250_Wait_Statement_Not_Synthesizable.v , Line: 6
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -1868,7 +1868,7 @@ void checkGATE(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
   {
     if (!ivl_scope_parent(ivl_logic_scope(gate)))
     {
-      rule = 1178;
+      rule = 1178; // same as 1249, not implemented
       if (table[rule][sAct] == "yes")
       {
         printViolation(rule, line, file, logicName);

@@ -1,3 +1,2 @@
 Violated 1035: Insufficiant Index "4". File: 1035_Insufficient_Index_Variable.v , Line: 8
-Violated 1121: "num" not a constant in bits selection. File: 1035_Insufficient_Index_Variable.v , Line: 8
-TOTAL NUMBER OF VIOLATIONS ARE: 2.
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

@@ -303,12 +303,54 @@ void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_statemen
   }
 }
 
+void checkVectorIndexSufficient(map<int, map<string, string> > & table, ivl_expr_t rExp)
+{
+  int rule = 0;
+  const char *sAct = "active";
+  int line = ivl_expr_lineno(rExp);
+  const char *file = ivl_expr_file(rExp);
+
+  ivl_expr_t opr1 = ivl_expr_oper1(rExp);
+  if (ivl_expr_type(opr1) == IVL_EX_SIGNAL)
+  {
+    ivl_signal_t opr1Sig = ivl_expr_signal(opr1);
+    ivl_expr_t opr2 = ivl_expr_oper2(rExp);
+    if (ivl_expr_type(opr2) == IVL_EX_SIGNAL)
+    {
+      ivl_signal_t opr2Sig = ivl_expr_signal(opr2);
+      unsigned oper1Width = ivl_signal_width(opr1Sig);
+      unsigned oper2Width = ivl_signal_width(opr2Sig);
+      oper2Width = pow(2, oper2Width);
+      if (oper1Width > oper2Width)
+      {
+        rule = 1035;
+      }
+      if (oper1Width < oper2Width)
+      {
+        rule = 1036;
+      }
+      if (rule && table[rule][sAct] == "yes")
+      {
+        printViolation(rule, line, file, oper2Width);
+      }
+      rule = 1121;
+      if (rule && table[rule][sAct] == "yes")
+      {
+        if (!ivl_signal_dimensions(opr1Sig))
+        {
+          printViolation(rule, line, file, ivl_signal_basename(opr2Sig));
+        }
+      }
+    }
+  }
+}
+
 void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExpr, ivl_signal_t lvSig, ivl_signal_t &loopVar, set<ivl_signal_t> &lhSigs, set<ivl_signal_t> &sigLst, bool first = true)
 {
   int rule = 0;
   const char *sAct = "active";
-  int line = ivl_expr_lineno(anExpr);
-  const char *file = ivl_expr_file(anExpr);
+  int line = anExpr ? ivl_expr_lineno(anExpr) : 0;
+  const char *file = anExpr ? ivl_expr_file(anExpr) : NULL;
   ivl_expr_t opr1 = NULL;
   ivl_expr_t opr2 = NULL;
   ivl_expr_t opr3 = NULL;
@@ -398,6 +440,15 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
               }
             }
           }
+          rule = 1019; // same as 1224, not implemnted
+          if (table[rule][sAct] == "yes")
+          {
+            unsigned nBit = ivl_expr_width(anExpr);
+            if (nBit > 1)
+            {
+              printViolation(rule, line, file, nBit);
+            }
+          }
 	}
 	else
 	{
@@ -441,6 +492,25 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
             printViolation(rule, line, file);
           }
         }
+        rule = 1050;
+        if (table[rule][sAct] == "yes")
+        {
+          const char *exprBits = ivl_expr_bits(anExpr);
+          if (strchr(exprBits, 'z') || strchr(exprBits, 'Z'))
+          {
+            printViolation(rule, line, file, "z or Z");
+          }
+          if (strchr(exprBits, 'x') || strchr(exprBits, 'X'))
+          {
+            printViolation(rule, line, file, "x or X");
+          }
+        }
+        rule = 1074;
+        if (table[rule][sAct] == "yes")
+        {
+          // Can not implement rule 1074. No trace of -ve
+          //printViolation(rule, line, file, exprBits);
+        }
       }
     }
     break;
@@ -457,8 +527,41 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
     }
     break;
     case IVL_EX_UNARY:
+    {
+      opr1 = ivl_expr_oper1(anExpr);
+      if (first)
+      {
+        if (ivl_expr_opcode(anExpr) == '&')
+        {
+          if (ivl_expr_width(opr1) == 1)
+          {
+            const char *aSigName = NULL;
+            if (ivl_expr_type(opr1) == IVL_EX_SIGNAL)
+            {
+              ivl_signal_t aSig = ivl_expr_signal(opr1);
+              aSigName = ivl_signal_basename(aSig);
+            }
+            else
+            {
+              aSigName = ivl_expr_name(opr1);
+            }
+            rule = 1177;
+            if (table[rule][sAct] == "yes")
+            {
+              printViolation(rule, line, file, aSigName);
+            }
+          }
+        }
+      }
+      traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst, first);
+    }
+    break;
     case IVL_EX_SELECT:
     {
+      if (first)
+      {
+        checkVectorIndexSufficient(table, anExpr);
+      }
       opr1 = ivl_expr_oper1(anExpr);
       traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst, first);
     }
@@ -471,6 +574,22 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
         if (table[rule][sAct] == "yes")
         {
           printViolation(rule, line, file, ivl_expr_opcode(anExpr));
+        }
+        if (ivl_expr_opcode(anExpr) == 'E')
+        {
+          rule = 1251;
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file);
+          }
+        }
+        if (ivl_expr_opcode(anExpr) == 'n')
+        {
+          rule = 1030; // same as 1180, not implemented
+          if (table[rule][sAct] == "yes")
+          {
+            printViolation(rule, line, file);
+          }
         }
       }
       opr1 = ivl_expr_oper1(anExpr);
@@ -488,6 +607,15 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
         {
           printViolation(rule, line, file, ivl_expr_opcode(anExpr));
         }
+        rule = 1142;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file);
+        }
+/*        if (ivl_expr_type(opr3) == IVL_EX_NUMBER)
+        {
+          const char *someBits = ivl_expr_bits(opr3);
+        }*/
       }
       opr1 = ivl_expr_oper1(anExpr);
       traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst, first);
@@ -973,45 +1101,6 @@ bool checkEvent(map<int, map<string, string> > & table, ivl_event_t & evt, set<i
   return edgeEv;
 }
 
-void checkVectorIndexSufficient(map<int, map<string, string> > & table, ivl_expr_t rExp)
-{
-  int rule = 0;
-  const char *sAct = "active";
-  int line = ivl_expr_lineno(rExp);
-  const char *file = ivl_expr_file(rExp);
-
-  ivl_expr_t opr1 = ivl_expr_oper1(rExp);
-  if (ivl_expr_type(opr1) == IVL_EX_SIGNAL)
-  {
-    ivl_signal_t opr1Sig = ivl_expr_signal(opr1);
-    ivl_expr_t opr2 = ivl_expr_oper2(rExp);
-    if (ivl_expr_type(opr2) == IVL_EX_SIGNAL)
-    {
-      ivl_signal_t opr2Sig = ivl_expr_signal(opr2);
-      unsigned oper1Width = ivl_signal_width(opr1Sig);
-      unsigned oper2Width = ivl_signal_width(opr2Sig);
-      oper2Width = pow(2, oper2Width);
-      if (oper1Width > oper2Width)
-      {
-        rule = 1035;
-      }
-      if (oper1Width < oper2Width)
-      {
-        rule = 1036;
-      }
-      if (rule && table[rule][sAct] == "yes")
-      {
-        printViolation(rule, line, file, oper2Width);
-      }
-      if (!ivl_signal_dimensions(opr1Sig))
-      {
-        rule = 1121;
-        printViolation(rule, line, file, ivl_signal_basename(opr2Sig));
-      }
-    }
-  }
-}
-
 void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
 {
   int rule = 0;
@@ -1340,8 +1429,11 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
       case IVL_ST_CONDIT:
       {
         moreIfCaseForRepWhileStmt++;
+        ivl_signal_t lvSigDum = NULL;
+        ivl_signal_t loopIdx = NULL;
         ivl_expr_t condExpr = ivl_stmt_cond_expr(aStmt);
-        checkConditExpr(table, condExpr);
+        //checkConditExpr(table, condExpr);
+        traverseExpression(table, condExpr, lvSigDum, loopIdx, sigSet, sigLst);
         checkUnsignedVector(table, condExpr);
         checkConditClauses(table, aStmt, sigLst, sigSet);
       }
@@ -1385,7 +1477,7 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
         ivl_signal_t lvSigDum = NULL;
         ivl_signal_t loopIdx = NULL;
         ivl_expr_t loopCond = ivl_stmt_cond_expr(aStmt);
-        traverseExpression(table, loopCond, lvSigDum, loopIdx, sigLst, sigSet);
+        traverseExpression(table, loopCond, lvSigDum, loopIdx, sigSet, sigLst);
         ivl_statement_t loopStmt = ivl_stmt_sub_stmt(aStmt);
         checkProcesStatement(table, loopStmt, loopIdx, sigLst, sigSet);
       }
@@ -1535,8 +1627,11 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
     break; 
     case IVL_ST_CONDIT:
     {
+      ivl_signal_t lvSigDum = NULL;
+      ivl_signal_t loopIdx = NULL;
       ivl_expr_t condExpr = ivl_stmt_cond_expr(net);
-      checkConditExpr(table, condExpr);
+      //checkConditExpr(table, condExpr);
+      traverseExpression(table, condExpr, lvSigDum, loopIdx, lhSigs, sensitivityList);
       checkUnsignedVector(table, condExpr);
       checkConditClauses(table, net, sensitivityList, lhSigs);
     }
@@ -1564,7 +1659,7 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
     {
       ivl_expr_t rhs = ivl_stmt_rval(net);
       DelayControl(table, net, sensitivityList, lhSigs);
-      checkConditExpr(table, rhs);
+      //checkConditExpr(table, rhs);
       checkDirectInputOutput(table, net);
       SignalAssignedToSelf(table, net, loopVar, sensitivityList, lhSigs);
       checkNetStuck(table, net);
@@ -1626,7 +1721,7 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
       ivl_signal_t lvSigDum = NULL;
       ivl_signal_t loopIdx = NULL;
       ivl_expr_t loopCond = ivl_stmt_cond_expr(net);
-      traverseExpression(table, loopCond, lvSigDum, loopIdx, sensitivityList, lhSigs);
+      traverseExpression(table, loopCond, lvSigDum, loopIdx, lhSigs, sensitivityList);
       ivl_statement_t loopStmt = ivl_stmt_sub_stmt(net);
       checkProcesStatement(table, loopStmt, loopIdx, sensitivityList, lhSigs);
     }

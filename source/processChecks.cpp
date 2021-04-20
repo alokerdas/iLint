@@ -1085,6 +1085,14 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
     break;
     case IVL_EX_BINARY:
     {
+      if (ivl_expr_opcode(expr) == 'E')
+      {
+        rule = 1251;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file);
+        }
+      }
       if (ivl_expr_opcode(expr) == 'n')
       {
         rule = 1030; // same as 1180, not implemented
@@ -1150,54 +1158,71 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
     }
   }
 
-  if (tCls && (ivl_statement_type(tCls) == IVL_ST_FORCE ||
-               ivl_statement_type(tCls) == IVL_ST_ASSIGN ||
-               ivl_statement_type(tCls) == IVL_ST_RELEASE ||
-               ivl_statement_type(tCls) == IVL_ST_CASSIGN ||
-               ivl_statement_type(tCls) == IVL_ST_DEASSIGN ||
-               ivl_statement_type(tCls) == IVL_ST_ASSIGN_NB))
+  if (tCls)
   {
-    line = ivl_stmt_lineno(tCls);
-    file = ivl_stmt_file(tCls);
-    for (unsigned idx = 0 ;  idx < ivl_stmt_lvals(tCls) ;  idx++)
+    ivl_statement_type_t falseStmtTyp = IVL_ST_NONE;
+    ivl_statement_type_t trueStmtTyp = ivl_statement_type(tCls);
+    if ((trueStmtTyp == IVL_ST_FORCE) ||
+        (trueStmtTyp == IVL_ST_ASSIGN) ||
+        (trueStmtTyp == IVL_ST_RELEASE) ||
+        (trueStmtTyp == IVL_ST_CASSIGN) ||
+        (trueStmtTyp == IVL_ST_DEASSIGN) ||
+        (trueStmtTyp == IVL_ST_ASSIGN_NB))
     {
-      ivl_lval_t tLvl = ivl_stmt_lval(tCls, idx);
-      if (tLvl)
+      line = ivl_stmt_lineno(tCls);
+      file = ivl_stmt_file(tCls);
+      for (unsigned idx = 0 ;  idx < ivl_stmt_lvals(tCls) ;  idx++)
       {
-        ivl_signal_t tLvlSig = ivl_lval_sig(tLvl);
-        if (tLvlSig)
+        ivl_lval_t tLvl = ivl_stmt_lval(tCls, idx);
+        if (tLvl)
         {
-          const char *tLvlSigName = ivl_signal_basename(tLvlSig);
-          if (fCls && (ivl_statement_type(fCls) == IVL_ST_FORCE ||
-                       ivl_statement_type(fCls) == IVL_ST_ASSIGN ||
-                       ivl_statement_type(fCls) == IVL_ST_RELEASE ||
-                       ivl_statement_type(fCls) == IVL_ST_CASSIGN ||
-                       ivl_statement_type(fCls) == IVL_ST_DEASSIGN ||
-                       ivl_statement_type(fCls) == IVL_ST_ASSIGN_NB))
+          ivl_signal_t tLvlSig = ivl_lval_sig(tLvl);
+          if (tLvlSig)
           {
-            int foundSigInFalseCls = 0;
-            for (unsigned jdx = 0 ;  jdx < ivl_stmt_lvals(fCls) ;  jdx++)
-            {
-              ivl_lval_t fLvl = ivl_stmt_lval(fCls, jdx);
-              if (fLvl)
+            const char *tLvlSigName = ivl_signal_basename(tLvlSig);
+	    if (fCls)
+	    {
+              falseStmtTyp = ivl_statement_type(fCls);
+              if ((falseStmtTyp == IVL_ST_FORCE) ||
+                  (falseStmtTyp == IVL_ST_ASSIGN) ||
+                  (falseStmtTyp == IVL_ST_RELEASE) ||
+                  (falseStmtTyp == IVL_ST_CASSIGN) ||
+                  (falseStmtTyp == IVL_ST_DEASSIGN) ||
+                  (falseStmtTyp == IVL_ST_ASSIGN_NB))
               {
-                ivl_signal_t fLvlSig = ivl_lval_sig(fLvl);
-                if (fLvlSig == tLvlSig)
+                int foundSigInFalseCls = 0;
+                for (unsigned jdx = 0 ;  jdx < ivl_stmt_lvals(fCls) ;  jdx++)
                 {
-                  foundSigInFalseCls = 1;
-                  if (ivl_statement_type(tCls) != ivl_statement_type(fCls))
+                  ivl_lval_t fLvl = ivl_stmt_lval(fCls, jdx);
+                  if (fLvl)
                   {
-		    // this is same as 1051. So 1051 not implemented
-                    rule = 1025;
-                    if (table[rule][sAct] == "yes")
+                    ivl_signal_t fLvlSig = ivl_lval_sig(fLvl);
+                    if (fLvlSig == tLvlSig)
                     {
-                      printViolation(rule, line, file, tLvlSigName);
+                      foundSigInFalseCls = 1;
+                      if (trueStmtTyp != falseStmtTyp)
+                      {
+		        // this is same as 1051. So 1051 not implemented
+                        rule = 1025;
+                        if (table[rule][sAct] == "yes")
+                        {
+                          printViolation(rule, line, file, tLvlSigName);
+                        }
+                      }
                     }
+                  }
+                }
+                if (!foundSigInFalseCls)
+                {
+                  rule = 1022;
+                  if (table[rule][sAct] == "yes")
+                  {
+                    printViolation(rule, line, file, tLvlSigName);
                   }
                 }
               }
             }
-            if (!foundSigInFalseCls)
+            else
             {
               rule = 1022;
               if (table[rule][sAct] == "yes")
@@ -1206,42 +1231,34 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
               }
             }
           }
-          else
+        }
+      }
+    }
+    if (falseStmtTyp == IVL_ST_CONDIT)
+    {
+      if (ivl_stmt_cond_true(fCls))
+      {
+        if (ivl_stmt_cond_false(fCls))
+        {
+          // nested if-else-if
+          rule = 1049;
+          if (table[rule][sAct] == "yes")
           {
-            rule = 1022;
-            if (table[rule][sAct] == "yes")
-            {
-              printViolation(rule, line, file, tLvlSigName);
-            }
+            printViolation(rule, line, file);
           }
         }
       }
     }
   }
-  if (tCls && fCls && ivl_statement_type(fCls) == IVL_ST_CONDIT)
-  {
-    if (ivl_stmt_cond_true(fCls))
-    {
-      if (ivl_stmt_cond_false(fCls))
-      {
-        // nested if-else-if
-        rule = 1049;
-        if (table[rule][sAct] == "yes")
-        {
-          printViolation(rule, line, file);
-        }
-      }
-    }
-  }
 
-  ivl_statement_t condStmt = cls;
+/*  ivl_statement_t condStmt = cls;
   while (condStmt && ivl_statement_type(condStmt) == IVL_ST_CONDIT)
   {
     ivl_expr_t fExpr = ivl_stmt_cond_expr(condStmt);
     checkConditExpr(table, fExpr); // not a full proof way for 1050 and 1019
     checkUnsignedVector(table, fExpr); // not a full proof way for 1050 and 1019
     condStmt = ivl_stmt_cond_false(condStmt);
-  }
+  }*/
 
   ivl_signal_t lpIdx = NULL;
   if (tCls)
@@ -1277,7 +1294,8 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
   for (unsigned idx = 0; idx < noStmt; idx++)
   {
     ivl_statement_t aStmt = ivl_stmt_block_stmt(net, idx);
-    switch (ivl_statement_type(aStmt))
+    ivl_statement_type_t stmtTyp = ivl_statement_type(aStmt);
+    switch (stmtTyp)
     {
       case IVL_ST_CASSIGN:
       {
@@ -1313,7 +1331,7 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
         checkIntegerNegative(table, aStmt);
         checkNonConstShiftAmt(table, rhs, true);
         functionCalledInAnAlwaysBlock(table, rhs);
-        if (ivl_statement_type(aStmt) == IVL_ST_ASSIGN)
+        if (stmtTyp == IVL_ST_ASSIGN)
           blkStmtFound = true;
 	else
           nblkStmtFound = true;
@@ -1322,8 +1340,9 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
       case IVL_ST_CONDIT:
       {
         moreIfCaseForRepWhileStmt++;
-        checkConditExpr(table, ivl_stmt_cond_expr(aStmt));
-        checkUnsignedVector(table, ivl_stmt_cond_expr(aStmt));
+        ivl_expr_t condExpr = ivl_stmt_cond_expr(aStmt);
+        checkConditExpr(table, condExpr);
+        checkUnsignedVector(table, condExpr);
         checkConditClauses(table, aStmt, sigLst, sigSet);
       }
       break;
@@ -1516,6 +1535,9 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
     break; 
     case IVL_ST_CONDIT:
     {
+      ivl_expr_t condExpr = ivl_stmt_cond_expr(net);
+      checkConditExpr(table, condExpr);
+      checkUnsignedVector(table, condExpr);
       checkConditClauses(table, net, sensitivityList, lhSigs);
     }
     break;
@@ -1546,7 +1568,7 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
       checkDirectInputOutput(table, net);
       SignalAssignedToSelf(table, net, loopVar, sensitivityList, lhSigs);
       checkNetStuck(table, net);
-      checkUnsignedVector(table, rhs);
+      //checkUnsignedVector(table, rhs);
       checkNonConstShiftAmt(table, rhs, true);
       checkIntegerNegative(table, net);
       functionCalledInAnAlwaysBlock(table, rhs);
@@ -1662,7 +1684,7 @@ void checkUnasndVar(map<int, map<string, string> > & table, ivl_statement_t net,
       {
         ivl_statement_t tCls = ivl_stmt_cond_true(net);
         checkUnasndVar(table, tCls, alLhSigs);
-          ivl_statement_t fCls = ivl_stmt_cond_false(net);
+        ivl_statement_t fCls = ivl_stmt_cond_false(net);
         if (fCls)
           checkUnasndVar(table, fCls, alLhSigs);
       }

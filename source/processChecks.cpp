@@ -1223,6 +1223,31 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
   }
 }
 
+void checkIfElse(ivl_statement_t cls, map<ivl_signal_t, ivl_statement_t> &lhSigs)
+{
+  ivl_statement_type_t stmtTyp = ivl_statement_type(cls);
+  if ((stmtTyp == IVL_ST_FORCE) ||
+      (stmtTyp == IVL_ST_ASSIGN) ||
+      (stmtTyp == IVL_ST_RELEASE) ||
+      (stmtTyp == IVL_ST_CASSIGN) ||
+      (stmtTyp == IVL_ST_DEASSIGN) ||
+      (stmtTyp == IVL_ST_ASSIGN_NB))
+  {
+    for (unsigned idx = 0 ;  idx < ivl_stmt_lvals(cls) ;  idx++)
+    {
+      ivl_lval_t tLvl = ivl_stmt_lval(cls, idx);
+      if (tLvl)
+      {
+        ivl_signal_t tLvlSig = ivl_lval_sig(tLvl);
+        if (tLvlSig)
+        {
+          lhSigs[tLvlSig] = cls;
+        }
+      }
+    }
+  }
+}
+
 void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t cls, set<ivl_signal_t> &sigLst, set<ivl_signal_t> &lhSigs)
 {
   int rule = 1210; // also 1214
@@ -1232,109 +1257,117 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
 
   ivl_statement_t tCls = ivl_stmt_cond_true(cls);
   ivl_statement_t fCls = ivl_stmt_cond_false(cls);
-  if (!tCls)
+  if (table[rule][sAct] == "yes")
   {
-    if (table[rule][sAct] == "yes")
+    if (!tCls)
     {
       printViolation(rule, line, file, "IF");
     }
-  }
-  if (!fCls)
-  {
-    if (table[rule][sAct] == "yes")
+    if (!fCls)
     {
       printViolation(rule, line, file, "ELSE");
     }
   }
 
-  if (tCls)
+  rule = 1049;
+  if (table[rule][sAct] == "yes")
   {
-    ivl_statement_type_t falseStmtTyp = IVL_ST_NONE;
-    ivl_statement_type_t trueStmtTyp = ivl_statement_type(tCls);
-    if ((trueStmtTyp == IVL_ST_FORCE) ||
-        (trueStmtTyp == IVL_ST_ASSIGN) ||
-        (trueStmtTyp == IVL_ST_RELEASE) ||
-        (trueStmtTyp == IVL_ST_CASSIGN) ||
-        (trueStmtTyp == IVL_ST_DEASSIGN) ||
-        (trueStmtTyp == IVL_ST_ASSIGN_NB))
+    if (fCls)
     {
-      line = ivl_stmt_lineno(tCls);
-      file = ivl_stmt_file(tCls);
-      for (unsigned idx = 0 ;  idx < ivl_stmt_lvals(tCls) ;  idx++)
+      if (ivl_statement_type(fCls) == IVL_ST_CONDIT)
       {
-        ivl_lval_t tLvl = ivl_stmt_lval(tCls, idx);
-        if (tLvl)
+        if (ivl_stmt_cond_true(fCls))
         {
-          ivl_signal_t tLvlSig = ivl_lval_sig(tLvl);
-          if (tLvlSig)
+          if (ivl_stmt_cond_false(fCls))
           {
-            const char *tLvlSigName = ivl_signal_basename(tLvlSig);
-	    if (fCls)
-	    {
-              falseStmtTyp = ivl_statement_type(fCls);
-              if ((falseStmtTyp == IVL_ST_FORCE) ||
-                  (falseStmtTyp == IVL_ST_ASSIGN) ||
-                  (falseStmtTyp == IVL_ST_RELEASE) ||
-                  (falseStmtTyp == IVL_ST_CASSIGN) ||
-                  (falseStmtTyp == IVL_ST_DEASSIGN) ||
-                  (falseStmtTyp == IVL_ST_ASSIGN_NB))
-              {
-                int foundSigInFalseCls = 0;
-                for (unsigned jdx = 0 ;  jdx < ivl_stmt_lvals(fCls) ;  jdx++)
-                {
-                  ivl_lval_t fLvl = ivl_stmt_lval(fCls, jdx);
-                  if (fLvl)
-                  {
-                    ivl_signal_t fLvlSig = ivl_lval_sig(fLvl);
-                    if (fLvlSig == tLvlSig)
-                    {
-                      foundSigInFalseCls = 1;
-                      if (trueStmtTyp != falseStmtTyp)
-                      {
-		        // this is same as 1051. So 1051 not implemented
-                        rule = 1025;
-                        if (table[rule][sAct] == "yes")
-                        {
-                          printViolation(rule, line, file, tLvlSigName);
-                        }
-                      }
-                    }
-                  }
-                }
-                if (!foundSigInFalseCls)
-                {
-                  rule = 1022;
-                  if (table[rule][sAct] == "yes")
-                  {
-                    printViolation(rule, line, file, tLvlSigName);
-                  }
-                }
-              }
-            }
-            else
-            {
-              rule = 1022;
-              if (table[rule][sAct] == "yes")
-              {
-                printViolation(rule, line, file, tLvlSigName);
-              }
-            }
+            // nested if-else-if
+            printViolation(rule, line, file);
           }
         }
       }
     }
-    if (falseStmtTyp == IVL_ST_CONDIT)
+  }
+
+  map<ivl_signal_t, ivl_statement_t> ifLhSigs;
+  if (tCls)
+  {
+    if (ivl_statement_type(tCls) == IVL_ST_BLOCK)
     {
-      if (ivl_stmt_cond_true(fCls))
+      unsigned noStmt = ivl_stmt_block_count(tCls);
+      for (unsigned idx = 0; idx < noStmt; idx++)
       {
-        if (ivl_stmt_cond_false(fCls))
+        ivl_statement_t aStmt = ivl_stmt_block_stmt(tCls, idx);
+        checkIfElse(aStmt, ifLhSigs);
+      }
+    }
+    else
+    {
+      checkIfElse(tCls, ifLhSigs);
+    }
+  }
+  map<ivl_signal_t, ivl_statement_t> elseLhSigs;
+  if (fCls)
+  {
+    if (ivl_statement_type(fCls) == IVL_ST_BLOCK)
+    {
+      unsigned noStmt = ivl_stmt_block_count(fCls);
+      for (unsigned idx = 0; idx < noStmt; idx++)
+      {
+        ivl_statement_t aStmt = ivl_stmt_block_stmt(fCls, idx);
+        checkIfElse(aStmt, elseLhSigs);
+      }
+    }
+    else
+    {
+      checkIfElse(fCls, elseLhSigs);
+    }
+  }
+
+  map<ivl_signal_t, ivl_statement_t>::iterator itr;
+  if (tCls)
+  {
+    line = ivl_stmt_lineno(tCls);
+    file = ivl_stmt_file(tCls);
+    for (itr = ifLhSigs.begin(); itr != ifLhSigs.end(); itr++)
+    {
+      ivl_signal_t ifSig = itr->first;
+      if (elseLhSigs.find(ifSig) == elseLhSigs.end())
+      {
+        rule = 1022;
+        if (table[rule][sAct] == "yes")
         {
-          // nested if-else-if
-          rule = 1049;
-          if (table[rule][sAct] == "yes")
+          printViolation(rule, line, file, ivl_signal_basename(ifSig));
+        }
+      }
+      else
+      {
+        // this is same as 1051. So 1051 not implemented
+        rule = 1025;
+        if (table[rule][sAct] == "yes")
+        {
+          ivl_statement_t ifStmt = ifLhSigs[ifSig];
+          ivl_statement_t elStmt = elseLhSigs[ifSig];
+          if (ivl_statement_type(ifStmt) != ivl_statement_type(elStmt))
           {
-            printViolation(rule, line, file);
+            printViolation(rule, line, file, ivl_signal_basename(ifSig));
           }
+        }
+      }
+    }
+  }
+  if (fCls)
+  {
+    line = ivl_stmt_lineno(fCls);
+    file = ivl_stmt_file(tCls);
+    for (itr = elseLhSigs.begin(); itr != elseLhSigs.end(); itr++)
+    {
+      ivl_signal_t elSig = itr->first;
+      if (ifLhSigs.find(elSig) == ifLhSigs.end())
+      {
+        rule = 1022;
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file, ivl_signal_basename(elSig));
         }
       }
     }

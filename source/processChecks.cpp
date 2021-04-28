@@ -1288,6 +1288,8 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
     }
   }
 
+  bool eventAtIf = false;
+  bool eventAtElse = false;
   map<ivl_signal_t, ivl_statement_t> ifLhSigs;
   if (tCls)
   {
@@ -1297,8 +1299,23 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
       for (unsigned idx = 0; idx < noStmt; idx++)
       {
         ivl_statement_t aStmt = ivl_stmt_block_stmt(tCls, idx);
-        checkIfElse(aStmt, ifLhSigs);
+        if (ivl_statement_type(aStmt) == IVL_ST_WAIT)
+        {
+          line = ivl_stmt_lineno(aStmt);
+          file = ivl_stmt_file(aStmt);
+          eventAtIf = true;
+        }
+	else
+	{
+          checkIfElse(aStmt, ifLhSigs);
+        }
       }
+    }
+    else if (ivl_statement_type(tCls) == IVL_ST_WAIT)
+    {
+      line = ivl_stmt_lineno(tCls);
+      file = ivl_stmt_file(tCls);
+      eventAtIf = true;
     }
     else
     {
@@ -1314,12 +1331,36 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
       for (unsigned idx = 0; idx < noStmt; idx++)
       {
         ivl_statement_t aStmt = ivl_stmt_block_stmt(fCls, idx);
-        checkIfElse(aStmt, elseLhSigs);
+        if (ivl_statement_type(aStmt) == IVL_ST_WAIT)
+        {
+          line = ivl_stmt_lineno(aStmt);
+          file = ivl_stmt_file(aStmt);
+          eventAtElse = true;
+        }
+	else
+	{
+          checkIfElse(aStmt, elseLhSigs);
+        }
       }
+    }
+    else if (ivl_statement_type(fCls) == IVL_ST_WAIT)
+    {
+      line = ivl_stmt_lineno(fCls);
+      file = ivl_stmt_file(fCls);
+      eventAtElse = true;
     }
     else
     {
       checkIfElse(fCls, elseLhSigs);
+    }
+  }
+
+  rule = 1252;
+  if (table[rule][sAct] == "yes")
+  {
+    if (eventAtIf != eventAtElse)
+    {
+      printViolation(rule, line, file);
     }
   }
 

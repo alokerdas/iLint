@@ -279,7 +279,7 @@ const char* giveMassage(int num)
     massages[1250] = "Wait statement should not be used because it is not synthesizable.";
     massages[1251] = "Case Equivalence Operator is Not Synthesizable.";
     massages[1252] = "Event control statement or delay is lost in some possible branches of always, it may cause simulation time hangs.";
-    massages[1253] = "Unconventional File Extension < .%s > on file name < %s >.";
+    massages[1253] = "Unconventional File Extension \".%s\".";
     massages[1254] = "For loop Detected on < %s >.";
     massages[1255] = "Comment is not found following port declaration %s ";
     massages[1256] = "Input, output and inout signals should be grouped and separated by blank line in port declarations.";

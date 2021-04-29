@@ -412,6 +412,25 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
       printViolation(rule, line, file, strlen(file), nml);
     }
   }
+  rule = 1253;
+  if (table[rule][sAct] == "yes")
+  {
+    char *fileExt;
+    char *fileName = strdup(file);
+    char *tok = strtok(fileName, ".");
+    while (tok)
+    {
+      fileExt = tok;
+      tok = strtok(NULL, ".");
+    }
+    if (strcasecmp(fileExt, "v") &&
+        strcasecmp(fileExt, "vlog") &&
+        strcasecmp(fileExt, "vhd") &&
+        strcasecmp(fileExt, "vhdl"))
+    {
+      printViolation(rule, 0, file, fileExt);
+    }
+  }
 }
 
 void checkTaskName(map<int, map<string, string> > & table, ivl_scope_t & scope)

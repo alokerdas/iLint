@@ -1666,6 +1666,109 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
   }
 }
 
+int checkWidthRHS(ivl_expr_t rhsExpr, char op, bool firsTime = false)
+{
+  static int width;
+  if (firsTime)
+    width = 0;
+
+  switch (ivl_expr_type(rhsExpr))
+  {
+    case IVL_EX_UNARY:
+    {
+      checkWidthRHS(ivl_expr_oper1(rhsExpr), ivl_expr_opcode(rhsExpr));
+    }
+    break;
+    case IVL_EX_SELECT:
+    {
+      checkWidthRHS(ivl_expr_oper1(rhsExpr), op);
+    }
+    break;
+    case IVL_EX_BINARY:
+    {
+      char code = ivl_expr_opcode(rhsExpr);
+      checkWidthRHS(ivl_expr_oper1(rhsExpr), code);
+      checkWidthRHS(ivl_expr_oper2(rhsExpr), code);
+    }
+    break;
+    case IVL_EX_TERNARY:
+    {
+      checkWidthRHS(ivl_expr_oper1(rhsExpr), '?');
+      checkWidthRHS(ivl_expr_oper2(rhsExpr), '?');
+      checkWidthRHS(ivl_expr_oper3(rhsExpr), '?');
+    }
+    break;
+    case IVL_EX_NUMBER:
+    {
+      const char *numBits = ivl_expr_bits(rhsExpr);
+      int constWidth = strlen(numBits);
+      numBits = strrchr(numBits, '1');
+      constWidth = constWidth - strlen(numBits) + 1;
+      if (op == '*')
+      {
+          width += constWidth;
+      }
+      if (constWidth > width)
+      {
+        if (op == '+')
+          width = constWidth + 1;
+        else
+          width = constWidth;
+      }
+
+    }
+    break;
+    default:
+    {
+      if (op == '*')
+      {
+          width += ivl_expr_width(rhsExpr);
+      }
+      if (ivl_expr_width(rhsExpr) > width)
+      {
+        if (op == '+')
+          width = ivl_expr_width(rhsExpr) + 1;
+        else
+          width = ivl_expr_width(rhsExpr);
+      }
+    }
+    break;
+  }
+  return width;
+}
+
+void checkBothSides(map<int, map<string, string>> &table, ivl_statement_t net)
+{
+  int rule = 1045;
+  const char *sAct = "active";
+  int line = ivl_stmt_lineno(net);
+  const char *file = ivl_stmt_file(net);
+
+  int lhsWidth = 0;
+  for (unsigned idx = 0; idx < ivl_stmt_lvals(net); idx++)
+  {
+    lhsWidth += ivl_lval_width(ivl_stmt_lval(net, idx));
+    ivl_signal_t lhSig = ivl_lval_sig(ivl_stmt_lval(net, idx));
+    if (lhSig && (ivl_signal_width(lhSig) != ivl_lval_width(ivl_stmt_lval(net, idx))))
+    {
+      if (table[rule][sAct] == "yes")
+      {
+        printViolation(rule, line, file, ivl_signal_basename(lhSig));
+      }
+    }
+  }
+  rule = 1272;
+  if (table[rule][sAct] == "yes")
+  {
+    ivl_expr_t rhs = ivl_stmt_rval(net);
+    int rhsWidth = checkWidthRHS(rhs, 0, true);
+    if (rhsWidth > lhsWidth)
+    {
+      printViolation(rule, line, file, lhsWidth);
+    }
+  }
+}
+
 void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t net, ivl_signal_t &loopVar, set<ivl_signal_t> &sensitivityList, set<ivl_signal_t> &lhSigs, bool edge, bool firsTime)
 {
   int rule = 0;
@@ -1733,26 +1836,13 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
     {
       ivl_expr_t rhs = ivl_stmt_rval(net);
       DelayControl(table, net, sensitivityList, lhSigs);
-      //checkConditExpr(table, rhs);
       checkDirectInputOutput(table, net);
       SignalAssignedToSelf(table, net, loopVar, sensitivityList, lhSigs);
       checkNetStuck(table, net);
-      //checkUnsignedVector(table, rhs);
       checkNonConstShiftAmt(table, rhs, true);
       checkIntegerNegative(table, net);
       functionCalledInAnAlwaysBlock(table, rhs);
-      for (unsigned idx = 0; idx < ivl_stmt_lvals(net); idx++)
-      {
-        rule = 1045;
-        ivl_signal_t lhSig = ivl_lval_sig(ivl_stmt_lval(net, idx));
-        if (lhSig && (ivl_signal_width(lhSig) != ivl_lval_width(ivl_stmt_lval(net, idx))))
-        {
-          if (table[rule][sAct] == "yes")
-          {
-            printViolation(rule, line, file, ivl_signal_basename(lhSig));
-          }
-        }
-      }
+      checkBothSides(table, net);
     }
     break; 
     case IVL_ST_CASSIGN:

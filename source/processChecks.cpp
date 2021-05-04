@@ -1703,7 +1703,8 @@ int checkWidthRHS(ivl_expr_t rhsExpr, char op, bool firsTime = false)
       const char *numBits = ivl_expr_bits(rhsExpr);
       int constWidth = strlen(numBits);
       numBits = strrchr(numBits, '1');
-      constWidth = constWidth - strlen(numBits) + 1;
+      if (numBits)
+        constWidth = constWidth - strlen(numBits) + 1;
       if (op == '*')
       {
           width += constWidth;

@@ -306,7 +306,7 @@ const char* giveMassage(int num)
     massages[1277] = "%s.";
     massages[1278] = "Don't use complex expression in the condition expression for asynchronous set or reset."; 
     massages[1279] = "The inputs of the tri-state bus \"%s\" are not generated from any clock source.";
-    massages[1280] = "TriState exists in a clock path from \"%s\" to \"%s\".";
+    massages[1280] = "TriState exists in the clock path of \"%s\".";
     massages[1281] = "Set (%s) and reset (%s) are specified for the same flip-flop/latch.";
     massages[1282] = "Multiple asynchronous resets are specified in the same always construct.";
     massages[1283] = "Signal \"%s\" has already been %sset.";

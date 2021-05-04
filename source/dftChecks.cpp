@@ -20,10 +20,28 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+bool isTriState(ivl_lpm_t netMux)
+{
+  bool triState = false;
+  // e ? i2 : 1'bz type of definition will be MUX lpm
+  for(unsigned j = 0 ; j < 2 ; j++)
+  {
+    ivl_nexus_t muxIn = ivl_lpm_data(netMux, j);
+    unsigned connect = ivl_nexus_ptrs(muxIn);
+    for(unsigned i = 0 ; i < connect ; i++)
+    {
+      ivl_nexus_ptr_t inCon = ivl_nexus_ptr(muxIn, i);
+      ivl_signal_t aSig = ivl_nexus_ptr_sig(inCon);
+      if(aSig && ivl_signal_local(aSig) && (connect == 2))
+        triState = true;
+    }
+  }
+  return triState;
+}
+
 void checkTristateBuffers(map<int, map<string, string> > & table, ivl_lpm_t & net)
 {
   int rule = 0;
-  bool isTriState = false;
   const char *sAct = "active";
   unsigned line = ivl_lpm_lineno(net);
   const char *file = ivl_lpm_file(net);
@@ -37,59 +55,45 @@ void checkTristateBuffers(map<int, map<string, string> > & table, ivl_lpm_t & ne
     {
       outSigName = ivl_signal_basename(outSig);
     }
-    // e ? i2 : 1'bz type of definition will be MUX lpm
-    for(unsigned j = 0 ; j < 2 ; j++)
+    if (isTriState(net))
     {
-      ivl_nexus_t muxIn = ivl_lpm_data(net, j);
-      unsigned connect = ivl_nexus_ptrs(muxIn);
-      for(unsigned i = 0 ; i < connect ; i++)
+      rule = 1179;
+      if (table[rule][sAct] == "yes")
       {
-        ivl_nexus_ptr_t inCon = ivl_nexus_ptr(muxIn, i);
-        ivl_signal_t aSig = ivl_nexus_ptr_sig(inCon);
-        if(aSig && ivl_signal_local(aSig) && (connect == 2))
+        const char *patt = "*_z";
+        if(fnmatch(patt, outSigName, 0))
         {
-          isTriState = true;
-          rule = 1179;
-          if (table[rule][sAct] == "yes")
+          printViolation(rule, line, file, outSigName);
+        }
+      }
+      rule = 1007;
+      if (table[rule][sAct] == "yes")
+      {
+        unsigned joints = ivl_nexus_ptrs(muxOut);
+        for(unsigned k = 1 ; k < joints ; k++)
+        {
+          outConn = ivl_nexus_ptr(muxOut, k);
+          ivl_lpm_t anLPM = ivl_nexus_ptr_lpm(outConn);
+          if (anLPM && (anLPM != net))
           {
-            const char *patt = "*_z";
-            if(fnmatch(patt, outSigName, 0))
-            {
+            if (ivl_lpm_q(anLPM) == muxOut)
               printViolation(rule, line, file, outSigName);
-            }
           }
-          unsigned joints = ivl_nexus_ptrs(muxOut);
-          for(unsigned k = 0 ; k < joints ; k++)
+          ivl_net_logic_t aLogic = ivl_nexus_ptr_log(outConn);
+          if (aLogic)
           {
-            outConn = ivl_nexus_ptr(muxOut, k);
-            rule = 1007;
-            if (table[rule][sAct] == "yes")
-            {
-              ivl_lpm_t anLPM = ivl_nexus_ptr_lpm(outConn);
-              if (anLPM && (anLPM != net))
-              {
-                if (ivl_lpm_q(anLPM) == muxOut)
-                  printViolation(rule, line, file, outSigName);
-              }
-              ivl_net_logic_t aLogic = ivl_nexus_ptr_log(outConn);
-              if (aLogic)
-              {
-		if (ivl_logic_pin(aLogic, 0) == muxOut)
-                  printViolation(rule, line, file, outSigName);
-              }
-            }
+            if (ivl_logic_pin(aLogic, 0) == muxOut)
+              printViolation(rule, line, file, outSigName);
           }
         }
       }
     }
-    if (!isTriState)
+    else
     {
       rule = 1194;
       if (table[rule][sAct] == "yes")
       {
-        {
-          printViolation(rule, line, file, outSigName);
-        }
+        printViolation(rule, line, file, outSigName);
       }
     }
   }
@@ -1368,12 +1372,18 @@ void checkClockSeqLogic(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
       {
         if (ivl_lpm_q(anLpm) == ckNex)
         {
+          file = ivl_lpm_file(lpm);
+          line = ivl_lpm_lineno(lpm);
           rule = 1094;
           if (table[rule][sAct] == "yes")
           {
-            file = ivl_lpm_file(lpm);
-            line = ivl_lpm_lineno(lpm);
             printViolation(rule, line, file, ckSigName);
+          }
+          rule = 1280;
+          if (table[rule][sAct] == "yes")
+          {
+            if ((ivl_lpm_type(anLpm) == IVL_LPM_MUX) && isTriState(anLpm))
+              printViolation(rule, line, file, ckSigName);
           }
         }
         if (ivl_lpm_data(anLpm, 0) == ckNex)

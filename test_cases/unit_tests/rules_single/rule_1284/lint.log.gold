@@ -1,0 +1,3 @@
+Violated 1284: The inputs of the gate "_ivl_1" come from more than one clock source. File: 1284_End_Point_Not_Generated_from_a_Single.v , Line: 10
+Violated 1284: The inputs of the gate "_ivl_19" come from more than one clock source. File: 1284_End_Point_Not_Generated_from_a_Single.v , Line: 16
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

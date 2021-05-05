@@ -75,6 +75,7 @@ extern void InstanceNameRelatedModuleName(map<int, map<string, string> > & table
 extern void checkUDPInstanceNotSynthesizable(map<int, map<string, string> > & table,ivl_net_logic_t & net);
 extern void checkUDP(map<int, map<string, string> > & table, ivl_net_logic_t & gate);
 extern void Tri_state_Output_Mixed_with_Other_Logic_in_a_Module(map<int, map<string, string> > & table, ivl_net_logic_t & net);
+extern void checkInputsFromDifferentClockSource(map<int, map<string, string> > & table, ivl_net_logic_t & combGate);
 
 
 /************************ ivl_scope_t net *****************************/

@@ -308,7 +308,12 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName)
         for (int i = 1; i < pins; i++)
         {
           ivl_nexus_t aJoint = ivl_logic_pin(Gat, i);
-	  if (aJoint != nex)
+	  if (aJoint == nex)
+          {
+            found = NULL;
+            break;
+	  }
+	  else
             found = traverseTillFF(aJoint, pinName);
         }
       }
@@ -397,6 +402,34 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName)
       break;
   }
   return found;
+}
+
+void checkInputsFromDifferentClockSource(map<int, map<string, string> > & table, ivl_net_logic_t & combGate)
+{
+  int rule = 1284;
+  const char *sAct = "active";
+  unsigned line = ivl_logic_lineno(combGate);
+  const char *file = ivl_logic_file(combGate);
+  if (table[rule][sAct] == "yes")
+  {
+    unsigned noInputs = ivl_logic_pins(combGate);
+    if (noInputs > 2)
+    {
+      ivl_nexus_t ckNex = NULL;
+      for (int i = 1; i < noInputs; i++)
+      {
+        ivl_nexus_t inputNex = ivl_logic_pin(combGate, i);
+        ivl_lpm_t foundFF = inputNex ? traverseTillFF(inputNex, "OUT") : NULL;
+        if (ckNex)
+        {
+          if (ivl_lpm_clk(foundFF) != ckNex)
+            printViolation(rule, line, file, ivl_logic_basename(combGate));
+        }
+        else
+          ckNex = foundFF ? ivl_lpm_clk(foundFF) : NULL;
+      }
+    }
+  }
 }
 
 void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm)

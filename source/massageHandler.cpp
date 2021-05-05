@@ -310,7 +310,7 @@ const char* giveMassage(int num)
     massages[1281] = "Set (%s) and reset (%s) are specified for the same flip-flop/latch.";
     massages[1282] = "Multiple asynchronous resets are specified in the same always construct.";
     massages[1283] = "Signal \"%s\" has already been %sset.";
-    massages[1284] = "The input of register \"%s\" comes from more than one clock source.";
+    massages[1284] = "The inputs of the gate \"%s\" come from more than one clock source.";
     massages[1285] = "Signal \"%s\" should not connect both input and output port of the instance.";
     massages[1286] = "Bus direction of \"%s\" is not consistent with \"%s\".";
     massages[1287] = "Bit Width \"%s\" and \"%s\" Mismatch in Logical Operation.";

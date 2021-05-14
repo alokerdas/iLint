@@ -292,7 +292,7 @@ void checkFallingActiveClock(map<int, map<string, string> > & table,ivl_lpm_t & 
   }
 }
 
-ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName)
+ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName, set<ivl_net_logic_t> &trvrsGates)
 {
   ivl_lpm_t found = NULL;
   unsigned connection = ivl_nexus_ptrs(nex);
@@ -302,28 +302,35 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName)
     ivl_net_logic_t Gat = ivl_nexus_ptr_log(sCon);
     if(Gat)
     {
-      if (pinName == "OUT")
+      if (trvrsGates.find(Gat) == trvrsGates.end())
       {
-        unsigned pins = ivl_logic_pins(Gat);
-        for (int i = 1; i < pins; i++)
+        if (pinName == "OUT")
         {
-          ivl_nexus_t aJoint = ivl_logic_pin(Gat, i);
-	  if (aJoint == nex)
+          unsigned pins = ivl_logic_pins(Gat);
+          for (int i = 1; i < pins; i++)
           {
-            found = NULL;
-            break;
-	  }
-	  else
-            found = traverseTillFF(aJoint, pinName);
+            ivl_nexus_t aJoint = ivl_logic_pin(Gat, i);
+            if (aJoint == nex)
+            {
+              found = NULL;
+              break;
+            }
+            else
+              found = traverseTillFF(aJoint, pinName, trvrsGates);
+          }
+        }
+        else
+        {
+          ivl_nexus_t outNex = ivl_logic_pin(Gat, 0);
+          if (outNex != nex)
+          {
+            found = traverseTillFF(outNex, pinName, trvrsGates);
+          }
         }
       }
       else
       {
-        ivl_nexus_t outNex = ivl_logic_pin(Gat, 0);
-	if (outNex != nex)
-	{
-          found = traverseTillFF(outNex, pinName);
-        }
+        //combinational loop
       }
     }
     ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(sCon);
@@ -335,7 +342,7 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName)
         if (selNex == nex)
         {
           ivl_nexus_t outNex = ivl_lpm_q(anLpm);
-          found = traverseTillFF(outNex, "DATA");
+          found = traverseTillFF(outNex, "DATA", trvrsGates);
         }
       }
       if (ivl_lpm_type(anLpm) == IVL_LPM_FF)
@@ -418,8 +425,9 @@ void checkInputsFromDifferentClockSource(map<int, map<string, string> > & table,
       ivl_nexus_t ckNex = NULL;
       for (int i = 1; i < noInputs; i++)
       {
+        set<ivl_net_logic_t> gateList;
         ivl_nexus_t inputNex = ivl_logic_pin(combGate, i);
-        ivl_lpm_t foundFF = inputNex ? traverseTillFF(inputNex, "OUT") : NULL;
+        ivl_lpm_t foundFF = inputNex ? traverseTillFF(inputNex, "OUT", gateList) : NULL;
         if (ckNex)
         {
           if (ivl_lpm_clk(foundFF) != ckNex)
@@ -472,7 +480,8 @@ void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
     rule = 1031;
     if (table[rule][sAct] == "yes")
     {
-      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "SYNCCLR") : NULL;
+      set<ivl_net_logic_t> gateList;
+      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "SYNCCLR", gateList) : NULL;
       if (foundFF)
       {
         file = ivl_lpm_file(foundFF);
@@ -483,7 +492,8 @@ void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
     rule = 1163;
     if (table[rule][sAct] == "yes")
     {
-      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "OUT") : NULL;
+      set<ivl_net_logic_t> gateList;
+      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "OUT", gateList) : NULL;
       if (foundFF)
       {
         file = ivl_lpm_file(foundFF);
@@ -494,7 +504,8 @@ void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
     rule = 1164;
     if (table[rule][sAct] == "yes")
     {
-      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "DATA") : NULL;
+      set<ivl_net_logic_t> gateList;
+      ivl_lpm_t foundFF = clrNex ? traverseTillFF(clrNex, "DATA", gateList) : NULL;
       if (foundFF)
       {
         file = ivl_lpm_file(foundFF);
@@ -583,13 +594,15 @@ void checkReconvClock(map<int, map<string, string> > & table, ivl_net_logic_t & 
       ivl_signal_t piFound1 = traverseBackward(pin1);
       if (piFound1)
       {
-        ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound1, 0), "CLOCK");
+        set<ivl_net_logic_t> gateList;
+        ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound1, 0), "CLOCK", gateList);
 	piFound1 = ifPIclock ? piFound1 : NULL;
       }
       ivl_signal_t piFound2 = traverseBackward(pin2);
       if (piFound2)
       {
-        ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound2, 0), "CLOCK");
+        set<ivl_net_logic_t> gateList;
+        ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound2, 0), "CLOCK", gateList);
 	piFound2 = ifPIclock ? piFound2 : NULL;
       }
       if (piFound1 && (piFound1 == piFound2))
@@ -602,7 +615,8 @@ void checkReconvClock(map<int, map<string, string> > & table, ivl_net_logic_t & 
         ivl_signal_t piFound3 = traverseBackward(pin3);
         if (piFound3)
         {
-          ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound3, 0), "CLOCK");
+          set<ivl_net_logic_t> gateList;
+          ivl_lpm_t ifPIclock = traverseTillFF(ivl_signal_nex(piFound3, 0), "CLOCK", gateList);
 	  piFound3 = ifPIclock ? piFound3 : NULL;
         }
         if (piFound3 && ((piFound1 == piFound3) || (piFound2 == piFound3)))
@@ -679,6 +693,7 @@ void traverseForward(ivl_nexus_t aNex, ivl_signal_t piSig, int aRule)
         int line = ivl_signal_lineno(piSig);
         const char *file = ivl_signal_file(piSig);
         printViolation(aRule, line, file, ivl_signal_basename(piSig), ivl_signal_basename(aSig));
+	break;
       }
     }
     ivl_net_logic_t aLog = ivl_nexus_ptr_log(aConn);
@@ -969,8 +984,10 @@ void checkEnableSetReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
     rule = 1111;
     if (table[rule][sAct] == "yes")
     {
-      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "ASYNCCLR") : NULL;
-      foundFF = foundFF ? foundFF : setNex ? traverseTillFF(setNex, "SYNCCLR") : NULL;
+      set<ivl_net_logic_t> gateList;
+      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "ASYNCCLR", gateList) : NULL;
+      gateList.clear();
+      foundFF = foundFF ? foundFF : setNex ? traverseTillFF(setNex, "SYNCCLR", gateList) : NULL;
       if (foundFF)
       {
         file = ivl_lpm_file(foundFF);
@@ -981,7 +998,8 @@ void checkEnableSetReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
     rule = 1148;
     if (table[rule][sAct] == "yes")
     {
-      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "OUT") : NULL;
+      set<ivl_net_logic_t> gateList;
+      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "OUT", gateList) : NULL;
       if (foundFF)
       {
         file = ivl_lpm_file(foundFF);
@@ -992,7 +1010,8 @@ void checkEnableSetReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm
     rule = 1165;
     if (table[rule][sAct] == "yes")
     {
-      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "SYNCSET") : NULL;
+      set<ivl_net_logic_t> gateList;
+      ivl_lpm_t foundFF = setNex ? traverseTillFF(setNex, "SYNCSET", gateList) : NULL;
       if (foundFF)
       {
         file = ivl_lpm_file(foundFF);
@@ -1040,8 +1059,9 @@ void checkSetDataInput(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
             rule = 1110;
             if (table[rule][sAct] == "yes")
             {
+              set<ivl_net_logic_t> gateList;
               ivl_nexus_t inNot = ivl_logic_pin(aLogic, 1);
-              ivl_lpm_t foundFF = traverseTillFF(inNot, "DATA");
+              ivl_lpm_t foundFF = traverseTillFF(inNot, "DATA", gateList);
               if (foundFF)
               {
                 file = ivl_lpm_file(foundFF);

@@ -20,6 +20,42 @@
 #include "ivl_target.h"
 #include "lint.h"
 
+void SignalConnectedBothInputOutputPorts(map<int, map<string, string> > & table, ivl_signal_t aSig)
+{
+  int rule = 1285;
+  const char *sAct = "active";
+  int line = ivl_signal_lineno(aSig);
+  const char *file = ivl_signal_file(aSig);
+  const char *sigName = ivl_signal_basename(aSig);
+  if (table[rule][sAct] == "yes")
+  {
+    unsigned elements = ivl_signal_array_count(aSig);
+    for (int i = 0; i < elements; i++)
+    {
+      bool inputConnected = false;
+      bool outputConnected = false;
+      ivl_nexus_t aJoint = ivl_signal_nex(aSig, i);
+      unsigned connections = ivl_nexus_ptrs(aJoint);
+      for (int j = 0; j < connections; j++)
+      {
+        ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aJoint, j);
+        ivl_signal_t connSig = ivl_nexus_ptr_sig(aConn);
+	if (connSig)
+	{
+          if (ivl_signal_port(connSig) == IVL_SIP_INPUT)
+            inputConnected = true;
+          if (ivl_signal_port(connSig) == IVL_SIP_OUTPUT)
+            outputConnected = true;
+	}
+      }
+      if (inputConnected && outputConnected)
+      {
+        printViolation(rule, line, file, sigName);
+      }
+    }
+  }
+}
+
 void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_lpm_t &net)
 {
   int rule = 0;

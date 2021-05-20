@@ -47,7 +47,6 @@ extern void checkNOoutput(map<int, map<string, string> > & table, ivl_scope_t & 
 extern void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void checkInoutInputOnlyShift(map<int, map<string, string> > & table, ivl_signal_t & sig);
 extern void show_tristste_other_logic(map<int, map<string, string> > & table,ivl_signal_t & net);
-extern void SignalConnectedBothInputOutputPorts(map<int, map<string, string> > & table, ivl_signal_t & MySig);
 
 
 /************************ ivl_lpm_t net *****************************/
@@ -275,7 +274,7 @@ extern void UPDNameLowerCase(map<int, map<string, string> > & table, ivl_signal_
 extern void EndPointNotGeneratedSingleClockSource(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void BitWidthMismatchLogicalOperation(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void BusDirectionConsistPortBinding(map<int, map<string, string> > & table, ivl_signal_t & mySig);
-extern void SignalConnectedBothInputOutputPorts(map<int, map<string, string> > & table, ivl_signal_t & mySig);
+extern void SignalConnectedBothInputOutputPorts(map<int, map<string, string> > & table, ivl_signal_t mySig);
 extern void InputFloating(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 
 /**************************************** ivl_lpm_t ********************************/

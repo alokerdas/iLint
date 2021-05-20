@@ -115,6 +115,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
       checkCombinationalPiPoPath(table, mySig);  
       checkAssignmentInputSignal(table, mySig);  
       checkSystemVerilogReservedWords(table, mySig);  
+      SignalConnectedBothInputOutputPorts(table, mySig);
     }
   }
 

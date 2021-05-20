@@ -304,6 +304,7 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName, set<ivl_net_logic_t> &
     {
       if (trvrsGates.find(Gat) == trvrsGates.end())
       {
+        trvrsGates.insert(Gat);
         if (pinName == "OUT")
         {
           unsigned pins = ivl_logic_pins(Gat);

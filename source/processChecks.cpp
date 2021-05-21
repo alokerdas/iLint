@@ -492,7 +492,7 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
             printViolation(rule, line, file);
           }
         }
-        rule = 1050;
+        rule = 1050; // same as 1289, not implemented
         if (table[rule][sAct] == "yes")
         {
           const char *exprBits = ivl_expr_bits(anExpr);
@@ -612,10 +612,6 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
         {
           printViolation(rule, line, file);
         }
-/*        if (ivl_expr_type(opr3) == IVL_EX_NUMBER)
-        {
-          const char *someBits = ivl_expr_bits(opr3);
-        }*/
       }
       opr1 = ivl_expr_oper1(anExpr);
       traverseExpression(table, opr1, lvSig, loopVar, lhSigs, sigLst, first);
@@ -656,7 +652,6 @@ void SignalAssignedToSelf(map<int, map<string, string> > & table, ivl_statement_
         {
           printViolation(rule, line, file, lvSigName);
         }
-	  //delete lhSigs; can't delete, its complecated.
       }
       if (lvSig == loopVar)
       {
@@ -802,18 +797,7 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
     if (ivl_expr_type(opr1) == IVL_EX_SIGNAL)
     {
       operWidth = ivl_signal_width(ivl_expr_signal(opr1));
-//      if (operWidth > casExpWidth)
-//      {
-//	casExpWidth = operWidth;
-//      }
-      if (ivl_expr_oper2(casCondExpr) == opr1)
-      {
-	break;
-      }
-      else
-      {
-        opr1 = ivl_expr_oper2(casCondExpr); //may need change
-      }
+      opr1 = NULL;
     }
     else
     {
@@ -847,13 +831,11 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
 
         rule = 1044;
         unsigned lblExpWidth = ivl_expr_uvalue(lblExp);
-//        if (lblExpWidth >= pow(2, casExpWidth))
         if (lblExpWidth >= pow(2, operWidth))
         {
           if (table[rule][sAct] == "yes")
           {
             printViolation(rule, line, file, operWidth);
-//            printViolation(rule, line, file, casExpWidth);
           }
         }
       }
@@ -877,6 +859,17 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
 	    break;
 	  }
           printViolation(rule, line, file, somStr.c_str());
+        }
+      }
+      break;
+      case IVL_EX_REALNUM:
+      {
+        rule = 1297;
+        line = ivl_expr_lineno(lblExp);
+        file = ivl_expr_file(lblExp);
+        if (table[rule][sAct] == "yes")
+        {
+          printViolation(rule, line, file);
         }
       }
       break;
@@ -1125,7 +1118,7 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
     case IVL_EX_NUMBER:
     {
       const char *exprBits = ivl_expr_bits(expr);
-      rule = 1050;
+      rule = 1050; // same as 1289, not implemented
       if (table[rule][sAct] == "yes")
       {
         if (strchr(exprBits, 'z') || strchr(exprBits, 'Z'))
@@ -1414,15 +1407,6 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
     }
   }
 
-/*  ivl_statement_t condStmt = cls;
-  while (condStmt && ivl_statement_type(condStmt) == IVL_ST_CONDIT)
-  {
-    ivl_expr_t fExpr = ivl_stmt_cond_expr(condStmt);
-    checkConditExpr(table, fExpr); // not a full proof way for 1050 and 1019
-    checkUnsignedVector(table, fExpr); // not a full proof way for 1050 and 1019
-    condStmt = ivl_stmt_cond_false(condStmt);
-  }*/
-
   ivl_signal_t lpIdx = NULL;
   if (tCls)
   {
@@ -1506,7 +1490,6 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
         ivl_signal_t lvSigDum = NULL;
         ivl_signal_t loopIdx = NULL;
         ivl_expr_t condExpr = ivl_stmt_cond_expr(aStmt);
-        //checkConditExpr(table, condExpr);
         traverseExpression(table, condExpr, lvSigDum, loopIdx, sigSet, sigLst);
         checkUnsignedVector(table, condExpr);
         checkConditClauses(table, aStmt, sigLst, sigSet);
@@ -1581,6 +1564,11 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
         }
       }
       break;
+      case IVL_ST_CASER:
+      {
+        checkCaseLabels(table, aStmt, sigLst, sigSet);
+      }
+      break; 
       default:
       {
         moreIfCaseForRepWhileStmt++;
@@ -1790,9 +1778,9 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
       ivl_statement_t procStmt = ivl_stmt_sub_stmt(net);
       if (edge)
         checkComboInSequential(table, procStmt);
+
       checkNestedEvents(table, net, firsTime);
-//      if (ivl_statement_type(procStmt) != IVL_ST_NOOP)
-        checkProcesStatement(table, procStmt, loopVar, sensitivityList, lhSigs, edge);
+      checkProcesStatement(table, procStmt, loopVar, sensitivityList, lhSigs, edge);
       if (!firsTime)
       {
         rule = 1250;
@@ -1808,7 +1796,6 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
       ivl_signal_t lvSigDum = NULL;
       ivl_signal_t loopIdx = NULL;
       ivl_expr_t condExpr = ivl_stmt_cond_expr(net);
-      //checkConditExpr(table, condExpr);
       traverseExpression(table, condExpr, lvSigDum, loopIdx, lhSigs, sensitivityList);
       checkUnsignedVector(table, condExpr);
       checkConditClauses(table, net, sensitivityList, lhSigs);
@@ -1821,6 +1808,7 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
     }
     break; 
     case IVL_ST_CASE:
+    case IVL_ST_CASER:
     {
       checkCaseLabels(table, net, sensitivityList, lhSigs);
     }

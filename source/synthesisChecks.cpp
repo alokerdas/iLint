@@ -158,93 +158,6 @@ void checkPossibleLossofCarryorBorrow(map<int, map<string, string>> &table, ivl_
       }
     }
   }
-	    /*
-
-
-
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                {     
-                      i = idx; //printf("%s\n",ivl_nexus_name(ivl_lpm_q(net, idx)));
-                      //printf("Q : %s\n",ivl_nexus_name(ivl_lpm_q(net, idx)));
-                }
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                {
-                      const char* lname = ivl_nexus_name(ivl_lpm_data(net, idx));
-                      char buf[20];
-                      strcpy(buf,lname);
-
-                      t1 = strtok(buf,"<");
-
-                      j = idx; //printf("%s\n",ivl_nexus_name(ivl_lpm_data(net, idx)));
-                     // printf("A : %s\n",ivl_nexus_name(ivl_lpm_data(net, idx)));
-                }
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                {
-                      const char* rname = ivl_nexus_name(ivl_lpm_datab(net, idx));
-                      char buf[20];
-                      strcpy(buf,rname);
-
-                      t2 = strtok(buf,"<");
-
-                      k =idx;  //printf("%s\n",ivl_nexus_name(ivl_lpm_datab(net, idx))); 
-                      //printf("B : %s\n",ivl_nexus_name(ivl_lpm_datab(net, idx)));
-                }
-
-
-       if( i && j && k)
-           if((j+k)>=i)
-             printViolation(1225,line,file,t1,t2);
-              //printf("possible loss value in Multiplication\n");  
-    if (table[1229][sAct] == "yes")
-    {
-           unsigned idx;
-           unsigned width = ivl_lpm_width(net);
-           static unsigned Ac = 0;
-           static unsigned Sc = 0; 
-
-           static const char*Signame ;
-
-           switch(ivl_lpm_type(net))
-           {
-               case IVL_LPM_SHIFTL:
-               // printf("  LPM_SHIFTL %s: <width=%u, selects=%u %s>\n",
-                    //    ivl_lpm_basename(net), width, ivl_lpm_selects(net),
-                  //      ivl_lpm_signed(net)? "signed" : "unsigned");
-                //for (idx = 0 ;  idx < width ;  idx += 1)
-                     // printf("    Q %u: %s\n", idx,
-                       //       ivl_nexus_name(ivl_lpm_q(net, idx)));
-                for (idx = 0 ;  idx < width ;  idx += 1)
-                  if(!strstr(ivl_nexus_name(ivl_lpm_data(net, idx)),"_s")){
-                    Ac++;
-                     Signame = ivl_nexus_name(ivl_lpm_data(net, idx));}
-                for (idx = 0 ;  idx < ivl_lpm_selects(net) ;  idx += 1)
-                    Sc++;
-
-
-                 if(Ac && Sc)
-                   if(Ac==Sc)
-                    {
-                       char buf[20];
-                       strcpy(buf,Signame);   
-                       char* t = strtok(buf,"<");
-                       printViolation(1229,line,file,t);
-                    }
-                    // printf("All Bits shifted Out\n");   
- 
-                      //printf("    Shift %u: %s\n", idx,ivl_nexus_name(ivl_lpm_select(net, idx)));
-               break;  
-           } 
-
-
-
-
-
-    }
-
-
-
-
-    */
 }
 
 void ProceduralContinuousAssignmentNotSynthesizable(map<int, map<string, string>> &table, ivl_statement_t net)
@@ -621,8 +534,6 @@ void checkRepeatExpression(map<int, map<string, string> > & table, ivl_statement
       printViolation(rule, line, file);
     }
   }
-//      ivl_expr_t repExpr = ivl_stmt_cond_expr(net);
-//      ivl_expr_type_t expTyp = ivl_expr_type(repExpr);
 }
 
 void traverseLoopExpression(map<int, map<string, string>> &table, ivl_expr_t loopExp, ivl_signal_t &loopVar)

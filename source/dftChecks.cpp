@@ -525,8 +525,8 @@ ivl_signal_t traverseBackward(ivl_nexus_t aNex)
   {
     ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aNex, j);
     ivl_signal_t aSig = ivl_nexus_ptr_sig(aConn);
-    if (aSig && (ivl_signal_port(aSig) == IVL_SIP_INOUT ||
-                 ivl_signal_port(aSig) == IVL_SIP_INPUT))
+    if (aSig && ((ivl_signal_port(aSig) == IVL_SIP_INOUT) ||
+                 (ivl_signal_port(aSig) == IVL_SIP_INPUT)))
     {
       piFound = aSig;
       break;
@@ -577,6 +577,29 @@ ivl_signal_t traverseBackward(ivl_nexus_t aNex)
     }
   }
   return piFound;
+}
+
+void checkSignalUnconnected(map<int, map<string, string> > &table, ivl_signal_t aSig)
+{
+  int rule = 1299;
+  const char *sAct = "active";
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_signal_port(aSig) == IVL_SIP_NONE)
+    {
+      unsigned line = ivl_signal_lineno(aSig);
+      const char *file = ivl_signal_file(aSig);
+      const char *aSigName = ivl_signal_basename(aSig);
+      unsigned elements = ivl_signal_array_count(aSig);
+      for (int i = 0; i < elements; i++)
+      {
+        ivl_nexus_t aJoint = ivl_signal_nex(aSig, i);
+        bool inFound = traverseBackward(aJoint);
+	if (!inFound)
+          printViolation(rule, line, file, aSigName, "input");
+      }
+    }
+  }
 }
 
 void checkReconvClock(map<int, map<string, string> > & table, ivl_net_logic_t & gate)

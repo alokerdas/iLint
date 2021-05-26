@@ -47,6 +47,7 @@ extern void checkNOoutput(map<int, map<string, string> > & table, ivl_scope_t & 
 extern void checkDirectInputOutput(map<int, map<string, string> > & table, ivl_signal_t & mySig);
 extern void checkInoutInputOnlyShift(map<int, map<string, string> > & table, ivl_signal_t & sig);
 extern void show_tristste_other_logic(map<int, map<string, string> > & table,ivl_signal_t & net);
+extern void checkSignalUnconnected(map<int, map<string, string> > &table, ivl_signal_t net);
 
 
 /************************ ivl_lpm_t net *****************************/

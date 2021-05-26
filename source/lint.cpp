@@ -107,6 +107,7 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
       checkVariableName(table, mySig);  
       checkSignalDrivers(table, mySig);
       checkSignalDrivConst(table, mySig);  
+      checkSignalUnconnected(table, mySig);
       checkVhdlReservedWords(table, mySig); 
       checkBiDirecTionalPort(table, mySig);  
       variable_synthesizeble(table, mySig);

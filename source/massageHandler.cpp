@@ -324,7 +324,7 @@ const char* giveMassage(int num)
     massages[1296] = "variable \"%s\"%s%s%s is not completely assigned in always_comb block.";
     massages[1297] = "Real expression is used in case item.";
     massages[1298] = "Snake path detected between register \"%s :Reg\" and register \"%s: Reg\".";
-    massages[1299] = "Primary output pin \"%s\" floating through wire \"%s\".";
+    massages[1299] = "Signal \"%s\" is not connected to any \"%s\".";
     massages[1301] = "No Escape should be used on < %s >.";        
     massages[1302] = "Dc_shell commands < %s > should not be used.";
     massages[1303] = "Nested text macros < %s > found";

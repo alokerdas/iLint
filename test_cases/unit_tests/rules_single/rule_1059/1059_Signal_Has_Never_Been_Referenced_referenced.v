@@ -1,10 +1,7 @@
-module test;
- wire c;
- reg a,b,d;
- initial
- begin
- assign a=b;
- assign d=c;
- end
+module test1 (o, a);
+input a;
+output o;
+wire b, c;
+assign o = c;
+assign b = a;
 endmodule
-

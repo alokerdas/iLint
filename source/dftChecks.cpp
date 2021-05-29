@@ -595,7 +595,7 @@ void checkSignalUnconnected(map<int, map<string, string> > &table, ivl_signal_t 
       {
         ivl_nexus_t aJoint = ivl_signal_nex(aSig, i);
         bool inFound = traverseBackward(aJoint);
-	if (!inFound)
+        if (!inFound)
           printViolation(rule, line, file, aSigName, "input");
       }
     }
@@ -2004,30 +2004,78 @@ void checkGATE(map<int, map<string, string> > & table, ivl_net_logic_t & gate)
   }
 }
 
-void SignalAssigned(map<int, map<string, string> > & table, ivl_signal_t sig)
+void SignalAssigned(map<int, map<string, string> > & table, ivl_signal_t aSig)
 {
-	// in this function we can not check if the signal is assigned or referenced. Hence, 1059 is not implemented.
-  int rule = 1058; // same as 1232, 1233, 1234, not implemented
-  const char *sAct = "active";
-
-  const char* signameHier = ivl_signal_name(sig);
-  if ((table[rule][sAct] == "yes"))
+  bool comingFrom = false;
+  bool goingTo = false;
+  unsigned line = ivl_signal_lineno(aSig);
+  const char *file = ivl_signal_file(aSig);
+  const char *aSigName = ivl_signal_basename(aSig);
+  unsigned elements = ivl_signal_array_count(aSig);
+  for (int i = 0; i < elements; i++)
   {
-    unsigned sigWidth = ivl_signal_width(sig);
-    unsigned elements = ivl_signal_array_count(sig);
-    for (int i = 0; i < elements; i++)
+    ivl_nexus_t aNex = ivl_signal_nex(aSig, i);
+    unsigned connections = aNex ? ivl_nexus_ptrs(aNex) : 0;
+    for (int j = 0; j < connections; j++)
     {
-      ivl_nexus_t aJoint = ivl_signal_nex(sig, i);
-      unsigned connections = 0;
-      if (aJoint)
-        connections = ivl_nexus_ptrs(aJoint);
-
-      if ((connections <= 1) && (ivl_signal_port(sig) == IVL_SIP_NONE))
+      ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aNex, j);
+      ivl_signal_t mySig = ivl_nexus_ptr_sig(aConn);
+      if (mySig && (mySig != aSig))
       {
-        int line = ivl_signal_lineno(sig);
-        const char *file = ivl_signal_file(sig);
-        printViolation(rule, line, file, signameHier);
+        comingFrom = true;
+        goingTo = true;
       }
+      ivl_net_logic_t aLog = ivl_nexus_ptr_log(aConn);
+      if (aLog)
+      {
+        if (ivl_nexus_ptr_pin(aConn) == 0)
+          comingFrom = true;
+        else
+          goingTo = true;
+      }
+      ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(aConn);
+      if (anLpm)
+      {
+        if (ivl_lpm_q(anLpm) == aNex)
+          comingFrom = true;
+        else
+          goingTo = true;
+      }
+      ivl_branch_t aBrnc = ivl_nexus_ptr_branch(aConn);
+      if( aBrnc)
+      {
+        if (ivl_branch_terminal(aBrnc, 0) == aNex)
+          comingFrom = true;
+        else
+          goingTo = true;
+      }
+      ivl_switch_t aSwc = ivl_nexus_ptr_switch(aConn);
+      if (aSwc)
+      {
+        if (ivl_switch_b(aSwc) == aNex)
+          comingFrom = true;
+        else
+          goingTo = true;
+      }
+    }
+  }
+  const char *sAct = "active";
+  int rule = 1058;
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_signal_port(aSig) != IVL_SIP_INPUT)
+    {
+      if (!comingFrom)
+        printViolation(rule, line, file, aSigName);
+    }
+  }
+  rule = 1059;
+  if (table[rule][sAct] == "yes")
+  {
+    if (ivl_signal_port(aSig) != IVL_SIP_OUTPUT)
+    {
+      if (!goingTo)
+        printViolation(rule, line, file, aSigName);
     }
   }
 }

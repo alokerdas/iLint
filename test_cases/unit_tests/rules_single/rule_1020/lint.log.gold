@@ -1,3 +1,2 @@
-Violated 1020: 'or' (rather than |, ||) should be used in event expression "(_ivl_0....)". File: 1020_Logical_or_Bitwise_OR_Used_in_Event_Control.v , Line: 7
-Violated 1020: 'or' (rather than |, ||) should be used in event expression "(_ivl_0....)". File: 1020_Logical_or_Bitwise_OR_Used_in_Event_Control.v , Line: 7
-TOTAL NUMBER OF VIOLATIONS ARE: 2.
+Violated 1020: User defined primitive < Carry > should be named in lower case. File: 1020_User_Defined_Primitive_should_be_Named_in_Lower_Case.v , Line: 5
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

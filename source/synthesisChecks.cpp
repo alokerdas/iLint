@@ -35,7 +35,7 @@ void SignalConnectedBothInputOutputPorts(map<int, map<string, string> > & table,
       bool inputConnected = false;
       bool outputConnected = false;
       ivl_nexus_t aJoint = ivl_signal_nex(aSig, i);
-      unsigned connections = ivl_nexus_ptrs(aJoint);
+      unsigned connections = aJoint ? ivl_nexus_ptrs(aJoint) : 0;
       for (int j = 0; j < connections; j++)
       {
         ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aJoint, j);
@@ -245,7 +245,7 @@ void checkMemory(map<int, map<string, string> > & table, ivl_signal_t & mem)
   const char *memName = ivl_signal_basename(mem);
   if (ivl_signal_type(mem) == IVL_SIT_REG)
   {
-    rule = 1116; 
+    rule = 1116; // same as 1319, not implemented
     if ((table[rule][sAct] == "yes") && (ivl_signal_dimensions(mem) > 0))
     {
       printViolation(rule, line, file, memName);

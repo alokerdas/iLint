@@ -39,7 +39,7 @@ void checkPMETER(map<int, map<string, string> > & table , ivl_parameter_t & para
       printViolation(rule, line, file, paraname, patt);
   } 
 
-  rule = 1312;
+  rule = 1084;
   if (table[rule][sAct] == "yes")
   {
     if (paraname && !ivl_parameter_local(param))

@@ -1,0 +1,2 @@
+Violated 1084: use localparam instead of parameter to declare < NOT_OK > File: 1084_Use_Localparam_in_Module_or_Interface.v , Line: 2
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

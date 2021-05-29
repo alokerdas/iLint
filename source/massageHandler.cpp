@@ -46,7 +46,7 @@ const char* giveMassage(int num)
     massages[1017] = "Violation on Reset Gate \"%s\".";
     massages[1018] = "Line Too Long.";
     massages[1019] = "More Than Expected Bit %u'b.";
-    massages[1020] = "'or' (rather than |, ||) should be used in event expression \"(%s....)\".";
+    massages[1020] = "User defined primitive < %s > should be named in lower case.";
     massages[1021] = "Drive strength \"(%s)\" should not be used because it is not synthesizable.";
     massages[1022] = "Register \"%s\" should be assigned in data clause."; 
     massages[1023] = "Tri-state enable port should not be connected to an expression.";
@@ -110,7 +110,7 @@ const char* giveMassage(int num)
     massages[1081] = "Signal \"%s\" is being read asynchronously. It may cause simulation-synthesis mismatch.";
     massages[1082] = "String \"%s\" should not be used because it is not synthesizable.";
     massages[1083] = "Event enable statement ->%s should not be used because it is not synthesizable.";
-    massages[1084] = "Specify bit width \"%d\" explicitly when assigning %s constant of 5 bits or more.";
+    massages[1084] = "use localparam instead of parameter to declare < %s >";
     massages[1085] = "More than one if/case/while/for/forever/repeat statements is used in a single always block.";
     massages[1086] = "A negative value is assigned to an integer \"%s\".";
     massages[1087] = "Process should be named.";
@@ -333,10 +333,8 @@ const char* giveMassage(int num)
     massages[1306] = "No comment on synopsys synthesis directive.";
     massages[1307] = "No comment is found before always";
     massages[1308] = "Define is not allowed for defining constants < %s >.";
-    massages[1309] = "User defined primitive < %s > should be named in lower case.";
     massages[1310] = "Synopsys template directive should be used before parameter ";
     massages[1311] = "Multiline command should not be used here %s";
-    massages[1312] = "use localparam instead of parameter to declare < %s >";
     massages[1313] = "Port < %s > should be declared by using explicit name.";
     massages[1314] = "Unconventional port declaration in order < %s > ......";
     massages[1315] = "Literal numbers should not be used in specifying a range (in object \" %s \").";

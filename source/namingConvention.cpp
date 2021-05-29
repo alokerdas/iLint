@@ -67,7 +67,7 @@ void checkGatePrefixSuffix(map<int, map<string, string> > & table, ivl_net_logic
       printViolation(rule, line, file, gateName);
     }
   } 
-  rule = 1309;
+  rule = 1020;
   if (table[rule][sAct] == "yes")
   {
     ivl_udp_t aUDP = (ivl_logic_type(gate) == IVL_LO_UDP) ? ivl_logic_udp(gate) : NULL;

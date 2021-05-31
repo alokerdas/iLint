@@ -22,7 +22,7 @@
 
 void SignalConnectedBothInputOutputPorts(map<int, map<string, string> > & table, ivl_signal_t aSig)
 {
-  int rule = 1285;
+  int rule = 1000;
   const char *sAct = "active";
   int line = ivl_signal_lineno(aSig);
   const char *file = ivl_signal_file(aSig);

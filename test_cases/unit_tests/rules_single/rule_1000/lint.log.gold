@@ -1,0 +1,5 @@
+Violated 1000: Signal "c" should not connect both input and output port of the instance. File: 1000_input_output_instance.v , Line: 13
+Violated 1000: Signal "m" should not connect both input and output port of the instance. File: 1000_input_output_instance.v , Line: 2
+Violated 1000: Signal "o" should not connect both input and output port of the instance. File: 1000_input_output_instance.v , Line: 3
+Violated 1000: Signal "z" should not connect both input and output port of the instance. File: 1000_input_output_instance.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 4.

@@ -414,7 +414,7 @@ ivl_lpm_t traverseTillFF(ivl_nexus_t nex, string pinName, set<ivl_net_logic_t> &
 
 void checkInputsFromDifferentClockSource(map<int, map<string, string> > & table, ivl_net_logic_t & combGate)
 {
-  int rule = 1284;
+  int rule = 1074;
   const char *sAct = "active";
   unsigned line = ivl_logic_lineno(combGate);
   const char *file = ivl_logic_file(combGate);
@@ -581,7 +581,7 @@ ivl_signal_t traverseBackward(ivl_nexus_t aNex)
 
 void checkSignalUnconnected(map<int, map<string, string> > &table, ivl_signal_t aSig)
 {
-  int rule = 1299;
+  int rule = 1051;
   const char *sAct = "active";
   if (table[rule][sAct] == "yes")
   {

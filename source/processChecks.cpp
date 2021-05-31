@@ -505,12 +505,6 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
             printViolation(rule, line, file, "x or X");
           }
         }
-        rule = 1074;
-        if (table[rule][sAct] == "yes")
-        {
-          // Can not implement rule 1074. No trace of -ve
-          //printViolation(rule, line, file, exprBits);
-        }
       }
     }
     break;
@@ -864,7 +858,7 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
       break;
       case IVL_EX_REALNUM:
       {
-        rule = 1297;
+        rule = 1018;
         line = ivl_expr_lineno(lblExp);
         file = ivl_expr_file(lblExp);
         if (table[rule][sAct] == "yes")
@@ -1130,12 +1124,6 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
           printViolation(rule, line, file, "x or X");
         }
       }
-      rule = 1074;
-      if (table[rule][sAct] == "yes")
-      {
-	// Can not implement rule 1074. No trace of -ve
-        //printViolation(rule, line, file, exprBits);
-      }
     }
     break;
     case IVL_EX_UNARY:
@@ -1375,7 +1363,6 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
       }
       else
       {
-        // this is same as 1051. So 1051 not implemented
         rule = 1025;
         if (table[rule][sAct] == "yes")
         {

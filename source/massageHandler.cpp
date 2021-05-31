@@ -27,6 +27,7 @@ const char* giveMassage(int num)
 
   if (firstTime)
   {
+    massages[1000] = "Signal \"%s\" should not connect both input and output port of the instance.";
     massages[1001] = "Signals \"%s\" cannot be in UPPER CASE.";
     massages[1002] = "Signals \"%s\" cannot be greater than \"%d\" characters.";
     massages[1003] = "Clock signals \"%s\" doesn't follow name conventinon \"%s\".";
@@ -44,7 +45,7 @@ const char* giveMassage(int num)
     massages[1015] = "Buffered Clock is on \"%s\".";
     massages[1016] = "Violation on Set Gate \"%s\".";
     massages[1017] = "Violation on Reset Gate \"%s\".";
-    massages[1018] = "Line Too Long.";
+    massages[1018] = "Real expression is used in case item.";
     massages[1019] = "More Than Expected Bit %u'b.";
     massages[1020] = "User defined primitive < %s > should be named in lower case.";
     massages[1021] = "Drive strength \"(%s)\" should not be used because it is not synthesizable.";
@@ -77,7 +78,7 @@ const char* giveMassage(int num)
     massages[1048] = "Write enable signal \"%s\" for memories should be disabled in the test mode.";
     massages[1049] = "Case Like If Else.";
     massages[1050] = "Used \"%s\" in Conditional Expression.";
-    massages[1051] = "Blocking and Non-blocking Statements in the Same Always Block.";
+    massages[1051] = "Signal \"%s\" is not connected to any \"%s\".";
     massages[1052] = "Delay Control Ignored by Synthesis";
     massages[1053] = "System Task Call \"%s;\" Not Synthesizable.";
     massages[1054] = "Force Statement Not Synthesizable.";
@@ -100,7 +101,7 @@ const char* giveMassage(int num)
     massages[1071] = "Number of lines in block is %d, should not be > 10.";
     massages[1072] = "Delay should not be used in a non-blocking assignment.";
     massages[1073] = "Only non-blocking assignment is used in combinational block.";
-    massages[1074] = "Do not assign signal with negative value \"-%s\".";
+    massages[1074] = "The inputs of the gate \"%s\" come from more than one clock source.";
     massages[1075] = "Signal \"%s\" should not be assigned to itself.";
     massages[1076] = "The value of case selection expression is fixed.";
     massages[1077] = "Variable \"%s\" is assigned in another assignment in same time point.";
@@ -310,8 +311,6 @@ const char* giveMassage(int num)
     massages[1281] = "Set (%s) and reset (%s) are specified for the same flip-flop/latch.";
     massages[1282] = "Multiple asynchronous resets are specified in the same always construct.";
     massages[1283] = "Signal \"%s\" has already been %sset.";
-    massages[1284] = "The inputs of the gate \"%s\" come from more than one clock source.";
-    massages[1285] = "Signal \"%s\" should not connect both input and output port of the instance.";
     massages[1286] = "Bus direction of \"%s\" is not consistent with \"%s\".";
     massages[1287] = "Bit Width \"%s\" and \"%s\" Mismatch in Logical Operation.";
     massages[1288] = "The bit width of reduction operand \"%s\" is larger than %d.";
@@ -322,37 +321,8 @@ const char* giveMassage(int num)
     massages[1294] = "Task is used in \"always_comb\" block.";
     massages[1295] = "Event construct @ is found in \"always_comb\" procedure.";
     massages[1296] = "variable \"%s\"%s%s%s is not completely assigned in always_comb block.";
-    massages[1297] = "Real expression is used in case item.";
     massages[1298] = "Snake path detected between register \"%s :Reg\" and register \"%s: Reg\".";
-    massages[1299] = "Signal \"%s\" is not connected to any \"%s\".";
-    massages[1301] = "No Escape should be used on < %s >.";        
-    massages[1302] = "Dc_shell commands < %s > should not be used.";
-    massages[1303] = "Nested text macros < %s > found";
-    massages[1304] = "Macro name < %s > must be upper case";
-    massages[1305] = "Comment not found on < %s >.";  
-    massages[1306] = "No comment on synopsys synthesis directive.";
-    massages[1307] = "No comment is found before always";
-    massages[1308] = "Define is not allowed for defining constants < %s >.";
-    massages[1310] = "Synopsys template directive should be used before parameter ";
-    massages[1311] = "Multiline command should not be used here %s";
-    massages[1313] = "Port < %s > should be declared by using explicit name.";
-    massages[1314] = "Unconventional port declaration in order < %s > ......";
-    massages[1315] = "Literal numbers should not be used in specifying a range (in object \" %s \").";
-    massages[1316] = "Null port is used in the module definition < %s; > ";
-    massages[1317] = "Gate port is deliberately not connected on Module < %s >";
-    massages[1318] = "Gate port is not connected on module < %s > .";
-    massages[1319] = "Memory < %s > should not be used because it is not synthesizable.";
-    massages[1320] = "Total bits in < %s > should be less than 1024";
-    massages[1321] = "Total word in < %s > should be less than 1024";
-    massages[1322] = "Port < %s > and its connection < %s > should be similar."; 
-    massages[1323] = "The < %s > ports are declared in groups.";
-    massages[1324] = "More than one port is declared in one line. %s"; 
-    massages[1325] = "Only one statement is allowed per line.";
-    massages[1326] = "Should not use TAB for indentation %s";
-    massages[1327] = "Should not use 4 spaces for indentation";
-    massages[1328] = "The lines of a source file < %s > hould not exceed %d lines.";
-    massages[1329] = "Realtime variable < %s > should not be used because it is not synthesizable.";
-    massages[1330] = "";
+    massages[1300] = "";
   }
 
   firstTime = 0;

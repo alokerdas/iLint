@@ -1372,6 +1372,7 @@ void checkAssignmentInputSignal(map<int, map<string, string> > & table, ivl_sign
   const char *sAct = "active";
   int line = ivl_signal_lineno(mySig);
   const char *file = ivl_signal_file(mySig);
+  const char *mySigName = ivl_signal_basename(mySig);
   if (table[rule][sAct] == "yes")
   {
     if (ivl_signal_port(mySig) == IVL_SIP_INPUT)
@@ -1384,15 +1385,49 @@ void checkAssignmentInputSignal(map<int, map<string, string> > & table, ivl_sign
         for(unsigned j = 0 ; j < connections ; j++)
         {
           ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aNex, j);
+          ivl_lpm_t anLpm = ivl_nexus_ptr_lpm(aConn);
+          if(anLpm)
+          {
+            file = ivl_lpm_file(anLpm);
+            line = ivl_lpm_lineno(anLpm);
+            if (ivl_lpm_q(anLpm) == aNex)
+	    {
+              printViolation(rule, line, file, mySigName);
+	    }
+          }
           ivl_net_logic_t aLog = ivl_nexus_ptr_log(aConn);
           if(aLog)
           {
-            if (ivl_logic_type(aLog) == IVL_LO_BUFZ)
+            file = ivl_logic_file(aLog);
+            line = ivl_logic_lineno(aLog);
+            if (ivl_nexus_ptr_pin(aConn) == 0)
 	    {
-              if (ivl_nexus_ptr_pin(aConn) == 0)
-	      {
-                printViolation(rule, line, file, ivl_signal_basename(mySig));
-	      }
+              printViolation(rule, line, file, mySigName);
+	    }
+          }
+          ivl_net_const_t aConst = ivl_nexus_ptr_con(aConn);
+          if(aConst)
+          {
+            line = ivl_const_lineno(aConst);
+            file = ivl_const_file(aConst);
+            printViolation(rule, line, file, mySigName);
+          }
+          ivl_branch_t aBrnc = ivl_nexus_ptr_branch(aConn);
+          if( aBrnc)
+          {
+            if (ivl_branch_terminal(aBrnc, 0) == aNex)
+	    {
+              printViolation(rule, line, file, mySigName);
+	    }
+          }
+          ivl_switch_t aSwc = ivl_nexus_ptr_switch(aConn);
+          if (aSwc)
+          {
+            line = ivl_switch_lineno(aSwc);
+            file = ivl_switch_file(aSwc);
+            if (ivl_switch_b(aSwc) == aNex)
+	    {
+              printViolation(rule, line, file, mySigName);
 	    }
           }
         }

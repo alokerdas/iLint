@@ -607,7 +607,7 @@ void traverseLoopExpression(map<int, map<string, string>> &table, ivl_expr_t loo
 void WhileLoop(map<int, map<string, string>> &table, ivl_statement_t net)
 {
 
-  int rule = 1060; // same as 1254. FOR/WHILE lloop
+  int rule = 1060;
   const char *sAct = "active";
   int line = ivl_stmt_lineno(net);
   const char *file = ivl_stmt_file(net);

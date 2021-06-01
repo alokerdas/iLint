@@ -178,7 +178,6 @@ int draw_scope_port(map<int, map<string, string> > & table, ivl_scope_t scope)
       set<ivl_signal_t> dummy;
       checkEvent(table, evt, dummy);
       checkEdgeNonEdge(table, evt);
-      checkMultipleClock(table, evt);
       checkActiveSignalName(table, evt);
     }
     else

@@ -1170,7 +1170,7 @@ void checkSignalNoLoad(map<int, map<string, string> > & table, ivl_signal_t & my
 
 void checkNetStuck(map<int, map<string, string> > & table, ivl_statement_t & myStmt)
 {
-  int rule = 1103; // same as 1109, not implemented
+  int rule = 1103;
   const char *sAct = "active";
   int line = ivl_stmt_lineno(myStmt);
   const char *file = ivl_stmt_file(myStmt);
@@ -1456,7 +1456,7 @@ void checkClockSeqLogic(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
           {
             printViolation(rule, line, file, ckSigName);
           }
-          rule = 1280;
+          rule = 1102;
           if (table[rule][sAct] == "yes")
           {
             if ((ivl_lpm_type(anLpm) == IVL_LPM_MUX) && isTriState(anLpm))

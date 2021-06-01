@@ -1,2 +1,2 @@
-rule=1280
+rule=1102
 active=yes

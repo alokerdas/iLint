@@ -292,7 +292,6 @@ extern void checkSetDrivCombiLogic(map<int, map<string, string> > & table, ivl_l
 extern void checkSyncAsyncReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkClockConst(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkClockSeqLogic(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
-extern void checkMultipleClock(map<int, map<string, string> > & table, ivl_event_t & evt);
 extern void checkResetActiveHighLow(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkSetDataInput(map<int, map<string, string> > & table, ivl_lpm_t & lpm);
 extern void checkEnableSetReset(map<int, map<string, string> > & table, ivl_lpm_t & lpm);

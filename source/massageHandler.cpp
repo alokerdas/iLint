@@ -129,14 +129,14 @@ const char* giveMassage(int num)
     massages[1099] = "Signal \"%s\" Driven By Constant.";
     massages[1100] = "Assignment to an input Signal \"%s\".";
     massages[1101] = "Reset Signal \"%s\" Active High and Low.";
-    massages[1102] = "More than one clock signal in a sequential logic.";
+    massages[1102] = "TriState exists in the clock path of \"%s\".";
     massages[1103] = "Signal \"%s\" Stuck at Logic 0/1.";
     massages[1104] = "Signal \"%s\" has no Load.";
     massages[1105] = "Integer \"%s\" is used in concatenation/directly.";
     massages[1106] = "Integer variable \"%s\" should be named in CASE_LOWER case.";
     massages[1107] = "The length of Integer variable name \"%s\" should not exceed 10 characters.";
     massages[1108] = "Variable name \"%s\" does not match to regular expression v_.*.";
-    massages[1109] = "Signal \"%s\" Stuck at Logic 1.";
+    massages[1109] = "Arithmetic/Relational Operations Sharing with Large Operand Not Allowed. It Exceed Limit %d Bit.";
     massages[1110] = "Set Signal \"%s\" Used as Data Input.";
     massages[1111] = "\"%s\" signal is used as both set and reset.";
     massages[1112] = "Nontop Module Tri-state \"%s\" Detected.";
@@ -299,7 +299,6 @@ const char* giveMassage(int num)
     massages[1269] = "Comment should be on < %s >";
     massages[1270] = "'iff' construct is not synthesizable.";
     massages[1271] = "Keyword 'changed' is not synthesizable.";
-    massages[1272] = "Arithmetic/Relational Operations Sharing with Large Operand Not Allowed. It Exceed Limit %d Bit.";
     massages[1273] = "Do not infer large multiplier by the operand \"%s\" whose bit-width is larger than %d.";
     massages[1274] = "Use \"always_comb\" to model combinational behavior.";
     massages[1275] = "\"always_ff\" is not used to model sequential blocks.";
@@ -307,7 +306,6 @@ const char* giveMassage(int num)
     massages[1277] = "%s.";
     massages[1278] = "Don't use complex expression in the condition expression for asynchronous set or reset."; 
     massages[1279] = "The inputs of the tri-state bus \"%s\" are not generated from any clock source.";
-    massages[1280] = "TriState exists in the clock path of \"%s\".";
     massages[1281] = "Set (%s) and reset (%s) are specified for the same flip-flop/latch.";
     massages[1282] = "Multiple asynchronous resets are specified in the same always construct.";
     massages[1283] = "Signal \"%s\" has already been %sset.";

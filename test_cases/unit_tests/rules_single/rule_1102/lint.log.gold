@@ -1,0 +1,3 @@
+Violated 1102: TriState exists in the clock path of "clk2". File: 1102_Tri-state_Buffer_in_a_Clock_Path.v , Line: 11
+Violated 1102: TriState exists in the clock path of "clk1". File: 1102_Tri-state_Buffer_in_a_Clock_Path.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 2.

@@ -1733,7 +1733,7 @@ void checkBothSides(map<int, map<string, string>> &table, ivl_statement_t net)
       }
     }
   }
-  rule = 1272;
+  rule = 1109;
   if (table[rule][sAct] == "yes")
   {
     ivl_expr_t rhs = ivl_stmt_rval(net);

@@ -328,24 +328,6 @@ void checkIntegerConcatenation(map<int, map<string, string> > & table, ivl_signa
   }
 }
 
-void checkMultipleClock(map<int, map<string, string> > & table, ivl_event_t & evt)
-{
-  // this implementation of 1102 doesn't work
-  int rule = 1102;
-  const char *sAct = "active";
-  int line = ivl_event_lineno(evt);
-  const char *file = ivl_event_file(evt);
-  if (table[rule][sAct] == "yes")
-  {
-    int edge = ivl_event_nneg(evt);   
-    edge += ivl_event_npos(evt);   
-    if (edge > 1)
-    {
-       printViolation(rule, line, file);
-    }
-  } 
-}
-
 void checkBiDirecTionalPort(map<int, map<string, string> > & table, ivl_signal_t & mySig)
 {
   int rule = 1098;

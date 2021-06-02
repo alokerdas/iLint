@@ -492,7 +492,7 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
             printViolation(rule, line, file);
           }
         }
-        rule = 1050; // same as 1289, not implemented
+        rule = 1050;
         if (table[rule][sAct] == "yes")
         {
           const char *exprBits = ivl_expr_bits(anExpr);
@@ -679,7 +679,7 @@ void checkCaseXZ(map<int, map<string, string> > & table, ivl_statement_t net)
     }
   }
 
-  rule = 1064; // 1063 are not implemented
+  rule = 1064;
   if (table[rule][sAct] == "yes")
   {
     if (ivl_expr_type(casCondExpr) == IVL_EX_UNARY ||
@@ -746,7 +746,7 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
   int line = ivl_expr_lineno(casCondExpr);
   const char *file = ivl_expr_file(casCondExpr);
 
-  int rule = 1064; // 1063 are not implemented
+  int rule = 1064;
   if (table[rule][sAct] == "yes")
   {
     if (ivl_expr_type(casCondExpr) == IVL_EX_UNARY ||
@@ -1112,7 +1112,7 @@ void checkConditExpr(map<int, map<string, string> > & table, ivl_expr_t expr)
     case IVL_EX_NUMBER:
     {
       const char *exprBits = ivl_expr_bits(expr);
-      rule = 1050; // same as 1289, not implemented
+      rule = 1050;
       if (table[rule][sAct] == "yes")
       {
         if (strchr(exprBits, 'z') || strchr(exprBits, 'Z'))
@@ -1336,7 +1336,7 @@ void checkConditClauses(map<int, map<string, string> > & table, ivl_statement_t 
     }
   }
 
-  rule = 1252;
+  rule = 1113;
   if (table[rule][sAct] == "yes")
   {
     if (eventAtIf != eventAtElse)

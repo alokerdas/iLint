@@ -412,7 +412,7 @@ void checkModuleName(map<int, map<string, string> > & table, ivl_scope_t & scope
       printViolation(rule, line, file, strlen(file), nml);
     }
   }
-  rule = 1253;
+  rule = 1123;
   if (table[rule][sAct] == "yes")
   {
     char *fileExt;
@@ -945,11 +945,5 @@ void checkSignalName(map<int, map<string, string> > & table, ivl_signal_t & sig)
       if (sigLSB && sigMSB)
         printViolation(rule, line, file, sigName);
     }
-  }
-  rule = 1301; // this rule does not work. signame doesn't have the \ character
-  if (table[rule][sAct] == "yes")
-  {
-    if (sigName[0] == '\\')
-      printViolation(rule, line, file, sigName);
   }
 }

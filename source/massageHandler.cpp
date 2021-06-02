@@ -140,7 +140,7 @@ const char* giveMassage(int num)
     massages[1110] = "Set Signal \"%s\" Used as Data Input.";
     massages[1111] = "\"%s\" signal is used as both set and reset.";
     massages[1112] = "Nontop Module Tri-state \"%s\" Detected.";
-    massages[1113] = "Combinational Path Too Long.";
+    massages[1113] = "Event control statement or delay is lost in some possible branches of always, it may cause simulation time hangs.";
     massages[1114] = "Special signal \"%s\" is a bit select.";
     massages[1115] = "Variable or Function \"%s\" of type \"%s\" is not Synthesizable.";
     massages[1116] = "Memory \"%s\" Not Synthesizable.";
@@ -150,7 +150,7 @@ const char* giveMassage(int num)
     massages[1120] = "Both Edge \"%s\" and Non-edge \"%s\" Expressions in the Sensitivity List.";
     massages[1121] = "\"%s\" not a constant in bits selection.";
     massages[1122] = "Multiple Bits in Special Type \"%s\" Reset Signal.";
-    massages[1123] = "UDP declaration \"%s\" should not be used because it is not synthesizable.";
+    massages[1123] = "Unconventional File Extension \".%s\".";
     massages[1124] = "Combinational Path Between PI \"%s\" and PO \"%s\" without Being Registered.";
     massages[1125] = "Non-constant Divisor \"%s\".";
     massages[1126] = "Non-constant Divident \"%s\".";
@@ -279,8 +279,6 @@ const char* giveMassage(int num)
     massages[1249] = "Primitive gate \"%s\" found in non_leaf module.";
     massages[1250] = "Wait statement should not be used because it is not synthesizable.";
     massages[1251] = "Case Equivalence Operator is Not Synthesizable.";
-    massages[1252] = "Event control statement or delay is lost in some possible branches of always, it may cause simulation time hangs.";
-    massages[1253] = "Unconventional File Extension \".%s\".";
   }
 
   firstTime = 0;

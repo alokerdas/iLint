@@ -245,7 +245,7 @@ void checkMemory(map<int, map<string, string> > & table, ivl_signal_t & mem)
   const char *memName = ivl_signal_basename(mem);
   if (ivl_signal_type(mem) == IVL_SIT_REG)
   {
-    rule = 1116; // same as 1319, not implemented
+    rule = 1116;
     if ((table[rule][sAct] == "yes") && (ivl_signal_dimensions(mem) > 0))
     {
       printViolation(rule, line, file, memName);
@@ -283,7 +283,7 @@ void checkMemory(map<int, map<string, string> > & table, ivl_signal_t & mem)
 
 void variable_synthesizeble(map<int, map<string, string> > & table, ivl_signal_t &mySig)
 {
-  int rule = 1115; // also 1200 and 1329
+  int rule = 1115; // also 1200
   const char *sAct = "active";
   if (table[rule][sAct] == "yes")
   {
@@ -404,7 +404,7 @@ void checkDriveSynth(map<int, map<string, string> > & table, ivl_signal_t &mySig
 
 void checkUDPInstanceNotSynthesizable(map<int, map<string, string> > & table, ivl_net_logic_t &myLog)
 {
-  int rule = 1024; // same as 1123
+  int rule = 1024;
   const char *sAct = "active";
   int line = ivl_logic_lineno(myLog);
   const char *file = ivl_logic_file(myLog);

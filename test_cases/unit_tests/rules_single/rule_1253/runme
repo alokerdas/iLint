@@ -1,1 +1,0 @@
-iverilog -S -tlint 1253_Unconventional_File_Extension.abc

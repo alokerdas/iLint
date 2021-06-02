@@ -1,0 +1,2 @@
+Violated 1113: Event control statement or delay is lost in some possible branches of always, it may cause simulation time hangs. File: 1113_Event_Control_or_Delay_Statement_Not_Found_in_All_Branches.v , Line: 8
+TOTAL NUMBER OF VIOLATIONS ARE: 1.

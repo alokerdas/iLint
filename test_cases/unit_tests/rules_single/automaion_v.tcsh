@@ -11,7 +11,7 @@ if ($#rulesToCheck < 1) then
   exit (1)
 endif
 
-set path=(/home/aloke/projects/install/iverilog/bin $path)
+set path=($HOME/projects/install/iverilog/bin $path)
 set local_cmd = "./runme"
 set default_cmd = "iverilog -tlint *.v"
 set lintlog = "lint.log"

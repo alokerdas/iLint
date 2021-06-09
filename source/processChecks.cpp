@@ -782,7 +782,15 @@ void checkCaseLabels(map<int, map<string, string> > & table, ivl_statement_t net
 
   unsigned operWidth = 0;
   ivl_expr_t opr1 = NULL;
-  if (ivl_expr_type(casCondExpr) != IVL_EX_NUMBER)
+  if ((ivl_expr_type(casCondExpr) == IVL_EX_NEW) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_UNARY) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_SIGNAL) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_BINARY) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_SELECT) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_MEMORY) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_TERNARY) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_PROPERTY) ||
+      (ivl_expr_type(casCondExpr) == IVL_EX_SHALLOWCOPY))
   {
     opr1 = ivl_expr_oper1(casCondExpr);
   }

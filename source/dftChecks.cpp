@@ -547,7 +547,11 @@ ivl_signal_t traverseBackward(ivl_nexus_t aNex)
     if(anLpm && (ivl_lpm_q(anLpm) == aNex))
     {
       if ((ivl_lpm_type(anLpm) != IVL_LPM_FF) &&
-          (ivl_lpm_type(anLpm) != IVL_LPM_LATCH))
+          (ivl_lpm_type(anLpm) != IVL_LPM_LATCH) &&
+          (ivl_lpm_type(anLpm) != IVL_LPM_ARRAY) &&
+          (ivl_lpm_type(anLpm) != IVL_LPM_CMP_WEQ) &&
+          (ivl_lpm_type(anLpm) != IVL_LPM_CMP_WNE) &&
+          (ivl_lpm_type(anLpm) != IVL_LPM_SUBSTITUTE))
       {
         unsigned lpmSize = ivl_lpm_size(anLpm);
         for (int i = 0; i < lpmSize; i++)

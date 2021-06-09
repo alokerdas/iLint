@@ -599,7 +599,7 @@ void traverseExpression(map<int, map<string, string> > & table, ivl_expr_t anExp
         rule = 1202;
         if (table[rule][sAct] == "yes")
         {
-          printViolation(rule, line, file, ivl_expr_opcode(anExpr));
+          printViolation(rule, line, file, '?');
         }
         rule = 1142;
         if (table[rule][sAct] == "yes")

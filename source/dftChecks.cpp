@@ -549,7 +549,7 @@ ivl_signal_t traverseBackward(ivl_nexus_t aNex)
       if ((ivl_lpm_type(anLpm) != IVL_LPM_FF) &&
           (ivl_lpm_type(anLpm) != IVL_LPM_LATCH))
       {
-        unsigned lpmSize = 2;
+        unsigned lpmSize = ivl_lpm_size(anLpm);
         for (int i = 0; i < lpmSize; i++)
         {
           ivl_nexus_t inLpm = ivl_lpm_data(anLpm, i); 

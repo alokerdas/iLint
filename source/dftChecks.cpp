@@ -431,7 +431,7 @@ void checkInputsFromDifferentClockSource(map<int, map<string, string> > & table,
         ivl_lpm_t foundFF = inputNex ? traverseTillFF(inputNex, "OUT", gateList) : NULL;
         if (ckNex)
         {
-          if (ivl_lpm_clk(foundFF) != ckNex)
+          if (foundFF && (ivl_lpm_clk(foundFF) != ckNex))
             printViolation(rule, line, file, ivl_logic_basename(combGate));
         }
         else
@@ -1897,10 +1897,10 @@ void checkGlitch(map<int, map<string, string> > & table, ivl_lpm_t & lpm)
 
   if (ivl_lpm_type(lpm) == IVL_LPM_FF)
   {
-    if (ivl_lpm_clk(lpm))
+    aJoint = ivl_lpm_clk(lpm);
+    if (aJoint)
     {
       rule = 1013;
-      aJoint = ivl_lpm_clk(lpm);
       aLogic = comingFrmComb(table, aJoint, true);
       if (aLogic)
       {
@@ -2143,23 +2143,23 @@ void checkPin(map<int, map<string, string> > & table, ivl_signal_t & sig)
       {
         unsigned connWidth = 0;
         ivl_nexus_ptr_t aConn = ivl_nexus_ptr(aJoint, j);
-        if (ivl_nexus_ptr_con(aConn))
+        ivl_net_const_t aConst = ivl_nexus_ptr_con(aConn);
+        if (aConst)
         {
-          ivl_net_const_t aConst = ivl_nexus_ptr_con(aConn);
           line = ivl_const_lineno(aConst);
           file = ivl_const_file(aConst);
           connWidth = ivl_const_width(aConst);
         }
-        if (ivl_nexus_ptr_log(aConn))
+        ivl_net_logic_t aLogic = ivl_nexus_ptr_log(aConn);
+        if (aLogic)
         {
-          ivl_net_logic_t aLogic = ivl_nexus_ptr_log(aConn);
           line = ivl_logic_lineno(aLogic);
           file = ivl_logic_file(aLogic);
           connWidth = ivl_logic_width(aLogic);
         }
-        if (ivl_nexus_ptr_lpm(aConn))
+        ivl_lpm_t anLPM = ivl_nexus_ptr_lpm(aConn);
+        if (anLPM)
         {
-          ivl_lpm_t anLPM = ivl_nexus_ptr_lpm(aConn);
           line = ivl_lpm_lineno(anLPM);
           file = ivl_lpm_file(anLPM);
           if ((ivl_lpm_type(anLPM) == IVL_LPM_FF))

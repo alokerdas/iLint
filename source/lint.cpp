@@ -18,7 +18,6 @@
  */
 
 #include "ivl_target.h"
-#include "general.h"
 #include "lint.h"
 
 int checkProcess(ivl_process_t pros, void *X)

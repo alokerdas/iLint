@@ -1,2 +1,2 @@
-Violated 1119: Net "t" of type "tri0" Not Synthesizable. File: 1119_Net_Types_Not_Synthesizable.v , Line: 3
+Violated 1119: Net "t" of type "tri0" Not Synthesizable. File: 1119_Net_Types_Not_Synthesizable.v , Line: 5
 TOTAL NUMBER OF VIOLATIONS ARE: 1.

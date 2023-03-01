@@ -1523,6 +1523,7 @@ void checkBlockStatements(map<int, map<string, string>> &table, ivl_statement_t 
       break;
       case IVL_ST_WHILE:
       case IVL_ST_DO_WHILE:
+      case IVL_ST_FORLOOP:
       {
         moreIfCaseForRepWhileStmt++;
         WhileLoop(table, aStmt);
@@ -1864,6 +1865,7 @@ void checkProcesStatement(map<int, map<string, string>> &table, ivl_statement_t 
     break;
     case IVL_ST_WHILE:
     case IVL_ST_DO_WHILE:
+    case IVL_ST_FORLOOP:
     {
       WhileLoop(table, net);
       ivl_signal_t lvSigDum = NULL;
